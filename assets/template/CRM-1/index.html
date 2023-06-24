@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./index.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=TheSansArab:wght@400;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Puritan:wght@700&display=swap"
+    />
+  </head>
+  <body>
+    <div class="div" id="back">
+      <div class="child"></div>
+      <div class="item" id="round_2"></div>
+      <div class="inner"></div>
+      <img
+        class="computer-login-bro-1"
+        alt=""
+        src="./public/computer-loginbro-11.svg"
+      />
+
+      <div class="rectangle-div" id="round_1"></div>
+      <img class="logo-dark-1-icon" alt="" src="./public/logo-dark-1@2x.png" />
+
+      <p class="p" id="welcometext">مرحباً بكم</p>
+      <p class="p1" id="signintext">تسجيل الدخول</p>
+      <button class="rectangle-button" id="rectangleButton"></button>
+      <b class="b">تسجيل الدخول</b>
+      <input class="frame-input" type="text" id="usermail" />
+
+      <input class="child1" type="text" id="Mahy" />
+
+      <button class="button" id="button">هل نسيت كلمة السر؟</button>
+    </div>
+
+    <script>
+      var rectangleButton = document.getElementById("rectangleButton");
+      if (rectangleButton) {
+        rectangleButton.addEventListener("click", function (e) {
+          window.location.href = "./Component3.html";
+        });
+      }
+      
+      var button = document.getElementById("button");
+      if (button) {
+        button.addEventListener("click", function (e) {
+          window.location.href = "./Component.html";
+        });
+      }
+      </script>
+  </body>
+</html>

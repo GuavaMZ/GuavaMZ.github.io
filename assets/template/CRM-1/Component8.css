@@ -1,0 +1,868 @@
+.group-child435 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: var(--br-31xl) 0 var(--br-31xl) 0;
+  background-color: var(--color-aliceblue);
+  width: 1275px;
+  height: 881px;
+}
+.b110 {
+  position: absolute;
+  top: 35px;
+  left: 1081px;
+  font-size: var(--font-size-11xl);
+  font-weight: 700;
+}
+.group-child436 {
+  border: 0;
+  background-color: var(--color-white);
+  position: absolute;
+  top: 50px;
+  left: 0;
+  border-radius: var(--br-xl);
+  width: 1185px;
+  height: 96px;
+}
+.b111 {
+  position: absolute;
+  top: 0;
+  left: 1089px;
+  font-weight: 700;
+}
+.group-child437,
+.rectangle-parent119 {
+  position: absolute;
+  top: 93px;
+  left: 42px;
+  width: 1185px;
+  height: 146px;
+}
+.group-child437 {
+  border: 0;
+  background-color: var(--color-white);
+  top: 50px;
+  left: 0;
+  border-radius: var(--br-xl);
+  height: 178px;
+}
+.b112 {
+  position: absolute;
+  top: 0;
+  left: 1032px;
+  font-weight: 700;
+}
+.group-child438,
+.rectangle-parent120 {
+  position: absolute;
+  top: 254px;
+  left: 42px;
+  width: 1185px;
+  height: 228px;
+}
+.group-child438 {
+  top: 50px;
+  left: 0;
+  border-radius: var(--br-xl);
+  background-color: var(--color-white);
+  width: 447px;
+  height: 96px;
+}
+.b113 {
+  position: absolute;
+  top: 0;
+  left: 392px;
+  font-weight: 700;
+}
+.arrow-square-down-1 {
+  position: absolute;
+  top: 83px;
+  left: 393px;
+  width: 30px;
+  height: 30px;
+  overflow: hidden;
+}
+.oraxrest1 {
+  margin: 0;
+  position: absolute;
+  top: 76px;
+  left: 30px;
+  font-size: inherit;
+  font-weight: 700;
+  font-family: inherit;
+  color: var(--color-darkgray);
+}
+.group-child439,
+.rectangle-parent121 {
+  position: absolute;
+  top: 497px;
+  left: 45px;
+  width: 447px;
+  height: 146px;
+}
+.group-child439 {
+  top: 50px;
+  left: 0;
+  border-radius: var(--br-xl);
+  background-color: var(--color-white);
+  width: 708px;
+  height: 96px;
+}
+.b114 {
+  position: absolute;
+  top: 0;
+  left: 608px;
+  font-weight: 700;
+}
+.vector-icon471 {
+  position: absolute;
+  height: 5%;
+  width: 38.33%;
+  top: 47.5%;
+  right: 30.83%;
+  bottom: 47.5%;
+  left: 30.83%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.vector-icon472 {
+  height: 38.33%;
+  width: 5%;
+  top: 30.83%;
+  right: 47.5%;
+  bottom: 30.83%;
+  left: 47.5%;
+  max-width: 100%;
+  max-height: 100%;
+}
+.add-square-32,
+.vector-icon472,
+.vector-icon473 {
+  position: absolute;
+  overflow: hidden;
+}
+.vector-icon473 {
+  height: 88.33%;
+  width: 88.33%;
+  top: 5.83%;
+  right: 5.83%;
+  bottom: 5.83%;
+  left: 5.83%;
+  max-width: 100%;
+  max-height: 100%;
+}
+.add-square-32 {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  top: 83px;
+  left: 648px;
+  width: 30px;
+  height: 30px;
+}
+.no-file-chosen {
+  margin: 0;
+  position: absolute;
+  top: 83px;
+  left: 36px;
+  font-size: var(--font-size-base);
+  font-weight: 700;
+  font-family: inherit;
+  color: var(--color-darkgray);
+}
+.group-child440,
+.rectangle-parent122 {
+  position: absolute;
+  top: 497px;
+  left: 519px;
+  width: 708px;
+  height: 146px;
+}
+.group-child440 {
+  top: 0;
+  left: 0;
+  border-radius: var(--br-21xl);
+  background-color: var(--color-steelblue-100);
+  box-shadow: 0 0 4px rgba(11, 92, 153, 0.25);
+  width: 400px;
+  height: 90px;
+  cursor: pointer;
+}
+.b115 {
+  position: absolute;
+  top: 21px;
+  left: 171px;
+  font-weight: 700;
+}
+.rectangle-parent123 {
+  position: absolute;
+  top: 731px;
+  left: 437px;
+  width: 400px;
+  height: 90px;
+  font-size: var(--font-size-6xl);
+  color: var(--color-white);
+}
+.group-child441,
+.rectangle-parent118 {
+  position: absolute;
+  top: 144px;
+  left: 22px;
+  width: 1275px;
+  height: 881px;
+}
+.group-child441 {
+  top: 0;
+  left: 1439.99px;
+  border-radius: 0 var(--br-11xl) var(--br-11xl) 0;
+  background-color: var(--color-white);
+  width: 119px;
+  height: 1439.99px;
+  transform: rotate(89.98deg);
+  transform-origin: 0 0;
+}
+.vector-icon474,
+.vector-icon475,
+.vector-icon476,
+.vector-icon477 {
+  position: absolute;
+  height: 17.5%;
+  width: 5%;
+  top: 5.83%;
+  right: 64.17%;
+  bottom: 76.67%;
+  left: 30.83%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.vector-icon475,
+.vector-icon476,
+.vector-icon477 {
+  right: 30.83%;
+  left: 64.17%;
+}
+.vector-icon476,
+.vector-icon477 {
+  height: 5%;
+  width: 75.83%;
+  top: 35.37%;
+  right: 12.08%;
+  bottom: 59.63%;
+  left: 12.08%;
+}
+.vector-icon477 {
+  height: 82.08%;
+  width: 80%;
+  top: 12.08%;
+  right: 10%;
+  bottom: 5.83%;
+  left: 10%;
+}
+.vector-icon478 {
+  height: 6.67%;
+  width: 6.71%;
+  top: 53.75%;
+  right: 31.24%;
+  bottom: 39.58%;
+  left: 62.06%;
+  max-width: 100%;
+  max-height: 100%;
+}
+.vector-icon478,
+.vector-icon479,
+.vector-icon480 {
+  position: absolute;
+  overflow: hidden;
+}
+.vector-icon479 {
+  height: 6.67%;
+  width: 6.71%;
+  top: 66.25%;
+  right: 31.24%;
+  bottom: 27.08%;
+  left: 62.06%;
+  max-width: 100%;
+  max-height: 100%;
+}
+.vector-icon480 {
+  top: 53.75%;
+  right: 46.64%;
+  bottom: 39.58%;
+  left: 46.65%;
+}
+.vector-icon480,
+.vector-icon481,
+.vector-icon482 {
+  height: 6.67%;
+  width: 6.71%;
+  max-width: 100%;
+  max-height: 100%;
+}
+.vector-icon481 {
+  position: absolute;
+  top: 66.25%;
+  right: 46.64%;
+  bottom: 27.08%;
+  left: 46.65%;
+  overflow: hidden;
+}
+.vector-icon482 {
+  top: 53.75%;
+  right: 62.07%;
+  bottom: 39.58%;
+  left: 31.22%;
+}
+.calendar-19,
+.vector-icon482,
+.vector-icon483 {
+  position: absolute;
+  overflow: hidden;
+}
+.vector-icon483 {
+  height: 6.67%;
+  width: 6.71%;
+  top: 66.25%;
+  right: 62.07%;
+  bottom: 27.08%;
+  left: 31.22%;
+  max-width: 100%;
+  max-height: 100%;
+}
+.calendar-19 {
+  text-decoration: none;
+  top: 44px;
+  left: 247px;
+  width: 30px;
+  height: 30px;
+}
+.mask-group-icon12 {
+  position: absolute;
+  top: -3px;
+  left: 129px;
+  width: 56px;
+  height: 56px;
+}
+.p168 {
+  margin: 0;
+  position: absolute;
+  top: 2px;
+  left: 30px;
+  font-weight: 600;
+}
+.arrow-down-38,
+.vector-icon484 {
+  position: absolute;
+  overflow: hidden;
+}
+.vector-icon484 {
+  height: 37.07%;
+  width: 73.5%;
+  top: 33.54%;
+  right: 13.26%;
+  bottom: 29.38%;
+  left: 13.24%;
+  max-width: 100%;
+  max-height: 100%;
+}
+.arrow-down-38 {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  top: 19px;
+  left: 0;
+  width: 20px;
+  height: 20px;
+}
+.mask-group-parent8 {
+  position: absolute;
+  top: 35px;
+  left: 35px;
+  width: 182px;
+  height: 50px;
+}
+.b116 {
+  position: absolute;
+  top: 30px;
+  left: 1026px;
+  font-size: var(--font-size-13xl);
+  font-weight: 700;
+  display: inline-block;
+  width: 248px;
+}
+.rectangle-parent124 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1440.02px;
+  height: 119.47px;
+  font-size: var(--font-size-6xl);
+}
+.group-child442 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: var(--br-11xl) 0 var(--br-11xl) 0;
+  background-color: var(--color-steelblue-100);
+  box-shadow: 0 0 2px rgba(11, 92, 153, 0.25);
+  width: 121px;
+  height: 1148px;
+}
+.ef98ad7010f26031b617516aa4cd3410 {
+  text-decoration: none;
+  position: absolute;
+  top: 47px;
+  left: 36px;
+  width: 50px;
+  height: 50px;
+  background-image: url(./public/ef98ad7010f26031b617516aa4cd3417-11@3x.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+.folder-110,
+.vector-icon485 {
+  position: absolute;
+  overflow: hidden;
+}
+.vector-icon485 {
+  height: 90%;
+  width: 90%;
+  top: 5%;
+  right: 5%;
+  bottom: 5%;
+  left: 5%;
+  max-width: 100%;
+  max-height: 100%;
+}
+.folder-110 {
+  text-decoration: none;
+  top: 282px;
+  left: 46px;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+.vector-icon486,
+.vector-icon487,
+.vector-icon488 {
+  position: absolute;
+  height: 90.25%;
+  width: 90%;
+  top: 5%;
+  right: 5%;
+  bottom: 4.75%;
+  left: 5%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.vector-icon487,
+.vector-icon488 {
+  height: 6.67%;
+  width: 48.33%;
+  top: 30%;
+  right: 25.83%;
+  bottom: 63.33%;
+  left: 25.83%;
+}
+.vector-icon488 {
+  width: 31.67%;
+  top: 50.83%;
+  right: 42.5%;
+  bottom: 42.5%;
+}
+.message-text-1-110 {
+  text-decoration: none;
+  position: absolute;
+  top: 392px;
+  left: 46px;
+  width: 30px;
+  height: 30px;
+  overflow: hidden;
+  cursor: pointer;
+}
+.vector-icon489,
+.vector-icon490 {
+  width: 60.83%;
+  right: 19.58%;
+  left: 19.58%;
+  max-width: 100%;
+  max-height: 100%;
+}
+.vector-icon489 {
+  position: absolute;
+  height: 45.63%;
+  top: 49.38%;
+  bottom: 5%;
+  overflow: hidden;
+}
+.vector-icon490 {
+  height: 52.5%;
+  top: 5%;
+  bottom: 42.5%;
+}
+.coin-110,
+.vector-icon490,
+.vector-icon491 {
+  position: absolute;
+  overflow: hidden;
+}
+.vector-icon491 {
+  height: 73.33%;
+  width: 60.83%;
+  top: 5%;
+  right: 19.58%;
+  bottom: 21.67%;
+  left: 19.58%;
+  max-width: 100%;
+  max-height: 100%;
+}
+.coin-110 {
+  text-decoration: none;
+  top: 502px;
+  left: 46px;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+.vector-icon492,
+.vector-icon493,
+.vector-icon494 {
+  position: absolute;
+  height: 6.67%;
+  width: 48.33%;
+  top: 77.92%;
+  right: 9.17%;
+  bottom: 15.42%;
+  left: 42.5%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.vector-icon493,
+.vector-icon494 {
+  top: 48.75%;
+  bottom: 44.58%;
+}
+.vector-icon494 {
+  top: 19.58%;
+  bottom: 73.75%;
+}
+.vector-icon495,
+.vector-icon496 {
+  height: 19.17%;
+  width: 23.33%;
+  right: 67.5%;
+  left: 9.17%;
+  max-width: 100%;
+  max-height: 100%;
+}
+.vector-icon495 {
+  position: absolute;
+  top: 11.25%;
+  bottom: 69.58%;
+  overflow: hidden;
+}
+.vector-icon496 {
+  top: 40.42%;
+  bottom: 40.42%;
+}
+.task-110,
+.vector-icon496,
+.vector-icon497 {
+  position: absolute;
+  overflow: hidden;
+}
+.vector-icon497 {
+  height: 19.17%;
+  width: 23.33%;
+  top: 69.58%;
+  right: 67.5%;
+  bottom: 11.25%;
+  left: 9.17%;
+  max-width: 100%;
+  max-height: 100%;
+}
+.task-110 {
+  text-decoration: none;
+  top: 612px;
+  left: 46px;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+.vector-icon498,
+.vector-icon499,
+.vector-icon500,
+.vector-icon501,
+.vector-icon502,
+.vector-icon503 {
+  position: absolute;
+  height: 69.17%;
+  width: 69.17%;
+  top: 25.83%;
+  right: 25.83%;
+  bottom: 5%;
+  left: 5%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.vector-icon499,
+.vector-icon500,
+.vector-icon501,
+.vector-icon502,
+.vector-icon503 {
+  height: 33.33%;
+  width: 33.33%;
+  bottom: 40.83%;
+  left: 40.83%;
+}
+.vector-icon500,
+.vector-icon501,
+.vector-icon502,
+.vector-icon503 {
+  height: 6.67%;
+  width: 23.33%;
+  top: 5%;
+  right: 31.67%;
+  bottom: 88.33%;
+  left: 45%;
+}
+.vector-icon501,
+.vector-icon502,
+.vector-icon503 {
+  height: 19.17%;
+  width: 30.08%;
+  right: 44.09%;
+  bottom: 75.83%;
+  left: 25.83%;
+}
+.vector-icon502,
+.vector-icon503 {
+  height: 44.17%;
+  width: 18.37%;
+  top: 30%;
+  right: 5%;
+  bottom: 25.83%;
+  left: 76.63%;
+}
+.vector-icon503 {
+  height: 31.67%;
+  width: 31.67%;
+  top: 5%;
+  bottom: 63.33%;
+  left: 63.33%;
+}
+.document-copy-110 {
+  text-decoration: none;
+  position: absolute;
+  top: 722px;
+  left: 46px;
+  width: 30px;
+  height: 30px;
+  overflow: hidden;
+  cursor: pointer;
+}
+.vector-icon505,
+.vector-icon506 {
+  position: absolute;
+  height: 31.69%;
+  width: 30.96%;
+  top: 25.82%;
+  right: 34.49%;
+  bottom: 42.5%;
+  left: 34.54%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.vector-icon506 {
+  height: 6.67%;
+  width: 6.71%;
+  top: 67.5%;
+  right: 46.63%;
+  bottom: 25.83%;
+  left: 46.67%;
+}
+.help-circle-110 {
+  text-decoration: none;
+  position: absolute;
+  top: 832px;
+  left: 46px;
+  width: 30px;
+  height: 30px;
+  overflow: hidden;
+  cursor: pointer;
+}
+.vector-icon507,
+.vector-icon508,
+.vector-icon509,
+.vector-icon510 {
+  position: absolute;
+  height: 90%;
+  width: 81.67%;
+  top: 5%;
+  right: 9.17%;
+  bottom: 5%;
+  left: 9.17%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.vector-icon508,
+.vector-icon509,
+.vector-icon510 {
+  height: 23.33%;
+  width: 23.33%;
+  top: 15.42%;
+  right: 19.58%;
+  bottom: 61.25%;
+  left: 57.08%;
+}
+.vector-icon509,
+.vector-icon510 {
+  height: 6.67%;
+  top: 50.83%;
+  right: 46.67%;
+  bottom: 42.5%;
+  left: 30%;
+}
+.vector-icon510 {
+  width: 40%;
+  top: 67.5%;
+  right: 30%;
+  bottom: 25.83%;
+}
+.document-text-110 {
+  text-decoration: none;
+  position: absolute;
+  top: 942px;
+  left: 46px;
+  width: 30px;
+  height: 30px;
+  overflow: hidden;
+  cursor: pointer;
+}
+.vector-icon511,
+.vector-icon512 {
+  position: absolute;
+  height: 86%;
+  width: 59.17%;
+  top: 7.04%;
+  right: 7.08%;
+  bottom: 6.96%;
+  left: 33.75%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.vector-icon512 {
+  height: 6.67%;
+  width: 60.34%;
+  top: 46.67%;
+  right: 34.66%;
+  bottom: 46.67%;
+  left: 5%;
+}
+.vector-icon513 {
+  height: 34.58%;
+  width: 20.63%;
+  top: 32.71%;
+  right: 30%;
+  bottom: 32.71%;
+  left: 49.38%;
+  max-width: 100%;
+  max-height: 100%;
+}
+.login-110,
+.vector-icon513,
+.vector-icon514 {
+  position: absolute;
+  overflow: hidden;
+}
+.login-110 {
+  text-decoration: none;
+  top: 1052px;
+  left: 46px;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+.vector-icon514 {
+  height: 42.04%;
+  top: 5%;
+  right: 5%;
+  bottom: 52.96%;
+  left: 52.92%;
+}
+.vector-icon514,
+.vector-icon515,
+.vector-icon516 {
+  width: 42.08%;
+  max-width: 100%;
+  max-height: 100%;
+}
+.vector-icon515 {
+  position: absolute;
+  height: 42.08%;
+  top: 52.92%;
+  right: 5%;
+  bottom: 5%;
+  left: 52.92%;
+  overflow: hidden;
+}
+.vector-icon516 {
+  height: 42.04%;
+  top: 5%;
+  right: 52.92%;
+  bottom: 52.96%;
+  left: 5%;
+}
+.element-3-110,
+.vector-icon516,
+.vector-icon517 {
+  position: absolute;
+  overflow: hidden;
+}
+.vector-icon517 {
+  height: 42.08%;
+  width: 42.08%;
+  top: 52.92%;
+  right: 52.92%;
+  bottom: 5%;
+  left: 5%;
+  max-width: 100%;
+  max-height: 100%;
+}
+.element-3-110 {
+  text-decoration: none;
+  top: 172px;
+  left: 46px;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+.rectangle-parent125 {
+  position: absolute;
+  top: 0;
+  left: 1318px;
+  width: 121px;
+  height: 1148px;
+}
+.div121 {
+  position: relative;
+  background-color: var(--color-white);
+  width: 100%;
+  height: 1188px;
+  overflow: hidden;
+  cursor: pointer;
+  text-align: left;
+  font-size: var(--font-size-5xl);
+  color: var(--color-steelblue-100);
+  font-family: var(--font-cairo);
+}

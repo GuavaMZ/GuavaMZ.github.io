@@ -1,0 +1,56 @@
+
+
+
+
+
+
+body{
+    background-color: #ddd4d4;
+}
+
+.profileimg{
+    border-radius: 50%;
+    border: 2px solid blue;
+}
+.ul-profile{
+    float: right;
+}
+
+#slidparRight{
+    width: 121px;
+    font-size: 12px;
+}
+.ul-profile{
+    list-style: none;
+}
+.ulpnl{
+    list-style: none;
+    padding: 2%;
+    margin-top: 14px;
+}
+.ulpnl li{
+    margin-top: 24px;
+}
+.hellorectangle{
+    border-radius: 30px;
+    height: 200px;
+}
+.hello-img{
+    position: relative;
+    bottom: 28px;
+}
+.heading1 {
+    position: absolute;
+    width: 215px;
+    height: 60px;
+    left: 1064px;
+    top: 30px;
+
+    font-family: 'Cairo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 60px;
+
+    color: #12517F;
+}
