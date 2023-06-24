@@ -1,44 +1,46 @@
-
-
-
-
-
-
-body{
-    background-color: #ddd4d4;
+body {
+    background-color: #ffffff;
+    /* background-color: #ddd4d4; */
 }
 
-.profileimg{
+.profileimg {
     border-radius: 50%;
     border: 2px solid blue;
 }
-.ul-profile{
+
+.ul-profile {
     float: right;
 }
 
-#slidparRight{
+#slidparRight {
     width: 121px;
     font-size: 12px;
 }
-.ul-profile{
+
+.ul-profile {
     list-style: none;
 }
-.ulpnl{
+
+.ulpnl {
     list-style: none;
     padding: 2%;
     margin-top: 14px;
 }
-.ulpnl li{
+
+.ulpnl li {
     margin-top: 24px;
 }
-.hellorectangle{
+
+.hellorectangle {
     border-radius: 30px;
     height: 200px;
 }
-.hello-img{
+
+.hello-img {
     position: relative;
     bottom: 28px;
 }
+
 .heading1 {
     position: absolute;
     width: 215px;
@@ -53,4 +55,43 @@ body{
     line-height: 60px;
 
     color: #12517F;
+}
+
+.blueLightBack {
+    width: 95%;
+    height: 973px;
+    position: absolute;
+    background: #F2FAFF;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    margin-left: 2.5%;
+}
+
+.projectSummaryBox {
+
+    width: 672px;
+    height: 176px;
+    background: white;
+    border-radius: 30px;
+    margin-left: 2.5%;
+    margin-top: 2.5%;
+}
+
+.projectSummaryText {
+    position: absolute;
+    color: #12517F;
+    font-size: 25px;
+    font-family: Cairo;
+    font-weight: 600;
+    word-wrap: break-word;
+    margin-top: 18px;
+    margin-left: 470px;
+}
+
+.projectStatus {
+    color: #12517F;
+    font-size: 20px;
+    font-family: Cairo;
+    font-weight: 500;
+    word-wrap: break-word
 }
