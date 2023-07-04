@@ -7,15 +7,6 @@
     height: 1024px;
 }
 
-.computer-login-bro-1 {
-    position: relative;
-    top: 10%;
-    left: 16%;
-    width: 400px;
-    height: 400px;
-    overflow: hidden;
-}
-
 .rectangle-div {
     position:absolute;
     top: 165px;
@@ -37,15 +28,6 @@
     height: 66.5%;
 }
 
-.logo-dark-1-icon {
-    position: relative;
-    top: 10%;
-    left: 27%;
-    width: 289px;
-    height: 51px;
-    object-fit: cover;
-}
-
 .p {
     position: relative;
     left: 45%;
@@ -55,7 +37,7 @@
 
 .p1 {
     top: 244px;
-    left: 68%;
+    left: 58%;
     font-size: 25px;
     color: #ffffff;
     position: absolute;
@@ -82,7 +64,6 @@
     text-align: center;
 }
 
-.pass-input,
 .email-input {
     border: 0;
     background-color: #ffffff;
@@ -102,10 +83,6 @@
     font-family: 'TheSansArabic';
 }
 
-.pass-input {
-    top: 400px;
-}
-
 .button,b,
 .div {
     text-align: left;
@@ -117,12 +94,12 @@
     border: 0;
     padding: 0;
     background-color: transparent;
-    position: absolute;
-    top: 739px;
-    left: 383px;
+    position: relative;
+    top: 600px;
+    left: 70%;
     font-size: 16px;
     color: #ffffff;
-    display: inline-block;
+    /* display: inline-block; */
 }
 
 .div {
@@ -133,4 +110,22 @@
     overflow: hidden;
     font-size: 30px;
     color: #12517f;
+}
+
+.Forgot-password-pana1{
+    position: relative;
+    top: 10%;
+    left: 16%;
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+}
+
+.logo-dark-1-icon {
+    position: relative;
+    top: 10%;
+    left: 27%;
+    width: 289px;
+    height: 51px;
+    object-fit: cover;
 }
