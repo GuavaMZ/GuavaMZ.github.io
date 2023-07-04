@@ -23,7 +23,7 @@
     border-radius: 100px 0 0 0;
     background-color: #12517f;
     width: 30%;
-    height: 681px;
+    height: 66.5%;
 
 }
 
@@ -34,7 +34,7 @@
     border-radius: 0 0 100px 0;
     background-color: #ffffff;
     width: 30%;
-    height: 681px;
+    height: 66.5%;
 }
 
 .logo-dark-1-icon {
@@ -90,9 +90,9 @@
 .email-input {
     border: 0;
     background-color: #ffffff;
-    position: absolute;
+    position: relative;
     top: 371px;
-    left: 259px;
+    left: 12.5%;
     border-radius: 50px;
     width: 390px;
     height: 70px;
@@ -101,13 +101,13 @@
     padding: 0 25px;
     box-sizing: border-box;
     align-items: center;
-    justify-content: flex-end;
+    
     font-size: medium;
     font-family: 'TheSansArabic';
 }
 
 .pass-input {
-    top: 491px;
+    top: 400px;
 }
 
 .button,b,
