@@ -43,17 +43,13 @@ body {
 
 .heading1 {
     position: absolute;
-    width: 215px;
-    height: 60px;
-    left: 1064px;
-    top: 30px;
-
+    left: 83%;
+    top: 8%;
     font-family: 'Cairo';
     font-style: normal;
     font-weight: 700;
     font-size: 32px;
     line-height: 60px;
-
     color: #12517F;
 }
 
@@ -64,28 +60,29 @@ body {
     background: #F2FAFF;
     border-top-left-radius: 50px;
     border-bottom-right-radius: 50px;
-    margin-left: 2.5%;
+    left: 2.5rem;
+    top: 7.5rem;
 }
 
 .projectSummaryBox {
-
-    width: 672px;
+    position: relative;
+    width: 50%;
     height: 176px;
     background: white;
     border-radius: 30px;
-    margin-left: 2.5%;
+    margin-right: 2.5%;
     margin-top: 2.5%;
 }
 
 .projectSummaryText {
-    position: absolute;
+    position: relative;
     color: #12517F;
     font-size: 25px;
     font-family: Cairo;
     font-weight: 600;
     word-wrap: break-word;
     margin-top: 18px;
-    margin-left: 470px;
+    margin-right: 2.5%;
 }
 
 .projectStatus {
@@ -94,4 +91,157 @@ body {
     font-family: Cairo;
     font-weight: 500;
     word-wrap: break-word
+}
+
+.helloBox {
+    width: 42%;
+    height: 176px;
+    background: white;
+    border-radius: 30px;
+    margin-right: 2.5%;
+    margin-top: 2.5%;
+}
+
+.helloUser {
+    position: absolute;
+    margin-top: auto;
+    /* margin-left: auto; */
+    margin-right: 5%;
+    margin-top: 4.5%;
+    color: #12517F;
+    font-size: 20px;
+    font-family: Cairo;
+    font-weight: 600;
+    word-wrap: break-word
+}
+
+.quickInfoBox {
+    width: 37%;
+    height: 654px;
+    background: white;
+    box-shadow: 0px 0px 4px rgba(11, 92, 153, 0.25);
+    border-radius: 30px;
+    margin-right: 2.5%;
+    margin-top: 2.5%;
+}
+
+.quickBillsInfoBox {
+    width: 55%;
+    height: 654px;
+    background: white;
+    box-shadow: 0px 0px 4px rgba(11, 92, 153, 0.25);
+    border-radius: 30px;
+    margin-right: 2.5%;
+    margin-top: 2.5%;
+}
+
+
+.rectangle-parent61 {
+    position: absolute;
+    top: 3rem;
+    right: 10rem;
+    width: 27%;
+    height: 15%;
+}
+
+.group-child228,
+.searchButton {
+    border: 0;
+    position: absolute;
+    top: 79px;
+    left: 0;
+    border-radius: 40px;
+    box-shadow: 0 0 4px rgba(11, 92, 153, 0.25);
+    width: 534px;
+    height: 80px;
+}
+
+.searchButton {
+    cursor: pointer;
+    padding: 0;
+    background-color: #12517F;
+    width: 237px;
+}
+
+.group-child228 {
+    background-color: #F2FAFF;
+}
+
+
+.p101 {
+    position: absolute;
+    top: 101px;
+    left: 388px;
+    color: #12517F;
+    font-size: 20px;
+    font-family: Cairo;
+    font-weight: 700;
+    word-wrap: break-word
+}
+
+.b75 {
+    color: white;
+    font-size: 25px;
+    font-family: Cairo;
+    font-weight: 700;
+    word-wrap: break-word;
+}
+
+.b76 {
+    top: 0;
+    color: #12517F;
+    font-size: 30px;
+    font-family: Cairo;
+    font-weight: 700;
+    word-wrap: break-word
+}
+
+.coDetails {
+    position: absolute;
+    right: 80rem;
+    top: 3rem;
+    text-align: center;
+}
+
+.ellipse-parent10 {
+    position: absolute;
+    top: 180px;
+    left: 235px;
+    width: 50px;
+    height: 50px;
+}
+
+.ellipse-parent11 {
+    position: absolute;
+    top: 180px;
+    left: 305px;
+    width: 50px;
+    height: 50px;
+}
+
+.ellipse-parent12 {
+    position: absolute;
+    top: 180px;
+    left: 165px;
+    width: 50px;
+    height: 50px;
+}
+
+
+.group-child225 {
+    border-radius: 50%;
+    background-color: #F2FAFF;
+    box-shadow: 0 0 4px rgba(11, 92, 153, 0.25);
+    width: 50px;
+    height: 50px;
+    
+}
+
+.mail,.facebook,.webPage{
+    position: relative;
+    cursor: pointer;
+    padding: 0;
+    border: 0;
+    background-color: transparent;
+    top: 10px;
 }
