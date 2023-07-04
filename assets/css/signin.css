@@ -52,7 +52,6 @@
 }
 
 .p {
-
     position: relative;
     left: 45%;
     top: 10%;
@@ -61,7 +60,7 @@
 
 .p1 {
     top: 244px;
-    left: 378px;
+    left: 68%;
     font-size: 25px;
     color: #ffffff;
 }
@@ -71,9 +70,9 @@
     border: 0;
     padding: 0;
     background-color: #ffffff;
-    position: absolute;
-    top: 590px;
-    left: 329px;
+    position: relative;
+    top: 640px;
+    left: 58%;
     border-radius: 50px;
     box-shadow: 0 0 4px rgba(248, 69, 111, 0.25);
     width: 250px;
@@ -94,7 +93,7 @@
     top: 371px;
     left: 12.5%;
     border-radius: 50px;
-    width: 390px;
+    width: 70%;
     height: 70px;
     display: flex;
     flex-direction: row;
