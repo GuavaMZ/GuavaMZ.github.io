@@ -115,7 +115,7 @@
 
 .b {
     right: 45px;
-    top: 45px;
+    top: 30px;
     font-size: 30px;
     font-weight: 700;
     position: relative;
@@ -134,14 +134,14 @@
 
 .search-box {
     border: 0;
-    
     border-radius: 20px;
-    width: 463px;
+    border-color: #4899cc;
+    width: 27%;
     height: 50px;
     background-color: white;
     position: absolute;
-    top: 7%;
-    left: 10%;
+    top: 4.5%;
+    left: 9.7%;
     font-family: Cairo;
     padding-right: 50px;
 }
