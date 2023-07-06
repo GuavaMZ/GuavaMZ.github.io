@@ -314,26 +314,16 @@
     </div>
     <div class="blueLightBack">
         <div class="whiteRectBox">
-            <div class="group">
-                <!-- <p class="p3">الكل</p>
-                <select class="arrow-down-4">
-                  <option value="20">20</option>
-                  <option value="40">40</option>
-                </select> -->
-                <b class="b">الملفات</b>
-                <ul class="navbar-nav">
-                    <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        الكل
-                      </a>
-                      <ul class="dropdown-menu dropdown-menu-dark">
-                        <li><a class="dropdown-item" href="#">الكل</a></li>
-                        <li><a class="dropdown-item" href="#">1</a></li>
-                        <li><a class="dropdown-item" href="#">2</a></li>
-                      </ul>
-                    </li>
-                  </ul>
-            
+
+            <b class="b">الملفات</b>
+
+            <div class="filter-group">
+                <select class="selection-box">
+                    <option value="all">الكل</option>
+                    <option value="20">20</option>
+                    <option value="40">40</option>
+                </select>
+
             </div>
 
             <div class="rectangle-container">
@@ -341,6 +331,11 @@
 
                 <img class="search-normal-2.svg" alt="" src="assets/images/icons/search-normal 2.svg"
                     style="position: relative;right: 64%; top: 23%;" />
+            </div>
+
+            <div class="add-file-btn-square">
+                <input type="file" id="add-files-btn" hidden />
+                <label for="add-files-btn"><img src="/assets/images/icons/add-square 1.svg" alt="add file"></label>
             </div>
 
             <div class="files-table">
