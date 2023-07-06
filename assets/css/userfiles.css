@@ -161,3 +161,11 @@
     width: 18%;
     text-align: center;
 }
+
+.add-file-btn-square{
+    border: 0;
+    position: relative;
+    right: 94%;
+    bottom: 3.5%;
+    
+}
