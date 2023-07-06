@@ -135,7 +135,7 @@
 .search-box {
     border: 0;
     border-radius: 20px;
-    border-color: #4899cc;
+    outline-color: #F2FAFF;
     width: 27%;
     height: 50px;
     background-color: white;
