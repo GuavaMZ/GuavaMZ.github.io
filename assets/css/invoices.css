@@ -161,3 +161,26 @@
     width: 18%;
     text-align: center;
 }
+.filter-group {
+    position: relative;
+    width: 20%;
+    font-size: 15px;
+    color: #ffffff;
+    font-family: 'Cairo';
+    font-weight: 700;
+    right: 9.8%;
+    bottom: 0.7%;
+    
+}
+
+.selection-box {
+    font-size: 15px;
+    color: #ff0000;
+    outline-color: #ffffff;
+    background-color: #ffffff;
+    font-family: 'Cairo';
+    font-weight: 700;
+    position: absolute;
+    overflow: hidden;
+    border: 0;
+}
