@@ -1,0 +1,186 @@
+.profileimg {
+    border-radius: 50%;
+    border: 2px solid blue;
+}
+
+.ul-profile {
+    float: right;
+}
+
+.heading1 {
+    position: absolute;
+    top: 8%;
+    right: 10%;
+    font-family: 'Cairo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 60px;
+    color: #12517F;
+}
+
+.ul-profile {
+    float: right;
+}
+
+#slidparRight {
+    width: 121px;
+    font-size: 12px;
+}
+
+.ul-profile {
+    list-style: none;
+}
+
+.ulpnl {
+    list-style: none;
+    padding: 2%;
+    margin-top: 14px;
+}
+
+.ulpnl li {
+    margin-top: 24px;
+}
+
+.blueLightBack {
+    width: 95%;
+    height: 973px;
+    position: absolute;
+    background: #F2FAFF;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    left: 2.5rem;
+    top: 7.5rem;
+}
+
+.whiteRectBox {
+    position: relative;
+    width: 95%;
+    height: 85%;
+    background: white;
+    border-radius: 30px;
+    margin-right: 2.5%;
+    margin-top: 2.5%;
+    box-shadow: 0px 0px 4px rgba(11, 92, 153, 0.25);
+}
+
+.files-box {
+    width: 95%;
+    height: 80px;
+    background: #F2FAFF;
+    box-shadow: 0px 0px 4px rgba(11, 92, 153, 0.25);
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    position: relative;
+    top: 17%;
+    right: 2.5%;
+    margin-top: 1%;
+}
+
+.arrow-down-3,
+.vector-icon14 {
+    position: relative;
+    overflow: hidden;
+}
+
+.p3 {
+    margin: 0;
+    position: relative;
+    top: 0;
+    left: 23px;
+    font-weight: 700;
+}
+
+.arrow-down-3 {
+    cursor: pointer;
+    border: 0;
+    padding: 0;
+    background-color: transparent;
+    top: 19px;
+    left: 0;
+    width: 20px;
+    height: 20px;
+}
+
+.arrow-down-4 {
+    top: 11px;
+    left: 0;
+    width: 12px;
+    height: 12px;
+    overflow: hidden;
+    position: relative;
+}
+
+.b {
+    right: 45px;
+    top: 30px;
+    font-size: 30px;
+    font-weight: 700;
+    position: relative;
+    font-family: 'Cairo';
+    font-style: normal;
+    color: #12517F;
+}
+
+.group {
+    position: relative;
+    /* width: 54px;
+    height: 28px; */
+    font-size: 15px;
+    color: var(--color-darkgray);
+}
+
+.search-box {
+    border: 0;
+    border-radius: 20px;
+    outline-color: #F2FAFF;
+    width: 27%;
+    height: 50px;
+    background-color: white;
+    position: absolute;
+    top: 4.5%;
+    left: 9.7%;
+    font-family: Cairo;
+    padding-right: 50px;
+}
+
+.files-table {
+    position: relative;
+    top: 15%;
+    right: 13%;
+}
+
+.tableD{
+    width: 11%;
+    text-align: center;
+}
+
+.tableH{
+    width: 11%;
+    text-align: center;
+}
+.filter-group {
+    position: relative;
+    width: 30%;
+    font-size: 15px;
+    color: #ffffff;
+    font-family: 'Cairo';
+    font-weight: 700;
+    right: 14%;
+    /* bottom: 2%; */
+    
+}
+
+.selection-box {
+    font-size: 15px;
+    color: #ff0000;
+    outline-color: #ffffff;
+    background-color: #ffffff;
+    font-family: 'Cairo';
+    font-weight: 700;
+    position: absolute;
+    overflow: hidden;
+    border: 0;
+}
