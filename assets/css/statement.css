@@ -41,7 +41,7 @@
 
 .blueLightBack {
     width: 95%;
-    height: 973px;
+    height: 100%;
     position: absolute;
     background: #F2FAFF;
     border-top-left-radius: 50px;
@@ -53,7 +53,7 @@
 .whiteRectBox {
     position: relative;
     width: 95%;
-    height: 85%;
+    height: 100%;
     background: white;
     border-radius: 30px;
     margin-right: 2.5%;
@@ -149,15 +149,16 @@
     right: 13%;
 }
 
-.tableD{
+.tableD {
     width: 18%;
     text-align: center;
 }
 
-.tableH{
+.tableH {
     width: 18%;
     text-align: center;
 }
+
 .filter-group {
     position: relative;
     width: 20%;
@@ -165,9 +166,9 @@
     color: #ffffff;
     font-family: 'Cairo';
     font-weight: 700;
-    right: 11%;
+    right: 7%;
     bottom: 0.7%;
-    
+
 }
 
 .selection-box {
@@ -180,4 +181,62 @@
     position: absolute;
     overflow: hidden;
     border: 0;
+}
+
+
+.save-btn,
+.printer-btn {
+    border: 0;
+    position: relative;
+    /* right: 94%; */
+    bottom: 3.5%;
+    background-color: transparent;
+}
+
+.buttons-group {
+    position: relative;
+    right: 91%;
+}
+
+.company-name {
+    width: 25%;
+    color: #12517F;
+    position: relative;
+    font-size: 24px;
+    font-family: Cairo;
+    font-weight: 700;
+    word-wrap: break-word;
+    top: 50px;
+    right: 82px;
+}
+
+.splitter-line {
+    position: relative;
+    width: 95%;
+    height: 0px;
+    border: 2px #F2FAFF solid;
+    top: 110px;
+    right: 2.5%;
+}
+
+.account-summary-group {
+    position: relative;
+    top: 160px;
+    right: 50px;
+}
+
+.account-summary-cells,
+.account-summary-data {
+    color: #12517F;
+    font-size: 16px;
+    font-family: Cairo;
+    word-wrap: break-word;
+}
+
+.account-summary-cells {
+    font-weight: 700;
+}
+
+.account-summary-data {
+    font-weight: 500;
 }
