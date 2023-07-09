@@ -41,7 +41,7 @@
 
 .blueLightBack {
     width: 95%;
-    height: 100%;
+    height: 120%;
     position: absolute;
     background: #F2FAFF;
     border-top-left-radius: 50px;
@@ -72,7 +72,4 @@
     color: #12517F;
 }
 
-.youtube-frame {
-    display: block;
-    margin: 0 auto;
-}
+
