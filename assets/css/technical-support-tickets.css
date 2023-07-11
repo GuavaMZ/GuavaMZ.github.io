@@ -1,0 +1,146 @@
+.profileimg {
+    border-radius: 50%;
+    border: 2px solid blue;
+}
+
+.ul-profile {
+    float: right;
+}
+
+.heading1 {
+    position: absolute;
+    top: 8%;
+    right: 10%;
+    font-family: 'Cairo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 60px;
+    color: #12517F;
+}
+
+.ul-profile {
+    float: right;
+    list-style: none;
+}
+
+#slidparRight {
+    width: 121px;
+    font-size: 12px;
+}
+
+.ulpnl {
+    list-style: none;
+    padding: 2%;
+    margin-top: 14px;
+}
+
+.ulpnl li {
+    margin-top: 24px;
+}
+
+.blueLightBack {
+    width: 95%;
+    height: 120%;
+    position: absolute;
+    background: #F2FAFF;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    left: 2.5rem;
+    top: 7.5rem;
+}
+
+.b {
+    right: 45px;
+    top: 30px;
+    font-size: 30px;
+    font-weight: 700;
+    position: relative;
+    font-family: 'Cairo';
+    font-style: normal;
+    color: #12517F;
+}
+
+.random-ticket-group {
+    position: relative;
+    top: 7%;
+    right: 50px;
+}
+
+.random-ticket-group-rect {
+    width: 22%;
+    height: 522px;
+    position: absolute;
+    background: white;
+    border-radius: 50px;
+}
+
+.random-ticket-group-label {
+    left: 27%;
+    top: 35px;
+    position: absolute;
+    color: #12517F;
+    font-size: 30px;
+    font-family: Cairo;
+    font-weight: 700;
+    word-wrap: break-word
+}
+
+.random-ticket-group-var {
+    position: relative;
+    color: #12517F;
+    font-size: 20px;
+    font-family: Cairo;
+    font-weight: 600;
+    word-wrap: break-word;
+    right: 5%;
+}
+
+.random-ticket-group-val {
+    position: absolute;
+    color: #F8456F;
+    font-size: 20px;
+    font-family: Cairo;
+    font-weight: 400;
+    word-wrap: break-word;
+    right: 65%;
+}
+
+.add-ticket-respond-group {
+    position: relative;
+    top: 7%;
+}
+
+.add-ticket-respond-group-rect {
+    width: 55%;
+    height: 404px;
+    right: 35%;
+    position: absolute;
+    background: white;
+    border-radius: 50px;
+}
+
+.add-ticket-respond-group-label {
+    /* left: 160px; */
+    right: 25%;
+    top: 29px;
+    position: relative;
+    color: #12517F;
+    font-size: 24px;
+    font-family: Cairo;
+    font-weight: 600;
+    word-wrap: break-word
+}
+
+.add-ticket-respond-group-input-field {
+    top: 112px;
+    position: absolute;
+    color: #455A64;
+    font-size: 16px;
+    font-family: Cairo;
+    font-weight: 700;
+    word-wrap: break-word;
+    right: 1.5%;
+}
+
+.add-ticket-respond-group-files {}
