@@ -76,14 +76,14 @@
 }
 
 .random-ticket-group-label {
-    left: 27%;
     top: 35px;
-    position: absolute;
+    position: relative;
     color: #12517F;
     font-size: 30px;
     font-family: Cairo;
     font-weight: 700;
-    word-wrap: break-word
+    word-wrap: break-word;
+    text-align: center;
 }
 
 .random-ticket-group-var {
@@ -107,14 +107,16 @@
 }
 
 .add-ticket-respond-group {
+    width: 65%;
+    height: 36%;
     position: relative;
     top: 7%;
+    right: 30%;
 }
 
 .add-ticket-respond-group-rect {
-    width: 55%;
-    height: 404px;
-    right: 35%;
+    width: 100%;
+    height: 100%;
     position: absolute;
     background: white;
     border-radius: 50px;
@@ -122,14 +124,15 @@
 
 .add-ticket-respond-group-label {
     /* left: 160px; */
-    right: 25%;
+    /* right: 25%; */
     top: 29px;
     position: relative;
     color: #12517F;
     font-size: 24px;
     font-family: Cairo;
     font-weight: 600;
-    word-wrap: break-word
+    word-wrap: break-word;
+    text-align: center;
 }
 
 .add-ticket-respond-group-input-field {
@@ -140,7 +143,60 @@
     font-family: Cairo;
     font-weight: 700;
     word-wrap: break-word;
-    right: 1.5%;
+    right: 7.5%;
+    width: 100%;
 }
 
-.add-ticket-respond-group-files {}
+.ticket-feedback-input-field{
+    width: 85%;
+    height: 110px;
+    border-radius: 20px;
+    border: 5;
+    border-color: #F2FAFF;
+    outline-color: #F2FAFF;
+    outline-width: 5;
+    padding-right: 10px;
+    padding-top: 10px;
+}
+
+.add-ticket-respond-group-files {
+    top: 220px;
+    position: relative;
+    right: 45%;
+}
+
+.add-respond-submit-button-group {
+    position: relative;
+    text-align: center;
+
+}
+
+.add-respond-submit-button-group-rect {
+    width: 50%;
+    height: 90px;
+    right: 25%;
+    top: 450px;
+    position: absolute;
+    background: #12517F;
+    border-radius: 40px;
+    border: 0;
+}
+
+
+.add-file-btn-square {
+    border: 0;
+    position: relative;
+    right: 38%;
+    top: 37.5%;
+    align-self: center;
+
+}
+
+.add-ticket-respond-group-file-square {
+    width: 135px;
+    height: 125px;
+    position: relative;
+    background: rgba(217, 217, 217, 0.20);
+    border-radius: 20px;
+}
+
