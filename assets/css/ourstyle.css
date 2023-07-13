@@ -125,6 +125,29 @@ body {
     margin-top: 2.5%;
 }
 
+.bill-type {
+    position: relative;
+    color: #12517F;
+    font-size: 18px;
+    font-family: Cairo;
+    font-weight: 500;
+    word-wrap: break-word;
+    padding-top: 1.5%;
+}
+
+.bill-type-group{
+    position: relative;
+    right: 8%;   
+}
+
+.stats-quick-info-box{
+    position: relative;
+    height: 50%;
+    width: 90%;
+    border: 3;
+    border-color: #12517F;
+}
+
 .quickBillsInfoBox {
     width: 55%;
     height: 654px;
@@ -234,10 +257,12 @@ body {
     box-shadow: 0 0 4px rgba(11, 92, 153, 0.25);
     width: 50px;
     height: 50px;
-    
+
 }
 
-.mail,.facebook,.webPage{
+.mail,
+.facebook,
+.webPage {
     position: relative;
     cursor: pointer;
     padding: 0;
