@@ -140,6 +140,12 @@ body {
     right: 8%;   
 }
 
+.bill-type-table{
+    width: 80%;
+    position: relative;
+    top: 20%;
+}
+
 .stats-quick-info-box{
     position: relative;
     height: 50%;
