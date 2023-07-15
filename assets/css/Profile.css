@@ -1,0 +1,24 @@
+.blueLightBack {
+    width: 95%;
+    height: 973px;
+    position: absolute;
+    background: #F2FAFF;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    left: 2.5rem;
+    top: 7.5rem;
+}
+.h3{
+    top: 20%;
+    font-family: 'Cairo';
+}
+
+.control {
+   /* top: 30px; */
+   font-size: 20px;
+   font-weight: 700;
+   position: relative;
+   font-family: 'Cairo';
+   font-style: normal;
+   color: #12517F;
+}
