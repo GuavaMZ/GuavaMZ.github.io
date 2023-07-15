@@ -8,17 +8,23 @@
     left: 2.5rem;
     top: 7.5rem;
 }
-.h3{
-    top: 20%;
-    font-family: 'Cairo';
-}
 
-.control {
-   /* top: 30px; */
-   font-size: 20px;
-   font-weight: 700;
-   position: relative;
-   font-family: 'Cairo';
-   font-style: normal;
-   color: #12517F;
+.form-labe1 {
+    border: 0;
+    background-color: #ffffff;
+    outline-color: #ff0000;
+    position: relative;
+    /* top: 371px; */
+    /* left: 12.5%; */
+    border-radius: 20px;
+    width: 280%;
+    height: 90px;
+    display: flex;
+    flex-direction: row;
+    padding: 0 25px;
+    box-sizing: border-box;
+    align-items: center;
+    font-size: 25px;
+    color: #12517F;
+    font-family: 'Cairo';
 }
