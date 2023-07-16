@@ -1,3 +1,9 @@
+.body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
 .form-labe1 {
     border: 0;
     background-color: #ffffff;
