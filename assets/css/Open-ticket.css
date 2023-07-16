@@ -17,6 +17,7 @@
     color: #12517F;
     font-family: 'Cairo';
 }
+
 .text-input2 {
     border: 0;
     background-color: #ffffff;
@@ -36,6 +37,7 @@
     color: #12517F;
     font-family: 'Cairo';
 }
+
 .text-input3 {
     border: 0;
     background-color: #ffffff;
@@ -99,7 +101,7 @@
 
 .blueLightBack {
     width: 95%;
-    height: 100%;
+    height: 1024px;
     position: absolute;
     background: #F2FAFF;
     border-top-left-radius: 50px;
@@ -119,7 +121,7 @@
     box-shadow: 0px 0px 4px rgba(11, 92, 153, 0.25);
 }
 
-.form-label{
+.form-label {
     /* top: 30px; */
     font-size: 20px;
     font-weight: 700;
@@ -140,12 +142,13 @@
     color: #12517F;
 }
 
-.group{
+.group {
     position: relative;
     top: 60px;
     right: 60px;
 }
-.btn-primary {
+
+/* .btn-primary {
     border: 0;
     outline-color: #ffffff;
     border-radius: 20px;
@@ -156,4 +159,19 @@
     font-size: 25px;
     color: #ffffff;
     font-family: 'Cairo';
+} */
+
+.btn-primary {
+    width: 30%;
+    height: 90px;
+    background: #12517F;
+    box-shadow: 0px 0px 4px rgba(11, 92, 153, 0.25);
+    border-radius: 40px;
+    color: #ffffff;
+    border: 0;
+    font-size: 25px;
+    font-family: Cairo;
+    right: 30%;
+    top: 190px;
+    position: relative;
 }
