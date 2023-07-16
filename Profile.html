@@ -325,7 +325,7 @@
         <div class="blueLightBack">
             <h3 class="b">الملف الشخصي</h3>
 
-            <div class="row translate-middle.">
+            <div class="row justify-content-around">
                 <div style="right: 45%; top: 30px; position: relative;">
                     <a class="text-center" href="#">
                         <img src="assets/images/users/image.png" alt="" width="150" height="150"
@@ -334,7 +334,7 @@
                     </a>
                 </div>
 
-                <div class="col-md-4">
+                <div class="col-4">
                     <div class="input-form-group">
                         <h3 class="input-form-group-label">
                             الأسم الأول</h3>
@@ -342,8 +342,8 @@
                             required>
                     </div>
                 </div>
-                <div style="width: 20%;"></div>
-                <div class="col-md-4">
+
+                <div class="col-4">
                     <div class="input-form-group">
                         <h3 class="input-form-group-label">
                             الأسم الأخير</h3>
@@ -351,116 +351,146 @@
                             required>
                     </div>
                 </div>
-                <form class="row g-3">
-                    <div class="col-md-4">
-                        <div class="input-form-group">
-                            <h3 class="input-form-group-label">
-                                البريد الألكتروني </h3>
-                            <input class="input-form-group-field" type="text" class="form-control" id="emailFrm"
-                                required>
-                        </div>
+            </div>
+            <div class="row justify-content-around">
+                <div class="col-md-4">
+                    <div class="input-form-group">
+                        <h3 class="input-form-group-label">
+                            البريد الألكتروني </h3>
+                        <input class="input-form-group-field" type="text" class="form-control" id="emailFrm" required>
                     </div>
-                    <div style="width: 20%;"></div>
-                    <div class="col-md-4">
-                        <div class="input-form-group">
-                            <h3 class="input-form-group-label">
-                                رقم الهاتف</h3>
-                            <input class="input-form-group-field" type="text" class="form-control" id="phoneFrm"
-                                required>
-                        </div>
-                    </div>
-                </form>
+                </div>
 
-                <form class="row g-3">
-                    <div class="col-md-4">
-                        <div class="input-form-group">
-                            <h3 class="input-form-group-label">
-                                الاتجاه</h3>
-                            <select
-                                style="width: 100%;
+                <div class="col-md-4">
+                    <div class="input-form-group">
+                        <h3 class="input-form-group-label">
+                            رقم الهاتف</h3>
+                        <input class="input-form-group-field" type="text" class="form-control" id="phoneFrm" required>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row justify-content-around">
+                <div class="col-md-4">
+                    <div class="input-form-group">
+                        <h3 class="input-form-group-label">
+                            الاتجاه</h3>
+                        <select
+                            style="width: 100%;
                             height: 92px; left: 0px; top: 48px;position: absolute;background: white;border-radius: 30px;border: 0;"
-                                class="form-select" id="directionFrm" required>
-                                <option selected disabled value="">OraxRest</option>
-                                <option>OraxGold</option>
-                                <option>OraxOil</option>
-                                <option>OraxRest</option>
-                            </select>
-                        </div>
+                            class="form-select" id="directionFrm" required>
+                            <option selected disabled value="">OraxRest</option>
+                            <option>OraxGold</option>
+                            <option>OraxOil</option>
+                            <option>OraxRest</option>
+                        </select>
                     </div>
-                    <div style="width: 20%;"></div>
-                    <div class="col-md-4">
-                        <div class="input-form-group">
-                            <h3 class="input-form-group-label">
-                                المنصب</h3>
-                            <input class="input-form-group-field" type="text" class="form-control" id="positionFrm"
-                                required>
-                        </div>
-                    </div>
-                </form>
+                </div>
 
-                <form class="row g-3">
-                    <h3 class="b">اشعارات البريد الألكتروني</h3>
+                <div class="col-md-4">
+                    <div class="input-form-group">
+                        <h3 class="input-form-group-label">
+                            المنصب</h3>
+                        <input class="input-form-group-field" type="text" class="form-control" id="positionFrm"
+                            required>
+                    </div>
+                </div>
+            </div>
 
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                        <label class="form-check-label" for="flexCheckDefault">
-                            عقد
-                        </label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
-                        <label class="form-check-label" for="flexCheckChecked">
-                            التذاكر
-                        </label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
-                        <label class="form-check-label" for="flexCheckChecked">
-                            عرض سعر
-                        </label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
-                        <label class="form-check-label" for="flexCheckChecked">
-                            اشعار دائن
-                        </label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
-                        <label class="form-check-label" for="flexCheckChecked">
-                            فاتورة
-                        </label>
-                    </div>
 
-                    <div class="col-15">
-                        <button class="btn btn-primary" type="submit">تحديث</button>
-                    </div>
-                </form>
-                <hr style=color:#0B5C99;>
+            <h3 class="b" style="position: relative; height: 150px; top: 100px;">اشعارات البريد الألكتروني</h3>
+
+
+            <div class="row align-items-start"
+                style="position: relative;font-family: Cairo; height: 150px;right: 7.5%;top: 50px;font-size: 20px;font-style: normal;font-weight: 500;">
+                <div class="col">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        عقد
+                    </label>
+                </div>
+                <div class="col">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                    <label class="form-check-label" for="flexCheckChecked">
+                        التذاكر
+                    </label>
+                </div>
+                <div class="col">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                    <label class="form-check-label" for="flexCheckChecked">
+                        عرض سعر
+                    </label>
+                </div>
+                <div class="col">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                    <label class="form-check-label" for="flexCheckChecked">
+                        اشعار دائن
+                    </label>
+                </div>
+                <div class="col">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                    <label class="form-check-label" for="flexCheckChecked">
+                        فاتورة
+                    </label>
+                </div>
+
+                <!-- <hr style=color:#0B5C99;>
                 <h3>تغيير كلمة السر</h3>
 
                 <form class="row g-3">
                     <div class="col-md-4">
-                        <label for="validationDefault01" class="form-label">كلمةالسر القديمة</label>
+                        <label for="validationDefault01" class="input-form-group-label">كلمةالسر القديمة</label>
                         <input type="password" class="form-control" id="inputPassword">
                     </div>
                     <div class="col-md-4">
-                        <label for="validationDefault02" class="form-label">كلمة السر الجديدة</label>
+                        <label for="validationDefault02" class="input-form-group-label">كلمة السر الجديدة</label>
                         <input type="password" class="form-control" id="inputPassword">
                     </div>
                     <div class="col-md-4">
-                        <label for="validationDefault02" class="form-label">كلمة السر الجديدة</label>
+                        <label for="validationDefault02" class="input-form-group-label">كلمة السر الجديدة</label>
                         <input type="password" class="form-control" id="inputPassword">
                     </div>
                 </form>
                 <div class="col-15">
                     <button class="btn btn-primary" type="submit">تغيير كلمة السر</button>
                 </div>
-                <p>اخر تغيير لكلمة المرور قبل 6 شهور</p>
+                <p>اخر تغيير لكلمة المرور قبل 6 شهور</p> -->
             </div>
+            <div class="col-15">
+                <button class="update-profile-btn" type="submit">تحديث</button>
+            </div>
+            <hr style="color:#0B5C99;">
+            <h3 class="b" style="height: 100px">تغيير كلمة السر</h3>
+            <div class="row g-3" style="height: 75px; right: 3%; position: relative;">
+                <div class="col-md-4">
+                    <h4 class="pass-field-label">كلمة السر القديمة</h4>
+                </div>
+                <div class="col-md-4">
+                    <h4 class="pass-field-label">كلمة السر الجديدة</h4>
+                </div>
+                <div class="col-md-4">
+                    <h4 class="pass-field-label">تأكيد كلمة السر الجديدة</h4>
+                </div>
+            </div>
+            <form class="row g-3" style="right: 3%; position: relative;">
+                <div class="col-md-4">
+                    <input type="password" class="input-form-group-field" style="top: 0; width: 80%;" id="oldinputPassword">
+                </div>
+                <div class="col-md-4">
+                    <input type="password" class="input-form-group-field" style="top: 0;width: 80%;" id="newinputPassword">
+                </div>
+                <div class="col-md-4">
+                    <input type="password" class="input-form-group-field" style="top: 0;width: 80%;" id="confirmnewinputPassword">
+                </div>
+            </form>
+            <div style="height: 100px; position: relative;top: 25px;">
+                <button class="update-pass-profile-btn" type="submit">تغيير كلمة المرور</button>
+            </div>
+            <p style="top: 40px;position: relative; right: 45%; height: 100px;color: rgba(11, 92, 153, 0.25); font-size: 16px; font-family: Cairo; font-weight: 700; word-wrap: break-word">اخر تغيير لكلمة المرور قبل 6 شهور</p>
         </div>
+    </div>
 
-        <!--end of  body -->
+    <!--end of  body -->
 
 
     </div>
