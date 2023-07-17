@@ -298,3 +298,24 @@
     padding: 0;
     overflow-x: hidden;
 }
+
+.page-item {
+    padding-right: 7px;
+    padding-left: 7px;
+}
+
+.page-link {
+    background-color: #F2FAFF;
+    border-radius: 10px;
+    color: #12517F;
+}
+
+.page-link-prev {
+    top: 15%;
+    position: relative;
+}
+
+.page-link-next {
+    top: 15%;
+    position: relative;
+}
