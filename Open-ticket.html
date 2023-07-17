@@ -334,12 +334,23 @@
                 <div class="row justify-content-start">
                     <div class="col-4" style="top: 70px; position: relative;">
                         <label for="validationDefault01" class="form-label">المرفقات</label>
-                        <input type="text" class="text-input3" id="validationDefault03" required>
+                        <!-- <input type="text" class="text-input3" id="validationDefault03" required> -->
+                        <div class="text-input3">
+                            <input type="file" id="add-files-btn" hidden />
+                            <label class="add-file-btn-square" for="add-files-btn"><img
+                                    src="/assets/images/icons/add-square 1.svg" alt="add file"></label>
+                        </div>
                     </div>
                     <div style="width: 15.4%;"></div>
                     <div class="col-4" style="top: 70px; position: relative;">
                         <label for="validationDefault01" class="form-label">قسم</label>
-                        <input type="text" class="text-input3" id="validationDefault04" required>
+                        <!-- <input type="text" class="text-input3" id="validationDefault04" required> -->
+                        <select class="text-input3" id="directionFrm" required>
+                            <option selected disabled value="">OraxRest</option>
+                            <option>OraxGold</option>
+                            <option>OraxOil</option>
+                            <option>OraxRest</option>
+                        </select>
                     </div>
                 </div>
 

@@ -165,7 +165,14 @@
     border: 0;
     font-size: 25px;
     font-family: Cairo;
-    right: 30%;
+    right: 35%;
     top: 190px;
     position: relative;
+}
+
+.add-file-btn-square {
+    border: 0;
+    position: relative;
+    right: 3%;
+    top: 30%;
 }
