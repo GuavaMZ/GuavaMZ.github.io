@@ -152,15 +152,16 @@
     right: 13%;
 }
 
-.tableD{
+.tableD {
     width: 11%;
     text-align: center;
 }
 
-.tableH{
+.tableH {
     width: 11%;
     text-align: center;
 }
+
 .filter-group {
     position: relative;
     width: 30%;
@@ -170,7 +171,7 @@
     font-weight: 700;
     right: 14%;
     /* bottom: 2%; */
-    
+
 }
 
 .selection-box {
@@ -184,6 +185,7 @@
     overflow: hidden;
     border: 0;
 }
+
 .rectangle-parent61 {
     position: absolute;
     top: 3rem;
@@ -294,4 +296,41 @@
     border: 0;
     background-color: transparent;
     top: 10px;
+}
+
+.page-item {
+    padding-right: 7px;
+    padding-left: 7px;
+}
+
+.page-link {
+    background-color: #F2FAFF;
+    border-radius: 10px;
+    color: #12517F;
+}
+
+.page-link-prev {
+    top: 15%;
+    position: relative;
+}
+
+.page-link-next {
+    top: 15%;
+    position: relative;
+}
+
+.add-ticket-support-btn {
+    width: 15%;
+    height: 50px;
+    /* bottom: 5%; */
+    top: 4%;
+    right: 35%;
+    position: absolute;
+    background: #F2FAFF;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border: 0;
+    color: #12517F;
+    font-family: Cairo;
+    font-size: 15px;
 }
