@@ -1,3 +1,9 @@
+.body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
 .profileimg {
     border-radius: 50%;
     border: 2px solid blue;
@@ -43,7 +49,7 @@
 }
 
 .blueLightBack {
-    width: 95%;
+    width: 92.5%;
     height: 973px;
     position: absolute;
     background: #F2FAFF;
@@ -164,12 +170,12 @@
 
 .filter-group {
     position: relative;
-    width: 30%;
+    /* width: 30%; */
     font-size: 15px;
     color: #ffffff;
     font-family: 'Cairo';
     font-weight: 700;
-    right: 14%;
+    right: 15%;
     /* bottom: 2%; */
 
 }
