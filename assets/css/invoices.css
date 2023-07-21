@@ -135,7 +135,6 @@
 .search-box {
     border: 0;
     border-radius: 30px;
-    box-shadow: 0px 0px 2px 0px rgba(13, 58, 93, 0.25);
     outline-color: #F2FAFF;
     width: 27%;
     height: 50px;
@@ -257,7 +256,7 @@
 .ellipse-parent10 {
     position: absolute;
     top: 180px;
-    left: 235px;
+    left: 240px;
     width: 50px;
     height: 50px;
 }
@@ -265,7 +264,7 @@
 .ellipse-parent11 {
     position: absolute;
     top: 180px;
-    left: 305px;
+    left: 160px;
     width: 50px;
     height: 50px;
 }
@@ -273,7 +272,7 @@
 .ellipse-parent12 {
     position: absolute;
     top: 180px;
-    left: 165px;
+    left: 80px;
     width: 50px;
     height: 50px;
 }
