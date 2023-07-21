@@ -50,7 +50,7 @@
 
 .blueLightBack {
     width: 92.5%;
-    height: 973px;
+    height: 850px;
     position: absolute;
     background: #F2FAFF;
     border-top-left-radius: 50px;
@@ -140,16 +140,25 @@
 
 .search-box {
     border: 0;
-    border-radius: 20px;
+    border-radius: 30px;
     outline-color: #F2FAFF;
     width: 27%;
     height: 50px;
     background-color: white;
     position: absolute;
     top: 4.5%;
-    left: 9.7%;
+    left: 18%;
+    font-size:20px;
     font-family: Cairo;
-    padding-right: 50px;
+    padding-right: 70px;
+    color: #12517F;
+}
+
+.search-btn{
+    border: 0;
+    position: absolute;
+    background: none;
+    left: 43%;
 }
 
 .files-table {
@@ -171,18 +180,17 @@
 .filter-group {
     position: relative;
     /* width: 30%; */
-    font-size: 15px;
+    font-size: 16px;
     color: #ffffff;
     font-family: 'Cairo';
     font-weight: 700;
-    right: 15%;
+    right: 12%;
     /* bottom: 2%; */
-
 }
 
 .selection-box {
     font-size: 15px;
-    color: #ff0000;
+    color: #B2B2B2;
     outline-color: #ffffff;
     background-color: #ffffff;
     font-family: 'Cairo';
@@ -262,7 +270,7 @@
 .ellipse-parent10 {
     position: absolute;
     top: 180px;
-    left: 235px;
+    left: 240px;
     width: 50px;
     height: 50px;
 }
@@ -270,7 +278,7 @@
 .ellipse-parent11 {
     position: absolute;
     top: 180px;
-    left: 305px;
+    left: 160px;
     width: 50px;
     height: 50px;
 }
@@ -278,7 +286,7 @@
 .ellipse-parent12 {
     position: absolute;
     top: 180px;
-    left: 165px;
+    left: 80px;
     width: 50px;
     height: 50px;
 }
@@ -290,7 +298,6 @@
     box-shadow: 0 0 4px rgba(11, 92, 153, 0.25);
     width: 50px;
     height: 50px;
-
 }
 
 .mail,
@@ -326,19 +333,21 @@
 }
 
 .add-ticket-support-btn {
-    width: 15%;
+    width: 9%;
     height: 50px;
     /* bottom: 5%; */
     top: 4%;
-    right: 35%;
+    left: 2%;
     position: absolute;
     background: #F2FAFF;
     border-top-left-radius: 20px;
-    border-top-right-radius: 20;
+    border-top-right-radius: 0px;
     border-bottom-right-radius: 20px;
-    border-bottom-left-radius: 20;
-    border: 1;
+    border-bottom-left-radius: 0px;
+    box-shadow: 0px 0px 2px 0px rgba(13, 58, 93, 0.25);
+    border: 0;
     color: #12517F;
     font-family: Cairo;
-    font-size: 15px;
+    font-size: 18px;
+    font-weight: bold;
 }
