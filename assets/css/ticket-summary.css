@@ -328,8 +328,10 @@
     position: absolute;
     background: #F2FAFF;
     border-top-left-radius: 20px;
+    border-top-right-radius: 20;
     border-bottom-right-radius: 20px;
-    border: 0;
+    border-bottom-left-radius: 20;
+    border: 1;
     color: #12517F;
     font-family: Cairo;
     font-size: 15px;
