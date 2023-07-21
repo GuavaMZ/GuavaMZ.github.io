@@ -160,19 +160,19 @@
 }
 .filter-group {
     position: relative;
-    width: 20%;
-    font-size: 15px;
+    /* width: 30%; */
+    font-size: 16px;
     color: #ffffff;
     font-family: 'Cairo';
     font-weight: 700;
-    right: 11%;
-    bottom: 0.7%;
+    right: 10%;
+    /* bottom: 2%; */
     
 }
 
 .selection-box {
     font-size: 15px;
-    color: #ff0000;
+    color: #B2B2B2;
     outline-color: #ffffff;
     background-color: #ffffff;
     font-family: 'Cairo';
@@ -251,7 +251,7 @@
 .ellipse-parent10 {
     position: absolute;
     top: 180px;
-    left: 235px;
+    left: 240px;
     width: 50px;
     height: 50px;
 }
@@ -259,7 +259,7 @@
 .ellipse-parent11 {
     position: absolute;
     top: 180px;
-    left: 305px;
+    left: 160px;
     width: 50px;
     height: 50px;
 }
@@ -267,7 +267,7 @@
 .ellipse-parent12 {
     position: absolute;
     top: 180px;
-    left: 165px;
+    left: 80px;
     width: 50px;
     height: 50px;
 }
