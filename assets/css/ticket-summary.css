@@ -186,7 +186,7 @@
     font-family: 'Cairo';
     font-weight: 700;
     right: 12%;
-    /* bottom: 2%; */
+    /* bottom: 2%; */ 
 }
 
 .selection-box {
@@ -351,4 +351,9 @@
     font-family: Cairo;
     font-size: 18px;
     font-weight: bold;
+}
+
+.offcanvas-backdrop{
+    /* background-color: transparent; */
+    all: unset;
 }
