@@ -348,3 +348,8 @@
     background: none;
     left: 39%;
 }
+
+.offcanvas-backdrop{
+    /* background-color: transparent; */
+    all: unset;
+}

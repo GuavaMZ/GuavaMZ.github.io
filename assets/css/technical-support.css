@@ -117,3 +117,8 @@
 .tech-option-box-rect-img{
     width: 391px; height: 315px; left: 0px; top: 0px; position: absolute; border-radius: 30px;
 }
+
+.offcanvas-backdrop{
+    /* background-color: transparent; */
+    all: unset;
+}

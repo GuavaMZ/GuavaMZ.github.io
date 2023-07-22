@@ -318,3 +318,8 @@
     top: 15%;
     position: relative;
 }
+
+.offcanvas-backdrop{
+    /* background-color: transparent; */
+    all: unset;
+}

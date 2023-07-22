@@ -181,3 +181,7 @@
     top: 30%;
 }
 
+.offcanvas-backdrop{
+    /* background-color: transparent; */
+    all: unset;
+}

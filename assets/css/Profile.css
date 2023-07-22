@@ -145,3 +145,8 @@
     word-wrap: break-word;
     text-align: right;
 }
+
+.offcanvas-backdrop{
+    /* background-color: transparent; */
+    all: unset;
+}

@@ -332,3 +332,8 @@ body {
     padding: 0;
     overflow-x: hidden;
 }
+
+.offcanvas-backdrop{
+    /* background-color: transparent; */
+    all: unset;
+}

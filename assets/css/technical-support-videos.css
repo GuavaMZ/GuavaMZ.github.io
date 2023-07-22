@@ -72,4 +72,9 @@
     color: #12517F;
 }
 
+.offcanvas-backdrop{
+    /* background-color: transparent; */
+    all: unset;
+}
+
 

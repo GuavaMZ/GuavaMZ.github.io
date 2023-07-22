@@ -240,3 +240,8 @@
 .account-summary-data {
     font-weight: 500;
 }
+
+.offcanvas-backdrop{
+    /* background-color: transparent; */
+    all: unset;
+}

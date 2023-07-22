@@ -248,3 +248,8 @@
     background-color: transparent;
     top: 10px;
 }
+
+.offcanvas-backdrop{
+    /* background-color: transparent; */
+    all: unset;
+}

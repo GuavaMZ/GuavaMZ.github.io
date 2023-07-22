@@ -225,3 +225,8 @@
     text-align: center;
     top: 27.5%;
 }
+
+.offcanvas-backdrop{
+    /* background-color: transparent; */
+    all: unset;
+}
