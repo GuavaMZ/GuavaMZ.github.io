@@ -233,6 +233,6 @@
 }
 
 .offcanvas-backdrop {
-    /* background-color: transparent; */
-    all: unset;
+    background-color: transparent;
+    /* all: unset; */
 }
