@@ -1,3 +1,9 @@
+.body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
 .profileimg {
     border-radius: 50%;
     border: 2px solid blue;
@@ -291,12 +297,6 @@
     border: 0;
     background-color: transparent;
     top: 10px;
-}
-
-.body{
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
 }
 
 .page-item {
