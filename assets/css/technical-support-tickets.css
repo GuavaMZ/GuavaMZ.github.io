@@ -1,3 +1,9 @@
+.body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
 .profileimg {
     border-radius: 50%;
     border: 2px solid blue;
@@ -40,7 +46,7 @@
 }
 
 .blueLightBack {
-    width: 95%;
+    width: 92.5%;
     height: 120%;
     position: absolute;
     background: #F2FAFF;
@@ -226,7 +232,7 @@
     top: 27.5%;
 }
 
-.offcanvas-backdrop{
+.offcanvas-backdrop {
     /* background-color: transparent; */
     all: unset;
 }

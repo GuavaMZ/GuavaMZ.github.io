@@ -1,3 +1,9 @@
+.body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
 .profileimg {
     border-radius: 50%;
     border: 2px solid blue;
@@ -43,7 +49,7 @@
 }
 
 .blueLightBack {
-    width: 95%;
+    width: 92.5%;
     height: 973px;
     position: absolute;
     background: #F2FAFF;
@@ -115,7 +121,7 @@
     font-weight: 700;
     right: 7%;
     /* bottom: 2%; */
-    
+
 }
 
 .selection-box {
@@ -166,6 +172,7 @@
     right: 94%;
     bottom: 3.5%;
 }
+
 .rectangle-parent61 {
     position: absolute;
     top: 3rem;
@@ -299,7 +306,7 @@
     position: relative;
 }
 
-.offcanvas-backdrop{
+.offcanvas-backdrop {
     /* background-color: transparent; */
     all: unset;
 }
