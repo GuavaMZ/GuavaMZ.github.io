@@ -20,7 +20,7 @@
     font-family: 'Cairo';
     font-style: normal;
     font-weight: 700;
-    font-size: 32px;
+    font-size: 1.5vw;
     line-height: 60px;
     color: #12517F;
 }
@@ -49,8 +49,8 @@
 }
 
 .blueLightBack {
-    width: 92.5%;
-    height: 850.5px;
+    width: 91vw;
+    height: 100vh;
     position: absolute;
     background: #F2FAFF;
     border-top-left-radius: 50px;
@@ -72,7 +72,7 @@
 
 .files-box {
     width: 95%;
-    height: 80px;
+    height: 4vw;
     background: #F2FAFF;
     box-shadow: 0px 0px 4px rgba(11, 92, 153, 0.25);
     border-top-left-radius: 30px;
@@ -122,7 +122,7 @@
 .b {
     right: 45px;
     top: 30px;
-    font-size: 30px;
+    font-size: 1.2vw;
     font-weight: 700;
     position: relative;
     font-family: 'Cairo';
@@ -134,7 +134,7 @@
     position: relative;
     /* width: 54px;
     height: 28px; */
-    font-size: 15px;
+    font-size: 0.6vw;
     color: var(--color-darkgray);
 }
 
@@ -148,13 +148,13 @@
     position: absolute;
     top: 4.5%;
     left: 18%;
-    font-size:20px;
+    font-size: 0.9vw;
     font-family: Cairo;
     padding-right: 70px;
     color: #12517F;
 }
 
-.search-btn{
+.search-btn {
     border: 0;
     position: absolute;
     background: none;
@@ -178,15 +178,26 @@
     text-align: center;
 }
 
+.td-style {
+    color: #12517F;
+    font-family: Cairo;
+    font-weight: 400;
+    font-size: 1vw;
+}
+
+.th-style{
+    color: #F8456F;font-family: Cairo;font-size: 1vw;
+}
+
 .filter-group {
     /* position: relative; */
     /* width: 30%; */
-    font-size: 16px;
+    font-size: 0.5vw;
     color: #ffffff;
     font-family: 'Cairo';
     font-weight: 700;
     /* right: 12%; */
-    /* bottom: 2%; */ 
+    /* bottom: 2%; */
 }
 
 .selection-box {
@@ -210,30 +221,6 @@
     height: 15%;
 }
 
-.group-child228,
-.searchButton {
-    border: 0;
-    position: absolute;
-    top: 79px;
-    left: 0;
-    border-radius: 40px;
-    box-shadow: 0 0 4px rgba(11, 92, 153, 0.25);
-    width: 534px;
-    height: 80px;
-}
-
-.searchButton {
-    cursor: pointer;
-    padding: 0;
-    background-color: #12517F;
-    width: 237px;
-}
-
-.group-child228 {
-    background-color: #F2FAFF;
-}
-
-
 .p101 {
     position: absolute;
     top: 101px;
@@ -243,30 +230,6 @@
     font-family: Cairo;
     font-weight: 700;
     word-wrap: break-word
-}
-
-.b75 {
-    color: white;
-    font-size: 25px;
-    font-family: Cairo;
-    font-weight: 700;
-    word-wrap: break-word;
-}
-
-.b76 {
-    top: 0;
-    color: #12517F;
-    font-size: 30px;
-    font-family: Cairo;
-    font-weight: 700;
-    word-wrap: break-word
-}
-
-.coDetails {
-    position: absolute;
-    right: 80rem;
-    top: 3rem;
-    text-align: center;
 }
 
 .ellipse-parent10 {
@@ -318,21 +281,7 @@
     padding-left: 7px;
 }
 
-.page-link {
-    background-color: #F2FAFF;
-    border-radius: 10px;
-    color: #12517F;
-}
 
-.page-link-prev {
-    top: 15%;
-    position: relative;
-}
-
-.page-link-next {
-    top: 15%;
-    position: relative;
-}
 
 .add-ticket-support-btn {
     width: 9%;
@@ -350,7 +299,11 @@
     border: 0;
     color: #12517F;
     font-family: Cairo;
-    font-size: 18px;
+    font-size: 0.9vw;
     font-weight: bold;
+    
 }
 
+.add-ticket-support-btn:hover{
+    box-shadow: 0px 0px 4px 0px rgb(17, 39, 160);
+}
