@@ -171,11 +171,18 @@
 .tableD {
     width: 11%;
     text-align: center;
+    color: #12517F;
+    font-family: Cairo;
+    font-weight: 400;
+    font-size: 1vw;
 }
 
 .tableH {
     width: 11%;
     text-align: center;
+    color: #F8456F;
+    font-family: Cairo;
+    font-size: 1vw;
 }
 
 .td-style {
@@ -185,8 +192,10 @@
     font-size: 1vw;
 }
 
-.th-style{
-    color: #F8456F;font-family: Cairo;font-size: 1vw;
+.th-style {
+    color: #F8456F;
+    font-family: Cairo;
+    font-size: 1vw;
 }
 
 .filter-group {
@@ -301,9 +310,9 @@
     font-family: Cairo;
     font-size: 0.9vw;
     font-weight: bold;
-    
+
 }
 
-.add-ticket-support-btn:hover{
+.add-ticket-support-btn:hover {
     box-shadow: 0px 0px 4px 0px rgb(17, 39, 160);
 }

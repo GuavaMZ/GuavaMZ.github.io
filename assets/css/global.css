@@ -24,7 +24,7 @@
 
 .coDetails {
     position: absolute;
-    right: 80rem;
+    right: 65%;
     top: 3rem;
     text-align: center;
 }
@@ -37,7 +37,7 @@
     left: 0;
     border-radius: 40px;
     box-shadow: 0 0 4px rgba(11, 92, 153, 0.25);
-    width: 534px;
+    width: 27.5vw;
     height: 80px;
 }
 
@@ -45,7 +45,7 @@
     cursor: pointer;
     padding: 0;
     background-color: #12517F;
-    width: 237px;
+    width: 12vw;
 }
 
 .group-child228 {
