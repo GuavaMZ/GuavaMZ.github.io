@@ -238,7 +238,8 @@
     font-size: 20px;
     font-family: Cairo;
     font-weight: 700;
-    word-wrap: break-word
+    word-wrap: break-word;
+    
 }
 
 .ellipse-parent10 {
@@ -314,7 +315,7 @@
 }
 
 .add-ticket-support-btn:hover {
-    box-shadow: 0px 0px 4px 0px rgb(17, 39, 160);
+    box-shadow: 0px 0px 4px 0px #12517F
 }
 
 .btn{
