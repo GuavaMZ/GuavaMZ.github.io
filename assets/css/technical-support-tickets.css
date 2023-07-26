@@ -13,17 +13,7 @@
     float: right;
 }
 
-.heading1 {
-    position: absolute;
-    top: 8%;
-    right: 10%;
-    font-family: 'Cairo';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 32px;
-    line-height: 60px;
-    color: #12517F;
-}
+ 
 
 .ul-profile {
     float: right;
@@ -45,27 +35,8 @@
     margin-top: 24px;
 }
 
-.blueLightBack {
-    width: 92.5%;
-    height: 120%;
-    position: absolute;
-    background: #F2FAFF;
-    border-top-left-radius: 50px;
-    border-bottom-right-radius: 50px;
-    left: 2.5rem;
-    top: 7.5rem;
-}
 
-.b {
-    right: 45px;
-    top: 30px;
-    font-size: 30px;
-    font-weight: 700;
-    position: relative;
-    font-family: 'Cairo';
-    font-style: normal;
-    color: #12517F;
-}
+ 
 
 .random-ticket-group {
     position: relative;

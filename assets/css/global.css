@@ -110,15 +110,89 @@
     position: absolute;
 } */
 
+#top-nav-bar{
+    height: 6vh;
+}
+
 #slidparRight {
     width: 15vw;
     height: 100vh;
     border-radius: 20px 0 20px 0;
     background-color: #12517F;
     color: transparent;
+    position: absolute;
 }
 
-@media (min-width:600px){
+.heading1 {
+    position: absolute;
+    top: 4%;
+    right: 18%;
+    font-family: 'Cairo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 3vw;
+    line-height: 60px;
+    color: #12517F;
+}
+
+.blueLightBack {
+    width: 85vw;
+    height: 100vh;
+    position: absolute;
+    background: #F2FAFF;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 50px;
+    right: 15vw;
+    top: 8vh;
+}
+
+.whiteRectBox {
+    position: relative;
+    width: 80vw;
+    height: 85vh;
+    background: white;
+    border-radius: 30px;
+    margin-right: 2.5%;
+    margin-top: 5%;
+    box-shadow: 0px 0px 4px rgba(11, 92, 153, 0.25);
+}
+
+.b {
+    right: 5%;
+    top: 2.6vh;
+    font-size: 3vw;
+    font-weight: 700;
+    position: relative;
+    font-family: 'Cairo';
+    font-style: normal;
+    color: #12517F;
+}
+
+.search-box {
+    border: 0;
+    border-radius: 30px;
+    outline-color: #F2FAFF;
+    width: 74vw;
+    height: 3vh;
+    background-color: white;
+    position: relative;
+    top: 2.3vh;
+    right: 4%;
+    font-size: 1.5vw;
+    font-family: Cairo;
+    padding-right: 20px;
+    color: #12517F;
+}
+
+.search-btn {
+    border: 0;
+    /* position: absolute; */
+    background: none;
+    /* left: 43%; */
+    /* top: 5.5%; */
+}
+
+@media (min-width:600px) {
     #slidparRight {
         width: 4.55vw;
         height: 100vh;
@@ -126,4 +200,78 @@
         background-color: #12517F;
         color: transparent;
     }
+
+    #top-nav-bar{
+        height: 8.5vh;
+    }
+
+    .heading1 {
+        position: absolute;
+        top: 8%;
+        right: 10%;
+        font-family: 'Cairo';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 1.5vw;
+        line-height: 60px;
+        color: #12517F;
+    }
+
+    .blueLightBack {
+        width: 91vw;
+        height: 100vh;
+        position: absolute;
+        background: #F2FAFF;
+        border-top-left-radius: 50px;
+        border-bottom-right-radius: 50px;
+        right: 5.5vw;
+        top: 7.5rem;
+    }
+    
+    .whiteRectBox {
+        position: relative;
+        width: 95%;
+        height: 85%;
+        background: white;
+        border-radius: 30px;
+        margin-right: 2.5%;
+        margin-top: 2.5%;
+        box-shadow: 0px 0px 4px rgba(11, 92, 153, 0.25);
+    }
+
+    .b {
+        right: 3%;
+        top: 3.3vh;
+        font-size: 1.2vw;
+        font-weight: 700;
+        position: relative;
+        font-family: 'Cairo';
+        font-style: normal;
+        color: #12517F;
+    }
+
+    .search-box {
+        border: 0;
+        border-radius: 30px;
+        outline-color: #F2FAFF;
+        width: 27%;
+        height: 50px;
+        background-color: white;
+        position: absolute;
+        top: 4%;
+        right: 58%;
+        font-size: 0.9vw;
+        font-family: Cairo;
+        padding-right: 70px;
+        color: #12517F;
+    }
+
+    .search-btn {
+        border: 0;
+        position: absolute; 
+        background: none;
+        left: 43%;
+        top: 5.5%;
+    }
+
 }

@@ -76,11 +76,7 @@
     height: 70px;
 }
 
-.b {
-    position: relative;
-    font-size: 20px;
-    text-align: center;
-}
+ 
 
 .pass-input,
 .email-input {

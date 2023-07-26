@@ -33,17 +33,7 @@
     float: right;
 }
 
-.heading1 {
-    position: absolute;
-    top: 8%;
-    right: 10%;
-    font-family: 'Cairo';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 32px;
-    line-height: 60px;
-    color: #12517F;
-}
+ 
 
 .ul-profile {
     float: right;
@@ -68,27 +58,7 @@
     margin-top: 24px;
 }
 
-.blueLightBack {
-    width: 92.5%;
-    height: 100%;
-    position: relative;
-    background: #F2FAFF;
-    border-top-left-radius: 50px;
-    border-bottom-right-radius: 50px;
-    right: 2.5%;
-    top: 3rem;
-}
-
-.b {
-    right: 45px;
-    top: 30px;
-    font-size: 30px;
-    font-weight: 700;
-    position: relative;
-    font-family: 'Cairo';
-    font-style: normal;
-    color: #12517F;
-}
+ 
 
 .input-form-group {
     width: 100%;

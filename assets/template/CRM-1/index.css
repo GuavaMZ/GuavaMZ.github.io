@@ -78,12 +78,7 @@
   width: 250px;
   height: 70px;
 }
-.b {
-  position: absolute;
-  top: 609px;
-  left: 393px;
-  font-size: var(--font-size-xl);
-}
+
 .child1,
 .frame-input {
   border: 0;

@@ -1,3 +1,5 @@
+/* out of media is for phone */
+/* inside media is for pc */
 .body {
     margin: 0;
     padding: 0;
@@ -13,17 +15,6 @@
     float: right;
 }
 
-.heading1 {
-    position: absolute;
-    top: 8%;
-    right: 10%;
-    font-family: 'Cairo';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 1.5vw;
-    line-height: 60px;
-    color: #12517F;
-}
 
 .ul-profile {
     float: right;
@@ -48,50 +39,96 @@
     margin-top: 24px;
 }
 
-.blueLightBack {
-    width: 95vw;
-    height: 100vh;
+
+.filter-group {
+    font-size: 0.5vw;
+    color: #ffffff;
+    font-family: 'Cairo';
+    font-weight: 700;
+    /* right: 12%; */
+    /* bottom: 2%; */
+}
+
+.selection-box {
+    font-size: 2vw;
+    color: #B2B2B2;
+    outline-color: #ffffff;
+    background-color: #ffffff;
+    font-family: 'Cairo';
+    font-weight: 700;
+    position: relative;
+    /* overflow: hidden; */
+    border: 0;
+    right: 31%;
+    top: 0.5vh;
+}
+
+.add-ticket-support-btn {
+    width: 18vw;
+    height: 3vh;
+    /* bottom: 5%; */
+    top: 2.8%;
+    left: 4%;
     position: absolute;
     background: #F2FAFF;
-    border-top-left-radius: 50px;
-    border-bottom-right-radius: 50px;
-    right: 5vw;
-    top: 8vh;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 0px;
+    box-shadow: 0px 0px 2px 0px rgba(13, 58, 93, 0.25);
+    border: 0;
+    color: #12517F;
+    font-family: Cairo;
+    font-size: 2vw;
+    font-weight: bold;
+
 }
 
 @media (min-width:600px) {
-    .blueLightBack {
-        width: 91vw;
-        height: 100vh;
+    .filter-group {
+        /* position: relative; */
+        /* width: 30%; */
+        font-size: 0.5vw;
+        color: #ffffff;
+        font-family: 'Cairo';
+        font-weight: 700;
+        /* right: 12%; */
+        /* bottom: 2%; */
+    }
+    
+    .selection-box {
+        font-size: 15px;
+        color: #B2B2B2;
+        outline-color: #ffffff;
+        background-color: #ffffff;
+        font-family: 'Cairo';
+        font-weight: 700;
+        position: relative;
+        /* overflow: hidden; */
+        border: 0;
+        right: 15%;
+    }
+
+    .add-ticket-support-btn {
+        width: 9%;
+        height: 5.5vh;
+        /* bottom: 5%; */
+        top: 4%;
+        left: 2%;
         position: absolute;
         background: #F2FAFF;
-        border-top-left-radius: 50px;
-        border-bottom-right-radius: 50px;
-        right: 5.5vw;
-        top: 7.5rem;
-    }  
-}
-
-/* .blueLightBack {
-    width: 91vw;
-    height: 100vh;
-    position: absolute;
-    background: #F2FAFF;
-    border-top-left-radius: 50px;
-    border-bottom-right-radius: 50px;
-    left: 2.5rem;
-    top: 7.5rem;
-} */
-
-.whiteRectBox {
-    position: relative;
-    width: 95%;
-    height: 85%;
-    background: white;
-    border-radius: 30px;
-    margin-right: 2.5%;
-    margin-top: 2.5%;
-    box-shadow: 0px 0px 4px rgba(11, 92, 153, 0.25);
+        border-top-left-radius: 20px;
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 20px;
+        border-bottom-left-radius: 0px;
+        box-shadow: 0px 0px 2px 0px rgba(13, 58, 93, 0.25);
+        border: 0;
+        color: #12517F;
+        font-family: Cairo;
+        font-size: 0.9vw;
+        font-weight: bold;
+    
+    }
 }
 
 .files-box {
@@ -143,17 +180,6 @@
     position: relative;
 }
 
-.b {
-    right: 45px;
-    top: 30px;
-    font-size: 1.2vw;
-    font-weight: 700;
-    position: relative;
-    font-family: 'Cairo';
-    font-style: normal;
-    color: #12517F;
-}
-
 .group {
     position: relative;
     /* width: 54px;
@@ -162,29 +188,6 @@
     color: var(--color-darkgray);
 }
 
-.search-box {
-    border: 0;
-    border-radius: 30px;
-    outline-color: #F2FAFF;
-    width: 27%;
-    height: 50px;
-    background-color: white;
-    position: absolute;
-    top: 4.5%;
-    left: 18%;
-    font-size: 0.9vw;
-    font-family: Cairo;
-    padding-right: 70px;
-    color: #12517F;
-}
-
-.search-btn {
-    border: 0;
-    position: absolute;
-    background: none;
-    left: 43%;
-    top: 5.5%;
-}
 
 .files-table {
     position: relative;
@@ -220,30 +223,6 @@
     color: #F8456F;
     font-family: Cairo;
     font-size: 1vw;
-}
-
-.filter-group {
-    /* position: relative; */
-    /* width: 30%; */
-    font-size: 0.5vw;
-    color: #ffffff;
-    font-family: 'Cairo';
-    font-weight: 700;
-    /* right: 12%; */
-    /* bottom: 2%; */
-}
-
-.selection-box {
-    font-size: 15px;
-    color: #B2B2B2;
-    outline-color: #ffffff;
-    background-color: #ffffff;
-    font-family: 'Cairo';
-    font-weight: 700;
-    position: relative;
-    /* overflow: hidden; */
-    border: 0;
-    right: 15%;
 }
 
 .rectangle-parent61 {
@@ -317,26 +296,7 @@
 
 
 
-.add-ticket-support-btn {
-    width: 9%;
-    height: 5.5vh;
-    /* bottom: 5%; */
-    top: 4%;
-    left: 2%;
-    position: absolute;
-    background: #F2FAFF;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 0px;
-    border-bottom-right-radius: 20px;
-    border-bottom-left-radius: 0px;
-    box-shadow: 0px 0px 2px 0px rgba(13, 58, 93, 0.25);
-    border: 0;
-    color: #12517F;
-    font-family: Cairo;
-    font-size: 0.9vw;
-    font-weight: bold;
 
-}
 
 .add-ticket-support-btn:hover {
     box-shadow: 0px 0px 4px 0px #12517F

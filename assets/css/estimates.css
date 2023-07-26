@@ -1,4 +1,4 @@
-.body{
+.body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
@@ -13,17 +13,7 @@
     float: right;
 }
 
-.heading1 {
-    position: absolute;
-    top: 8%;
-    right: 10%;
-    font-family: 'Cairo';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 32px;
-    line-height: 60px;
-    color: #12517F;
-}
+
 
 .ul-profile {
     float: right;
@@ -45,27 +35,9 @@
     margin-top: 24px;
 }
 
-.blueLightBack {
-    width: 92.5%;
-    height: 973px;
-    position: absolute;
-    background: #F2FAFF;
-    border-top-left-radius: 50px;
-    border-bottom-right-radius: 50px;
-    left: 2.5rem;
-    top: 7.5rem;
-}
 
-.whiteRectBox {
-    position: relative;
-    width: 95%;
-    height: 85%;
-    background: white;
-    border-radius: 30px;
-    margin-right: 2.5%;
-    margin-top: 2.5%;
-    box-shadow: 0px 0px 4px rgba(11, 92, 153, 0.25);
-}
+
+
 
 .files-box {
     width: 95%;
@@ -116,16 +88,7 @@
     position: relative;
 }
 
-.b {
-    right: 45px;
-    top: 30px;
-    font-size: 30px;
-    font-weight: 700;
-    position: relative;
-    font-family: 'Cairo';
-    font-style: normal;
-    color: #12517F;
-}
+ 
 
 .group {
     position: relative;
@@ -135,44 +98,26 @@
     color: var(--color-darkgray);
 }
 
-.search-box {
-    border: 0;
-    border-radius: 30px;
-    outline-color: #F2FAFF;
-    width: 27%;
-    height: 50px;
-    background-color: white;
-    position: absolute;
-    top: 4.5%;
-    left: 10%;
-    font-size: 0.9vw;
-    font-family: Cairo;
-    padding-right: 70px;
-    color: #12517F;
-}
+ 
 
-.search-btn {
-    border: 0;
-    position: absolute;
-    background: none;
-    left: 35%;
-    top: 5.5%;
-}
+ 
+
 .files-table {
     position: relative;
     top: 15%;
     right: 13%;
 }
 
-.tableD{
+.tableD {
     width: 18%;
     text-align: center;
 }
 
-.tableH{
+.tableH {
     width: 18%;
     text-align: center;
 }
+
 .filter-group {
     position: relative;
     /* width: 30%; */
@@ -182,7 +127,7 @@
     font-weight: 700;
     right: 12%;
     /* bottom: 2%; */
-    
+
 }
 
 .selection-box {
@@ -196,6 +141,7 @@
     overflow: hidden;
     border: 0;
 }
+
 .rectangle-parent61 {
     position: absolute;
     top: 3rem;
@@ -204,7 +150,7 @@
     height: 15%;
 }
 
- 
+
 
 
 .p101 {
@@ -218,9 +164,9 @@
     word-wrap: break-word
 }
 
- 
 
-  
+
+
 
 .ellipse-parent10 {
     position: absolute;
@@ -272,9 +218,9 @@
     padding-left: 7px;
 }
 
- 
 
-.offcanvas-backdrop{
+
+.offcanvas-backdrop {
     /* background-color: transparent; */
     all: unset;
 }
