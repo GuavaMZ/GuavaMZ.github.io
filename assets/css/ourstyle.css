@@ -56,16 +56,39 @@
     color: #12517F;
 }
 
-.blueLightBack {
+/* .blueLightBack {
     width: 90vw;
     height: 973px;
-    
     position: absolute;
     background: #F2FAFF;
     border-top-left-radius: 50px;
     border-bottom-right-radius: 50px;
     left: 2.5rem;
     top: 7.5rem;
+} */
+
+.blueLightBack {
+    width: 95vw;
+    height: 100vh;
+    position: absolute;
+    background: #F2FAFF;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    right: 5vw;
+    top: 8vh;
+}
+
+@media (min-width:600px) {
+    .blueLightBack {
+        width: 91vw;
+        height: 100vh;
+        position: absolute;
+        background: #F2FAFF;
+        border-top-left-radius: 50px;
+        border-bottom-right-radius: 50px;
+        right: 5.5vw;
+        top: 7.5rem;
+    }  
 }
 
 .projectSummaryBox {

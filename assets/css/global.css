@@ -1,4 +1,4 @@
-.username-style{
+.username-style {
     font-size: 1vw;
 }
 
@@ -8,7 +8,7 @@
     color: #12517F;
 }
 
-.page-link:hover{
+.page-link:hover {
     background-color: #F2FAFF;
 }
 
@@ -72,21 +72,21 @@
     word-wrap: break-word
 }
 
-.hr-line{
+.hr-line {
     width: 100vw;
 }
 
-.trash-btn{
+.trash-btn {
     border: 0;
     background-color: transparent;
 }
 
-.btn:hover + .button-name{
-    background-color:#12517F;
+.btn:hover+.button-name {
+    background-color: #12517F;
     display: block;
 }
 
-.button-name{
+.button-name {
     display: none;
     width: 10vw;
     padding: 8px;
@@ -110,3 +110,20 @@
     position: absolute;
 } */
 
+#slidparRight {
+    width: 15vw;
+    height: 100vh;
+    border-radius: 20px 0 20px 0;
+    background-color: #12517F;
+    color: transparent;
+}
+
+@media (min-width:600px){
+    #slidparRight {
+        width: 4.55vw;
+        height: 100vh;
+        border-radius: 20px 0 20px 0;
+        background-color: #12517F;
+        color: transparent;
+    }
+}
