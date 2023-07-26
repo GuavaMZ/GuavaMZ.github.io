@@ -51,6 +51,7 @@
 .blueLightBack {
     width: 91vw;
     height: 100vh;
+    display: flex;
     position: absolute;
     background: #F2FAFF;
     border-top-left-radius: 50px;
@@ -294,7 +295,7 @@
 
 .add-ticket-support-btn {
     width: 9%;
-    height: 50px;
+    height: 5.5vh;
     /* bottom: 5%; */
     top: 4%;
     left: 2%;
