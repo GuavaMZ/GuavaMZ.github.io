@@ -57,8 +57,9 @@
 }
 
 .blueLightBack {
-    width: 92.5%;
+    width: 90vw;
     height: 973px;
+    
     position: absolute;
     background: #F2FAFF;
     border-top-left-radius: 50px;
