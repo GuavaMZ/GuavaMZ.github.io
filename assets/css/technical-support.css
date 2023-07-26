@@ -80,16 +80,26 @@
 
 .search-box {
     border: 0;
-    border-radius: 20px;
+    border-radius: 30px;
     outline-color: #F2FAFF;
     width: 27%;
     height: 50px;
     background-color: white;
-    position: relative;
+    position: absolute;
     top: 4.5%;
-    right: 63.2%;
+    left: 10%;
+    font-size: 0.9vw;
     font-family: Cairo;
-    padding-right: 50px;
+    padding-right: 70px;
+    color: #12517F;
+}
+
+.search-btn {
+    border: 0;
+    position: absolute;
+    background: none;
+    left: 35%;
+    top: 5.5%;
 }
 
 .tech-option-box {
@@ -110,7 +120,7 @@
 }
 
 .tech-option-box-rect-label {
-    left: 107px;
+    left: 110px;
     top: 335px;
     position: absolute;
     color: #12517F;

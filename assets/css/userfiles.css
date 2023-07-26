@@ -138,16 +138,26 @@
 
 .search-box {
     border: 0;
-    border-radius: 20px;
+    border-radius: 30px;
     outline-color: #F2FAFF;
     width: 27%;
     height: 50px;
     background-color: white;
     position: absolute;
     top: 4.5%;
-    left: 9.7%;
+    left: 18%;
+    font-size: 0.9vw;
     font-family: Cairo;
-    padding-right: 50px;
+    padding-right: 70px;
+    color: #12517F;
+}
+
+.search-btn {
+    border: 0;
+    position: absolute;
+    background: none;
+    left: 43%;
+    top: 5.5%;
 }
 
 .files-table {
@@ -170,7 +180,8 @@
     border: 0;
     position: relative;
     right: 94%;
-    bottom: 3.5%;
+    top: .5%;
+    
 }
 
 .rectangle-parent61 {

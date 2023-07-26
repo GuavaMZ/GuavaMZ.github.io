@@ -53,7 +53,6 @@
     padding-right: 9%;
     font-size: 1vw;
     font-family: 'Cairo';
-    outline-color: transparent;
 }
 
 .b75 {
@@ -67,7 +66,7 @@
 .b76 {
     top: 0;
     color: #12517F;
-    font-size: 1.5vw;
+    font-size: 2vw;
     font-family: Cairo;
     font-weight: 700;
     word-wrap: break-word
