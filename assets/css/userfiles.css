@@ -52,10 +52,6 @@
     font-weight: 700;
 }
 
-
-
-
-
 .filter-group {
     position: relative;
     /* width: 30%; */
@@ -63,13 +59,14 @@
     color: #ffffff;
     font-family: 'Cairo';
     font-weight: 700;
-    right: 17%;
+    right: 20%;
     /* bottom: 2%; */
+    top: 0.5%;
 
 }
 
 .selection-box {
-    font-size: 15px;
+    font-size: 2vw;
     color: #B2B2B2;
     outline-color: #ffffff;
     background-color: #ffffff;
@@ -81,7 +78,7 @@
 }
 
 .files-box {
-    width: 90%;
+    width: 92%;
     height: 60px;
     background: #F2FAFF;
     box-shadow: 0px 0px 4px rgba(11, 92, 153, 0.25);
@@ -91,8 +88,23 @@
     border-bottom-left-radius: 30px;
     position: relative;
     top: 6%;
-    right: 3%;
+    right: 4%;
     margin-top: 5%;
+}
+
+.trash-icon {
+    width: 5vw;
+}
+
+.file-style {
+    width: 14vw;
+}
+
+.files-box-style {
+    width: 100%;
+    top: 13%;
+    left: 1.6%;
+    position: relative;
 }
 
 .mm {
@@ -101,7 +113,7 @@
 
 .files-table {
     position: relative;
-    top: 5%;
+    top: 7%;
     right: 13%;
 }
 
@@ -117,9 +129,21 @@
     text-align: center;
 }
 
+.td-style {
+    color: #12517F;
+    font-family: Cairo;
+    font-size: 3.5vw;
+}
+
 .tableH {
     width: 18%;
     text-align: center;
+}
+
+.th-style {
+    color: #F8456F;
+    font-family: Cairo;
+    font-size: 3.5vw;
 }
 
 .add-file-btn-square {
@@ -139,10 +163,6 @@
     font-weight: 700;
     word-wrap: break-word
 }
-
-
-
-
 
 .ellipse-parent10 {
     position: absolute;
@@ -258,6 +278,20 @@
         right: 2.5%;
         margin-top: 1%;
     }
+
+    .files-box-style {
+        width: 100%;
+        top: 6%;
+        left: 1.6%;
+        position: relative;
+    }
+
+    .trash-icon {
+        width: 1.5vw;
+    }
+
+    .file-style {
+        width: 6vw;
+    }
+
 }
-
-
