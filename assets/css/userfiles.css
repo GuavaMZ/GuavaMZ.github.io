@@ -82,8 +82,8 @@
     height: 60px;
     background: #F2FAFF;
     box-shadow: 0px 0px 4px rgba(11, 92, 153, 0.25);
-    border-top-left-radius: 40px;
-    border-top-right-radius: 40px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
     border-bottom-right-radius: 30px;
     border-bottom-left-radius: 30px;
     position: relative;
