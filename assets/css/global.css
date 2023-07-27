@@ -128,7 +128,7 @@
     height: 3vh;
     background-color: white;
     position: relative;
-    top: 2.3vh;
+    top: 4vh;
     right: 4%;
     font-size: 1.5vw;
     font-family: Cairo;
@@ -203,6 +203,13 @@
     right: 50%;
     top: 3vh;
     text-align: center;
+}
+
+.files-table-head-style {
+    width: 95%;
+    top: 35%;
+    left: 12%;
+    position: relative;
 }
 
 /* Footer */
@@ -349,5 +356,12 @@
     }
 
     /* Footer */
+
+    .files-table-head-style {
+        width: 95%;
+        top: 35%;
+        left: 12%;
+        position: relative;
+    }
 
 }
