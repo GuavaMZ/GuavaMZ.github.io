@@ -232,6 +232,7 @@
         font-weight: 700;
         right: 10%;
         /* bottom: 2%; */
+        top: 0;
 
     }
 
@@ -266,7 +267,7 @@
 
     .files-box {
         width: 95%;
-        height: 80px;
+        height: 8.3vh;
         background: #F2FAFF;
         box-shadow: 0px 0px 4px rgba(11, 92, 153, 0.25);
         border-top-left-radius: 30px;
@@ -287,11 +288,22 @@
     }
 
     .trash-icon {
-        width: 1.5vw;
+        width: 2vw;
     }
 
     .file-style {
-        width: 6vw;
+        width: 4.7vw;
     }
 
+    .td-style {
+        color: #12517F;
+        font-family: Cairo;
+        font-size: 1.2vw;
+    }
+
+    .th-style {
+        color: #F8456F;
+        font-family: Cairo;
+        font-size: 1.2vw;
+    }
 }
