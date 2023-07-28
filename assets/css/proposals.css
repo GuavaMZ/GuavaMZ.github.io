@@ -13,7 +13,7 @@
     float: right;
 }
 
- 
+
 
 .ul-profile {
     float: right;
@@ -38,13 +38,9 @@
     margin-top: 24px;
 }
 
-  
-
- 
-
 .files-box {
-    width: 95%;
-    height: 80px;
+    width: 98%;
+    height: 60px;
     background: #F2FAFF;
     box-shadow: 0px 0px 4px rgba(11, 92, 153, 0.25);
     border-top-left-radius: 30px;
@@ -52,9 +48,16 @@
     border-bottom-right-radius: 30px;
     border-bottom-left-radius: 30px;
     position: relative;
-    top: 17%;
-    right: 2.5%;
-    margin-top: 1%;
+    top: 6%;
+    right: 1.5%;
+    margin-top: 5%;
+}
+
+.files-box-style {
+    width: 100%;
+    top: 20%;
+    left: 1.6%;
+    position: relative;
 }
 
 .arrow-down-3,
@@ -91,8 +94,6 @@
     position: relative;
 }
 
- 
-
 .group {
     position: relative;
     /* width: 54px;
@@ -101,20 +102,12 @@
     color: var(--color-darkgray);
 }
 
- 
-
- 
-
 .files-table {
     position: relative;
-    top: 15%;
+    top: 7%;
     right: 13%;
 }
 
-.tableD {
-    width: 18%;
-    text-align: center;
-}
 
 .tableH {
     width: 18%;
@@ -128,13 +121,13 @@
     color: #ffffff;
     font-family: 'Cairo';
     font-weight: 700;
-    right: 12%;
+    right: 24%;
     /* bottom: 2%; */
-    
+    top: 0.4vh;
 }
 
 .selection-box {
-    font-size: 15px;
+    font-size: 2vw;
     color: #B2B2B2;
     outline-color: #ffffff;
     background-color: #ffffff;
@@ -144,11 +137,6 @@
     overflow: hidden;
     border: 0;
 }
-
- 
-
- 
-
 
 .p101 {
     position: absolute;
@@ -160,10 +148,6 @@
     font-weight: 700;
     word-wrap: break-word
 }
-
- 
-
-  
 
 .ellipse-parent10 {
     position: absolute;
@@ -215,9 +199,62 @@
     padding-left: 7px;
 }
 
- 
-
-.offcanvas-backdrop{
+.offcanvas-backdrop {
     /* background-color: transparent; */
     all: unset;
+}
+
+@media(min-width:600px) {
+    .filter-group {
+        position: relative;
+        /* width: 30%; */
+        font-size: 16px;
+        color: #ffffff;
+        font-family: 'Cairo';
+        font-weight: 700;
+        right: 12%;
+        /* bottom: 2%; */
+
+    }
+
+    .selection-box {
+        font-size: 15px;
+        color: #B2B2B2;
+        outline-color: #ffffff;
+        background-color: #ffffff;
+        font-family: 'Cairo';
+        font-weight: 700;
+        position: absolute;
+        overflow: hidden;
+        border: 0;
+    }
+
+    .files-table {
+        position: relative;
+        top: 15%;
+        right: 13%;
+    }
+
+    .files-box {
+        width: 95%;
+        height: 80px;
+        background: #F2FAFF;
+        box-shadow: 0px 0px 4px rgba(11, 92, 153, 0.25);
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+        border-bottom-right-radius: 30px;
+        border-bottom-left-radius: 30px;
+        position: relative;
+        top: 17%;
+        right: 2.5%;
+        margin-top: 1%;
+    }
+
+    .files-box-style {
+        width: 100%;
+        top: 35%;
+        left: 1.6%;
+        position: relative;
+    }   
+
 }

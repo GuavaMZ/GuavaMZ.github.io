@@ -124,27 +124,6 @@
     position: relative;
 }
 
-.tableD {
-    width: 18%;
-    text-align: center;
-}
-
-.td-style {
-    color: #12517F;
-    font-family: Cairo;
-    font-size: 3.5vw;
-}
-
-.tableH {
-    width: 18%;
-    text-align: center;
-}
-
-.th-style {
-    color: #F8456F;
-    font-family: Cairo;
-    font-size: 3.5vw;
-}
 
 .add-file-btn-square {
     border: 0;
@@ -293,17 +272,5 @@
 
     .file-style {
         width: 4.7vw;
-    }
-
-    .td-style {
-        color: #12517F;
-        font-family: Cairo;
-        font-size: 1.2vw;
-    }
-
-    .th-style {
-        color: #F8456F;
-        font-family: Cairo;
-        font-size: 1.2vw;
     }
 }

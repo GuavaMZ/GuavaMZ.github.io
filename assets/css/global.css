@@ -218,6 +218,28 @@
     position: relative;
 }
 
+.tableD {
+    width: 18%;
+    text-align: center;
+}
+
+.tableH {
+    width: 18%;
+    text-align: center;
+}
+
+.td-style {
+    color: #12517F;
+    font-family: Cairo;
+    font-size: 3.5vw;
+}
+
+.th-style {
+    color: #F8456F;
+    font-family: Cairo;
+    font-size: 3.5vw;
+}
+
 @media (min-width:600px) {
     #slidparRight {
         width: 4.55vw;
@@ -392,6 +414,18 @@
         position: relative;
         top: 25%;
         right: 45%;
+    }
+
+    .th-style {
+        color: #F8456F;
+        font-family: Cairo;
+        font-size: 1.2vw;
+    }
+
+    .td-style {
+        color: #12517F;
+        font-family: Cairo;
+        font-size: 1.2vw;
     }
 
 }
