@@ -127,14 +127,15 @@
 .search-box {
     border: 0;
     border-radius: 30px;
-    outline-color: #F2FAFF;
+    box-shadow: 0 0 4px rgba(11, 92, 153, 0.25);
+    outline-color: #ffffff;
     width: 74vw;
-    height: 3vh;
+    height: 4vh;
     background-color: white;
     position: relative;
-    top: 4vh;
+    top: 5vh;
     right: 4%;
-    font-size: 1.5vw;
+    font-size: 3vw;
     font-family: Cairo;
     padding-right: 20px;
     color: #12517F;
@@ -231,13 +232,13 @@
 .td-style {
     color: #12517F;
     font-family: Cairo;
-    font-size: 3.5vw;
+    font-size: 2.5vw;
 }
 
 .th-style {
     color: #F8456F;
     font-family: Cairo;
-    font-size: 3.5vw;
+    font-size: 3vw;
 }
 
 @media (min-width:600px) {

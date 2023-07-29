@@ -44,7 +44,7 @@
 
 .files-box {
     width: 95%;
-    height: 80px;
+    height: 50px;
     background: #F2FAFF;
     box-shadow: 0px 0px 4px rgba(11, 92, 153, 0.25);
     border-top-left-radius: 30px;
@@ -52,9 +52,9 @@
     border-bottom-right-radius: 30px;
     border-bottom-left-radius: 30px;
     position: relative;
-    top: 17%;
+    top: 10%;
     right: 2.5%;
-    margin-top: 1%;
+    margin-top: 3%;
 }
 
 .arrow-down-3,
@@ -103,7 +103,7 @@
 
 .files-table {
     position: relative;
-    top: 15%;
+    top: 10%;
     right: 13%;
 }
 
@@ -119,11 +119,11 @@
 .filter-group {
     position: relative;
     /* width: 30%; */
-    font-size: 16px;
+    font-size: 2vw;
     color: #ffffff;
     font-family: 'Cairo';
     font-weight: 700;
-    right: 10%;
+    right: 15%;
     /* bottom: 2%; */
     
 }
@@ -218,19 +218,19 @@
  
 
 .show-invoice-btn {
-    width: 9%;
-    height: 50px;
+    width: 25%;
+    height: 25px;
     /* bottom: 5%; */
-    top: 4%;
+    top: 3%;
     left: 2%;
     position: absolute;
-    border-top-left-radius: 20px;
-    border-bottom-right-radius: 20px;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
     border: 0;
     background-color: #F2FAFF; 
     color: #12517F;
     font-family: Cairo;
-    font-size: 18px;
+    font-size: 3vw;
     font-weight: bold;
     box-shadow: 0px 0px 2px 0px rgba(13, 58, 93, 0.25);
 }
@@ -238,4 +238,79 @@
 .offcanvas-backdrop{
     /* background-color: transparent; */
     all: unset;
+}
+
+@media (min-width:600px) {
+    .filter-group {
+        position: relative;
+        /* width: 30%; */
+        font-size: 16px;
+        color: #ffffff;
+        font-family: 'Cairo';
+        font-weight: 700;
+        right: 10%;
+        /* bottom: 2%; */
+        
+    }
+    
+    .selection-box {
+        font-size: 15px;
+        color: #B2B2B2;
+        outline-color: #ffffff;
+        background-color: #ffffff;
+        font-family: 'Cairo';
+        font-weight: 700;
+        position: absolute;
+        overflow: hidden;
+        border: 0;
+    }
+
+    .show-invoice-btn {
+        width: 9%;
+        height: 50px;
+        /* bottom: 5%; */
+        top: 4%;
+        left: 2%;
+        position: absolute;
+        border-top-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        border: 0;
+        background-color: #F2FAFF; 
+        color: #12517F;
+        font-family: Cairo;
+        font-size: 18px;
+        font-weight: bold;
+        box-shadow: 0px 0px 2px 0px rgba(13, 58, 93, 0.25);
+    }
+    
+    .files-table {
+        position: relative;
+        top: 15%;
+        right: 13%;
+    }
+    
+    .tableD{
+        width: 18%;
+        text-align: center;
+    }
+    
+    .tableH{
+        width: 18%;
+        text-align: center;
+    }
+     
+    .files-box {
+        width: 95%;
+        height: 80px;
+        background: #F2FAFF;
+        box-shadow: 0px 0px 4px rgba(11, 92, 153, 0.25);
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+        border-bottom-right-radius: 30px;
+        border-bottom-left-radius: 30px;
+        position: relative;
+        top: 17%;
+        right: 2.5%;
+        margin-top: 1%;
+    }
 }
