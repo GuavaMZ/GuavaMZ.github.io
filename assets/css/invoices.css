@@ -123,13 +123,13 @@
     color: #ffffff;
     font-family: 'Cairo';
     font-weight: 700;
-    right: 15%;
+    right: 20%;
     /* bottom: 2%; */
-    
+    top: 0.3vh;
 }
 
 .selection-box {
-    font-size: 15px;
+    font-size: 2.5vw;
     color: #B2B2B2;
     outline-color: #ffffff;
     background-color: #ffffff;
