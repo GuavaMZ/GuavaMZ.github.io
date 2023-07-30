@@ -313,4 +313,11 @@
         right: 2.5%;
         margin-top: 1%;
     }
-}
+
+        .search-btn {
+        border: 0;
+        position: absolute;
+        background: none;
+        left: 43%;
+        top: 5.5%;
+    }
