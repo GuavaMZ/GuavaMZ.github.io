@@ -41,40 +41,25 @@
 
 .hello-img {
     position: relative;
-    bottom: 28px;
-}
-
-.heading1 {
-    position: absolute;
-    left: 83%;
-    top: 8%;
-    font-family: 'Cairo';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 32px;
-    line-height: 60px;
-    color: #12517F;
-}
-
-
-@media (min-width:600px) {
-
+    bottom: 3.5vh;
+    width: 95%;
 }
 
 .projectSummaryBox {
     position: relative;
-    width: 50%;
-    height: 176px;
+    width: 90%;
+    height: 140px;
     background: white;
     border-radius: 30px;
-    margin-right: 2.5%;
-    margin-top: 2.5%;
+    margin-right: 5%;
+    margin-top: 5%;
+    /* display: none; */
 }
 
 .projectSummaryText {
     position: relative;
     color: #12517F;
-    font-size: 25px;
+    font-size: 3.2vw;
     font-family: Cairo;
     font-weight: 600;
     word-wrap: break-word;
@@ -84,29 +69,29 @@
 
 .projectStatus {
     color: #12517F;
-    font-size: 20px;
+    font-size: 2.6vw;
     font-family: Cairo;
     font-weight: 500;
     word-wrap: break-word
 }
 
 .helloBox {
-    width: 42%;
-    height: 176px;
+    width: 90%;
+    height: 100px;
     background: white;
     border-radius: 30px;
-    margin-right: 2.5%;
+    margin-right: 5%;
     margin-top: 2.5%;
 }
 
 .helloUser {
-    position: absolute;
-    margin-top: auto;
+    position: relative;
     /* margin-left: auto; */
     margin-right: 5%;
-    margin-top: 4.5%;
+    margin-top: 1%;
     color: #12517F;
-    font-size: 20px;
+    font-size: 4vw;
+    top: 3.7vh;
     font-family: Cairo;
     font-weight: 600;
     word-wrap: break-word
@@ -120,6 +105,14 @@
     border-radius: 30px;
     margin-right: 2.5%;
     margin-top: 2.5%;
+    display: none;
+}
+
+.quickInfoTextStyle {
+    color: #12517F;
+    font-size: 1.5vw;
+    font-family: Cairo;
+    font-weight: 700;
 }
 
 .bill-type {
@@ -152,20 +145,22 @@
 }
 
 .quickBillsInfoBox {
-    width: 55%;
-    height: 654px;
+    width: 90%;
+    height: 55vh;
     background: white;
     box-shadow: 0px 0px 4px rgba(11, 92, 153, 0.25);
     border-radius: 30px;
-    margin-right: 2.5%;
-    margin-top: 2.5%;
+    margin-right: 5%;
+    margin-top: 5%;
 }
 
-
- 
-
- 
-
+.quickBillsTextStyle {
+    color: #12517F;
+    font-size: 2.5vw;
+    font-family: Cairo;
+    font-weight: 700;
+    position: relative;
+}
 
 .p101 {
     position: absolute;
@@ -177,10 +172,6 @@
     font-weight: 700;
     word-wrap: break-word
 }
-
- 
-
-  
 
 .ellipse-parent10 {
     position: absolute;
@@ -229,20 +220,17 @@
 
 .filter-group1 {
     position: relative;
-    width: 20%;
+    /* width: 10%; */
     font-size: 15px;
     color: #ffffff;
     font-family: 'Cairo';
     font-weight: 700;
-    /* right: 9.8%; */
-    bottom: 0.7%;
-
 }
 
 .selection-box1 {
     /* top: 2.5%; */
-    /* right: 80%; */
-    font-size: 15px;
+    bottom: 25%;
+    font-size: 2.5vw;
     color: #ff0000;
     outline-color: #ffffff;
     background-color: #ffffff;
@@ -288,4 +276,132 @@
 .offcanvas-backdrop {
     /* background-color: transparent; */
     all: unset;
+}
+
+@media (min-width:600px) {
+    .helloBox {
+        width: 42%;
+        height: 176px;
+        background: white;
+        border-radius: 30px;
+        margin-right: 2.5%;
+        margin-top: 2.5%;
+    }
+
+    .projectSummaryBox {
+        position: relative;
+        width: 50%;
+        height: 176px;
+        background: white;
+        border-radius: 30px;
+        margin-right: 2.5%;
+        margin-top: 2.5%;
+    }
+
+    .hello-img {
+        position: relative;
+        bottom: 28px;
+    }
+
+    .helloUser {
+        position: absolute;
+        margin-top: auto;
+        /* margin-left: auto; */
+        margin-right: 5%;
+        margin-top: 4.5%;
+        color: #12517F;
+        font-size: 20px;
+        font-family: Cairo;
+        font-weight: 600;
+        word-wrap: break-word
+    }
+
+    .projectSummaryText {
+        position: relative;
+        color: #12517F;
+        font-size: 1.5vw;
+        font-family: Cairo;
+        font-weight: 600;
+        word-wrap: break-word;
+        margin-top: 18px;
+        margin-right: 2.5%;
+    }
+
+    .projectStatus {
+        color: #12517F;
+        font-size: 1.1vw;
+        font-family: Cairo;
+        font-weight: 500;
+        word-wrap: break-word
+    }
+
+    .stats-quick-info-box {
+        position: relative;
+        height: 50%;
+        width: 90%;
+        border: 3;
+        border-color: #12517F;
+    }
+
+    .quickBillsInfoBox {
+        width: 55%;
+        height: 654px;
+        background: white;
+        box-shadow: 0px 0px 4px rgba(11, 92, 153, 0.25);
+        border-radius: 30px;
+        margin-right: 2.5%;
+        margin-top: 2.5%;
+    }
+
+    .quickBillsTextStyle {
+        color: #12517F;
+        font-size: 1.5vw;
+        font-family: Cairo;
+        font-weight: 700;
+    }
+
+    .quickInfoBox {
+        width: 37%;
+        height: 654px;
+        background: white;
+        box-shadow: 0px 0px 4px rgba(11, 92, 153, 0.25);
+        border-radius: 30px;
+        margin-right: 2.5%;
+        margin-top: 2.5%;
+        display: block;
+    }
+
+    .quickInfoTextStyle {
+        color: #12517F;
+        font-size: 1.5vw;
+        font-family: Cairo;
+        font-weight: 700;
+    }
+
+    .filter-group1 {
+        position: relative;
+        width: 20%;
+        font-size: 15px;
+        color: #ffffff;
+        font-family: 'Cairo';
+        font-weight: 700;
+        /* right: 9.8%; */
+        bottom: 0.7%;
+    
+    }
+
+    .selection-box1 {
+        /* top: 2.5%; */
+        /* right: 80%; */
+        font-size: 15px;
+        color: #ff0000;
+        outline-color: #ffffff;
+        background-color: #ffffff;
+        font-family: 'Cairo';
+        font-weight: 700;
+        position: relative;
+        overflow: hidden;
+        border: 0;
+    }
+
 }
