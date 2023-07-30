@@ -339,16 +339,16 @@
         <div class="blueLightBack" style="height: 155vh;">
             <h3 class="b">الملف الشخصي</h3>
 
-            <div class="row justify-content-around">
-                <div style="right: 45%; top: 30px; position: relative;">
+            <div class="row justify-content-around" id="">
+                <div class="profile-image-style">
                     <a class="text-center" href="#">
                         <img src="assets/images/users/image.png" alt="" width="150" height="150"
-                            class="profileimg d-inline-block align-text-top">
+                            class="profileimg d-inline-block align-text-top" id="edit-profile-image">
 
                     </a>
                 </div>
 
-                <div class="col-4">
+                <div class="col-md-4">
                     <div class="input-form-group">
                         <h3 class="input-form-group-label">
                             الأسم الأول</h3>
@@ -357,7 +357,7 @@
                     </div>
                 </div>
 
-                <div class="col-4">
+                <div class="col-md-4">
                     <div class="input-form-group">
                         <h3 class="input-form-group-label">
                             الأسم الأخير</h3>
@@ -389,10 +389,7 @@
                     <div class="input-form-group">
                         <h3 class="input-form-group-label">
                             الاتجاه</h3>
-                        <select
-                            style="width: 100%;
-                            height: 92px; left: 0px; top: 48px;position: absolute;background: white;border-radius: 30px;border: 0;"
-                            class="form-select" id="directionFrm" required>
+                        <select class="dir-selection-box-style" required>
                             <option selected disabled value="">OraxRest</option>
                             <option>OraxGold</option>
                             <option>OraxOil</option>
@@ -412,11 +409,10 @@
             </div>
 
 
-            <h3 class="b" style="position: relative; height: 150px; top: 100px;">اشعارات البريد الألكتروني</h3>
+            <h3 class="b" id="email-notification-text">اشعارات البريد الألكتروني</h3>
 
 
-            <div class="row align-items-start"
-                style="position: relative;font-family: Cairo; height: 150px;right: 7.5%;top: 50px;font-size: 20px;font-style: normal;font-weight: 500;">
+            <div class="row align-items-start" id="check-frm-group">
                 <div class="col">
                     <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
                     <label class="form-check-label" for="flexCheckDefault">
@@ -424,25 +420,25 @@
                     </label>
                 </div>
                 <div class="col">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
                     <label class="form-check-label" for="flexCheckChecked">
                         التذاكر
                     </label>
                 </div>
                 <div class="col">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
                     <label class="form-check-label" for="flexCheckChecked">
                         عرض سعر
                     </label>
                 </div>
                 <div class="col">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
                     <label class="form-check-label" for="flexCheckChecked">
                         اشعار دائن
                     </label>
                 </div>
                 <div class="col">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
                     <label class="form-check-label" for="flexCheckChecked">
                         فاتورة
                     </label>
@@ -474,7 +470,7 @@
                 <button class="update-profile-btn" type="submit">تحديث</button>
             </div>
             <hr style="color:#0B5C99;">
-            <h3 class="b" style="height: 100px">تغيير كلمة السر</h3>
+            <h3 class="b" id="change-pass-text">تغيير كلمة السر</h3>
             <div class="row g-3" style="height: 75px; right: 3%; position: relative;">
                 <div class="col-md-4">
                     <h4 class="pass-field-label">كلمة السر القديمة</h4>
@@ -486,25 +482,21 @@
                     <h4 class="pass-field-label">تأكيد كلمة السر الجديدة</h4>
                 </div>
             </div>
-            <form class="row g-3" style="right: 3%; position: relative;">
+            <form class="row g-3" id="pass-form">
                 <div class="col-md-4">
-                    <input type="password" class="input-form-group-field" style="top: 0; width: 80%;"
-                        id="oldinputPassword">
+                    <input type="password" class="input-form-group-field" id="oldinputPassword">
                 </div>
                 <div class="col-md-4">
-                    <input type="password" class="input-form-group-field" style="top: 0;width: 80%;"
-                        id="newinputPassword">
+                    <input type="password" class="input-form-group-field" id="newinputPassword">
                 </div>
                 <div class="col-md-4">
-                    <input type="password" class="input-form-group-field" style="top: 0;width: 80%;"
-                        id="confirmnewinputPassword">
+                    <input type="password" class="input-form-group-field" id="confirmnewinputPassword">
                 </div>
             </form>
-            <div style="height: 100px; position: relative;top: 25px;">
+            <div class="update-pass-profile-btn-div">
                 <button class="update-pass-profile-btn" type="submit">تغيير كلمة المرور</button>
             </div>
-            <p
-                style="top: 40px;position: relative; right: 45%; height: 100px;color: rgba(11, 92, 153, 0.25); font-size: 16px; font-family: Cairo; font-weight: 700; word-wrap: break-word">
+            <p class="last-pass-edit-text">
                 اخر تغيير لكلمة المرور قبل 6 شهور</p>
         </div>
     </div>
