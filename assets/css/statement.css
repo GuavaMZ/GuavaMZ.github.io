@@ -13,8 +13,6 @@
     float: right;
 }
 
- 
-
 .ul-profile {
     float: right;
     list-style: none;
@@ -35,7 +33,7 @@
     margin-top: 24px;
 }
 
- 
+
 
 .whiteRectBox {
     position: relative;
@@ -97,7 +95,7 @@
     position: relative;
 }
 
- 
+
 
 .group {
     position: relative;
@@ -114,7 +112,7 @@
     right: 13%;
 }
 
- 
+
 
 .tableH {
     width: 18%;
@@ -128,13 +126,14 @@
     color: #ffffff;
     font-family: 'Cairo';
     font-weight: 700;
-    right: 7%;
+    right: 14%;
     bottom: 0.7%;
+    top: 0.2vh;
 
 }
 
 .selection-box {
-    font-size: 15px;
+    font-size: 3vw;
     color: #ff0000;
     outline-color: #ffffff;
     background-color: #ffffff;
@@ -157,19 +156,19 @@
 
 .buttons-group {
     position: relative;
-    right: 91%;
+    right: 60%;
 }
 
 .company-name {
-    width: 25%;
+    width: 95%;
     color: #12517F;
     position: relative;
-    font-size: 24px;
+    font-size: 2.8vw;
     font-family: Cairo;
     font-weight: 700;
     word-wrap: break-word;
-    top: 50px;
-    right: 82px;
+    top: 40px;
+    right: 10px;
 }
 
 .splitter-line {
@@ -177,20 +176,34 @@
     width: 95%;
     height: 0px;
     border: 2px #F2FAFF solid;
-    top: 110px;
+    top: 10%;
     right: 2.5%;
+}
+
+.account-summary-text {
+    color: #12517F;
+    font-size: 3.3vw;
+    font-family: Cairo;
+    font-weight: 700;
+    word-wrap: break-word
+}
+
+.account-summary-table {
+    position: absolute;
+    top: 40px;
+    width: 98%;
 }
 
 .account-summary-group {
     position: relative;
-    top: 160px;
-    right: 50px;
+    top: 90px;
+    right: 10px;
 }
 
 .account-summary-cells,
 .account-summary-data {
     color: #12517F;
-    font-size: 16px;
+    font-size: 2.6vw;
     font-family: Cairo;
     word-wrap: break-word;
 }
@@ -203,7 +216,231 @@
     font-weight: 500;
 }
 
-.offcanvas-backdrop{
+.offcanvas-backdrop {
     /* background-color: transparent; */
     all: unset;
+}
+
+@media(min-width:600px) {
+    .body {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+
+    .profileimg {
+        border-radius: 50%;
+        border: 2px solid blue;
+    }
+
+    .ul-profile {
+        float: right;
+    }
+
+    .ul-profile {
+        float: right;
+        list-style: none;
+    }
+
+    #slidparRight {
+        width: 121px;
+        font-size: 12px;
+    }
+
+    .ulpnl {
+        list-style: none;
+        padding: 2%;
+        margin-top: 14px;
+    }
+
+    .ulpnl li {
+        margin-top: 24px;
+    }
+
+
+
+    .whiteRectBox {
+        position: relative;
+        width: 95%;
+        height: 100%;
+        background: white;
+        border-radius: 30px;
+        margin-right: 2.5%;
+        margin-top: 2.5%;
+        box-shadow: 0px 0px 4px rgba(11, 92, 153, 0.25);
+    }
+
+    .files-box {
+        width: 95%;
+        height: 80px;
+        background: #F2FAFF;
+        box-shadow: 0px 0px 4px rgba(11, 92, 153, 0.25);
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+        border-bottom-right-radius: 30px;
+        border-bottom-left-radius: 30px;
+        position: relative;
+        top: 17%;
+        right: 2.5%;
+        margin-top: 1%;
+    }
+
+    .arrow-down-3,
+    .vector-icon14 {
+        position: relative;
+        overflow: hidden;
+    }
+
+    .p3 {
+        margin: 0;
+        position: relative;
+        top: 0;
+        left: 23px;
+        font-weight: 700;
+    }
+
+    .arrow-down-3 {
+        cursor: pointer;
+        border: 0;
+        padding: 0;
+        background-color: transparent;
+        top: 19px;
+        left: 0;
+        width: 20px;
+        height: 20px;
+    }
+
+    .arrow-down-4 {
+        top: 11px;
+        left: 0;
+        width: 12px;
+        height: 12px;
+        overflow: hidden;
+        position: relative;
+    }
+
+
+
+    .group {
+        position: relative;
+        /* width: 54px;
+        height: 28px; */
+        font-size: 15px;
+        color: var(--color-darkgray);
+    }
+
+
+    .files-table {
+        position: relative;
+        top: 15%;
+        right: 13%;
+    }
+
+
+
+    .tableH {
+        width: 18%;
+        text-align: center;
+    }
+
+    .filter-group {
+        position: relative;
+        width: 20%;
+        font-size: 15px;
+        color: #ffffff;
+        font-family: 'Cairo';
+        font-weight: 700;
+        right: 7%;
+        bottom: 0.7%;
+
+    }
+
+    .selection-box {
+        font-size: 15px;
+        color: #ff0000;
+        outline-color: #ffffff;
+        background-color: #ffffff;
+        font-family: 'Cairo';
+        font-weight: 700;
+        position: absolute;
+        overflow: hidden;
+        border: 0;
+    }
+
+
+    .save-btn,
+    .printer-btn {
+        border: 0;
+        position: relative;
+        /* right: 94%; */
+        bottom: 3.5%;
+        background-color: transparent;
+    }
+
+    .buttons-group {
+        position: relative;
+        right: 91%;
+    }
+
+    .company-name {
+        width: 25%;
+        color: #12517F;
+        position: relative;
+        font-size: 24px;
+        font-family: Cairo;
+        font-weight: 700;
+        word-wrap: break-word;
+        top: 50px;
+        right: 82px;
+    }
+
+    .splitter-line {
+        position: relative;
+        width: 95%;
+        height: 0px;
+        border: 2px #F2FAFF solid;
+        top: 110px;
+        right: 2.5%;
+    }
+
+    .account-summary-group {
+        position: relative;
+        top: 160px;
+        right: 50px;
+    }
+
+    .account-summary-cells,
+    .account-summary-data {
+        color: #12517F;
+        font-size: 16px;
+        font-family: Cairo;
+        word-wrap: break-word;
+    }
+
+    .account-summary-table {
+        position: absolute;
+        top: 75px;
+        width: 100%;
+    }
+
+    .account-summary-cells {
+        font-weight: 700;
+    }
+
+    .account-summary-data {
+        font-weight: 500;
+    }
+
+    .account-summary-text {
+        color: #12517F;
+        font-size: 23px;
+        font-family: Cairo;
+        font-weight: 700;
+        word-wrap: break-word
+    }
+
+    .offcanvas-backdrop {
+        /* background-color: transparent; */
+        all: unset;
+    }
 }
