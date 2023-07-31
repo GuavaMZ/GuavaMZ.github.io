@@ -1,52 +1,173 @@
+.body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.profileimg {
+    border-radius: 50%;
+    border: 2px solid blue;
+}
+
+.ul-profile {
+    float: right;
+}
+
+
+.ul-profile {
+    float: right;
+    list-style: none;
+}
+
+#slidparRight {
+    width: 121px;
+    font-size: 12px;
+}
+
+.ulpnl {
+    list-style: none;
+    padding: 2%;
+}
+
+.ulpnl li {
+    margin-top: 24px;
+}
+
+.form-group {
+    position: relative;
+    right: 5%;
+    top: 2.5%;
+}
+
 .form-label {
     border: 0;
-    background-color: #ffffff;
+    right: 5%;
     outline-color: #ff0000;
     position: relative;
-    /* top: 371px; */
-    /* left: 12.5%; */
     border-radius: 20px;
-    width: 280%;
-    height: 90px;
     display: flex;
     flex-direction: row;
-    padding: 0 25px;
     box-sizing: border-box;
     align-items: center;
-    font-size: 25px;
+    font-size: 3.5vw;
     color: #12517F;
     font-family: 'Cairo';
 }
 
-.input-form-group {
-    width: 100%;
-    height: 100px;
-    position: relative;
-    top: 40px;
-    /* right: 22.5%; */
-
-}
-
-.input-form-group-field {
-    width: 95%;
-    height: 50px;
-    top: 35px;
-    position: relative;
-    background: white;
+.form-control {
+    height: 40px;
     border-radius: 30px;
-    border: 0;
-    right: 2.5%;
-    padding-right: 10px;
+    width: 90%; 
 }
 
-.input-form-group-label {
-    right: 1.5%;
-    position: absolute;
-    color: #12517F;
-    font-size: 2.8vw;
-    font-family: Cairo;
-    font-weight: 500;
-    word-wrap: break-word;
-    text-align: right;
-    top: 5px;
+.add-link-group {
+    position: relative;
+    top: 35px;
+    right: 7.5%;
+    font-size: 3.8vw;
+    font-family: 'Cairo';
+}
+
+.update-button {
+    position: relative;
+    right: 0;
+    top: 45px;
+}
+
+#update-buttonn {
+    width: 40%;
+    height: 40px;
+    font-family: 'Cairo';
+    background-color: #12517F;
+    border-radius: 50px;
+    position: relative;
+    right: 25%;
+}
+
+@media(min-width:600px) {
+    .body {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+
+    .profileimg {
+        border-radius: 50%;
+        border: 2px solid blue;
+    }
+
+    .ul-profile {
+        float: right;
+    }
+
+
+    .ul-profile {
+        float: right;
+        list-style: none;
+    }
+
+    #slidparRight {
+        width: 121px;
+        font-size: 12px;
+    }
+
+    .ulpnl {
+        list-style: none;
+        padding: 2%;
+    }
+
+    .ulpnl li {
+        margin-top: 24px;
+    }
+
+    .form-group {
+        position: relative;
+        right: 0;
+        top: 6%;
+    }
+
+    .form-label {
+        border: 0;
+        right: 5%;
+        outline-color: #ff0000;
+        position: relative;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: row;
+        box-sizing: border-box;
+        align-items: center;
+        font-size: 1.5vw;
+        color: #12517F;
+        font-family: 'Cairo';
+    }
+
+    .form-control {
+        height: 75px;
+        border-radius: 30px;
+        width: 100%;
+    }
+
+    .add-link-group {
+        position: relative;
+        top: 35px;
+        right: 7.5%;
+        font-size: 20px;
+        font-family: 'Cairo';
+    }
+
+    .update-button {
+        position: relative;
+        right: 0;
+        top: 45px;
+    }
+
+    #update-buttonn {
+        width: 15%;
+        height: 55px;
+        font-family: 'Cairo';
+        background-color: #12517F;
+        border-radius: 50px;
+        position: relative;
+        right: 45%;
+    }
 }

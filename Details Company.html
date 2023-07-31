@@ -8,9 +8,9 @@
     <link href="assets/bootstrap/bootstrap.rtl.min.css" rel="stylesheet">
     <link href="assets/css/Details company.css" rel="stylesheet">
     <link href="assets/css/global.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <link href="index.css" rel="stylesheet">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous"> -->
+    <!-- <link href="index.css" rel="stylesheet"> -->
     <title>Document</title>
 </head>
 
@@ -19,119 +19,68 @@
 
         <!-- nave  -->
         <nav class="navbar navbar-expand-lg bg-light" id="top-nav-bar">
-            <div class="container">
 
-                <!-- btn of offcanvas -->
+            <h2 class="heading1">تفاصيل الشركة</h2>
+            <div style="width: 78%"></div>
+            <!-- Nav button -->
 
+            <!-- Calender button -->
+            <button class="btn btn-link" type="button" data-bs-toggle="offcanvas" data-bs-target="#slidparleft"
+                aria-controls="slidparleft">
+                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9.99902 2.5V6.25" stroke="#12517F" stroke-width="1.5" stroke-miterlimit="10"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M19.999 2.5V6.25" stroke="#12517F" stroke-width="1.5" stroke-miterlimit="10"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M4.37402 11.3623H25.624" stroke="#12517F" stroke-width="1.5" stroke-miterlimit="10"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                        d="M26.249 10.625V21.25C26.249 25 24.374 27.5 19.999 27.5H9.99902C5.62402 27.5 3.74902 25 3.74902 21.25V10.625C3.74902 6.875 5.62402 4.375 9.99902 4.375H19.999C24.374 4.375 26.249 6.875 26.249 10.625Z"
+                        stroke="#12517F" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    <path d="M19.6172 17.125H19.6284" stroke="#12517F" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    <path d="M19.6172 20.875H19.6284" stroke="#12517F" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    <path d="M14.9932 17.125H15.0044" stroke="#12517F" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    <path d="M14.9932 20.875H15.0044" stroke="#12517F" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    <path d="M10.3672 17.125H10.3784" stroke="#12517F" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    <path d="M10.3672 20.875H10.3784" stroke="#12517F" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
+                <!-- profile -->
+                <div class=" collapse navbar-collapse" id="navbarNavDarkDropdown">
+                    <h5 class="username-style"> Mahytab Adel </h5>
+                    <ul class="navbar-nav">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">الملف الشخصي</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">تفاصيل الشركة</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">الأعلانات</a></li>
+                            </ul>
 
-                <button class="btn btn-link" type="button" data-bs-toggle="offcanvas"
-                    data-bs-target="#slidparRight" aria-controls="slidparRight">
-                    <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M3.125 7.29163H21.875" stroke="#12517F" stroke-width="2" stroke-linecap="round"/>
-                        <path d="M3.125 12.5H18.125" stroke="#12517F" stroke-width="2" stroke-linecap="round"/>
-                        <path d="M3.125 17.7084H13.125" stroke="#12517F" stroke-width="2" stroke-linecap="round"/>
-                        </svg>
-                </button>
+                        </li>
+                    </ul>
+                    <a class="navbar-brand " href="#">
+                        <img src="assets/images/users/image.png" alt="" width="60" height="60"
+                            class="profileimg d-inline-block align-text-top">
 
-                <h2 class="heading1">تفاصيل الشركة</h2>
-
-                <button class="btn btn-link" type="button" data-bs-toggle="offcanvas"
-                    data-bs-target="#slidparleft" aria-controls="slidparleft">
-                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M9.99902 2.5V6.25" stroke="#12517F" stroke-width="1.5" stroke-miterlimit="10"
-                            stroke-linecap="round" stroke-linejoin="round" />
-                        <path d="M19.999 2.5V6.25" stroke="#12517F" stroke-width="1.5" stroke-miterlimit="10"
-                            stroke-linecap="round" stroke-linejoin="round" />
-                        <path d="M4.37402 11.3623H25.624" stroke="#12517F" stroke-width="1.5" stroke-miterlimit="10"
-                            stroke-linecap="round" stroke-linejoin="round" />
-                        <path
-                            d="M26.249 10.625V21.25C26.249 25 24.374 27.5 19.999 27.5H9.99902C5.62402 27.5 3.74902 25 3.74902 21.25V10.625C3.74902 6.875 5.62402 4.375 9.99902 4.375H19.999C24.374 4.375 26.249 6.875 26.249 10.625Z"
-                            stroke="#12517F" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
-                            stroke-linejoin="round" />
-                        <path d="M19.6172 17.125H19.6284" stroke="#12517F" stroke-width="2" stroke-linecap="round"
-                            stroke-linejoin="round" />
-                        <path d="M19.6172 20.875H19.6284" stroke="#12517F" stroke-width="2" stroke-linecap="round"
-                            stroke-linejoin="round" />
-                        <path d="M14.9932 17.125H15.0044" stroke="#12517F" stroke-width="2" stroke-linecap="round"
-                            stroke-linejoin="round" />
-                        <path d="M14.9932 20.875H15.0044" stroke="#12517F" stroke-width="2" stroke-linecap="round"
-                            stroke-linejoin="round" />
-                        <path d="M10.3672 17.125H10.3784" stroke="#12517F" stroke-width="2" stroke-linecap="round"
-                            stroke-linejoin="round" />
-                        <path d="M10.3672 20.875H10.3784" stroke="#12517F" stroke-width="2" stroke-linecap="round"
-                            stroke-linejoin="round" />
-                    </svg>
-                </button>
-
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <!-- <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Dropdown
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled">Disabled</a>
-              </li>
-            </ul> -->
-
-                    <!-- <label>الصفحة الرئيسية</label> -->
-
-                    <!-- <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form> -->
-
-                    <!-- profile  -->
-                    <div class=" collapse navbar-collapse" id="navbarNavDarkDropdown">
-                        <h5 class="username-style"> Mahytab Adel </h5>
-                        <ul class="navbar-nav">
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                    aria-expanded="false"> 
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="/Profile.html">الملف الشخصي</a></li>
-                                    <li>
-                                        <hr class="dropdown-divider">
-                                    </li>
-                                    <li><a class="dropdown-item" href="/Details Company.html">تفاصيل الشركة</a></li>
-                                    <li>
-                                        <hr class="dropdown-divider">
-                                    </li>
-                                    <li><a class="dropdown-item" href="#">الأعلانات</a></li>
-                                </ul>
-
-                            </li>
-                        </ul>
-                        <a class="navbar-brand " href="#">
-                            <img src="assets/images/users/image.png" alt="" width="60" height="60"
-                                class="profileimg d-inline-block align-text-top">
-
-                        </a>
-
-                    </div>
-
-
+                    </a>
                 </div>
             </div>
         </nav>
@@ -139,12 +88,8 @@
 
 
         <!-- offcanvas -->
-
-
-
-                <div class="offcanvas offcanvas-start show align-items-center" tabindex="-1" id="slidparRight"
-            aria-labelledby="offcanvasLabel"
-            >
+        <div class="offcanvas offcanvas-start show align-items-center" tabindex="-1" id="slidparRight"
+            aria-labelledby="offcanvasLabel">
             <div class="offcanvas-header">
                 <a href="/index.html">
                     <h5 class="offcanvas-title" id="staticBackdropLabel">
@@ -191,7 +136,7 @@
                                 </svg>
                             </a>
                             <div class="button-name" style="bottom: 81.4%;">الصفحة الرئيسية
-                                
+
                             </div>
                         </li>
 
@@ -207,7 +152,7 @@
                                 </svg>
                             </a>
                             <div class="button-name" style="bottom: 74.4%;">الملفات
-                                
+
                             </div>
                         </li>
 
@@ -228,7 +173,7 @@
 
                             </a>
                             <div class="button-name" style="bottom: 67.4%;">الإقتراحات
-                                
+
                             </div>
                         </li>
 
@@ -253,7 +198,7 @@
 
                             </a>
                             <div class="button-name" style="bottom: 60.4%;">عرض سعر
-                                
+
                             </div>
                         </li>
 
@@ -278,7 +223,7 @@
 
                             </a>
                             <div class="button-name" style="bottom: 53.4%;">العقود
-                                
+
                             </div>
                         </li>
 
@@ -309,7 +254,7 @@
 
                             </a>
                             <div class="button-name" style="bottom: 46.4%;">الفواتير
-                                
+
                             </div>
                         </li>
 
@@ -332,7 +277,7 @@
 
                             </a>
                             <div class="button-name" style="bottom: 39.4%;">الدعم الفني
-                                
+
                             </div>
                         </li>
 
@@ -356,7 +301,7 @@
 
                             </a>
                             <div class="button-name" style="bottom: 32.4%;"> منتدى الشروحات
-                                
+
                             </div>
                         </li>
 
@@ -377,7 +322,7 @@
 
                             </a>
                             <div class="button-name" style="bottom: 25.4%;">تسجيل خروج
-                                
+
                             </div>
                         </li>
 
@@ -389,92 +334,96 @@
         <!-- end offcanvas -->
 
         <!-- body of page -->
-        <div class="blueLightBack">
-            <div class="whiteRectBox">
+        <div class="blueLightBack" style="height: 140vh;">
+            <div class="whiteRectBox" style="height: 130vh;">
+                <h3 class="b">الملف الشخصي</h3>
+                <div class="form-group">
+                    <form class="row justify-content-around">
 
-        <form class="row g-3">
-            <h3>الملف الشخصي</h3>
-    
-                <div class="col-md-4">
-                  <label for="validationDefault01" class="form-label">شركة</label>
-                  <input type="text" class="form-control" id="validationDefault01" value="Mark" required>
-                </div>
-                <div class="col-md-4">
-                  <label for="validationDefault02" class="form-label">العنوان</label>
-                  <input type="text" class="form-control" id="validationDefault02" value="Otto" required>
-                </div>
-                </form>
-                <form class="row g-3">
-                    <div class="col-md-4">
-                        <label for="exampleFormControlInput1" class="form-label">الموقع الألكتروني</label>
-                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-                      </div>
-                      <div class="col-md-4">
-                        <label for="validationDefault05" class="form-label">رقم الهاتف</label>
-                        <input type="text" class="form-control" id="validationDefault05" required>
-                      </div>
-                     </form>
-                     <form class="row g-3">
-                            <div class="col-md-4">
-                              <label for="validationDefault01" class="form-label">ضريبة الشراء</label>
-                              <input type="text" class="form-control" id="validationDefault01" value="Mark" required>
-                            </div>
-                            <div class="col-md-4">
-                              <label for="validationDefault02" class="form-label">المدينة</label>
-                              <input type="text" class="form-control" id="validationDefault02" value="جدة" required>
-                            </div>
-                            </form>
-                            <form class="row g-3">
-                                <div class="col-md-4">
-                                    <label for="validationDefault01" class="form-label">الحالة</label>
-                                    <input type="text" class="form-control" id="validationDefault01" value="Mark" required>
-                                  </div>
-                                  <div class="col-md-4">
-                                    <label for="validationDefault05" class="form-label">الرمز البريدي</label>
-                                    <input type="text" class="form-control" id="validationDefault05" required>
-                                  </div>
-                                 </form>
-                                 <form class="row g-3">
-                                    <div class="col-md-4">
-                                        <label for="validationDefault01" class="form-label">الدولة</label>
-                                        <input type="text" class="form-control" id="validationDefault01" value="Mark" required>
-                                      </div>
-                                      <div class="col-md-4">
-                                        <label for="validationDefault01" class="form-label">اللغة الافتراضية</label>
-                                        <input type="text" class="form-control" id="validationDefault01" value="Mark" required>
-                                      </div>     
-                                     </form>  
+                        <div class="col-md-4">
+                            <label for="validationDefault01" class="form-label">شركة</label>
+                            <input type="text" class="form-control" id="validationDefault01" value="" required>
+                        </div>
+                        <div class="col-md-4">
+                            <label for="validationDefault02" class="form-label">العنوان</label>
+                            <input type="text" class="form-control" id="validationDefault02" value="" required>
+                        </div>
+                    </form>
+                    <form class="row justify-content-around">
+                        <div class="col-md-4">
+                            <label for="exampleFormControlInput1" class="form-label">الموقع الألكتروني</label>
+                            <input type="email" class="form-control" id="exampleFormControlInput1"
+                                placeholder="name@example.com">
+                        </div>
+                        <div class="col-md-4">
+                            <label for="validationDefault05" class="form-label">رقم الهاتف</label>
+                            <input type="text" class="form-control" id="validationDefault05" required>
+                        </div>
+                    </form>
+                    <form class="row justify-content-around">
+                        <div class="col-md-4">
+                            <label for="validationDefault01" class="form-label">ضريبة الشراء</label>
+                            <input type="text" class="form-control" id="validationDefault01" value="" required>
+                        </div>
+                        <div class="col-md-4">
+                            <label for="validationDefault02" class="form-label">المدينة</label>
+                            <input type="text" class="form-control" id="validationDefault02" value="" required>
+                        </div>
+                    </form>
+                    <form class="row justify-content-around">
+                        <div class="col-md-4">
+                            <label for="validationDefault01" class="form-label">الحالة</label>
+                            <input type="text" class="form-control" id="validationDefault01" value="" required>
+                        </div>
+                        <div class="col-md-4">
+                            <label for="validationDefault05" class="form-label">الرمز البريدي</label>
+                            <input type="text" class="form-control" id="validationDefault05" required>
+                        </div>
+                    </form>
+                    <form class="row justify-content-around">
+                        <div class="col-md-4">
+                            <label for="validationDefault01" class="form-label">الدولة</label>
+                            <input type="text" class="form-control" id="validationDefault01" value="" required>
+                        </div>
+                        <div class="col-md-4">
+                            <label for="validationDefault01" class="form-label">اللغة الافتراضية</label>
+                            <input type="text" class="form-control" id="validationDefault01" value="" required>
+                        </div>
+                    </form>
 
-                                     <form class="row g-3">
-                                        <div class="col-md-4">
-                                            <label for="validationDefault05" class="form-label">رقم السجل التجاري</label>
-                                            <input type="text" class="form-control" id="validationDefault05" required>
-                                          </div>
-                                          <div class="col-md-4">
-                                            <label for="validationDefault05" class="form-label">الرقم الضريبي</label>
-                                            <input type="text" class="form-control" id="validationDefault05" required>
-                                          </div>    
-                                         </form>  
-                                         <form class="row g-3">
-                                            <div class="col-md-4">
-                                                <label for="validationDefault01" class="form-label">اسم المنطقة</label>
-                                                <input type="text" class="form-control" id="validationDefault01" value="Mark" required>
-                                              </div>
-                                              <div class="col-md-4">
-                                                <label for="validationDefault01" class="form-label">مالك المنشئة (الكفيل)</label>
-                                                <input type="text" class="form-control" id="validationDefault01" value="Mark" required>
-                                              </div>
-                                             </form>
-                                             <h3>موقع المحل </h3>
-                                             <a href="#" class="text-decoration-none">أنقر هنا لأضافة رابط</a>
-                                             <div class="col-15">
-                                                <button class="btn btn-primary" type="submit">تحديث</button>
-                                              </div>
-                                              
+                    <form class="row justify-content-around">
+                        <div class="col-md-4">
+                            <label for="validationDefault05" class="form-label">رقم السجل التجاري</label>
+                            <input type="text" class="form-control" id="validationDefault05" required>
+                        </div>
+                        <div class="col-md-4">
+                            <label for="validationDefault05" class="form-label">الرقم الضريبي</label>
+                            <input type="text" class="form-control" id="validationDefault05" required>
+                        </div>
+                    </form>
+                    <form class="row justify-content-around">
+                        <div class="col-md-4">
+                            <label for="validationDefault01" class="form-label">اسم المنطقة</label>
+                            <input type="text" class="form-control" id="validationDefault01" value="" required>
+                        </div>
+                        <div class="col-md-4">
+                            <label for="validationDefault01" class="form-label">مالك المنشئة (الكفيل)</label>
+                            <input type="text" class="form-control" id="validationDefault01" value="" required>
+                        </div>
+                    </form>
+                    <h3 class="b">موقع المحل </h3>
+                    <div class="add-link-group">
+                        <a href="#" class="text-decoration-none">أنقر هنا لأضافة رابط</a>
+                    </div>
+                    <div class="update-button">
+                        <button class="btn btn-primary" id="update-buttonn" type="submit">تحديث</button>
+                    </div>
+                </div>
             </div>
         </div>
-         <!--end of  body -->
-         
+    </div>
+    <!--end of  body -->
+
     </div>
     <!-- <script src="assets/bootstrap/bootstrap.bundle.min.js"></script> -->
 </body>
