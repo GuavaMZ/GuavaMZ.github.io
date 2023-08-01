@@ -38,10 +38,6 @@
     margin-top: 24px;
 }
 
-  
-
- 
-
 .files-box {
     width: 95%;
     height: 50px;
@@ -155,37 +151,6 @@
     word-wrap: break-word
 }
 
- 
-
-  
-
-.ellipse-parent10 {
-    position: absolute;
-    top: 180px;
-    left: 240px;
-    width: 50px;
-    height: 50px;
-}
-
-.ellipse-parent11 {
-    position: absolute;
-    top: 180px;
-    left: 160px;
-    width: 50px;
-    height: 50px;
-}
-
-.ellipse-parent12 {
-    position: absolute;
-    top: 180px;
-    left: 80px;
-    width: 50px;
-    height: 50px;
-}
-
-
- 
-
 .mail,
 .facebook,
 .webPage {
@@ -230,7 +195,8 @@
 
 .offcanvas-backdrop{
     /* background-color: transparent; */
-    all: unset;
+    /* all: unset; */
+    /* width: 0; */
 }
 
 @media (min-width:600px) {
@@ -241,9 +207,9 @@
         color: #ffffff;
         font-family: 'Cairo';
         font-weight: 700;
-        right: 10%;
+        right: 12.5%;
         /* bottom: 2%; */
-        
+        top: 0;
     }
     
     .selection-box {
@@ -314,3 +280,5 @@
         left: 43%;
         top: 5.5%;
     }
+
+}

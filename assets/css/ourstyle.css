@@ -352,12 +352,13 @@
         font-family: 'Cairo';
         font-weight: 700;
         /* right: 9.8%; */
+        /* top: 15px; */
         bottom: 0.7%;
     
     }
 
     .selection-box1 {
-        /* top: 2.5%; */
+        top: 2.5%;
         /* right: 80%; */
         font-size: 15px;
         color: #ff0000;

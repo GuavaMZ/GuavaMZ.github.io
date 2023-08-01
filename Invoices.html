@@ -13,14 +13,20 @@
 <body class="body">
     <div>
         <nav class="navbar navbar-expand-lg bg-light" id="top-nav-bar">
-
+            <!-- <script src="assets/bootstrap/bootstrap.bundle.min.js">
+            </script> -->
             <h2 class="heading1">الفواتير</h2>
-            <div style="width: 78%"></div>
+            <div class="nav-bar-spacer"></div>
             <!-- Nav button -->
-
+            <button class="btn btn-link" id="nav-button" type="button" data-bs-toggle="offcanvas" data-bs-target="#slidparRight" aria-controls="offcanvasExample">
+                <svg width="30" height="30" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3.125 7.29163H21.875" stroke="#12517F" stroke-width="1.5" stroke-linecap="round" />
+                    <path d="M3.125 12.5H18.125" stroke="#12517F" stroke-width="1.5" stroke-linecap="round" />
+                    <path d="M3.125 17.7084H13.125" stroke="#12517F" stroke-width="1.5" stroke-linecap="round" />
+                </svg>
+            </button>
             <!-- Calender button -->
-            <button class="btn btn-link" type="button" data-bs-toggle="offcanvas" data-bs-target="#slidparleft"
-                aria-controls="slidparleft">
+            <button class="btn btn-link" id="calendar-button" type="button" data-bs-toggle="" data-bs-target="" aria-controls="">
                 <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M9.99902 2.5V6.25" stroke="#12517F" stroke-width="1.5" stroke-miterlimit="10"
                         stroke-linecap="round" stroke-linejoin="round" />
@@ -80,11 +86,8 @@
         </nav>
 
         <!-- offcanvas -->
-
-
-
-        <div class="offcanvas offcanvas-start show align-items-center" tabindex="-1" id="slidparRight"
-            aria-labelledby="offcanvasLabel">
+        <div class="offcanvas offcanvas-start show align-items-center" data-bs-backdrop="false" data-bs-scroll="true"
+            tabindex="-1" id="slidparRight" aria-labelledby="offcanvasExample">
             <div class="offcanvas-header">
                 <a href="/index.html">
                     <h5 class="offcanvas-title" id="staticBackdropLabel">
@@ -101,7 +104,6 @@
                         </svg>
                     </h5>
                 </a>
-
             </div>
 
             <div class="offcanvas-body ">
@@ -346,14 +348,12 @@
                 <button class="show-invoice-btn">
                     كشف حساب
                 </button>
-                <div class="rectangle-container">
-                    <input class="search-box" type="text" maxlength minlength placeholder="بحث" />
-                    <!-- <button class="search-btn">
+
+                <input class="search-box" type="text" maxlength minlength placeholder="بحث" />
+                <!-- <button class="search-btn">
                         <img class="search-normal-2.svg" alt="" src="assets/images/icons/search-normal 2.svg"
                             style="position: relative;right: 60%; top: 23%;" />
                     </button> -->
-                </div>
-
                 <div class="files-table">
                     <table class="files-table-head-style">
                         <tr>
@@ -392,7 +392,8 @@
                                 <h5 class="td-style">25 ابريل 2023</h5>
                             </td>
                             <td class="tableD">
-                                <h5 class="td-style" style="color: #48ff00;font-family: Cairo;font-weight: 400;">مدفوع</h5>
+                                <h5 class="td-style" style="color: #48ff00;font-family: Cairo;font-weight: 400;">مدفوع
+                                </h5>
                             </td>
 
                         </tr>
@@ -438,7 +439,8 @@
                                 <h5 class="td-style">25 ابريل 2023</h5>
                             </td>
                             <td class="tableD">
-                                <h5 class="td-style" style="color: #0095ff;font-family: Cairo;font-weight: 400;">مدفوع جزئياً</h5>
+                                <h5 class="td-style" style="color: #0095ff;font-family: Cairo;font-weight: 400;">مدفوع
+                                    جزئياً</h5>
                             </td>
 
                         </tr>
@@ -461,7 +463,8 @@
                                 <h5 class="td-style">25 ابريل 2023</h5>
                             </td>
                             <td class="tableD">
-                                <h5 class="td-style" style="color: #ff8400;font-family: Cairo;font-weight: 400;">متأخر</h5>
+                                <h5 class="td-style" style="color: #ff8400;font-family: Cairo;font-weight: 400;">متأخر
+                                </h5>
                             </td>
 
                         </tr>
@@ -575,7 +578,9 @@
     </div>
     <!--end of  footer -->
 
-    <!--script src="assets/bootstrap/bootstrap.bundle.min.js"></script-->
+    <script src="assets/bootstrap/bootstrap.bundle.min.js">
+
+    </script>
 </body>
 
 </html>
