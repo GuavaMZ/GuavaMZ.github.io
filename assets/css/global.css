@@ -301,12 +301,12 @@
 
     .heading1 {
         position: absolute;
-        top: 8%;
+        top: 11%;
         right: 10%;
         font-family: 'Cairo';
         font-style: normal;
         font-weight: 700;
-        font-size: 1.5vw;
+        font-size: 1.8vw;
         line-height: 60px;
         color: #12517F;
     }
@@ -336,7 +336,7 @@
     .b {
         right: 3%;
         top: 3.3vh;
-        font-size: 2vw;
+        font-size: 1.5vw;
         font-weight: 700;
         position: relative;
         font-family: 'Cairo';
