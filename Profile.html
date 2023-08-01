@@ -23,7 +23,13 @@
             <h2 class="heading1">الصفحة الشخصية</h2>
             <div class="nav-bar-spacer"></div>
             <!-- Nav button -->
-
+            <button class="btn btn-link" id="nav-button" type="button" data-bs-toggle="offcanvas" data-bs-target="#slidparRight" aria-controls="offcanvasExample">
+                <svg width="30" height="30" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3.125 7.29163H21.875" stroke="#12517F" stroke-width="1.5" stroke-linecap="round" />
+                    <path d="M3.125 12.5H18.125" stroke="#12517F" stroke-width="1.5" stroke-linecap="round" />
+                    <path d="M3.125 17.7084H13.125" stroke="#12517F" stroke-width="1.5" stroke-linecap="round" />
+                </svg>
+            </button>
             <!-- Calender button -->
             <button class="btn btn-link" type="button" data-bs-toggle="offcanvas" data-bs-target="#slidparleft"
                 aria-controls="slidparleft">
@@ -89,8 +95,8 @@
 
 
 
-        <div class="offcanvas offcanvas-start show align-items-center" tabindex="-1" id="slidparRight"
-            aria-labelledby="offcanvasLabel">
+        <div class="offcanvas offcanvas-start show align-items-center" data-bs-backdrop="false" data-bs-scroll="true"
+            tabindex="-1" id="slidparRight" aria-labelledby="offcanvasExample">
             <div class="offcanvas-header">
                 <a href="/index.html">
                     <h5 class="offcanvas-title" id="staticBackdropLabel">
@@ -505,7 +511,9 @@
 
 
     </div>
-    <!-- <script src="assets/bootstrap/bootstrap.bundle.min.js"></script> -->
+        <script src="assets/bootstrap/bootstrap.bundle.min.js">
+
+    </script>
 </body>
 
 </html>
