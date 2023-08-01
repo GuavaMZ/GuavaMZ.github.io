@@ -34,6 +34,7 @@
 
 .hr-line {
     width: 100vw;
+    position: relative;
 }
 
 .trash-btn {
@@ -156,7 +157,7 @@
 /* Footer */
 .rectangle-parent61 {
     position: absolute;
-    top: 1vh;
+    top: 4vh;
     right: 10%;
     width: 27%;
     /* height: 5vh; */
@@ -223,33 +224,51 @@
 .ellipse-parent10 {
     position: absolute;
     top: 60px;
-    left: 290px;
-    width: 25px;
-    height: 25px;
+    left: 140px;
+    width: 27px;
+    height: 27px;
 }
 
 .ellipse-parent11 {
     position: absolute;
     top: 60px;
-    left: 360px;
-    width: 25px;
-    height: 25px;
+    left: 100px;
+    width: 27px;
+    height: 27px;
 }
 
 .ellipse-parent12 {
     position: absolute;
     top: 60px;
-    left: 220px;
-    width: 25px;
-    height: 25px;
+    left: 60px;
+    width: 27px;
+    height: 27px;
 }
 
 .group-child225 {
     border-radius: 50%;
     background-color: #F2FAFF;
     box-shadow: 0 0 4px rgba(11, 92, 153, 0.25);
-    width: 50px;
-    height: 50px;
+    width: 30px;
+    height: 30px;
+    top: 3%;
+}
+
+.vector-icon199{
+    position: relative;
+    width: 20px;
+    height: 20px;  
+}
+
+.mail,
+.facebook,
+.webPage {
+    position: relative;
+    cursor: pointer;
+    padding: 0;
+    border: 0;
+    background-color: transparent;
+    top: 2px;
 }
 
 
@@ -461,8 +480,8 @@
         border-radius: 50%;
         background-color: #F2FAFF;
         box-shadow: 0 0 4px rgba(11, 92, 153, 0.25);
-        width: 50px;
-        height: 50px;
+        width: 60px;
+        height: 60px;
     }
 
     /* Social Media Links */
@@ -513,5 +532,21 @@
         font-family: Cairo;
         font-size: 1.2vw;
     }
+
+.mail,
+.facebook,
+.webPage {
+    position: relative;
+    cursor: pointer;
+    padding: 0;
+    border: 0;
+    background-color: transparent;
+    top: 10px;
+}
+.vector-icon199{
+    position: relative;
+    width: 40px;
+    height: 40px;  
+}
 
 }

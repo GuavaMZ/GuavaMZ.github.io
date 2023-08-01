@@ -167,20 +167,6 @@
     height: 50px;
 }
 
-
- 
-
-.mail,
-.facebook,
-.webPage {
-    position: relative;
-    cursor: pointer;
-    padding: 0;
-    border: 0;
-    background-color: transparent;
-    top: 10px;
-}
-
 .page-item {
     padding-right: 7px;
     padding-left: 7px;
