@@ -34,7 +34,19 @@
 
 .hr-line {
     width: 100vw;
-    position: relative;
+}
+
+.hr-line2{
+    width: 100vm;
+}
+
+.foot{
+    position: relative; 
+    color: #12517F;
+    font-size: 10px; 
+    font-family: Cairo;
+    font-weight: 400;
+    word-wrap: break-word"  
 }
 
 .trash-btn {
@@ -548,5 +560,13 @@
     width: 40px;
     height: 40px;  
 }
-
+.foot{
+    position: relative; 
+    color: #12517F;
+    font-size: 20px; 
+    font-family: Cairo;
+    font-weight: 400;
+    word-wrap: break-word"
+    
+}
 }
