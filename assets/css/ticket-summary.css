@@ -66,9 +66,9 @@
     left: 4%;
     position: absolute;
     background: #ffffff;
-    border-top-left-radius: 20px;
+    border-top-left-radius: 10px;
     border-top-right-radius: 0px;
-    border-bottom-right-radius: 20px;
+    border-bottom-right-radius: 10px;
     border-bottom-left-radius: 0px;
     box-shadow: 0px 0px 2px 0px rgba(13, 58, 93, 0.25);
     border: 0;
@@ -85,7 +85,7 @@
 
 .files-table {
     position: relative;
-    top: 7%;
+    top: 13%;
     right: 13%;
 }
 
@@ -99,15 +99,15 @@
 
 .files-box {
     width: 98%;
-    height: 60px;
+    height: 50px;
     background: #F2FAFF;
     box-shadow: 0px 0px 4px rgba(11, 92, 153, 0.25);
-    border-top-left-radius: 30px;
-    border-top-right-radius: 30px;
-    border-bottom-right-radius: 30px;
-    border-bottom-left-radius: 30px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
     position: relative;
-    top: 6%;
+    top: 13%;
     right: 1.5%;
     margin-top: 5%;
 }
@@ -167,50 +167,6 @@
     font-weight: 700;
     word-wrap: break-word;
 
-}
-
-.ellipse-parent10 {
-    position: absolute;
-    top: 180px;
-    left: 240px;
-    width: 50px;
-    height: 50px;
-}
-
-.ellipse-parent11 {
-    position: absolute;
-    top: 180px;
-    left: 160px;
-    width: 50px;
-    height: 50px;
-}
-
-.ellipse-parent12 {
-    position: absolute;
-    top: 180px;
-    left: 80px;
-    width: 50px;
-    height: 50px;
-}
-
-
-.group-child225 {
-    border-radius: 50%;
-    background-color: #F2FAFF;
-    box-shadow: 0 0 4px rgba(11, 92, 153, 0.25);
-    width: 50px;
-    height: 50px;
-}
-
-.mail,
-.facebook,
-.webPage {
-    position: relative;
-    cursor: pointer;
-    padding: 0;
-    border: 0;
-    background-color: transparent;
-    top: 10px;
 }
 
 .page-item {

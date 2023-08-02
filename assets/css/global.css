@@ -28,7 +28,7 @@
 
 .btn-group {
     position: relative;
-    top: 15%;
+    top: 20%;
     right: 17%;
 }
 
@@ -36,17 +36,29 @@
     width: 100vw;
 }
 
-.hr-line2{
+.hr-line2 {
     width: 100vm;
 }
 
-.foot{
-    position: relative; 
+.hr-line-pos {
+    position: relative;
+    top: 55rem;
+}
+
+.hr-line2-pos {
+    position: relative;
+    top: 8rem;
+    text-align: center;
+}
+
+.foot {
+    position: relative;
     color: #12517F;
-    font-size: 10px; 
+    font-size: 10px;
     font-family: Cairo;
     font-weight: 400;
     word-wrap: break-word"  
+
 }
 
 .trash-btn {
@@ -85,12 +97,13 @@
 
 #top-nav-bar {
     height: 6vh;
+    background-color: #F2FAFF;
 }
 
 #slidparRight {
-    width: 15vw;
-    height: 100vh;
-    border-radius: 20px 0 20px 0;
+    width: 14vw;
+    height: 90vh;
+    border-radius: 10px 0 10px 0;
     background-color: #12517F;
     color: transparent;
     position: absolute;
@@ -110,7 +123,7 @@
 
 .blueLightBack {
     width: 85vw;
-    height: 95vh;
+    height: 75vh;
     position: absolute;
     background: #F2FAFF;
     border-top-left-radius: 30px;
@@ -122,7 +135,7 @@
 .whiteRectBox {
     position: relative;
     width: 80vw;
-    height: 85vh;
+    height: 65vh;
     background: white;
     border-radius: 30px;
     margin-right: 2.5%;
@@ -147,7 +160,7 @@
     box-shadow: 0 0 4px rgba(11, 92, 153, 0.25);
     outline-color: #ffffff;
     width: 74vw;
-    height: 4vh;
+    height: 5vh;
     background-color: white;
     position: relative;
     top: 5vh;
@@ -266,10 +279,10 @@
     top: 3%;
 }
 
-.vector-icon199{
+.vector-icon199 {
     position: relative;
     width: 20px;
-    height: 20px;  
+    height: 20px;
 }
 
 .mail,
@@ -315,16 +328,33 @@
     color: #F8456F;
     font-family: Cairo;
     font-size: 3vw;
+    font-weight: 700;
 }
 
-.nav-bar-spacer{
+.nav-bar-spacer {
     width: 60%
 }
 
+/* .btn{
+   position: relative;
+   top: 5vw;
+   left: 4vw;
+    width: 15px;
+    height: 15px;
+} */
+
 @media (min-width:600px) {
-    .nav-bar-spacer{
+    .nav-bar-spacer {
         width: 78%
     }
+    
+    /* .btn{
+        position: relative;
+        top: 1vw;
+        left: 0.75vw;
+         width: 30px;
+         height: 30px;
+     } */
 
     #slidparRight {
         width: 4.55vw;
@@ -545,28 +575,41 @@
         font-size: 1.2vw;
     }
 
-.mail,
-.facebook,
-.webPage {
-    position: relative;
-    cursor: pointer;
-    padding: 0;
-    border: 0;
-    background-color: transparent;
-    top: 10px;
-}
-.vector-icon199{
-    position: relative;
-    width: 40px;
-    height: 40px;  
-}
-.foot{
-    position: relative; 
-    color: #12517F;
-    font-size: 20px; 
-    font-family: Cairo;
-    font-weight: 400;
-    word-wrap: break-word"
+    .mail,
+    .facebook,
+    .webPage {
+        position: relative;
+        cursor: pointer;
+        padding: 0;
+        border: 0;
+        background-color: transparent;
+        top: 10px;
+    }
+
+    .vector-icon199 {
+        position: relative;
+        width: 40px;
+        height: 40px;
+    }
+
+    .hr-line-pos {
+        position: relative;
+        top: 64rem;
+    }
     
-}
+    .hr-line2-pos {
+        position: relative;
+        top: 18rem;
+        text-align: center;
+    }
+
+    .foot {
+        position: relative;
+        color: #12517F;
+        font-size: 20px;
+        font-family: Cairo;
+        font-weight: 400;
+        word-wrap: break-word"
+
+    }
 }

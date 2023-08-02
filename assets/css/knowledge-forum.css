@@ -13,8 +13,6 @@
     float: right;
 }
 
- 
-
 .ul-profile {
     float: right;
     list-style: none;
@@ -46,29 +44,29 @@
 
 .forum-card-blue-rect {
     width: 93%;
-    height: 90px;
+    height: 80px;
     left: 0px;
     top: 0px;
     position: absolute;
     background: #12517F;
     box-shadow: 0px 0px 4px #12517F;
-    border-radius: 30px;
+    border-radius: 20px;
     
 }
 
 .forum-card-white-rect {
     width: 97.5%;
-    height: 90px;
+    height: 80px;
     left: 0px;
     top: 0px;
     position: absolute;
     background: white;
-    border-radius: 30px;
+    border-radius: 20px;
 }
 
 .forum-card-label {
     right: 3%;
-    top: 15px;
+    top: 10px;
     position: absolute;
     color: #12517F;
     font-size: 20px;
@@ -98,11 +96,6 @@
     font-weight: 700;
     word-wrap: break-word
 }
-  
-
- 
-
-
  
 
 .mail,

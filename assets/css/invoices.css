@@ -48,7 +48,7 @@
     border-bottom-right-radius: 30px;
     border-bottom-left-radius: 30px;
     position: relative;
-    top: 10%;
+    top: 15%;
     right: 2.5%;
     margin-top: 3%;
 }
@@ -99,7 +99,7 @@
 
 .files-table {
     position: relative;
-    top: 10%;
+    top: 13%;
     right: 13%;
 }
 
