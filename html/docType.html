@@ -232,13 +232,15 @@
               </ol>
             </div>
             <!-- / Routes -->
-            <div class="modal fade" id="OnModal" tabindex="-1"
-              style="display: none;; background-color: rgba(0, 0, 0, 0.5);" aria-modal="true" role="dialog">
+
+            <!-- Modal -->
+            <div class="modal fade" tabindex="-1" role="dialog" aria-hidden="true" aria-labelledby="exampleModalLabel" id="OnModal"
+              style="background-color: rgba(0, 0, 0, 0.5);" role="dialog">
               <div class="modal-dialog" role="document">
                 <div class="modal-content">
                   <div class="modal-header">
-                    <h6 class="modal-title m-0">انواع طلبات العملاء</h6>
-                    <button type="button" class="btn-close" aria-label="Close" data-bs-dismiss="modal"></button>
+                    <h6 class="modal-title m-0" id="exampleModalLabel">انواع طلبات العملاء</h6>
+                    <button type="button" class="btn-close" aria-label="Close" data-dismiss="modal"></button>
                   </div>
                   <div class="modal-body">
                     <div class="form-group">
@@ -269,6 +271,8 @@
                 </div>
               </div>
             </div>
+            <!-- / Modal -->
+
             <!-- List Table -->
             <div class="card">
               <div class="card-datatable table-responsive">

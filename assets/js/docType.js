@@ -12,6 +12,18 @@ document.addEventListener('DOMContentLoaded', function () {
             document.getElementById("OnModal").style.display = 'none';
             document.getElementById("OnModal").className = 'modal fade';
         });
+
+      window.addEventListener("click", function (event) {
+        if(event.target == document.getElementById("OnModal")) {
+          document.getElementById("OnModal").style.display = 'none';
+          document.getElementById("OnModal").className = 'modal fade';
+        }
+          
+      });
+
+        // document.getElementById("addNewRecord").setAttribute("data-toggle","modal");
+        // document.getElementById("addNewRecord").setAttribute("data-target","#OnModal");
+
         const dt_doctype = new DataTable(dt_doctype_table, {
             ajax: assetsPath + 'json/invoice-list.json',
             columns: [
@@ -33,15 +45,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     }
                 },
                 {
-
                     targets: 1,
-                    orderable: false,
-                    searchable: false,
-                    responsivePriority: 4,
-                    render: function () {
-                        return '<input type="checkbox" class="dt-checkboxes form-check-input">';
-                    }
-
                 },
                 {
                     targets: 2,
@@ -123,7 +127,9 @@ document.addEventListener('DOMContentLoaded', function () {
                             action: function () {
                               document.getElementById("OnModal").style.display = 'block';
                               document.getElementById("OnModal").className = 'modal fade show';
-                            }
+                              
+                            },
+                            
                           },
 
                         ]
