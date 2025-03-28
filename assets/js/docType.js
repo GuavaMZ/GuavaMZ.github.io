@@ -6,8 +6,12 @@
 
 document.addEventListener('DOMContentLoaded', function () {
     const dt_doctype_table = document.querySelector('.invoice-list-table');
-
+    const modalCloseBtn = document.querySelector('.btn-close');
     if (dt_doctype_table) {
+        modalCloseBtn.addEventListener("click", function () {
+            document.getElementById("OnModal").style.display = 'none';
+            document.getElementById("OnModal").className = 'modal fade';
+        });
         const dt_doctype = new DataTable(dt_doctype_table, {
             ajax: assetsPath + 'json/invoice-list.json',
             columns: [
@@ -117,9 +121,11 @@ document.addEventListener('DOMContentLoaded', function () {
                             text: '<i class="icon-base ti tabler-plus icon-16px me-md-2"></i><span class="d-md-inline-block d-none">اضافة</span>',
                             className: 'btn btn-primary',
                             action: function () {
-                              window.location = 'app-invoice-add.html';
+                              document.getElementById("OnModal").style.display = 'block';
+                              document.getElementById("OnModal").className = 'modal fade show';
                             }
-                          }
+                          },
+
                         ]
                       }
                     ]
