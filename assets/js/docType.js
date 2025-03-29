@@ -20,10 +20,6 @@ document.addEventListener('DOMContentLoaded', function () {
         }
           
       });
-
-        // document.getElementById("addNewRecord").setAttribute("data-toggle","modal");
-        // document.getElementById("addNewRecord").setAttribute("data-target","#OnModal");
-
         const dt_doctype = new DataTable(dt_doctype_table, {
             ajax: assetsPath + 'json/invoice-list.json',
             columns: [
@@ -44,13 +40,11 @@ document.addEventListener('DOMContentLoaded', function () {
                         return '';
                     }
                 },
-                {
-                    targets: 1,
-                },
+                
                 {
                     targets: 2,
                     render: function (data, type, full) {
-                        return `<a href="app-invoice-preview.html">#${full['invoice_id']}</a>`;
+                        return `<a href="">#${full['invoice_id']}</a>`;
                     }
                 },
                 {
@@ -123,15 +117,24 @@ document.addEventListener('DOMContentLoaded', function () {
                         buttons: [
                           {
                             text: '<i class="icon-base ti tabler-plus icon-16px me-md-2"></i><span class="d-md-inline-block d-none">اضافة</span>',
-                            className: 'btn btn-primary',
+                            className: 'btn btn-primary rounded',
                             action: function () {
                               document.getElementById("OnModal").style.display = 'block';
                               document.getElementById("OnModal").className = 'modal fade show';
-                              
                             },
-                            
                           },
-
+                          {
+                            text: '|', // Simple vertical bar as text
+                            className: 'button-separator',
+                            enabled: false, // Optional: Disable interaction
+                          },
+                          {
+                            text: '<i class="icon-base ti tabler-rotate-clockwise icon-16px me-md-2"></i><span class="d-md-inline-block d-none">تحديث</span>',
+                            className: 'btn btn-primary',
+                            action: function () { 
+                                                      
+                            },                          
+                          }, 
                         ]
                       }
                     ]
@@ -200,4 +203,38 @@ document.addEventListener('DOMContentLoaded', function () {
               },
         })
     }
+
+    setTimeout(() => {
+      const elementsToModify = [
+        {selector: '.dt-buttons .btn', classToRemove: 'btn-secondary'},
+        { selector: '.dt-buttons', classToRemove: 'btn-secondary' },
+        { selector: '.dt-buttons.btn-group', classToAdd: 'mb-0' },
+        { selector: '.dt-search .form-control', classToRemove: 'form-control-sm' },
+        { selector: '.dt-length .form-select', classToRemove: 'form-select-sm' },
+        { selector: '.dt-length', classToAdd: 'me-0 mb-md-6 mb-6' },
+        {
+          selector: '.dt-layout-end',
+          classToRemove: 'justify-content-between ms-auto',
+          classToAdd: 'justify-content-md-between justify-content-center d-flex flex-wrap gap-4 mb-sm-0 mb-4 mt-0'
+        },
+        {
+          selector: '.dt-layout-start',
+          classToRemove: 'd-md-flex me-auto justify-content-between',
+          classToAdd: 'col-12 col-md-6 d-flex justify-content-center justify-content-md-start gap-2'
+        },
+        { selector: '.dt-layout-table', classToRemove: 'row mt-2' },
+        { selector: '.dt-layout-full', classToRemove: 'col-md col-12', classToAdd: 'table-responsive' }
+      ];
+
+      elementsToModify.forEach(({ selector, classToRemove, classToAdd }) => {
+        document.querySelectorAll(selector).forEach(element => {
+          if (classToRemove) {
+            classToRemove.split(' ').forEach(className => element.classList.remove(className));
+          }
+          if (classToAdd) {
+            classToAdd.split(' ').forEach(className => element.classList.add(className));
+          }
+        });
+      });
+    }, 100);
 });
