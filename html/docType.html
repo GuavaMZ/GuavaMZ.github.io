@@ -44,7 +44,7 @@
   <link rel="stylesheet" href="../../assets/vendor/libs/datatables-responsive-bs5/responsive.bootstrap5.css" />
   <link rel="stylesheet" href="../../assets/vendor/libs/datatables-buttons-bs5/buttons.bootstrap5.css" />
   <link rel="stylesheet" href="../../assets/vendor/css/pages/app-invoice.css" />
-  
+
   <!-- Page CSS -->
 
   <!-- Helpers -->
@@ -234,7 +234,7 @@
             </div>
             <!-- / Routes -->
 
-            <!-- Modal -->
+            <!-- Add Modal -->
             <div class="modal fade" tabindex="-1" role="dialog" aria-hidden="true" aria-labelledby="exampleModalLabel"
               id="OnModal" style="background-color: rgba(0, 0, 0, 0.5);" role="dialog">
               <div class="modal-dialog" role="document">
@@ -265,19 +265,85 @@
                     <div class="form-group mb-0 row">
                       <div class="col-4 mt-2">
                         <div class="d-grid"><button class="btn btn-primary" type="submit">حفظ<i
-                              class="mdi mdi-content-save"></i></button></div>       
+                              class="mdi mdi-content-save"></i></button></div>
                       </div>
                       <div class="col-4 mt-2">
                         <div class="d-grid"><button class="btn btn-secondary" type="">إلغاء<i
                               class="mdi mdi-content-save"></i></button></div>
-                              
+
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <!-- / Modal -->
+            <!-- / Add Modal -->
+
+            <!-- Search Modal -->
+            <div class="modal fade" tabindex="-1" role="dialog" aria-hidden="true" aria-labelledby="exampleModalLabel"
+              id="SearchModal" style="background-color: rgba(0, 0, 0, 0.5);" role="dialog">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h6 class="modal-title m-0" id="exampleModalLabel">انواع طلبات العملاء</h6>
+                    <button type="button" class="btn-close" aria-label="Close" data-dismiss="modal"></button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="form-group">
+                      <label class="mb-3">الاسم الاجنبي</label>
+                      <div class="input-group mb-3">
+                        <input class="form-control valid" type="text" placeholder="الاسم الاجنبي" required="">
+                      </div>
+                    </div>
+                    <div class="form-group mb-0 row">
+                      <div class="col-4 mt-2">
+                        <div class="d-grid"><button class="btn btn-primary" type="submit">بحث<i
+                              class="mdi mdi-content-save"></i></button></div>
+                      </div>
+                      <div class="col-4 mt-2">
+                        <div class="d-grid"><button class="btn btn-secondary" type="">إلغاء<i
+                              class="mdi mdi-content-save"></i></button></div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- / Search Modal -->
+            
+             <!-- Delete Modal -->
+             <div class="modal fade" tabindex="-1" role="dialog" aria-hidden="true" aria-labelledby="exampleModalLabel"
+             id="DeleteModal" style="background-color: rgba(0, 0, 0, 0.5);" role="dialog">
+             <div class="modal-dialog" role="document">
+               <div class="modal-content">
+                 <div class="modal-header">
+                   <h6 class="modal-title m-0" id="exampleModalLabel">انواع طلبات العملاء</h6>
+                   <button type="button" class="btn-close" aria-label="Close" data-dismiss="modal"></button>
+                 </div>
+                 <div class="modal-body">
+                   <div class="form-group">
+                     <label class="mb-3">الاسم الاجنبي</label>
+                     <div class="input-group mb-3">
+                       <input class="form-control valid" type="text" placeholder="الاسم الاجنبي" required="">
+                     </div>
+                   </div>
+                   <div class="form-group mb-0 row">
+                     <div class="col-4 mt-2">
+                       <div class="d-grid"><button class="btn btn-primary" type="submit">بحث<i
+                             class="mdi mdi-content-save"></i></button></div>
+                     </div>
+                     <div class="col-4 mt-2">
+                       <div class="d-grid"><button class="btn btn-secondary" type="">إلغاء<i
+                             class="mdi mdi-content-save"></i></button></div>
+
+                     </div>
+                   </div>
+                 </div>
+               </div>
+             </div>
+           </div>
+           <!-- / Delete Modal -->
 
             <!-- List Table -->
             <div class="card">

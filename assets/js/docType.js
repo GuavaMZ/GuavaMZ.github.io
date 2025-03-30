@@ -17,6 +17,12 @@ document.addEventListener('DOMContentLoaded', function () {
       if (event.target == document.getElementById("OnModal")) {
         document.getElementById("OnModal").style.display = 'none';
         document.getElementById("OnModal").className = 'modal fade';
+      } else if (event.target == document.getElementById("SearchModal")) {
+        document.getElementById("SearchModal").style.display = 'none';
+        document.getElementById("SearchModal").className = 'modal fade';
+      } else if (event.target == document.getElementById("DeleteModal")) {
+        document.getElementById("DeleteModal").style.display = 'none';
+        document.getElementById("DeleteModal").className = 'modal fade';
       }
 
     });
@@ -130,7 +136,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 },
                 {
                   text: '<i class="icon-base ti tabler-plus icon-16px me-md-2"></i><span class="d-md-inline-block d-none">اضافة</span>',
-                  className: 'btn btn-primary rounded mr-2',
+                  className: 'btn btn-primary',
                   action: function () {
                     document.getElementById("OnModal").style.display = 'block';
                     document.getElementById("OnModal").className = 'modal fade show';
@@ -145,7 +151,20 @@ document.addEventListener('DOMContentLoaded', function () {
                   text: '<i class="icon-base ti tabler-rotate-clockwise icon-16px me-md-2"></i><span class="d-md-inline-block d-none">تحديث</span>',
                   className: 'btn btn-primary',
                   action: function () {
-
+                    //Add update logic here
+                  },
+                },
+                {
+                  text: '|', // Simple vertical bar as text
+                  className: 'button-separator',
+                  enabled: false, // Optional: Disable interaction
+                },
+                {
+                  text: '<i class="icon-base ti tabler-search icon-16px me-md-2"></i><span class="d-md-inline-block d-none">بحث</span>',
+                  className: 'btn btn-primary',
+                  action: function () {
+                    document.getElementById("SearchModal").style.display = 'block';
+                    document.getElementById("SearchModal").className = 'modal fade show';
                   },
                 },
               ]
@@ -153,14 +172,14 @@ document.addEventListener('DOMContentLoaded', function () {
           ]
         },
         topEnd: {
-          rowClass: 'row m-3 my-0 justify-content-between',
+          // rowClass: 'row m-3 my-0 justify-content-between',
           features: [
-            {
-              search: {
-                placeholder: 'بحث بالاسم او بالرقم',
-                text: '_INPUT_'
-              }
-            }
+            // {
+            //   search: {
+            //     placeholder: 'بحث بالاسم او بالرقم',
+            //     text: '_INPUT_'
+            //   }
+            // }
           ]
         },
         bottomStart: {
@@ -225,6 +244,7 @@ document.addEventListener('DOMContentLoaded', function () {
       { selector: '.dt-search .form-control', classToRemove: 'form-control-sm' },
       { selector: '.dt-length .form-select', classToRemove: 'form-select-sm' },
       { selector: '.dt-length', classToAdd: 'me-0 mb-md-6 mb-6' },
+      
       {
         selector: '.dt-layout-end',
         classToRemove: 'justify-content-between ms-auto',
@@ -233,7 +253,7 @@ document.addEventListener('DOMContentLoaded', function () {
       {
         selector: '.dt-layout-start',
         classToRemove: 'd-md-flex me-auto justify-content-between',
-        classToAdd: 'col-12 col-md-6 d-flex justify-content-center justify-content-md-start gap-2'
+        classToAdd: 'col-12 d-flex justify-content-center justify-content-md-start gap-2'
       },
       { selector: '.dt-layout-table', classToRemove: 'row mt-2' },
       { selector: '.dt-layout-full', classToRemove: 'col-md col-12', classToAdd: 'table-responsive' }
