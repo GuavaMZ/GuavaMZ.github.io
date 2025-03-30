@@ -6,12 +6,12 @@
 
 document.addEventListener('DOMContentLoaded', function () {
   const dt_doctype_table = document.querySelector('.invoice-list-table');
-  const modalCloseBtn = document.querySelector('.btn-close');
+  // const modalCloseBtn = document.querySelector('.btn-close');
   if (dt_doctype_table) {
-    modalCloseBtn.addEventListener("click", function () {
-      document.getElementById("OnModal").style.display = 'none';
-      document.getElementById("OnModal").className = 'modal fade';
-    });
+    // modalCloseBtn.addEventListener("click", function () {
+    //   document.getElementById("OnModal").style.display = 'none';
+    //   document.getElementById("OnModal").className = 'modal fade';
+    // });
 
     window.addEventListener("click", function (event) {
       if (event.target == document.getElementById("OnModal")) {
@@ -105,7 +105,7 @@ document.addEventListener('DOMContentLoaded', function () {
           render: function () {
             return (
               '<div class="d-flex align-items-center">' +
-              '<a href="javascript:;" data-bs-toggle="tooltip" class="btn btn-icon btn-text-secondary rounded-pill waves-effect delete-record" data-bs-placement="top" title="حذف"><i class="icon-base ti tabler-trash icon-22px"></i></a>' +
+              '<button type="button" class="btn btn-icon btn-text-secondary rounded-pill waves-effect" title="حذف" data-bs-toggle="modal" data-bs-target="#DeleteModal"><i class="icon-base ti tabler-trash icon-22px"></i></button>' +
               '<a href="app-invoice-preview.html" data-bs-toggle="tooltip" class="btn btn-icon btn-text-secondary rounded-pill waves-effect" data-bs-placement="top" title="عرض"><i class="icon-base ti tabler-eye icon-22px"></i></a>' +
               '<div class="dropdown">' +
               '<a href="javascript:;" class="btn dropdown-toggle hide-arrow btn-icon btn-text-secondary rounded-pill waves-effect p-0" data-bs-toggle="dropdown"><i class="icon-base ti tabler-dots-vertical icon-22px"></i></a>' +
