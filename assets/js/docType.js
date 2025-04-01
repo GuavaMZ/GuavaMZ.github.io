@@ -137,10 +137,16 @@ document.addEventListener('DOMContentLoaded', function () {
                 {
                   text: '<i class="icon-base ti tabler-plus icon-16px me-md-2"></i><span class="d-md-inline-block d-none">اضافة</span>',
                   className: 'btn btn-primary',
-                  action: function () {
-                    document.getElementById("OnModal").style.display = 'block';
-                    document.getElementById("OnModal").className = 'modal fade show';
-                  },
+                  attr:{
+                    'data-bs-toggle': 'modal',
+                    'data-bs-target': '#OnModal',
+                  }
+                  // 'data-bs-toggle': 'modal',
+                  // 'data-bs-target': '#OnModal',
+                  // action: function () {
+                  //   document.getElementById("OnModal").style.display = 'block';
+                  //   document.getElementById("OnModal").className = 'modal fade show';
+                  // },
                 },
                 {
                   text: '|', // Simple vertical bar as text
@@ -162,10 +168,10 @@ document.addEventListener('DOMContentLoaded', function () {
                 {
                   text: '<i class="icon-base ti tabler-search icon-16px me-md-2"></i><span class="d-md-inline-block d-none">بحث</span>',
                   className: 'btn btn-primary',
-                  action: function () {
-                    document.getElementById("SearchModal").style.display = 'block';
-                    document.getElementById("SearchModal").className = 'modal fade show';
-                  },
+                  attr:{
+                    'data-bs-toggle': 'modal',
+                    'data-bs-target': '#SearchModal',
+                  }
                 },
               ]
             }
