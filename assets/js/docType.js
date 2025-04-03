@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function () {
     searchInput.addEventListener('keyup', function () {
       const searchQuery = searchInput.value.trim();
       if (searchQuery !== '') {
-
+        
       }
     });
 
@@ -32,11 +32,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
     });
 
-    window.addEventListener('resize', function () { })
+    window.addEventListener('resize', function(){})
     const dt_doctype = new DataTable(dt_doctype_table, {
       ajax: assetsPath + 'json/invoice-list.json',
       pageLength: 25,
-      responsive: true,
+      responsive:true,
       ordering: false,
       columns: [
         { data: 'invoice_id' },
@@ -48,10 +48,10 @@ document.addEventListener('DOMContentLoaded', function () {
       ],
       columnDefs: [
         {
-          // className: 'control',
-          // responsivePriority: 2,
-          // orderable: false,
-          // searchable: false,
+          className: 'control',
+          responsivePriority: 2,
+          orderable: false,
+          searchable: false,
           targets: 0,
           render: function () {
             return '';
@@ -59,9 +59,9 @@ document.addEventListener('DOMContentLoaded', function () {
         },
         {
           targets: 1,
-          // orderable: false,
-          // searchable: false,
-          // responsivePriority: 4,
+          orderable: false,
+          searchable: false,
+          responsivePriority: 4,
           render: function () {
             return '';
           }
@@ -213,24 +213,22 @@ document.addEventListener('DOMContentLoaded', function () {
         }
       },
       responsive: {
-
         details: {
           display: $.fn.dataTable.Responsive.display.childRowImmediate,
           type: '',
           renderer: function (api, rowIdx, columns) {
             const data = columns
               .map(function (col) {
-                if ($(window).width() < 768) {
-                  return col.title !== '' // ? Do not show row in modal popup if title is blank (for check box)
-                    ? `<tr data-dt-row="${col.rowIndex}" data-dt-column="${col.columnIndex}">
+                if($(window).width() < 768) {
+                return col.title !== '' // ? Do not show row in modal popup if title is blank (for check box)
+                  ? `<tr data-dt-row="${col.rowIndex}" data-dt-column="${col.columnIndex}">
                               <td>${col.title}:</td>
                               <td>${col.data}</td>
                             </tr>`
-                    : '';
-                } else {
-                  return '';
-                }
-              })
+                  : '';
+              } else {
+                return '';
+              }})
               .join('');
 
             if (data) {
