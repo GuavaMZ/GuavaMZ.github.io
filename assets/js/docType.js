@@ -28,6 +28,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
     const dt_doctype = new DataTable(dt_doctype_table, {
       ajax: assetsPath + 'json/invoice-list.json',
+      pageLength: 25,
       columns: [
         { data: 'invoice_id' },
         { data: 'invoice_id', orderable: false, render: DataTable.render.select() },
@@ -120,36 +121,31 @@ document.addEventListener('DOMContentLoaded', function () {
         }
       ],
       layout: {
-        topStart: {
-          rowClass: 'row m-3 my-0 justify-content-between align-items-center',
+        top: {
+          rowClass: 'row m-3 my-5 align-items-center',
           features: [
             {
-              pageLength: {
-                menu: [10, 25, 50, 100],
-                text: 'اظهار عدد نتائج لكل صفحة_MENU_'
-              },
+              // pageLength: {
+                // menu: [25, 50, 100],
+                // text: 'اظهار عدد نتائج لكل صفحة_MENU_'
+              // },
               buttons: [
                 {
-                  text: '|', // Simple vertical bar as text
+                  text: '', // Simple vertical bar as text
                   className: 'button-separator',
                   enabled: false, // Optional: Disable interaction
                 },
                 {
                   text: '<i class="icon-base ti tabler-plus icon-16px me-md-2"></i><span class="d-md-inline-block d-none">اضافة</span>',
                   className: 'btn btn-primary',
-                  attr:{
+                  attr: {
                     'data-bs-toggle': 'modal',
                     'data-bs-target': '#OnModal',
+                    
                   }
-                  // 'data-bs-toggle': 'modal',
-                  // 'data-bs-target': '#OnModal',
-                  // action: function () {
-                  //   document.getElementById("OnModal").style.display = 'block';
-                  //   document.getElementById("OnModal").className = 'modal fade show';
-                  // },
                 },
                 {
-                  text: '|', // Simple vertical bar as text
+                  text: '', // Simple vertical bar as text
                   className: 'button-separator',
                   enabled: false, // Optional: Disable interaction
                 },
@@ -161,14 +157,14 @@ document.addEventListener('DOMContentLoaded', function () {
                   },
                 },
                 {
-                  text: '|', // Simple vertical bar as text
+                  text: '', // Simple vertical bar as text
                   className: 'button-separator',
                   enabled: false, // Optional: Disable interaction
                 },
                 {
                   text: '<i class="icon-base ti tabler-search icon-16px me-md-2"></i><span class="d-md-inline-block d-none">بحث</span>',
                   className: 'btn btn-primary',
-                  attr:{
+                  attr: {
                     'data-bs-toggle': 'modal',
                     'data-bs-target': '#SearchModal',
                   }
@@ -177,17 +173,19 @@ document.addEventListener('DOMContentLoaded', function () {
             }
           ]
         },
-        topEnd: {
+        topStart:null,
+        topEnd: null //{
           // rowClass: 'row m-3 my-0 justify-content-between',
-          features: [
+          // features: [
             // {
             //   search: {
             //     placeholder: 'بحث بالاسم او بالرقم',
             //     text: '_INPUT_'
             //   }
             // }
-          ]
-        },
+          // ]
+        //},
+        ,
         bottomStart: {
           rowClass: 'row mx-3 justify-content-between',
           features: ['info']
@@ -205,12 +203,7 @@ document.addEventListener('DOMContentLoaded', function () {
       },
       responsive: {
         details: {
-          display: DataTable.Responsive.display.modal({
-            header: function (row) {
-              const data = row.data();
-              return 'Details of ' + data['client_name'];
-            }
-          }),
+          display: $.fn.dataTable.Responsive.display.childRowImmediate,
           type: 'column',
           renderer: function (api, rowIdx, columns) {
             const data = columns
@@ -250,7 +243,7 @@ document.addEventListener('DOMContentLoaded', function () {
       { selector: '.dt-search .form-control', classToRemove: 'form-control-sm' },
       { selector: '.dt-length .form-select', classToRemove: 'form-select-sm' },
       { selector: '.dt-length', classToAdd: 'me-0 mb-md-6 mb-6' },
-      
+
       {
         selector: '.dt-layout-end',
         classToRemove: 'justify-content-between ms-auto',
