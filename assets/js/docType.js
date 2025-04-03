@@ -6,12 +6,17 @@
 
 document.addEventListener('DOMContentLoaded', function () {
   const dt_doctype_table = document.querySelector('.invoice-list-table');
-  // const modalCloseBtn = document.querySelector('.btn-close');
+  const searchResultsTable = document.getElementById('search-results-table');
+  const searchResultsTbody = document.getElementById('search-results-tbody');
+  const searchInput = document.getElementById('search-input');
   if (dt_doctype_table) {
-    // modalCloseBtn.addEventListener("click", function () {
-    //   document.getElementById("OnModal").style.display = 'none';
-    //   document.getElementById("OnModal").className = 'modal fade';
-    // });
+
+    searchInput.addEventListener('keyup', function () {
+      const searchQuery = searchInput.value.trim();
+      if (searchQuery !== '') {
+        
+      }
+    });
 
     window.addEventListener("click", function (event) {
       if (event.target == document.getElementById("OnModal")) {
@@ -26,9 +31,13 @@ document.addEventListener('DOMContentLoaded', function () {
       }
 
     });
+
+    window.addEventListener('resize', function(){})
     const dt_doctype = new DataTable(dt_doctype_table, {
       ajax: assetsPath + 'json/invoice-list.json',
       pageLength: 25,
+      responsive:true,
+      ordering: false,
       columns: [
         { data: 'invoice_id' },
         { data: 'invoice_id', orderable: false, render: DataTable.render.select() },
@@ -39,9 +48,10 @@ document.addEventListener('DOMContentLoaded', function () {
       ],
       columnDefs: [
         {
-          className: 'control',
-          responsivePriority: 2,
-          searchable: false,
+          // className: 'control',
+          // responsivePriority: 2,
+          // orderable: false,
+          // searchable: false,
           targets: 0,
           render: function () {
             return '';
@@ -49,9 +59,9 @@ document.addEventListener('DOMContentLoaded', function () {
         },
         {
           targets: 1,
-          orderable: false,
-          searchable: false,
-          responsivePriority: 4,
+          // orderable: false,
+          // searchable: false,
+          // responsivePriority: 4,
           render: function () {
             return '';
           }
@@ -60,7 +70,8 @@ document.addEventListener('DOMContentLoaded', function () {
           targets: 2,
           render: function (data, type, full) {
             return `<a href="">#${full['invoice_id']}</a>`;
-          }
+          },
+          responsivePriority: 0
         },
         {
           targets: 3,
@@ -85,7 +96,7 @@ document.addEventListener('DOMContentLoaded', function () {
                             <a href="pages-profile-user.html" class="text-heading text-truncate"><span class="fw-medium">${clientName}</span></a>
                           </div>
                         </div>
-                      `;;
+                      `;
           }
         },
         {
@@ -126,8 +137,8 @@ document.addEventListener('DOMContentLoaded', function () {
           features: [
             {
               // pageLength: {
-                // menu: [25, 50, 100],
-                // text: 'اظهار عدد نتائج لكل صفحة_MENU_'
+              // menu: [25, 50, 100],
+              // text: 'اظهار عدد نتائج لكل صفحة_MENU_'
               // },
               buttons: [
                 {
@@ -141,7 +152,7 @@ document.addEventListener('DOMContentLoaded', function () {
                   attr: {
                     'data-bs-toggle': 'modal',
                     'data-bs-target': '#OnModal',
-                    
+
                   }
                 },
                 {
@@ -173,17 +184,17 @@ document.addEventListener('DOMContentLoaded', function () {
             }
           ]
         },
-        topStart:null,
+        topStart: null,
         topEnd: null //{
-          // rowClass: 'row m-3 my-0 justify-content-between',
-          // features: [
-            // {
-            //   search: {
-            //     placeholder: 'بحث بالاسم او بالرقم',
-            //     text: '_INPUT_'
-            //   }
-            // }
-          // ]
+        // rowClass: 'row m-3 my-0 justify-content-between',
+        // features: [
+        // {
+        //   search: {
+        //     placeholder: 'بحث بالاسم او بالرقم',
+        //     text: '_INPUT_'
+        //   }
+        // }
+        // ]
         //},
         ,
         bottomStart: {
@@ -202,19 +213,28 @@ document.addEventListener('DOMContentLoaded', function () {
         }
       },
       responsive: {
+        breakpoints: [
+          { name: 'desktop', width: Infinity },
+          { name: 'tablet', width: 1024 },
+          { name: 'fablet', width: 768 },
+          { name: 'phone', width: 480 }
+        ],
         details: {
           display: $.fn.dataTable.Responsive.display.childRowImmediate,
-          type: 'column',
+          type: '',
           renderer: function (api, rowIdx, columns) {
             const data = columns
               .map(function (col) {
+                if($(window).width() < 768) {
                 return col.title !== '' // ? Do not show row in modal popup if title is blank (for check box)
                   ? `<tr data-dt-row="${col.rowIndex}" data-dt-column="${col.columnIndex}">
                               <td>${col.title}:</td>
                               <td>${col.data}</td>
                             </tr>`
                   : '';
-              })
+              } else {
+                return '';
+              }})
               .join('');
 
             if (data) {

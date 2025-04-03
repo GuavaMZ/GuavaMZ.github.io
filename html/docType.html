@@ -269,7 +269,8 @@
                               class="mdi mdi-content-save"></i></button></div>
                       </div>
                       <div class="col-4 mt-2">
-                        <div class="d-grid"><button type="button" class="btn btn-secondary" data-bs-dismiss="modal">الغاء</button></div>
+                        <div class="d-grid"><button type="button" class="btn btn-secondary"
+                            data-bs-dismiss="modal">الغاء</button></div>
                       </div>
                     </div>
                   </div>
@@ -290,11 +291,22 @@
                   </div>
                   <div class="modal-body">
                     <div class="form-group">
-                      <label class="mb-3">الاسم الاجنبي</label>
+                      <label class="mb-3">بحث</label>
                       <div class="input-group mb-3">
-                        <input class="form-control valid" type="text" placeholder="الاسم الاجنبي" required="">
+                        <input class="form-control valid" id="search-input" type="text" placeholder="" required="">
                       </div>
                     </div>
+                    <table class="table table-striped" id="search-results-table">
+                      <thead>
+                        <tr>
+                          <th>Column 1</th>
+                          <th>Column 2</th>
+                          <th>Column 3</th>
+                        </tr>
+                      </thead>
+                      <tbody id="search-results-tbody">
+                      </tbody>
+                    </table>
                     <div class="form-group mb-0 row">
                       <div class="col-4 mt-2">
                         <div class="d-grid"><button class="btn btn-primary" type="submit">بحث<i

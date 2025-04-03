@@ -36,12 +36,15 @@
   visibility: hidden;
 }
 
-.top-start-wider {
-  flex-grow: 2; /* Adjust this value to control the width ratio */
+@media (max-width: 768px) {
+  thead{
+    display: none;
+  }
+
+  .dt-hasChild{
+    display: none;
+  }
 }
 
-.topEnd {
-  flex-grow: 1; /* Default flex-grow for the other section */
-}
 
 
