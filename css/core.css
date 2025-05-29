@@ -43,14 +43,14 @@
 }
 
 @utility flipper {
-    perspective: 1000px;
+    perspective: 1900px;
     :hover {
         transform: rotateY(180deg);
     }
 }
 
 @utility flipper-inner {
-    perspective: 1000px;
+    perspective: 1900px;
     transition: transform 0.6s; /* Controls the flip speed */
     transform-style: preserve-3d; /* Ensures 3D transformations apply to children */
     :hover {
