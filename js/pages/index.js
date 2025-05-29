@@ -8,11 +8,12 @@ import {
 initTWE({ Carousel });
 
 document.addEventListener('DOMContentLoaded', function () {
-    const sidebarMenuItems = document.querySelectorAll('.sidebar-menu');
+    const sidebarMenu = document.querySelectorAll('.sidebar-menu');
     const sidebarMenuIcons = document.querySelectorAll('.circle');
-    sidebarMenuItems.forEach(item => {
+    const sidebarMenuItems = document.querySelectorAll('.sidebar-menu-item');
+    sidebarMenu.forEach(item => {
       item.addEventListener('click', function () {
-        sidebarMenuItems.forEach(item => item.classList.remove('active'));
+        sidebarMenu.forEach(item => item.classList.remove('active'));
         this.classList.add('active');
       });
 
@@ -26,6 +27,16 @@ document.addEventListener('DOMContentLoaded', function () {
         this.classList.remove('-translate-y-2');
       });
     });
+
+      sidebarMenuIcons.forEach(icon => {
+        icon.removeEventListener('hover', function () {
+        });
+      });
+
+      sidebarMenuItems.forEach(item => {
+        item.removeEventListener('hover', function () {
+        });
+      });
 });
 
   
