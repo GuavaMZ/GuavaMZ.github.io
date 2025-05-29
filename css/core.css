@@ -112,6 +112,39 @@
   backface-visibility: hidden; /* Standard property */
 }
 
+@utility shine{
+    border: none;
+    border-radius: 0.25rem;
+    padding: 0.5rem 1rem;
+    /* background: #2196f3; */
+    position: relative;
+    overflow: hidden;
+    color: white;
+    ::before{
+        content: '';
+        position: absolute;
+        width: 100px;
+        height: 100%;
+        top:0;
+        left:-100px;
+        background: linear-gradient(120deg, rgba(255, 255, 255, 0) 30%, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0) 70%);
+        /* transition: left 0.5s ease-in-out; */
+        animation: shine 2s infinite linear;
+    }
+}
+
+@keyframes shine {
+    0% {
+        left: -100px;
+    }
+    20% {
+        left: 100%;
+    }
+    100% {
+        left: 100%;
+    }
+}
+
 /* Styling for images within the flip card */
 /* .flip-card img {
   width: 100%;
