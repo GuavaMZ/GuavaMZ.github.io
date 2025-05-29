@@ -1,0 +1,21 @@
+@font-face {
+    font-family: 'Lama Sans Bold';
+    font-weight: bold;
+    /* src: url('https://guavamz.github.io/css/Cairo-Regular.ttf'); */
+    src: url('/assets/fonts/LamaSans-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'Lama Sans Medium';
+    font-weight: 500;
+    /* src: url('https://guavamz.github.io/css/Cairo-Regular.ttf'); */
+    src: url('/assets/fonts/LamaSans-Medium.ttf');
+}
+
+/* .font-lama-bold {
+    font-family: 'Lama Sans Bold';
+}
+
+.font-lama-medium {
+    font-family: 'Lama Sans Medium';
+} */

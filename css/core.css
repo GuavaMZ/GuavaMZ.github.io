@@ -1,0 +1,110 @@
+@import "tailwindcss";
+
+@theme {
+    --font-lama-bold: "Lama Sans Bold";
+    --font-lama-medium: "Lama Sans Medium";
+    --primary-color: #000080;
+    --primary-dark-color: #000080;
+    --secondary-color: #ffd700;
+    --secondary-dark-color: #ffd700;
+    --background-color: #f0f0f0;
+    --background-dark-color: #f0f0f0;
+
+}
+
+@font-face {
+    font-family: 'Lama Sans Bold';
+    font-weight: bold;
+    /* src: url('https://guavamz.github.io/css/Cairo-Regular.ttf'); */
+    src: url('/assets/fonts/LamaSans-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'Lama Sans Medium';
+    font-weight: 500;
+    /* src: url('https://guavamz.github.io/css/Cairo-Regular.ttf'); */
+    src: url('/assets/fonts/LamaSans-Medium.ttf');
+}
+
+@utility container {
+    margin-inline: auto;
+    padding-inline: 1rem;
+}
+
+@utility sidebar-menu {
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    transition: translate 0.2s ease-in-out;
+    display: block;
+    perspective: 1000px;
+    :hover {
+        /* transform: translateY(-2px); */
+        transform: rotateY(180deg);
+        background-color: rgba(243, 244, 246, .1);
+        box-shadow: 0 1px 15px rgba(255, 255, 255, .3);
+    }
+}
+
+@utility sidebar-menu-item {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    transition: transform 0.6s; /* Controls the flip speed */
+    transform-style: preserve-3d; /* Ensures 3D transformations apply to children */
+    :hover{
+        transform: rotateY(180deg);
+    }
+}
+
+
+@utility circle {
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 auto;
+    box-shadow: 0 0px 7px rgba(255, 255, 255, .5);
+    padding: 0.95rem;
+}
+
+@utility ads-blur {
+  background-color: black;
+  opacity: 0.3;
+  height: inherit;
+  width: inherit;
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px);    
+}
+
+@utility flip-card-front {
+  background-color: #bbb; /*Example background, replace with your image
+  /* color: black; */
+  position: absolute;
+  /* width: 100%;
+  height: 100%; */
+  -webkit-backface-visibility: hidden; /* Hides the back of the element when facing away */
+  backface-visibility: hidden; /* Standard property */
+}
+
+@utility flip-card-back {
+  background-color: #2980b9; /* Example background, replace with your image */
+  color: white;
+  transform: rotateY(180deg); /* Initially rotated to be hidden */
+  /* position: absolute; */
+  /* width: 100%;
+  height: 100%; */
+  -webkit-backface-visibility: hidden; /* Hides the back of the element when facing away */
+  backface-visibility: hidden; /* Standard property */
+}
+
+/* Styling for images within the flip card */
+/* .flip-card img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover; 
+} */
