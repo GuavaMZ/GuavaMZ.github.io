@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function () {
       
     sidebarMenuItems.forEach(item =>{
       if (flipperStatus === 0) {
-        item.children[2].classList.remove('hide-flip-card');
+        item.children[3].classList.remove('hide-flip-card');
       }
     });
 
