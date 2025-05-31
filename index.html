@@ -1,24 +1,17 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
-
+<html lang="ar" dir="rtl" data-theme="dark">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" dir="rtl" content="width=device-width, initial-scale=1.0">
   <title>Orax Erp</title>
-
-  <!-- <link rel="stylesheet" href="css/global.css"> -->
   <link rel="stylesheet" href="css/output.css">
-  <!-- <link rel="stylesheet" href="tw-elements/css/tw-elements.min.css" /> -->
-
-  <!-- <link rel="stylesheet" href="css/pages/index.css"> -->
-  <script src="js/pages/index.js"></script>
+  <script  src="js/pages/index.js"></script>
 </head>
 
-<body class="font-lama-bold">
-
-  <div class="flex h-screen">
+<body class="font-lama-bold bg-(--background-color)">
+  <div class="flex h-screen ">
     <aside id="default-sidebar"
-      class="w-60 h-screen bg-gradient-to-b from-gray-950 to-gray-700 text-white shadow-lg transition-transform -translate-x-full sm:translate-x-0">
+      class="w-60 h-screen bg-(--sidebar-color) dark:bg-gradient-to-b from-gray-950 to-gray-700 text-(--text-dark-color) shadow-lg transition-transform sm:translate-x-0">
       <div class="h-full px-3 py-4 overflow-y-auto">
         <a href="index.html"
           class="grid grid-cols-1 items-center justify-items-center grid-rows-2 h-25 mb-4 hover:animate-pulse">
@@ -429,13 +422,13 @@
 
     </aside>
     <main class="flex flex-col flex-1 overflow-hidden">
-      <header class="bg-white shadow-md p-4">
+      <header class="dark:bg-gradient-to-bl from-gray-950 to-gray-700 text-(--text-dark-color) shadow-md p-4 ">
         <div class="flex justify-between items-center">
           <h1 class="text-xl font-semibold">Dashboard</h1>
           <nav>
             <ul class="flex space-x-4">
-              <li><a href="#" class="text-gray-700 hover:text-blue-600 transition-colors">Notifications</a></li>
-              <li><a href="#" class="text-gray-700 hover:text-blue-600 transition-colors">Profile</a></li>
+              <li><a href="#" class="text-gray-700 hover:text-blue-600 dark:text-(--text-dark-color) transition-colors">Notifications</a></li>
+              <li><a href="#" class="text-gray-700 hover:text-blue-600 dark:text-(--text-dark-color)  transition-colors">Profile</a></li>
             </ul>
           </nav>
         </div>
@@ -539,14 +532,18 @@
           <p class="text-gray-700">This is your main content area. It will take up the remaining space after the sidebar
             and
             navbar.</p>
-          <div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div class="bg-white rounded-md shadow-md p-4">
-              <h3 class="text-lg font-semibold mb-2">Card 1</h3>
-              <p class="text-gray-600">Some content for card 1.</p>
+          <div class="mt-8 grid grid-cols-1 md:grid-cols-3 gap-10 flipper">
+            <div class="bg-white rounded-md shadow-md flipper-inner p-4">
+              <h3 class="text-lg noHover font-semibold mb-2">Card 1</h3>
+              <p class="text-gray-600 noHover">Some content for card 1.</p>
             </div>
-            <div class="bg-white rounded-md shadow-md p-4">
+            <div class="bg-white rounded-md shadow-md flipper-inner p-4">
               <h3 class="text-lg font-semibold mb-2">Card 2</h3>
               <p class="text-gray-600">Some content for card 2.</p>
+            </div>
+            <div class="bg-white rounded-md shadow-md flipper-inner p-4">
+              <h3 class="text-lg font-semibold mb-2">Card 3</h3>
+              <p class="text-gray-600">Some content for card 3.</p>
             </div>
           </div>
         </div>

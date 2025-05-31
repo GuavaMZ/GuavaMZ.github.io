@@ -1,15 +1,17 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
+@custom-variant light (&:where([data-theme=light], [data-theme=light] *));
+
 @theme {
     --font-lama-bold: "Lama Sans Bold";
     --font-lama-medium: "Lama Sans Medium";
     --primary-color: #000080;
-    --primary-dark-color: #000080;
     --secondary-color: #ffd700;
-    --secondary-dark-color: #ffd700;
     --background-color: #f0f0f0;
-    --background-dark-color: #f0f0f0;
-
+    --background-dark-color: #000000;
+    --sidebar-color: #ffffff;
+    --text-dark-color: #ffffff;
 }
 
 @font-face {

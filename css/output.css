@@ -7,6 +7,7 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
+    --color-amber-400: oklch(82.8% 0.189 84.429);
     --color-blue-600: oklch(54.6% 0.245 262.881);
     --color-gray-600: oklch(44.6% 0.03 256.802);
     --color-gray-700: oklch(37.3% 0.034 259.733);
@@ -44,6 +45,9 @@
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
     --font-lama-bold: "Lama Sans Bold";
+    --background-color: #f0f0f0;
+    --sidebar-color: #ffffff;
+    --text-dark-color: #ffffff;
   }
 }
 @layer base {
@@ -544,6 +548,9 @@
   .h-0 {
     height: calc(var(--spacing) * 0);
   }
+  .h-1 {
+    height: calc(var(--spacing) * 1);
+  }
   .h-1\.5 {
     height: calc(var(--spacing) * 1.5);
   }
@@ -594,6 +601,9 @@
   }
   .w-0 {
     width: calc(var(--spacing) * 0);
+  }
+  .w-1 {
+    width: calc(var(--spacing) * 1);
   }
   .w-1\.5 {
     width: calc(var(--spacing) * 1.5);
@@ -658,8 +668,14 @@
   .flex-initial {
     flex: 0 auto;
   }
+  .flex-shrink {
+    flex-shrink: 1;
+  }
   .shrink-0 {
     flex-shrink: 0;
+  }
+  .flex-grow {
+    flex-grow: 1;
   }
   .grow {
     flex-grow: 1;
@@ -669,6 +685,9 @@
   }
   .basis-auto {
     flex-basis: auto;
+  }
+  .border-collapse {
+    border-collapse: collapse;
   }
   .-translate-x-full {
     --tw-translate-x: -100%;
@@ -759,6 +778,9 @@
   }
   .gap-6 {
     gap: calc(var(--spacing) * 6);
+  }
+  .gap-10 {
+    gap: calc(var(--spacing) * 10);
   }
   .space-y-5 {
     :where(& > :not(:last-child)) {
@@ -859,6 +881,12 @@
   .border-transparent {
     border-color: transparent;
   }
+  .bg-\(--background-color\) {
+    background-color: var(--background-color);
+  }
+  .bg-\(--sidebar-color\) {
+    background-color: var(--sidebar-color);
+  }
   .bg-\[\#6d6d6d\] {
     background-color: #6d6d6d;
   }
@@ -873,10 +901,6 @@
   }
   .bg-white {
     background-color: var(--color-white);
-  }
-  .bg-gradient-to-b {
-    --tw-gradient-position: to bottom in oklab;
-    background-image: linear-gradient(var(--tw-gradient-stops));
   }
   .bg-\[url\(\.\.\/assets\/img\/extra\/1\.jpeg\)\] {
     background-image: url(../assets/img/extra/1.jpeg);
@@ -931,6 +955,9 @@
   .px-\[0\.4rem\] {
     padding-inline: 0.4rem;
   }
+  .py-1 {
+    padding-block: calc(var(--spacing) * 1);
+  }
   .py-1\.5 {
     padding-block: calc(var(--spacing) * 1.5);
   }
@@ -948,6 +975,9 @@
   }
   .pt-3 {
     padding-top: calc(var(--spacing) * 3);
+  }
+  .pb-2 {
+    padding-bottom: calc(var(--spacing) * 2);
   }
   .pb-2\.5 {
     padding-bottom: calc(var(--spacing) * 2.5);
@@ -1041,6 +1071,9 @@
   .whitespace-nowrap {
     white-space: nowrap;
   }
+  .text-\(--text-dark-color\) {
+    color: var(--text-dark-color);
+  }
   .text-gray-600 {
     color: var(--color-gray-600);
   }
@@ -1064,6 +1097,9 @@
   }
   .no-underline {
     text-decoration-line: none;
+  }
+  .underline {
+    text-decoration-line: underline;
   }
   .underline-offset-auto {
     text-underline-offset: auto;
@@ -1606,6 +1642,11 @@
       grid-template-columns: repeat(2, minmax(0, 1fr));
     }
   }
+  .md\:grid-cols-3 {
+    @media (width >= 48rem) {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+  }
   .lg\:mt-0 {
     @media (width >= 64rem) {
       margin-top: calc(var(--spacing) * 0);
@@ -1637,12 +1678,12 @@
     }
   }
   .dark\:border-neutral-400 {
-    @media (prefers-color-scheme: dark) {
+    &:where([data-theme=dark], [data-theme=dark] *) {
       border-color: var(--color-neutral-400);
     }
   }
   .dark\:border-white\/10 {
-    @media (prefers-color-scheme: dark) {
+    &:where([data-theme=dark], [data-theme=dark] *) {
       border-color: color-mix(in srgb, #fff 10%, transparent);
       @supports (color: color-mix(in lab, red, red)) {
         border-color: color-mix(in oklab, var(--color-white) 10%, transparent);
@@ -1650,27 +1691,44 @@
     }
   }
   .dark\:bg-neutral-800 {
-    @media (prefers-color-scheme: dark) {
+    &:where([data-theme=dark], [data-theme=dark] *) {
       background-color: var(--color-neutral-800);
     }
   }
+  .dark\:bg-gradient-to-b {
+    &:where([data-theme=dark], [data-theme=dark] *) {
+      --tw-gradient-position: to bottom in oklab;
+      background-image: linear-gradient(var(--tw-gradient-stops));
+    }
+  }
+  .dark\:bg-gradient-to-bl {
+    &:where([data-theme=dark], [data-theme=dark] *) {
+      --tw-gradient-position: to bottom left in oklab;
+      background-image: linear-gradient(var(--tw-gradient-stops));
+    }
+  }
+  .dark\:text-\(--text-dark-color\) {
+    &:where([data-theme=dark], [data-theme=dark] *) {
+      color: var(--text-dark-color);
+    }
+  }
   .dark\:text-neutral-100 {
-    @media (prefers-color-scheme: dark) {
+    &:where([data-theme=dark], [data-theme=dark] *) {
       color: var(--color-neutral-100);
     }
   }
   .dark\:text-neutral-200 {
-    @media (prefers-color-scheme: dark) {
+    &:where([data-theme=dark], [data-theme=dark] *) {
       color: var(--color-neutral-200);
     }
   }
   .dark\:text-white {
-    @media (prefers-color-scheme: dark) {
+    &:where([data-theme=dark], [data-theme=dark] *) {
       color: var(--color-white);
     }
   }
   .dark\:shadow-black\/30 {
-    @media (prefers-color-scheme: dark) {
+    &:where([data-theme=dark], [data-theme=dark] *) {
       --tw-shadow-color: color-mix(in srgb, #000 30%, transparent);
       @supports (color: color-mix(in lab, red, red)) {
         --tw-shadow-color: color-mix(in oklab, color-mix(in oklab, var(--color-black) 30%, transparent) var(--tw-shadow-alpha), transparent);
