@@ -35,7 +35,7 @@
 
 @utility sidebar-menu {
     transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
-    transition: translate 0.2s ease-in-out;
+    /* transition: translate 0.2s ease-in-out; */
     display: block;
     :hover {
         /* transform: translateY(-2px); */
@@ -45,19 +45,19 @@
 }
 
 @utility flipper {
-    perspective: 1900px;
+    perspective: 1500px;
     :hover {
         transform: rotateY(180deg);
     }
 }
 
 @utility flipper-inner {
-    perspective: 1900px;
+    perspective: 1500px;
     transition: transform 0.6s; /* Controls the flip speed */
     transform-style: preserve-3d; /* Ensures 3D transformations apply to children */
-    :hover {
+    /* :hover {
         transform: rotateY(180deg);
-    }
+    } */
 }
 @utility sidebar-menu-item {
     display: flex;

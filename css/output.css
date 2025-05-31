@@ -502,7 +502,6 @@
   }
   .sidebar-menu {
     transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
-    transition: translate 0.2s ease-in-out;
     display: block;
     :hover {
       background-color: rgba(243, 244, 246, .1);
@@ -549,9 +548,6 @@
   }
   .h-0 {
     height: calc(var(--spacing) * 0);
-  }
-  .h-1 {
-    height: calc(var(--spacing) * 1);
   }
   .h-1\.5 {
     height: calc(var(--spacing) * 1.5);
@@ -603,9 +599,6 @@
   }
   .w-0 {
     width: calc(var(--spacing) * 0);
-  }
-  .w-1 {
-    width: calc(var(--spacing) * 1);
   }
   .w-1\.5 {
     width: calc(var(--spacing) * 1.5);
@@ -670,14 +663,8 @@
   .flex-initial {
     flex: 0 auto;
   }
-  .flex-shrink {
-    flex-shrink: 1;
-  }
   .shrink-0 {
     flex-shrink: 0;
-  }
-  .flex-grow {
-    flex-grow: 1;
   }
   .grow {
     flex-grow: 1;
@@ -687,9 +674,6 @@
   }
   .basis-auto {
     flex-basis: auto;
-  }
-  .border-collapse {
-    border-collapse: collapse;
   }
   .-translate-x-full {
     --tw-translate-x: -100%;
@@ -718,16 +702,8 @@
   .scale-\[1\.02\] {
     scale: 1.02;
   }
-  .flipper-inner {
-    perspective: 1900px;
-    transition: transform 0.6s;
-    transform-style: preserve-3d;
-    :hover {
-      transform: rotateY(180deg);
-    }
-  }
   .flipper {
-    perspective: 1900px;
+    perspective: 1500px;
     :hover {
       transform: rotateY(180deg);
     }
@@ -954,9 +930,6 @@
   .px-\[0\.4rem\] {
     padding-inline: 0.4rem;
   }
-  .py-1 {
-    padding-block: calc(var(--spacing) * 1);
-  }
   .py-1\.5 {
     padding-block: calc(var(--spacing) * 1.5);
   }
@@ -974,9 +947,6 @@
   }
   .pt-3 {
     padding-top: calc(var(--spacing) * 3);
-  }
-  .pb-2 {
-    padding-bottom: calc(var(--spacing) * 2);
   }
   .pb-2\.5 {
     padding-bottom: calc(var(--spacing) * 2.5);
@@ -1097,9 +1067,6 @@
   .no-underline {
     text-decoration-line: none;
   }
-  .underline {
-    text-decoration-line: underline;
-  }
   .underline-offset-auto {
     text-underline-offset: auto;
   }
@@ -1219,6 +1186,11 @@
   .ease-linear {
     --tw-ease: linear;
     transition-timing-function: linear;
+  }
+  .flipper-inner {
+    perspective: 1500px;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
   }
   .flip-card-front {
     -webkit-backface-visibility: hidden;

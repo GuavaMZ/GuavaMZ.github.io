@@ -13,6 +13,12 @@ document.addEventListener('DOMContentLoaded', function () {
       }
     });
 
+    document.querySelectorAll('.flipper').forEach(flipper => {
+      flipper.addEventListener('mouseover', function () {
+      
+      });
+    });
+
     // sidebarMenu.forEach(item => {
     //   item.addEventListener('click', function () {
     //     sidebarMenu.forEach(item => item.classList.remove('active'));
