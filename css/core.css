@@ -149,3 +149,7 @@
 @utility noHover{
     pointer-events: none;
 }
+
+@utility hide-flip-card{
+    display:none;
+}

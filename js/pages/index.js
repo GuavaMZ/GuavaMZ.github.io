@@ -1,44 +1,39 @@
 'use strict';
 
-import {
-  Carousel,
-  initTWE,
-} from "tw-elements";
-
-initTWE({ Carousel });
-
 document.addEventListener('DOMContentLoaded', function () {
     const sidebarMenu = document.querySelectorAll('.sidebar-menu');
     const sidebarMenuIcons = document.querySelectorAll('.circle');
     const sidebarMenuItems = document.querySelectorAll('.sidebar-menu-item');
-    sidebarMenu.forEach(item => {
-      item.addEventListener('click', function () {
-        sidebarMenu.forEach(item => item.classList.remove('active'));
-        this.classList.add('active');
-      });
-
-      item.addEventListener('mouseenter', function () {
-        sidebarMenuIcons.forEach(item2 => item2.classList.remove('hover'));
-        this.classList.add('-translate-y-2');
-      });
-
-      item.addEventListener('mouseleave', function () {
-        sidebarMenuIcons.forEach(item2 => item2.classList.remove('hover'));
-        this.classList.remove('-translate-y-2');
-      });
+    
+    const flipperStatus = 0;
+      
+    sidebarMenuItems.forEach(item =>{
+      if (flipperStatus === 0) {
+        item.children[2].classList.remove('hide-flip-card');
+      }
     });
 
-      sidebarMenuIcons.forEach(icon => {
-        icon.removeEventListener('hover', function () {
-        });
+    // sidebarMenu.forEach(item => {
+    //   item.addEventListener('click', function () {
+    //     sidebarMenu.forEach(item => item.classList.remove('active'));
+    //     this.classList.add('active');
+    //   });
+
+    //   item.addEventListener('mouseenter', function () {
+    //     sidebarMenuIcons.forEach(item2 => item2.classList.remove('hover'));
+    //     this.classList.add('-translate-y-2');
+    //   });
+
+    //   item.addEventListener('mouseleave', function () {
+    //     sidebarMenuIcons.forEach(item2 => item2.classList.remove('hover'));
+    //     this.classList.remove('-translate-y-2');
+    //   });
+    // });
+
+    sidebarMenuItems.forEach(item => {
+      item.removeEventListener('hover', function () {
       });
-
-      sidebarMenuItems.forEach(item => {
-        item.removeEventListener('hover', function () {
-        });
-      });
-
-
+    });
 });
 
   
