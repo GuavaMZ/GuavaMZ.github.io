@@ -16,6 +16,10 @@
     --icons-color: #030712;
     --icons-dark-color: #ffffff;
     --hover-color: #A8DADC;
+    --sidebar-menu-items-hover-color: #EDF2F7;
+    --sidebar-menu-items-hover-dark-color: rgba(243, 244, 246, .1);
+    --cards-background-color: #ffffff;
+    --cards-background-dark-color: #1a202c;
 }
 
 @utility side-nav-bar {
@@ -57,7 +61,6 @@
     transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
     /* transition: translate 0.2s ease-in-out; */
     display: block;
-
     :hover {
         /* transform: translateY(-2px); */
         background-color: rgba(243, 244, 246, .1);
