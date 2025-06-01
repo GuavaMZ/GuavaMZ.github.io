@@ -7,12 +7,15 @@ document.addEventListener('DOMContentLoaded', function () {
 
   const toggleNavButton = document.getElementById('nav-toggle');
   const sideNav = document.getElementById('default-sidebar');
-  const mainContent = document.getElementById('mainContent');
   const navWidth = 'w-60'; // Define the open width for the sidebar
   const navWidthMobile = 'max-md:w-40'
-  const mainContentMargin = 'ml-60'; // Define the margin for main content
 
   const flipperStatus = 0;
+
+  var themeToggleDarkIcon = document.getElementById('theme-toggle-dark-icon');
+  var themeToggleLightIcon = document.getElementById('theme-toggle-light-icon');
+  var themeToggleBtn = document.getElementById('theme-toggle');
+  const htmlElement = document.documentElement;
 
   sidebarMenuItems.forEach(item => {
     if (flipperStatus === 0) {
@@ -40,6 +43,25 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   });
 
+  if (htmlElement.dataset.theme === 'dark') {
+    themeToggleLightIcon.classList.remove('hidden');
+  } else {
+    themeToggleDarkIcon.classList.remove('hidden');
+  }
+
+  themeToggleBtn.addEventListener('click', function () {
+    // Toggle the theme
+    if (htmlElement.dataset.theme === 'dark') {
+      htmlElement.dataset.theme = 'light';
+      themeToggleDarkIcon.classList.remove('hidden');
+      themeToggleLightIcon.classList.add('hidden');
+    } else {
+      htmlElement.dataset.theme = 'dark';
+      themeToggleDarkIcon.classList.add('hidden');
+      themeToggleLightIcon.classList.remove('hidden');
+    }
+
+  });
   // sidebarMenu.forEach(item => {
   //   item.addEventListener('click', function () {
   //     sidebarMenu.forEach(item => item.classList.remove('active'));
