@@ -5,6 +5,13 @@ document.addEventListener('DOMContentLoaded', function () {
     const sidebarMenuIcons = document.querySelectorAll('.circle');
     const sidebarMenuItems = document.querySelectorAll('.sidebar-menu-item');
     
+    const toggleNavButton = document.getElementById('nav-toggle');
+    const sideNav = document.getElementById('default-sidebar');
+    const mainContent = document.getElementById('mainContent');
+    const navWidth = 'w-60'; // Define the open width for the sidebar
+    const navWidthMobile = 'max-md:w-40'
+    const mainContentMargin = 'ml-60'; // Define the margin for main content
+
     const flipperStatus = 0;
       
     sidebarMenuItems.forEach(item =>{
@@ -18,6 +25,24 @@ document.addEventListener('DOMContentLoaded', function () {
       
       });
     });
+
+    toggleNavButton.addEventListener('click', function() {
+    if (sideNav.classList.contains('w-0')) {
+      // If closed, open it: remove 'w-0' and add the open width class
+      sideNav.classList.remove('w-0');
+      sideNav.classList.add(navWidth);
+      sideNav.classList.add(navWidthMobile);            
+      // Push main content
+      // mainContent.classList.add(mainContentMargin);
+    } else {
+      // If open, close it: remove the open width class and add 'w-0'
+      sideNav.classList.remove(navWidth);
+      sideNav.classList.remove(navWidthMobile);
+      sideNav.classList.add('w-0');
+      // Reset main content margin
+      // mainContent.classList.remove(mainContentMargin);
+    }
+  });
 
     // sidebarMenu.forEach(item => {
     //   item.addEventListener('click', function () {
@@ -35,31 +60,4 @@ document.addEventListener('DOMContentLoaded', function () {
     //     this.classList.remove('-translate-y-2');
     //   });
     // });
-
-    sidebarMenuItems.forEach(item => {
-      item.removeEventListener('hover', function () {
-      });
-    });
 });
-
-  
-    // const elementsToModify = [
-      
-    //   {
-    //     selector: '.sidebar-menu-item',
-    //     classToRemove: 'rounded-lg',
-    //     classToAdd: ''
-    //   },
-      
-    // ];
-
-    // elementsToModify.forEach(({ selector, classToRemove, classToAdd }) => {
-    //   document.querySelectorAll(selector).forEach(element => {
-    //     if (classToRemove) {
-    //       classToRemove.split(' ').forEach(className => element.classList.remove(className));
-    //     }
-    //     if (classToAdd) {
-    //       classToAdd.split(' ').forEach(className => element.classList.add(className));
-    //     }
-    //   });
-    // });

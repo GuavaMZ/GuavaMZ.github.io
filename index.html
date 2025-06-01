@@ -6,24 +6,23 @@
   <meta name="viewport" dir="rtl" content="width=device-width, initial-scale=1.0">
   <title>Orax Erp</title>
   <link rel="stylesheet" href="css/output.css">
-  <script src="js/pages/index.js"></script>
 </head>
 
 <body class="font-lama-bold bg-(--background-color)">
   <div class="flex h-screen ">
     <aside id="default-sidebar"
-      class="w-60 h-screen bg-(--sidebar-color) dark:bg-gradient-to-b from-gray-950 to-gray-700 text-(--text-dark-color) shadow-lg transition-transform sm:translate-x-0">
+      class="side-nav-bar w-0 max-md:w-0 h-screen bg-(--sidebar-color) dark:bg-gradient-to-b from-gray-950 to-gray-700 text-(--text-dark-color) shadow-lg transition-all duration-500 ease-in-out sm:translate-x-0">
       <div class="h-full px-3 py-4 overflow-y-auto">
         <a href="index.html"
           class="grid grid-cols-1 items-center justify-items-center grid-rows-2 h-25 mb-4 hover:animate-pulse">
           <img src="/assets/img/logo.png" alt="Logo" class="h-18 w-auto mt-3 row-span-1 ">
-          <h1 class="text-xl font-bold text-gray-800 dark:text-white row-span-1 ">أوراكس سوفت</h1>
+          <h1 class="text-xl max-md:text-sm font-bold text-gray-800 dark:text-white row-span-1 ">أوراكس سوفت</h1>
         </a>
         <ul class="space-y-5 font-medium ">
           <li class="sidebar-menu flipper">
             <a href="#" class="sidebar-menu-item flipper-inner rounded-lg">
               <div class="circle noHover flip-card-front">
-                <svg class="w-7 h-7" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                <svg class="w-7 h-7 fill-(--icons-color) dark:fill-(--icons-dark-color)" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
                   viewBox="0 0 512.000000 512.000000">
                   <g class="w-7 h-7" transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)" stroke="none">
                     <path d="M2416 5098 c-7 -13 -24 -54 -36 -93 -13 -38 -27 -76 -33 -82 -5 -7
@@ -79,18 +78,18 @@
                   </g>
                 </svg>
               </div>
-              <span class="flip-card-front noHover">تهيئة النظام</span>
+              <span class="flip-card-front max-md:text-sm noHover text-(--text-color) dark:text-(--text-dark-color)">تهيئة النظام</span>
               <img class="flip-card-back hide-flip-card w-30 h-28 noHover" src="assets/img/billing-machine.png" alt="">
-              <p class="flip-card-back p-1 hide-flip-card text-base text-center noHover">نهية النظام وتسجيل المعاملات
+              <p class="flip-card-back p-1 hide-flip-card text-base text-center noHover text-(--text-color) dark:text-(--text-dark-color)">نهية النظام وتسجيل المعاملات
                 المالية والمحاسبية</p>
             </a>
             <div class="sidebar-submenu"></div>
           </li>
-          
+
           <li class="sidebar-menu flipper">
             <a href="#" class="sidebar-menu-item flipper-inner rounded-lg">
               <div class="circle noHover flip-card-front">
-                <svg class="shrink-0 w-7 h-7" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                <svg class="w-7 h-7 fill-(--icons-color) dark:fill-(--icons-dark-color)" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
                   viewBox="0 0 512.000000 512.000000">
                   <g class="shrink-0 w-7 h-7" xmlns="http://www.w3.org/2000/svg"
                     transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)" stroke="none">
@@ -115,16 +114,16 @@
                   </g>
                 </svg>
               </div>
-              <span class="flip-card-front noHover">إدارة النظام</span>
+              <span class="flip-card-front max-md:text-sm noHover text-(--text-color) dark:text-(--text-dark-color)">إدارة النظام</span>
               <img class="flip-card-back hide-flip-card w-30 h-28 noHover" src="assets/img/billing-machine.png" alt="">
-              <p class="flip-card-back p-1 hide-flip-card text-base text-center noHover">نهية النظام وتسجيل المعاملات
+              <p class="flip-card-back p-1 hide-flip-card text-base text-center noHover text-(--text-color) dark:text-(--text-dark-color)">نهية النظام وتسجيل المعاملات
                 المالية والمحاسبية</p>
             </a>
           </li>
           <li class="sidebar-menu flipper">
             <a href="#" class="sidebar-menu-item flipper-inner rounded-lg">
               <div class="circle noHover flip-card-front">
-                <svg class="shrink-0 w-7 h-7" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                <svg class="w-7 h-7 fill-(--icons-color) dark:fill-(--icons-dark-color)" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
                   viewBox="0 0 512.000000 512.000000">
                   <g class="shrink-0 w-7 h-7" xmlns="http://www.w3.org/2000/svg"
                     transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)" stroke="none">
@@ -154,9 +153,9 @@
                   </g>
                 </svg>
               </div>
-              <span class="flip-card-front noHover">نظام الحسابات</span>
+              <span class="flip-card-front max-md:text-sm noHover text-(--text-color) dark:text-(--text-dark-color)">نظام الحسابات</span>
               <img class="flip-card-back hide-flip-card w-30 h-28 noHover" src="assets/img/billing-machine.png" alt="">
-              <p class="flip-card-back p-1 hide-flip-card text-base text-center noHover">نهية النظام وتسجيل المعاملات
+              <p class="flip-card-back p-1 hide-flip-card text-base text-center noHover text-(--text-color) dark:text-(--text-dark-color)">نهية النظام وتسجيل المعاملات
                 المالية والمحاسبية</p>
               <div class="shine flip-card-back">
                 <div class="w-fit h-fit"></div>
@@ -166,7 +165,7 @@
           <li class="sidebar-menu flipper">
             <a href="#" class="sidebar-menu-item flipper-inner rounded-lg">
               <div class="circle noHover flip-card-front">
-                <svg class="shrink-0 w-7 h-7" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                <svg class="w-7 h-7 fill-(--icons-color) dark:fill-(--icons-dark-color)" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
                   viewBox="0 0 512.000000 512.000000">
                   <g class="shrink-0 w-7 h-7" xmlns="http://www.w3.org/2000/svg"
                     transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)" stroke="none">
@@ -205,16 +204,16 @@
                   </g>
                 </svg>
               </div>
-              <span class="flip-card-front noHover whitespace-nowrap">نظام الاستاذ العام</span>
+              <span class="flip-card-front max-md:text-sm noHover text-(--text-color) dark:text-(--text-dark-color) whitespace-nowrap">نظام الاستاذ العام</span>
               <img class="flip-card-back hide-flip-card w-30 h-28 noHover" src="assets/img/billing-machine.png" alt="">
-              <p class="flip-card-back p-1 hide-flip-card text-base text-center noHover">نهية النظام وتسجيل المعاملات
+              <p class="flip-card-back p-1 hide-flip-card text-base text-center noHover text-(--text-color) dark:text-(--text-dark-color)">نهية النظام وتسجيل المعاملات
                 المالية والمحاسبية</p>
             </a>
           </li>
           <li class="sidebar-menu flipper">
             <a href="#" class="sidebar-menu-item flipper-inner rounded-lg">
               <div class="circle noHover flip-card-front">
-                <svg class="shrink-0 w-7 h-7" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                <svg class="w-7 h-7 fill-(--icons-color) dark:fill-(--icons-dark-color)" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
                   viewBox="0 0 512.000000 512.000000">
                   <g class="shrink-0 w-7 h-7" xmlns="http://www.w3.org/2000/svg"
                     transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)" stroke="none">
@@ -225,9 +224,9 @@
                   </g>
                 </svg>
               </div>
-              <span class="flip-card-front noHover">نظام المراجعات</span>
+              <span class="flip-card-front max-md:text-sm noHover text-(--text-color) dark:text-(--text-dark-color)">نظام المراجعات</span>
               <img class="flip-card-back hide-flip-card w-30 h-28 noHover" src="assets/img/billing-machine.png" alt="">
-              <p class="flip-card-back p-1 hide-flip-card text-base text-center noHover">نهية النظام وتسجيل المعاملات
+              <p class="flip-card-back p-1 hide-flip-card text-base text-center noHover text-(--text-color) dark:text-(--text-dark-color)">نهية النظام وتسجيل المعاملات
                 المالية والمحاسبية</p>
             </a>
           </li>
@@ -235,7 +234,7 @@
 
             <a href="#" class="sidebar-menu-item flipper-inner rounded-lg">
               <div class="circle noHover flip-card-front">
-                <svg class="shrink-0 w-7 h-7" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                <svg class="w-7 h-7 fill-(--icons-color) dark:fill-(--icons-dark-color)" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
                   viewBox="0 0 512.000000 512.000000">
                   <g class="shrink-0 w-7 h-7" xmlns="http://www.w3.org/2000/svg"
                     transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)" stroke="none">
@@ -260,16 +259,16 @@
                   </g>
                 </svg>
               </div>
-              <span class="flip-card-front noHover">نظام المخزون</span>
+              <span class="flip-card-front max-md:text-sm noHover text-(--text-color) dark:text-(--text-dark-color)">نظام المخزون</span>
               <img class="flip-card-back hide-flip-card w-30 h-28 noHover" src="assets/img/billing-machine.png" alt="">
-              <p class="flip-card-back p-1 hide-flip-card text-base text-center noHover">نهية النظام وتسجيل المعاملات
+              <p class="flip-card-back p-1 hide-flip-card text-base text-center noHover text-(--text-color) dark:text-(--text-dark-color)">نهية النظام وتسجيل المعاملات
                 المالية والمحاسبية</p>
             </a>
           </li>
           <li class="sidebar-menu flipper">
             <a href="#" class="sidebar-menu-item flipper-inner rounded-lg">
               <div class="circle noHover flip-card-front">
-                <svg class="shrink-0 w-7 h-7" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                <svg class="w-7 h-7 fill-(--icons-color) dark:fill-(--icons-dark-color)" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
                   viewBox="0 0 512 512">
                   <g xmlns="http://www.w3.org/2000/svg"
                     transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)" stroke="none">
@@ -295,16 +294,16 @@
                 </svg>
               </div>
 
-              <span class="flip-card-front noHover">نظام العملاء</span>
+              <span class="flip-card-front max-md:text-sm noHover text-(--text-color) dark:text-(--text-dark-color)">نظام العملاء</span>
               <img class="flip-card-back hide-flip-card w-30 h-28 noHover" src="assets/img/billing-machine.png" alt="">
-              <p class="flip-card-back p-1 hide-flip-card text-base text-center noHover">نهية النظام وتسجيل المعاملات
+              <p class="flip-card-back p-1 hide-flip-card text-base text-center noHover text-(--text-color) dark:text-(--text-dark-color)">نهية النظام وتسجيل المعاملات
                 المالية والمحاسبية</p>
             </a>
           </li>
           <li class="sidebar-menu flipper">
             <a href="#" class="sidebar-menu-item flipper-inner rounded-lg">
               <div class="circle noHover flip-card-front">
-                <svg class="shrink-0 w-7 h-7" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                <svg class="w-7 h-7 fill-(--icons-color) dark:fill-(--icons-dark-color)" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
                   viewBox="0 0 512 512">
                   <g xmlns="http://www.w3.org/2000/svg"
                     transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)" stroke="none">
@@ -328,16 +327,16 @@
                   </g>
                 </svg>
               </div>
-              <span class="flip-card-front noHover">نظام المبيعات</span>
+              <span class="flip-card-front max-md:text-sm noHover text-(--text-color) dark:text-(--text-dark-color)">نظام المبيعات</span>
               <img class="flip-card-back hide-flip-card w-30 h-28 noHover" src="assets/img/billing-machine.png" alt="">
-              <p class="flip-card-back p-1 hide-flip-card text-base text-center noHover">نهية النظام وتسجيل المعاملات
+              <p class="flip-card-back p-1 hide-flip-card text-base text-center noHover text-(--text-color) dark:text-(--text-dark-color)">نهية النظام وتسجيل المعاملات
                 المالية والمحاسبية</p>
             </a>
           </li>
           <li class="sidebar-menu flipper">
             <a href="#" class="sidebar-menu-item flipper-inner rounded-lg">
               <div class="circle noHover flip-card-front">
-                <svg class="shrink-0 w-7 h-7" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                <svg class="w-7 h-7 fill-(--icons-color) dark:fill-(--icons-dark-color)" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
                   viewBox="0 0 512 512">
                   <g xmlns="http://www.w3.org/2000/svg"
                     transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)" stroke="none">
@@ -366,15 +365,15 @@
                 </svg>
               </div>
 
-              <span class="flip-card-front noHover">نظام المشتريات</span>
+              <span class="flip-card-front max-md:text-sm noHover text-(--text-color) dark:text-(--text-dark-color)">نظام المشتريات</span>
               <img class="flip-card-back hide-flip-card w-30 h-28 noHover" src="assets/img/billing-machine.png" alt="">
-              <p class="flip-card-back p-1 hide-flip-card text-base text-center noHover">نهية النظام وتسجيل المعاملات
+              <p class="flip-card-back p-1 hide-flip-card text-base text-center noHover text-(--text-color) dark:text-(--text-dark-color)">نهية النظام وتسجيل المعاملات
                 المالية والمحاسبية</p>
             </a>
           </li>
           <li class="sidebar-menu flipper">
             <a href="#" class="sidebar-menu-item flipper-inner rounded-lg">
-              <div class="circle noHover flip-card-front"><svg class="shrink-0 w-7 h-7" aria-hidden="true"
+              <div class="circle noHover flip-card-front"><svg class="w-7 h-7 fill-(--icons-color) dark:fill-(--icons-dark-color)" aria-hidden="true"
                   xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 512 512">
                   <g xmlns="http://www.w3.org/2000/svg"
                     transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)" stroke="none">
@@ -397,16 +396,16 @@
                   </g>
                 </svg></div>
 
-              <span class="flip-card-front noHover">نظام الموردين</span>
+              <span class="flip-card-front max-md:text-sm noHover text-(--text-color) dark:text-(--text-dark-color)">نظام الموردين</span>
               <img class="flip-card-back hide-flip-card w-30 h-28 noHover" src="assets/img/billing-machine.png" alt="">
-              <p class="flip-card-back p-1 hide-flip-card text-base text-center noHover">نهية النظام وتسجيل المعاملات
+              <p class="flip-card-back p-1 hide-flip-card text-base text-center noHover text-(--text-color) dark:text-(--text-dark-color)">نهية النظام وتسجيل المعاملات
                 المالية والمحاسبية</p>
             </a>
           </li>
           <li class="sidebar-menu flipper">
             <a href="#" class="sidebar-menu-item flipper-inner rounded-lg">
               <div class="circle noHover flip-card-front">
-                <svg class="shrink-0 w-7 h-7" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                <svg class="w-7 h-7 fill-(--icons-color) dark:fill-(--icons-dark-color)" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
                   viewBox="0 0 512 512">
                   <g xmlns="http://www.w3.org/2000/svg"
                     transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)" stroke="none">
@@ -439,9 +438,9 @@
                   </g>
                 </svg>
               </div>
-              <span class="flip-card-front noHover">نظام الانتاج</span>
+              <span class="flip-card-front max-md:text-sm noHover text-(--text-color) dark:text-(--text-dark-color)">نظام الانتاج</span>
               <img class="flip-card-back hide-flip-card w-30 h-28 noHover" src="assets/img/billing-machine.png" alt="">
-              <p class="flip-card-back p-1 hide-flip-card text-base text-center noHover">نهية النظام وتسجيل المعاملات
+              <p class="flip-card-back p-1 hide-flip-card text-base text-center noHover text-(--text-color) dark:text-(--text-dark-color)">نهية النظام وتسجيل المعاملات
                 المالية والمحاسبية</p>
             </a>
           </li>
@@ -449,17 +448,25 @@
       </div>
 
     </aside>
-    <main class="flex flex-col flex-1 overflow-hidden">
+    <main id="mainContent" class="flex flex-col flex-1 overflow-hidden transition-all duration-500 ease-in-out">
       <header class="dark:bg-gradient-to-bl from-gray-950 to-gray-700 text-(--text-dark-color) shadow-md p-4 ">
         <div class="flex justify-between items-center">
-          <h1 class="text-xl font-semibold">Dashboard</h1>
+          <button id="nav-toggle" class="">
+            <svg class="w-7 h-7 fill-(--icons-color) dark:fill-(--icons-dark-color)" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g id="Menu / Menu_Alt_01">
+                <path class=" stroke-(--icons-color) dark:stroke-white hover:stroke-(--hover-color)" id="Vector" d="M12 17H19M5 12H19M5 7H19"  stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round"/>
+              </g>
+            </svg>
+          </button>
+          <h1 class="text-xl max-md:text-sm font-semibold text-gray-700 dark:text-(--text-dark-color)">Dashboard</h1>
           <nav>
             <ul class="flex space-x-4">
               <li><a href="#"
-                  class="text-gray-700 hover:text-blue-600 dark:text-(--text-dark-color) transition-colors">Notifications</a>
+                  class="text-gray-700 hover:text-(--hover-color) dark:text-(--text-dark-color) transition-colors">Notifications</a>
               </li>
               <li><a href="#"
-                  class="text-gray-700 hover:text-blue-600 dark:text-(--text-dark-color)  transition-colors">Profile</a>
+                  class="text-gray-700 hover:text-(--hover-color) dark:text-(--text-dark-color)  transition-colors">Profile</a>
               </li>
             </ul>
           </nav>
@@ -495,7 +502,7 @@
                 </div>
               </div>
               <div class="absolute inset-x-[15%] bottom-5 hidden py-5 text-center text-white md:block">
-                <h5 class="text-xl">First slide label</h5>
+                <h5 class="text-xl max-md:text-sm">First slide label</h5>
                 <p>
                   Some representative placeholder content for the first slide.
                 </p>
@@ -509,7 +516,7 @@
                 <div class="ads-blur"></div>
               </div>
               <div class="absolute inset-x-[15%] bottom-5 hidden py-5 text-center text-white md:block">
-                <h5 class="text-xl">Second slide label</h5>
+                <h5 class="text-xl max-md:text-sm">Second slide label</h5>
                 <p>
                   Some representative placeholder content for the second slide.
                 </p>
@@ -523,7 +530,7 @@
                 <div class="ads-blur"></div>
               </div>
               <div class="absolute inset-x-[15%] bottom-5 hidden py-5 text-center text-white md:block">
-                <h5 class="text-xl">Third slide label</h5>
+                <h5 class="text-xl max-md:text-sm">Third slide label</h5>
                 <p>
                   Some representative placeholder content for the third slide.
                 </p>
