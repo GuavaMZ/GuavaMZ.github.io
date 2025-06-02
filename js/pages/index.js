@@ -68,7 +68,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   scrollerCarouselItems.forEach(item => {
     const duplicatedItem = item.cloneNode(true);
-    duplicatedItem.setAttribute('aria-hidden', true);
+    duplicatedItem.setAttribute('aria-hidden', true); 
     scrollerCarousel.appendChild(duplicatedItem);
   });
   // sidebarMenu.forEach(item => {

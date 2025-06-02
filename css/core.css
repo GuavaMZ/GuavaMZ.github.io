@@ -58,15 +58,23 @@
 }
 
 @utility sidebar-menu {
-    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    /* transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out; */
     /* transition: translate 0.2s ease-in-out; */
     display: block;
-
     :hover {
-        /* transform: translateY(-2px); */
         background-color: rgba(243, 244, 246, .1);
         box-shadow: 0 1px 15px rgba(255, 255, 255, .3);
     }
+}
+
+@utility sidebar-menu-item {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+    align-items: center;
+    justify-content: center;
+    /* transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out; */
 }
 
 @utility flipper {
@@ -88,15 +96,7 @@
     } */
 }
 
-@utility sidebar-menu-item {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    padding: 1rem;
-    align-items: center;
-    justify-content: center;
-    /* transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out; */
-}
+
 
 
 @utility circle {

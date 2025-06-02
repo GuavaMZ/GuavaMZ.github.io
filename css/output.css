@@ -528,7 +528,6 @@
     justify-content: center;
   }
   .sidebar-menu {
-    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
     display: block;
     :hover {
       background-color: rgba(243, 244, 246, .1);
