@@ -17,6 +17,9 @@ document.addEventListener('DOMContentLoaded', function () {
   var themeToggleBtn = document.getElementById('theme-toggle');
   const htmlElement = document.documentElement;
 
+  const scrollerCarousel = document.getElementById('carousel-scroller');
+  const scrollerCarouselItems = Array.from(scrollerCarousel.children);
+
   sidebarMenuItems.forEach(item => {
     if (flipperStatus === 0) {
       item.children[3].classList.remove('hide-flip-card');
@@ -61,6 +64,12 @@ document.addEventListener('DOMContentLoaded', function () {
       themeToggleLightIcon.classList.remove('hidden');
     }
 
+  });
+
+  scrollerCarouselItems.forEach(item => {
+    const duplicatedItem = item.cloneNode(true);
+    duplicatedItem.setAttribute('aria-hidden', true);
+    scrollerCarousel.appendChild(duplicatedItem);
   });
   // sidebarMenu.forEach(item => {
   //   item.addEventListener('click', function () {
