@@ -14,6 +14,7 @@ document.addEventListener('DOMContentLoaded', function () {
   const settingsNav = document.getElementById('settings-nav');
   const settingsNavWidth = 'w-50'; // Define the open width for the sidebar
   const settingsNavWidthMobile = 'max-md:w-35';
+  const settingsOverlay = document.getElementById('settingsOverlay');
 
   var flipperStatus = 0;
   var btnDetailsToggleIcon = document.getElementById('btns-details-toggle');
@@ -32,10 +33,12 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
+
+
   btnBackTypeToggle.addEventListener('click', function () {
     if (flipperStatus === 0) {
       flipperStatus = 1;
-    }else {
+    } else {
       flipperStatus = 0;
     }
     sidebarMenuItems.forEach(item => {
@@ -54,14 +57,12 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 
   sidebarMenuItems.forEach(item => {
-      if (flipperStatus === 0) {
-        item.children[2].classList.add('hide-flip-card');
-        item.children[3].classList.remove('hide-flip-card');
-      } else {
-        item.children[2].classList.remove('hide-flip-card');
-        item.children[3].classList.add('hide-flip-card');
-      }
-    });
+    if (flipperStatus === 0) {
+      item.children[3].classList.remove('hide-flip-card');
+    } else {
+      item.children[2].classList.remove('hide-flip-card');
+    }
+  });
 
   toggleNavButton.addEventListener('click', function () {
     if (sideNav.classList.contains('w-0')) {
@@ -84,6 +85,7 @@ document.addEventListener('DOMContentLoaded', function () {
       settingsNav.classList.add(settingsNavWidth);
       settingsNav.classList.add(settingsNavWidthMobile);
       settingsToggleBtn.classList.add('ml-55');
+      settingsOverlay.classList.remove('hidden');
     } else {
       // If open, close it: remove the open width class and add 'w-0'
       settingsNav.classList.remove(settingsNavWidth);
@@ -91,7 +93,24 @@ document.addEventListener('DOMContentLoaded', function () {
       settingsNav.classList.add('w-0');
       settingsToggleBtn.classList.remove('ml-55');
     }
+    setTimeout(() => {
+      settingsOverlay.classList.toggle('opacity-0');
+      settingsOverlay.classList.toggle('opacity-30');
+    }, 50);
   });
+
+  settingsOverlay.addEventListener('click', function () {
+    settingsNav.classList.remove(settingsNavWidth);
+    settingsNav.classList.remove(settingsNavWidthMobile);
+    settingsNav.classList.add('w-0');
+    settingsToggleBtn.classList.remove('ml-55');
+    settingsOverlay.classList.add('hidden');
+    setTimeout(() => {
+      settingsOverlay.classList.toggle('opacity-30');
+      settingsOverlay.classList.toggle('opacity-0');
+    }, 50);
+  });
+
 
   if (htmlElement.dataset.theme === 'dark') {
     themeToggleLightIcon.classList.remove('hidden');
@@ -118,8 +137,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   });
 
-
-
+  // Initialize the carousel by duplicating items
   scrollerCarouselItems.forEach(item => {
     const duplicatedItem = item.cloneNode(true);
     duplicatedItem.setAttribute('aria-hidden', true);

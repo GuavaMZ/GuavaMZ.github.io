@@ -516,8 +516,6 @@
               </g>
             </svg>
           </button>
-
-
           <h1 class="text-xl max-md:text-sm font-semibold text-gray-700 dark:text-(--text-dark-color)">Dashboard</h1>
           <nav>
             <ul class="flex space-x-4">
@@ -997,6 +995,7 @@
       </div>
     </main>
     <!-- Settings nav side -->
+    <div id="settingsOverlay" class="fixed inset-0 bg-black bg-opacity-50 z-30 hidden transition-opacity duration-300 opacity-0"></div>
     <aside id="settings-nav"
       class="side-nav-bar fixed top-0 left-0 w-0 z-40 max-md:w-0 h-screen bg-(--sidebar-color) dark:bg-gradient-to-br from-gray-950 to-gray-700 text-(--text-dark-color) shadow-lg transition-all duration-500 ease-in-out sm:translate-x-0">
       <div class="h-full py-4 overflow-y-auto">
@@ -1032,7 +1031,7 @@
                 <path d="M9,14H27a1,1,0,0,0,0-2H9a1,1,0,0,0,0,2Z" class="clr-i-outline clr-i-outline-path-2"></path>
                 <path d="M9,18H27a1,1,0,0,0,0-2H9a1,1,0,0,0,0,2Z" class="clr-i-outline clr-i-outline-path-3"></path>
                 <path d="M9,22H19a1,1,0,0,0,0-2H9a1,1,0,0,0,0,2Z" class="clr-i-outline clr-i-outline-path-4"></path>
-                
+
 
               </svg>
               <svg id="btns-icons-toggle" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 16 16"
@@ -1050,6 +1049,7 @@
       </div>
 
     </aside>
+
     <!--End Settings nav side -->
   </div>
   <script src="js/pages/index.js"></script>
