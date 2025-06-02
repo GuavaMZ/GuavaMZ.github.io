@@ -77,6 +77,20 @@
     /* transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out; */
 }
 
+@utility settings-menu-item {
+    display: flex;
+    /* flex-direction: column; */
+    gap: 0.5rem;
+    padding: 0.5rem;
+    align-items: center;
+    justify-content: space-between;
+    /* transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out; */
+}
+
+/* settings {
+    justify-content: ;
+} */
+
 @utility flipper {
     perspective: 2000px;
 

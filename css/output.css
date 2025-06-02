@@ -307,6 +307,9 @@
     overflow-x: hidden;
     z-index: 1;
   }
+  .z-40 {
+    z-index: 40;
+  }
   .z-\[1\] {
     z-index: 1;
   }
@@ -510,8 +513,14 @@
   .mb-4 {
     margin-bottom: calc(var(--spacing) * 4);
   }
+  .ml-0 {
+    margin-left: calc(var(--spacing) * 0);
+  }
   .ml-0\.5 {
     margin-left: calc(var(--spacing) * 0.5);
+  }
+  .ml-55 {
+    margin-left: calc(var(--spacing) * 55);
   }
   .box-border {
     box-sizing: border-box;
@@ -526,6 +535,13 @@
     padding: 1rem;
     align-items: center;
     justify-content: center;
+  }
+  .settings-menu-item {
+    display: flex;
+    gap: 0.5rem;
+    padding: 0.5rem;
+    align-items: center;
+    justify-content: space-between;
   }
   .sidebar-menu {
     display: block;
@@ -575,6 +591,9 @@
   .h-0 {
     height: calc(var(--spacing) * 0);
   }
+  .h-1 {
+    height: calc(var(--spacing) * 1);
+  }
   .h-1\.5 {
     height: calc(var(--spacing) * 1.5);
   }
@@ -593,8 +612,14 @@
   .h-10 {
     height: calc(var(--spacing) * 10);
   }
+  .h-15 {
+    height: calc(var(--spacing) * 15);
+  }
   .h-18 {
     height: calc(var(--spacing) * 18);
+  }
+  .h-20 {
+    height: calc(var(--spacing) * 20);
   }
   .h-24 {
     height: calc(var(--spacing) * 24);
@@ -639,6 +664,9 @@
   .w-0 {
     width: calc(var(--spacing) * 0);
   }
+  .w-1 {
+    width: calc(var(--spacing) * 1);
+  }
   .w-1\.5 {
     width: calc(var(--spacing) * 1.5);
   }
@@ -662,6 +690,9 @@
   }
   .w-30 {
     width: calc(var(--spacing) * 30);
+  }
+  .w-50 {
+    width: calc(var(--spacing) * 50);
   }
   .w-60 {
     width: calc(var(--spacing) * 60);
@@ -711,11 +742,17 @@
   .flex-initial {
     flex: 0 auto;
   }
+  .flex-shrink {
+    flex-shrink: 1;
+  }
   .flex-shrink-0 {
     flex-shrink: 0;
   }
   .shrink-0 {
     flex-shrink: 0;
+  }
+  .flex-grow {
+    flex-grow: 1;
   }
   .grow {
     flex-grow: 1;
@@ -725,6 +762,9 @@
   }
   .basis-auto {
     flex-basis: auto;
+  }
+  .border-collapse {
+    border-collapse: collapse;
   }
   .-translate-x-full {
     --tw-translate-x: -100%;
@@ -804,6 +844,9 @@
   }
   .justify-items-center {
     justify-items: center;
+  }
+  .gap-4 {
+    gap: calc(var(--spacing) * 4);
   }
   .gap-10 {
     gap: calc(var(--spacing) * 10);
@@ -987,6 +1030,9 @@
   .p-1 {
     padding: calc(var(--spacing) * 1);
   }
+  .p-2 {
+    padding: calc(var(--spacing) * 2);
+  }
   .p-2\.5 {
     padding: calc(var(--spacing) * 2.5);
   }
@@ -995,6 +1041,9 @@
   }
   .p-8 {
     padding: calc(var(--spacing) * 8);
+  }
+  .px-1 {
+    padding-inline: calc(var(--spacing) * 1);
   }
   .px-3 {
     padding-inline: calc(var(--spacing) * 3);
@@ -1007,6 +1056,9 @@
   }
   .px-\[0\.4rem\] {
     padding-inline: 0.4rem;
+  }
+  .py-1 {
+    padding-block: calc(var(--spacing) * 1);
   }
   .py-1\.5 {
     padding-block: calc(var(--spacing) * 1.5);
@@ -1025,6 +1077,9 @@
   }
   .pt-3 {
     padding-top: calc(var(--spacing) * 3);
+  }
+  .pb-2 {
+    padding-bottom: calc(var(--spacing) * 2);
   }
   .pb-2\.5 {
     padding-bottom: calc(var(--spacing) * 2.5);
@@ -1143,6 +1198,9 @@
   }
   .no-underline {
     text-decoration-line: none;
+  }
+  .underline {
+    text-decoration-line: underline;
   }
   .underline-offset-auto {
     text-underline-offset: auto;
@@ -1705,6 +1763,11 @@
       width: calc(var(--spacing) * 0);
     }
   }
+  .max-md\:w-35 {
+    @media (width < 48rem) {
+      width: calc(var(--spacing) * 35);
+    }
+  }
   .max-md\:w-40 {
     @media (width < 48rem) {
       width: calc(var(--spacing) * 40);
@@ -1809,6 +1872,24 @@
   .dark\:bg-gradient-to-bl {
     &:where([data-theme=dark], [data-theme=dark] *) {
       --tw-gradient-position: to bottom left in oklab;
+      background-image: linear-gradient(var(--tw-gradient-stops));
+    }
+  }
+  .dark\:bg-gradient-to-br {
+    &:where([data-theme=dark], [data-theme=dark] *) {
+      --tw-gradient-position: to bottom right in oklab;
+      background-image: linear-gradient(var(--tw-gradient-stops));
+    }
+  }
+  .dark\:bg-gradient-to-l {
+    &:where([data-theme=dark], [data-theme=dark] *) {
+      --tw-gradient-position: to left in oklab;
+      background-image: linear-gradient(var(--tw-gradient-stops));
+    }
+  }
+  .dark\:bg-gradient-to-tr {
+    &:where([data-theme=dark], [data-theme=dark] *) {
+      --tw-gradient-position: to top right in oklab;
       background-image: linear-gradient(var(--tw-gradient-stops));
     }
   }

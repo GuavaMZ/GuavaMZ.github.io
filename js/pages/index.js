@@ -10,27 +10,58 @@ document.addEventListener('DOMContentLoaded', function () {
   const navWidth = 'w-60'; // Define the open width for the sidebar
   const navWidthMobile = 'max-md:w-40'
 
-  const flipperStatus = 0;
+  const settingsToggleBtn = document.getElementById('settings-toggle');
+  const settingsNav = document.getElementById('settings-nav');
+  const settingsNavWidth = 'w-50'; // Define the open width for the sidebar
+  const settingsNavWidthMobile = 'max-md:w-35';
+
+  var flipperStatus = 0;
+  var btnDetailsToggleIcon = document.getElementById('btns-details-toggle');
+  var btnIconsToggleIcon = document.getElementById('btns-icons-toggle');
+  var btnBackTypeToggle = document.getElementById('btns-back-type-toggle');
+
 
   var themeToggleDarkIcon = document.getElementById('theme-toggle-dark-icon');
   var themeToggleLightIcon = document.getElementById('theme-toggle-light-icon');
   var themeToggleBtn = document.getElementById('theme-toggle');
+
   const htmlElement = document.documentElement;
 
   const scrollerCarousel = document.getElementById('carousel-scroller');
   const scrollerCarouselItems = Array.from(scrollerCarousel.children);
 
-  sidebarMenuItems.forEach(item => {
+
+
+  btnBackTypeToggle.addEventListener('click', function () {
     if (flipperStatus === 0) {
-      item.children[3].classList.remove('hide-flip-card');
+      flipperStatus = 1;
+    }else {
+      flipperStatus = 0;
     }
-  });
-
-  document.querySelectorAll('.flipper').forEach(flipper => {
-    flipper.addEventListener('mouseover', function () {
-
+    sidebarMenuItems.forEach(item => {
+      if (flipperStatus === 0) {
+        btnDetailsToggleIcon.classList.add('hidden');
+        btnIconsToggleIcon.classList.remove('hidden');
+        item.children[3].classList.remove('hide-flip-card');
+        item.children[2].classList.add('hide-flip-card');
+      } else {
+        btnDetailsToggleIcon.classList.remove('hidden');
+        btnIconsToggleIcon.classList.add('hidden');
+        item.children[3].classList.add('hide-flip-card');
+        item.children[2].classList.remove('hide-flip-card');
+      }
     });
   });
+
+  sidebarMenuItems.forEach(item => {
+      if (flipperStatus === 0) {
+        item.children[2].classList.add('hide-flip-card');
+        item.children[3].classList.remove('hide-flip-card');
+      } else {
+        item.children[2].classList.remove('hide-flip-card');
+        item.children[3].classList.add('hide-flip-card');
+      }
+    });
 
   toggleNavButton.addEventListener('click', function () {
     if (sideNav.classList.contains('w-0')) {
@@ -46,10 +77,32 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   });
 
+  settingsToggleBtn.addEventListener('click', function () {
+    if (settingsNav.classList.contains('w-0')) {
+      // If closed, open it: remove 'w-0' and add the open width class
+      settingsNav.classList.remove('w-0');
+      settingsNav.classList.add(settingsNavWidth);
+      settingsNav.classList.add(settingsNavWidthMobile);
+      settingsToggleBtn.classList.add('ml-55');
+    } else {
+      // If open, close it: remove the open width class and add 'w-0'
+      settingsNav.classList.remove(settingsNavWidth);
+      settingsNav.classList.remove(settingsNavWidthMobile);
+      settingsNav.classList.add('w-0');
+      settingsToggleBtn.classList.remove('ml-55');
+    }
+  });
+
   if (htmlElement.dataset.theme === 'dark') {
     themeToggleLightIcon.classList.remove('hidden');
   } else {
     themeToggleDarkIcon.classList.remove('hidden');
+  }
+
+  if (flipperStatus === 0) {
+    btnDetailsToggleIcon.classList.remove('hidden');
+  } else {
+    btnIconsToggleIcon.classList.remove('hidden');
   }
 
   themeToggleBtn.addEventListener('click', function () {
@@ -63,12 +116,13 @@ document.addEventListener('DOMContentLoaded', function () {
       themeToggleDarkIcon.classList.add('hidden');
       themeToggleLightIcon.classList.remove('hidden');
     }
-
   });
+
+
 
   scrollerCarouselItems.forEach(item => {
     const duplicatedItem = item.cloneNode(true);
-    duplicatedItem.setAttribute('aria-hidden', true); 
+    duplicatedItem.setAttribute('aria-hidden', true);
     scrollerCarousel.appendChild(duplicatedItem);
   });
   // sidebarMenu.forEach(item => {
