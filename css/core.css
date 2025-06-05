@@ -88,12 +88,6 @@
     /* transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out; */
 }
 
-
-
-/* settings {
-    justify-content: ;
-} */
-
 @utility flipper {
     perspective: 2000px;
 
@@ -274,5 +268,18 @@
     100% {
         -webkit-transform: rotate3d(1, 1, 0, -360deg);
         transform: rotate3d(1, 1, 0, -360deg);
+    }
+}
+
+@utitlity card-container {
+    position: relative;
+    overflow: hidden;
+    max-height: 200px; /* Adjust this value based on your content's height */
+    transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    :hover {
+        max-height: 500px;
+        /* Adjust this value based on your content's maximum height */
+        opacity: 1;
+        transform: translateY(0);
     }
 }

@@ -135,7 +135,7 @@ document.addEventListener('DOMContentLoaded', function () {
   // Initialize the carousel by duplicating items
 
 
-  const loadContent = async (contentFile) => {
+  const loadContent = async (contentFile, scriptFile = null) => {
     try {
       const response = await fetch(contentFile);
       if (!response.ok) {
@@ -143,6 +143,28 @@ document.addEventListener('DOMContentLoaded', function () {
       }
       const content = await response.text();
       bodyContentContainer.innerHTML = content;
+
+      // Load JavaScript file if provided
+      if (scriptFile) {
+        // Remove any previously loaded scripts to avoid conflicts
+        const existingScript = document.getElementById('dynamic-script');
+        if (existingScript) {
+          existingScript.remove();
+        }
+
+        const script = document.createElement('script');
+        script.src = scriptFile;
+        script.type = 'module'; // Or 'text/javascript' if not using modules
+        script.id = 'dynamic-script'; // Give it an ID to easily remove later
+        script.onload = () => {
+          console.log(`Script ${scriptFile} loaded successfully.`);
+        };
+        script.onerror = (e) => {
+          console.error(`Error loading script ${scriptFile}:`, e);
+        };
+        document.body.appendChild(script); // Append to body or head
+      }
+
     } catch (error) {
       console.error("Failed to load content:", error);
       bodyContentContainer.innerHTML = `<p style="color: red;">Error loading content. Please try again.</p>`;
@@ -151,8 +173,9 @@ document.addEventListener('DOMContentLoaded', function () {
   sidebarMenuButtons.forEach(button => {
     button.addEventListener('click', (event) => {
       const contentFile = event.target.dataset.contentFile;
+      const scriptFile = event.target.dataset.scriptFile;
       if (contentFile) {
-        loadContent(contentFile);
+        loadContent(contentFile, scriptFile);
       }
     });
   });
