@@ -13,13 +13,13 @@
     <aside id="default-sidebar"
       class="side-nav-bar w-60 max-md:w-40 h-screen bg-(--sidebar-color) dark:bg-gradient-to-b from-gray-950 to-gray-700 text-(--text-dark-color) shadow-lg transition-all duration-500 ease-in-out sm:translate-x-0">
       <div class="h-full py-4 overflow-y-auto">
-        <a href="index.html" class="logo grid grid-cols-1 items-center justify-items-center grid-rows-2 h-25 mb-4">
-          <img src="/assets/img/logo.png" alt="Logo" class="h-18  mt-3 row-span-1 ">
+        <a href="index.html" class="grid grid-cols-1 items-center justify-items-center grid-rows-2 h-25 mb-4">
+          <img src="/assets/img/logo.png" alt="Logo" class="h-18  mt-3 row-span-1 animate-bounce">
           <h1 class="text-xl max-md:text-sm font-bold text-gray-800 dark:text-white row-span-1 ">أوراكس سوفت</h1>
         </a>
         <ul class="space-y-5 px-3 font-medium">
           <li class="sidebar-menu">
-            <a href="#"
+            <a href="/pages/sys_init.html"
               class="sidebar-menu-item hover:bg-(--sidebar-menu-items-hover-color)  dark:hover:bg-(--sidebar-menu-items-hover-dark-color) rounded-lg hover:rotate-y-180 transform-3d transition-all duration-600 ease-in-out">
               <div class="circle noHover flip-card-front">
                 <svg class="w-7 h-7 fill-(--icons-color) dark:fill-(--icons-dark-color)" aria-hidden="true"
@@ -91,7 +91,7 @@
           </li>
 
           <li class="sidebar-menu">
-            <a href="#"
+            <a href="/pages/sys_management.html"
               class="sidebar-menu-item hover:bg-(--sidebar-menu-items-hover-color) dark:hover:bg-(--sidebar-menu-items-hover-dark-color) hover:rotate-y-180 transform-3d transition-all duration-600 ease-in-out rounded-lg">
               <div class="circle noHover flip-card-front">
                 <svg class="w-7 h-7 fill-(--icons-color) dark:fill-(--icons-dark-color)" aria-hidden="true"
@@ -537,462 +537,413 @@
           </button>
         </div>
       </header>
-      <main id="mainContent">
-        <div class="overflow-y-auto">
-          <!-- ----------------------------------------------- -->
-          <div dir="ltr" id="carouselExampleCaptions" class="relative" data-twe-carousel-init data-twe-ride="carousel">
-            <!--Carousel indicators-->
-            <div class="absolute bottom-0 left-0 right-0 z-[2] mx-[15%] mb-4 flex list-none justify-center p-0"
-              data-twe-carousel-indicators>
-              <button type="button" data-twe-target="#carouselExampleCaptions" data-twe-slide-to="0"
-                data-twe-carousel-active
-                class="mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-white bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
-                aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-twe-target="#carouselExampleCaptions" data-twe-slide-to="1"
-                class="mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-white bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
-                aria-label="Slide 2"></button>
-              <button type="button" data-twe-target="#carouselExampleCaptions" data-twe-slide-to="2"
-                class="mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-white bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
-                aria-label="Slide 3"></button>
-            </div>
 
-            <!--Carousel items-->
-            <div class="relative w-full overflow-hidden after:clear-both after:block after:content-['']">
-              <!--First item-->
-              <div
-                class="relative float-left -mr-[100%] w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
-                data-twe-carousel-active data-twe-carousel-item style="backface-visibility: hidden">
-                <div class="bg-contain h-100 w-full" alt="...">
-                  <div class="ticker-wrap">
-                    <ul id="carousel-scroller" class="animate-ticker flex items-center whitespace-nowrap">
-                      <li class="ml-0.5 flex-shrink-0">
-                        <div class="bg-[url(../assets/img/extra/1.jpeg)] bg-contain h-100 w-full" alt="...">
-                          <div class="ads-blur w-100 h-100"></div>
-                        </div>
-                      </li>
-                      <li class="ml-0.5 flex-shrink-0">
-                        <div class="bg-[url(../assets/img/extra/2.jpeg)] bg-contain h-100 w-full" alt="...">
-                          <div class="ads-blur w-100 h-100"></div>
-                        </div>
-                      </li>
-                      <li class="ml-0.5 flex-shrink-0">
-                        <div class="bg-[url(../assets/img/extra/3.jpeg)] bg-contain h-100 w-full" alt="...">
-                          <div class="ads-blur w-100 h-100"></div>
-                        </div>
-                      </li>
-                      <li class="ml-0.5 flex-shrink-0">
-                        <div class="bg-[url(../assets/img/extra/4.jpeg)] bg-contain h-100 w-full" alt="...">
-                          <div class="ads-blur w-100 h-100"></div>
-                        </div>
-                      </li>
-                      <li class="ml-0.5 flex-shrink-0">
-                        <div class="bg-[url(../assets/img/extra/5.jpeg)] bg-contain h-100 w-full" alt="...">
-                          <div class="ads-blur w-100 h-100"></div>
-                        </div>
-                      </li>
-                      <li class="ml-0.5 flex-shrink-0">
-                        <div class="bg-[url(../assets/img/extra/6.jpeg)] bg-contain h-100 w-full" alt="...">
-                          <div class="ads-blur w-100 h-100"></div>
-                        </div>
-                      </li>
-                      <li class="ml-0.5 flex-shrink-0">
-                        <div class="bg-[url(../assets/img/extra/7.jpeg)] bg-contain h-100 w-full" alt="...">
-                          <div class="ads-blur w-100 h-100"></div>
-                        </div>
-                      </li>
-                      <li class="ml-0.5 flex-shrink-0">
-                        <div class="bg-[url(../assets/img/extra/8.jpeg)] bg-contain h-100 w-full" alt="...">
-                          <div class="ads-blur w-100 h-100"></div>
-                        </div>
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="ads-blur">
-                  </div>
-                </div>
-                <div class="absolute inset-x-[15%] bottom-5 py-5 text-center text-white">
-                  <h5 class="text-xl max-md:text-sm">انظمة لتلبية جميع احتياجاتك</h5>
-                  <p>
-                    ماتفكرش كتير ، عندنا انظمة لكل حاجة تيجي ف دماعك
-                  </p>
-                </div>
-              </div>
-              <!--Second item-->
-              <div
-                class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
-                data-twe-carousel-item style="backface-visibility: hidden">
-                <div class="bg-[url(../assets/img/extra/2.jpeg)] h-100 w-full" alt="...">
-                  <div class="ads-blur"></div>
-                </div>
-                <div class="absolute inset-x-[15%] bottom-5 py-5 text-center text-white ">
-                  <h5 class="text-xl max-md:text-sm">Second slide label</h5>
-                  <p>
-                    Some representative placeholder content for the second slide.
-                  </p>
-                </div>
-              </div>
-              <!--Third item-->
-              <div
-                class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
-                data-twe-carousel-item style="backface-visibility: hidden">
-                <div class="bg-[url(../assets/img/extra/4.jpeg)] h-100 w-full" alt="...">
-                  <div class="ads-blur"></div>
-                </div>
-                <div class="absolute inset-x-[15%] bottom-5 py-5 text-center text-white md:block">
-                  <h5 class="text-xl max-md:text-sm">Third slide label</h5>
-                  <p>
-                    Some representative placeholder content for the third slide.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <!--Carousel controls - prev item-->
-            <button
-              class="absolute bottom-0 left-0 top-0 z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-white opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-white hover:no-underline hover:opacity-90 hover:outline-none focus:text-white focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
-              type="button" data-twe-target="#carouselExampleCaptions" data-twe-slide="prev">
-              <span class="inline-block h-8 w-8">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                  stroke="currentColor" class="h-6 w-6">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
-                </svg>
-              </span>
-              <span
-                class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]">Previous</span>
-            </button>
-            <!--Carousel controls - next item-->
-            <button
-              class="absolute bottom-0 right-0 top-0 z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-white opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-white hover:no-underline hover:opacity-90 hover:outline-none focus:text-white focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
-              type="button" data-twe-target="#carouselExampleCaptions" data-twe-slide="next">
-              <span class="inline-block h-8 w-8">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                  stroke="currentColor" class="h-6 w-6">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
-                </svg>
-              </span>
-              <span
-                class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]">Next</span>
-            </button>
+      <div class="overflow-y-auto">
+        <!-- ----------------------------------------------- -->
+        <div dir="ltr" id="carouselExampleCaptions" class="relative" data-twe-carousel-init data-twe-ride="carousel">
+          <!--Carousel indicators-->
+          <div class="absolute bottom-0 left-0 right-0 z-[2] mx-[15%] mb-4 flex list-none justify-center p-0"
+            data-twe-carousel-indicators>
+            <button type="button" data-twe-target="#carouselExampleCaptions" data-twe-slide-to="0"
+              data-twe-carousel-active
+              class="mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-white bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
+              aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-twe-target="#carouselExampleCaptions" data-twe-slide-to="1"
+              class="mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-white bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
+              aria-label="Slide 2"></button>
+            <button type="button" data-twe-target="#carouselExampleCaptions" data-twe-slide-to="2"
+              class="mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-white bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
+              aria-label="Slide 3"></button>
           </div>
-          <!-- ------------------------------------------------ -- -->
-          <div class="p-8 overflow-y-auto">
-            <div class="mt-8 grid grid-cols-1 md:grid-cols-3 gap-10">
-              <div class="bg-(--cards-background-color) dark:bg-(--cards-background-dark-color) rounded-md p-4">
 
+          <!--Carousel items-->
+          <div class="relative w-full overflow-hidden after:clear-both after:block after:content-['']">
+            <!--First item-->
+            <div
+              class="relative float-left -mr-[100%] w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+              data-twe-carousel-active data-twe-carousel-item style="backface-visibility: hidden">
+              <div class="bg-contain h-100 w-full" alt="...">
+                <div class="ticker-wrap">
+                  <ul id="carousel-scroller" class="animate-ticker flex items-center whitespace-nowrap">
+                    <li class="ml-0.5 flex-shrink-0">
+                      <div class="bg-[url(../assets/img/extra/1.jpeg)] bg-contain h-100 w-full" alt="...">
+                        <div class="ads-blur w-100 h-100"></div>
+                      </div>
+                    </li>
+                    <li class="ml-0.5 flex-shrink-0">
+                      <div class="bg-[url(../assets/img/extra/2.jpeg)] bg-contain h-100 w-full" alt="...">
+                        <div class="ads-blur w-100 h-100"></div>
+                      </div>
+                    </li>
+                    <li class="ml-0.5 flex-shrink-0">
+                      <div class="bg-[url(../assets/img/extra/3.jpeg)] bg-contain h-100 w-full" alt="...">
+                        <div class="ads-blur w-100 h-100"></div>
+                      </div>
+                    </li>
+                    <li class="ml-0.5 flex-shrink-0">
+                      <div class="bg-[url(../assets/img/extra/4.jpeg)] bg-contain h-100 w-full" alt="...">
+                        <div class="ads-blur w-100 h-100"></div>
+                      </div>
+                    </li>
+                    <li class="ml-0.5 flex-shrink-0">
+                      <div class="bg-[url(../assets/img/extra/5.jpeg)] bg-contain h-100 w-full" alt="...">
+                        <div class="ads-blur w-100 h-100"></div>
+                      </div>
+                    </li>
+                    <li class="ml-0.5 flex-shrink-0">
+                      <div class="bg-[url(../assets/img/extra/6.jpeg)] bg-contain h-100 w-full" alt="...">
+                        <div class="ads-blur w-100 h-100"></div>
+                      </div>
+                    </li>
+                    <li class="ml-0.5 flex-shrink-0">
+                      <div class="bg-[url(../assets/img/extra/7.jpeg)] bg-contain h-100 w-full" alt="...">
+                        <div class="ads-blur w-100 h-100"></div>
+                      </div>
+                    </li>
+                    <li class="ml-0.5 flex-shrink-0">
+                      <div class="bg-[url(../assets/img/extra/8.jpeg)] bg-contain h-100 w-full" alt="...">
+                        <div class="ads-blur w-100 h-100"></div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="ads-blur">
+                </div>
               </div>
-              <div class=" rounded-md p-4">
-                <h1 class="text-2xl text-center text-(--text-color) dark:text-(--text-dark-color) font-semibold mb-2">
-                  روابط سريعة</h3>
-              </div>
-              <div class="bg-(--cards-background-color) dark:bg-(--cards-background-dark-color) rounded-md p-4">
-
+              <div class="absolute inset-x-[15%] bottom-5 py-5 text-center text-white">
+                <h5 class="text-xl max-md:text-sm">انظمة لتلبية جميع احتياجاتك</h5>
+                <p>
+                  ماتفكرش كتير ، عندنا انظمة لكل حاجة تيجي ف دماعك
+                </p>
               </div>
             </div>
-            <div class="mt-8 grid grid-cols-1 md:grid-cols-4 gap-10">
-              <div class="bg-(--cards-background-color) dark:bg-(--cards-background-dark-color) rounded-lg shadow-md">
-                <a href="#"
-                  class="sidebar-menu-item  hover:bg-(--sidebar-menu-items-hover-color) dark:hover:bg-(--sidebar-menu-items-hover-dark-color) hover:rotate-y-180 transform-3d transition-all duration-600 ease-in-out rounded-lg">
-                  <div class="circle mt-3 noHover flip-card-front">
-                    <svg class="w-10 h-10 fill-(--icons-color) dark:fill-(--icons-dark-color)" aria-hidden="true"
-                      xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 512.000000 512.000000">
-                      <g class="w-7 h-7" transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)"
-                        stroke="none">
-                        <path d="M2416 5098 c-7 -13 -24 -54 -36 -93 -13 -38 -27 -76 -33 -82 -5 -7
-                    -32 -20 -61 -28 -28 -8 -90 -34 -137 -56 l-86 -41 -81 41 c-45 23 -93 41 -108
-                    41 -31 0 -165 -124 -185 -172 -11 -27 -9 -36 29 -110 23 -44 42 -86 42 -95 0
-                    -8 -15 -47 -34 -86 -19 -40 -42 -97 -52 -127 -9 -30 -21 -61 -27 -67 -5 -7
-                    -46 -24 -91 -39 -117 -37 -116 -35 -116 -174 0 -143 3 -148 117 -185 45 -14
-                    86 -32 91 -38 5 -7 21 -48 36 -92 15 -44 39 -99 52 -122 13 -23 24 -48 24 -57
-                    0 -8 -18 -52 -40 -97 -22 -46 -40 -89 -40 -97 0 -8 39 -54 87 -103 60 -62 94
-                    -89 110 -89 13 0 60 18 105 41 l81 41 86 -40 c47 -22 109 -47 138 -56 28 -10
-                    56 -22 61 -29 5 -7 19 -43 32 -82 38 -120 30 -115 180 -115 150 0 142 -5 180
-                    115 13 39 27 75 32 82 5 7 33 19 61 28 29 9 91 35 138 57 l86 40 81 -41 c45
-                    -23 92 -41 105 -41 16 0 50 27 110 89 48 49 87 95 87 103 0 8 -18 51 -40 97
-                    -22 45 -40 89 -40 97 0 9 11 34 24 57 13 23 37 78 52 122 15 44 31 85 36 92 5
-                    6 46 24 91 38 114 37 117 42 117 183 0 93 -3 119 -16 134 -9 9 -54 29 -99 43
-                    -45 14 -87 31 -92 37 -5 7 -20 45 -32 83 -13 39 -36 94 -52 124 -16 30 -29 62
-                    -29 70 0 9 19 53 41 98 38 75 41 84 30 111 -20 48 -154 172 -185 172 -15 0
-                    -63 -18 -108 -41 l-81 -41 -96 45 c-53 25 -115 50 -137 56 -52 14 -56 19 -84
-                    106 -38 120 -30 115 -180 115 -123 0 -130 -1 -144 -22z m247 -603 c274 -58
-                    452 -341 382 -610 -50 -192 -202 -332 -403 -372 -76 -15 -88 -15 -164 0 -341
-                    67 -515 418 -361 726 59 117 203 227 336 256 81 18 128 18 210 0z" />
-                        <path d="M569 3994 c-60 -18 -131 -82 -163 -146 l-26 -52 0 -1445 0 -1446 24
-                    -50 c13 -29 44 -69 70 -92 90 -79 -90 -73 2086 -73 2176 0 1996 -6 2086 73 26
-                    23 57 63 70 92 l24 50 0 1446 0 1445 -26 52 c-14 28 -46 69 -70 91 -78 69 -94
-                    71 -476 71 l-338 0 0 -70 c0 -135 -55 -205 -195 -250 -38 -12 -54 -25 -55 -42
-                    0 -5 168 -8 373 -8 277 0 376 -3 385 -12 17 -17 17 -2539 0 -2556 -17 -17
-                    -3539 -17 -3556 0 -17 17 -17 2539 0 2556 9 9 108 12 385 12 205 0 373 3 373
-                    8 -1 17 -17 30 -55 42 -140 45 -195 115 -195 250 l0 70 -337 -1 c-261 0 -348
-                    -4 -384 -15z" />
-                        <path d="M1142 2548 c-17 -17 -17 -389 0 -406 17 -17 389 -17 406 0 17 17 17
-                    389 0 406 -8 8 -68 12 -203 12 -135 0 -195 -4 -203 -12z" />
-                        <path d="M1952 2548 c-17 -17 -17 -389 0 -406 17 -17 389 -17 406 0 17 17 17
-                    389 0 406 -8 8 -68 12 -203 12 -135 0 -195 -4 -203 -12z" />
-                        <path d="M2762 2548 c-17 -17 -17 -389 0 -406 17 -17 389 -17 406 0 17 17 17
-                    389 0 406 -8 8 -68 12 -203 12 -135 0 -195 -4 -203 -12z" />
-                        <path d="M3572 2548 c-17 -17 -17 -389 0 -406 17 -17 389 -17 406 0 17 17 17
-                    389 0 406 -8 8 -68 12 -203 12 -135 0 -195 -4 -203 -12z" />
-                        <path d="M1142 1798 c-9 -9 -12 -68 -12 -205 0 -180 1 -193 19 -203 26 -13
-                    366 -13 392 0 18 10 19 23 19 203 0 137 -3 196 -12 205 -8 8 -68 12 -203 12
-                    -135 0 -195 -4 -203 -12z" />
-                        <path d="M1952 1798 c-9 -9 -12 -68 -12 -205 0 -180 1 -193 19 -203 26 -13
-                    366 -13 392 0 18 10 19 23 19 203 0 137 -3 196 -12 205 -8 8 -68 12 -203 12
-                    -135 0 -195 -4 -203 -12z" />
-                        <path d="M2762 1798 c-9 -9 -12 -68 -12 -205 0 -180 1 -193 19 -203 26 -13
-                    366 -13 392 0 18 10 19 23 19 203 0 137 -3 196 -12 205 -8 8 -68 12 -203 12
-                    -135 0 -195 -4 -203 -12z" />
-                        <path d="M3572 1798 c-9 -9 -12 -68 -12 -205 0 -180 1 -193 19 -203 26 -13
-                    366 -13 392 0 18 10 19 23 19 203 0 137 -3 196 -12 205 -8 8 -68 12 -203 12
-                    -135 0 -195 -4 -203 -12z" />
-                        <path d="M2121 518 c-4 -13 -34 -96 -66 -185 l-58 -163 -209 0 -210 0 -29 -29
-                    c-35 -35 -38 -77 -8 -115 l20 -26 999 0 999 0 20 26 c30 38 27 80 -8 115 l-29
-                    29 -210 0 -209 0 -65 183 -65 182 -432 3 -431 2 -9 -22z" />
-                      </g>
-                    </svg>
-                  </div>
-                  <span
-                    class="flip-card-front my-3 max-md:text-sm noHover text-(--text-color) dark:text-(--text-dark-color)">تهيئة
-                    النظام</span>
-                  <img class="flip-card-back hide-flip-card w-30 h-28 noHover" src="assets/img/billing-machine.png"
-                    alt="">
-                  <p
-                    class="flip-card-back p-1 hide-flip-card text-base text-center noHover text-(--text-color) dark:text-(--text-dark-color)">
-                    نهية النظام وتسجيل المعاملات
-                    المالية والمحاسبية</p>
-                  <div class="flip-card-back">
-                    <div class="w-fit h-fit"></div>
-                  </div>
-                </a>
+            <!--Second item-->
+            <div
+              class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+              data-twe-carousel-item style="backface-visibility: hidden">
+              <div class="bg-[url(../assets/img/extra/2.jpeg)] h-100 w-full" alt="...">
+                <div class="ads-blur"></div>
               </div>
-              <div class="bg-(--cards-background-color) dark:bg-(--cards-background-dark-color) rounded-lg shadow-md">
-                <a href="#"
-                  class="sidebar-menu-item  hover:bg-(--sidebar-menu-items-hover-color) dark:hover:bg-(--sidebar-menu-items-hover-dark-color) hover:rotate-y-180 transform-3d transition-all duration-600 ease-in-out rounded-lg">
-                  <div class="circle mt-3 noHover flip-card-front">
-                    <svg class="w-10 h-10 fill-(--icons-color) dark:fill-(--icons-dark-color)" aria-hidden="true"
-                      xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 512.000000 512.000000">
-                      <g class="w-7 h-7" transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)"
-                        stroke="none">
-                        <path d="M2416 5098 c-7 -13 -24 -54 -36 -93 -13 -38 -27 -76 -33 -82 -5 -7
-                    -32 -20 -61 -28 -28 -8 -90 -34 -137 -56 l-86 -41 -81 41 c-45 23 -93 41 -108
-                    41 -31 0 -165 -124 -185 -172 -11 -27 -9 -36 29 -110 23 -44 42 -86 42 -95 0
-                    -8 -15 -47 -34 -86 -19 -40 -42 -97 -52 -127 -9 -30 -21 -61 -27 -67 -5 -7
-                    -46 -24 -91 -39 -117 -37 -116 -35 -116 -174 0 -143 3 -148 117 -185 45 -14
-                    86 -32 91 -38 5 -7 21 -48 36 -92 15 -44 39 -99 52 -122 13 -23 24 -48 24 -57
-                    0 -8 -18 -52 -40 -97 -22 -46 -40 -89 -40 -97 0 -8 39 -54 87 -103 60 -62 94
-                    -89 110 -89 13 0 60 18 105 41 l81 41 86 -40 c47 -22 109 -47 138 -56 28 -10
-                    56 -22 61 -29 5 -7 19 -43 32 -82 38 -120 30 -115 180 -115 150 0 142 -5 180
-                    115 13 39 27 75 32 82 5 7 33 19 61 28 29 9 91 35 138 57 l86 40 81 -41 c45
-                    -23 92 -41 105 -41 16 0 50 27 110 89 48 49 87 95 87 103 0 8 -18 51 -40 97
-                    -22 45 -40 89 -40 97 0 9 11 34 24 57 13 23 37 78 52 122 15 44 31 85 36 92 5
-                    6 46 24 91 38 114 37 117 42 117 183 0 93 -3 119 -16 134 -9 9 -54 29 -99 43
-                    -45 14 -87 31 -92 37 -5 7 -20 45 -32 83 -13 39 -36 94 -52 124 -16 30 -29 62
-                    -29 70 0 9 19 53 41 98 38 75 41 84 30 111 -20 48 -154 172 -185 172 -15 0
-                    -63 -18 -108 -41 l-81 -41 -96 45 c-53 25 -115 50 -137 56 -52 14 -56 19 -84
-                    106 -38 120 -30 115 -180 115 -123 0 -130 -1 -144 -22z m247 -603 c274 -58
-                    452 -341 382 -610 -50 -192 -202 -332 -403 -372 -76 -15 -88 -15 -164 0 -341
-                    67 -515 418 -361 726 59 117 203 227 336 256 81 18 128 18 210 0z" />
-                        <path d="M569 3994 c-60 -18 -131 -82 -163 -146 l-26 -52 0 -1445 0 -1446 24
-                    -50 c13 -29 44 -69 70 -92 90 -79 -90 -73 2086 -73 2176 0 1996 -6 2086 73 26
-                    23 57 63 70 92 l24 50 0 1446 0 1445 -26 52 c-14 28 -46 69 -70 91 -78 69 -94
-                    71 -476 71 l-338 0 0 -70 c0 -135 -55 -205 -195 -250 -38 -12 -54 -25 -55 -42
-                    0 -5 168 -8 373 -8 277 0 376 -3 385 -12 17 -17 17 -2539 0 -2556 -17 -17
-                    -3539 -17 -3556 0 -17 17 -17 2539 0 2556 9 9 108 12 385 12 205 0 373 3 373
-                    8 -1 17 -17 30 -55 42 -140 45 -195 115 -195 250 l0 70 -337 -1 c-261 0 -348
-                    -4 -384 -15z" />
-                        <path d="M1142 2548 c-17 -17 -17 -389 0 -406 17 -17 389 -17 406 0 17 17 17
-                    389 0 406 -8 8 -68 12 -203 12 -135 0 -195 -4 -203 -12z" />
-                        <path d="M1952 2548 c-17 -17 -17 -389 0 -406 17 -17 389 -17 406 0 17 17 17
-                    389 0 406 -8 8 -68 12 -203 12 -135 0 -195 -4 -203 -12z" />
-                        <path d="M2762 2548 c-17 -17 -17 -389 0 -406 17 -17 389 -17 406 0 17 17 17
-                    389 0 406 -8 8 -68 12 -203 12 -135 0 -195 -4 -203 -12z" />
-                        <path d="M3572 2548 c-17 -17 -17 -389 0 -406 17 -17 389 -17 406 0 17 17 17
-                    389 0 406 -8 8 -68 12 -203 12 -135 0 -195 -4 -203 -12z" />
-                        <path d="M1142 1798 c-9 -9 -12 -68 -12 -205 0 -180 1 -193 19 -203 26 -13
-                    366 -13 392 0 18 10 19 23 19 203 0 137 -3 196 -12 205 -8 8 -68 12 -203 12
-                    -135 0 -195 -4 -203 -12z" />
-                        <path d="M1952 1798 c-9 -9 -12 -68 -12 -205 0 -180 1 -193 19 -203 26 -13
-                    366 -13 392 0 18 10 19 23 19 203 0 137 -3 196 -12 205 -8 8 -68 12 -203 12
-                    -135 0 -195 -4 -203 -12z" />
-                        <path d="M2762 1798 c-9 -9 -12 -68 -12 -205 0 -180 1 -193 19 -203 26 -13
-                    366 -13 392 0 18 10 19 23 19 203 0 137 -3 196 -12 205 -8 8 -68 12 -203 12
-                    -135 0 -195 -4 -203 -12z" />
-                        <path d="M3572 1798 c-9 -9 -12 -68 -12 -205 0 -180 1 -193 19 -203 26 -13
-                    366 -13 392 0 18 10 19 23 19 203 0 137 -3 196 -12 205 -8 8 -68 12 -203 12
-                    -135 0 -195 -4 -203 -12z" />
-                        <path d="M2121 518 c-4 -13 -34 -96 -66 -185 l-58 -163 -209 0 -210 0 -29 -29
-                    c-35 -35 -38 -77 -8 -115 l20 -26 999 0 999 0 20 26 c30 38 27 80 -8 115 l-29
-                    29 -210 0 -209 0 -65 183 -65 182 -432 3 -431 2 -9 -22z" />
-                      </g>
-                    </svg>
-                  </div>
-                  <span
-                    class="flip-card-front my-3 max-md:text-sm noHover text-(--text-color) dark:text-(--text-dark-color)">تهيئة
-                    النظام</span>
-                  <img class="flip-card-back hide-flip-card w-30 h-28 noHover" src="assets/img/billing-machine.png"
-                    alt="">
-                  <p
-                    class="flip-card-back p-1 hide-flip-card text-base text-center noHover text-(--text-color) dark:text-(--text-dark-color)">
-                    نهية النظام وتسجيل المعاملات
-                    المالية والمحاسبية</p>
-                  <div class="flip-card-back">
-                    <div class="w-fit h-fit"></div>
-                  </div>
-                </a>
+              <div class="absolute inset-x-[15%] bottom-5 py-5 text-center text-white ">
+                <h5 class="text-xl max-md:text-sm">Second slide label</h5>
+                <p>
+                  Some representative placeholder content for the second slide.
+                </p>
               </div>
-              <div class="bg-(--cards-background-color) dark:bg-(--cards-background-dark-color) rounded-lg shadow-md">
-                <a href="#"
-                  class="sidebar-menu-item  hover:bg-(--sidebar-menu-items-hover-color) dark:hover:bg-(--sidebar-menu-items-hover-dark-color) hover:rotate-y-180 transform-3d transition-all duration-600 ease-in-out rounded-lg">
-                  <div class="circle mt-3 noHover flip-card-front">
-                    <svg class="w-10 h-10 fill-(--icons-color) dark:fill-(--icons-dark-color)" aria-hidden="true"
-                      xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 512.000000 512.000000">
-                      <g class="w-7 h-7" transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)"
-                        stroke="none">
-                        <path d="M2416 5098 c-7 -13 -24 -54 -36 -93 -13 -38 -27 -76 -33 -82 -5 -7
-                    -32 -20 -61 -28 -28 -8 -90 -34 -137 -56 l-86 -41 -81 41 c-45 23 -93 41 -108
-                    41 -31 0 -165 -124 -185 -172 -11 -27 -9 -36 29 -110 23 -44 42 -86 42 -95 0
-                    -8 -15 -47 -34 -86 -19 -40 -42 -97 -52 -127 -9 -30 -21 -61 -27 -67 -5 -7
-                    -46 -24 -91 -39 -117 -37 -116 -35 -116 -174 0 -143 3 -148 117 -185 45 -14
-                    86 -32 91 -38 5 -7 21 -48 36 -92 15 -44 39 -99 52 -122 13 -23 24 -48 24 -57
-                    0 -8 -18 -52 -40 -97 -22 -46 -40 -89 -40 -97 0 -8 39 -54 87 -103 60 -62 94
-                    -89 110 -89 13 0 60 18 105 41 l81 41 86 -40 c47 -22 109 -47 138 -56 28 -10
-                    56 -22 61 -29 5 -7 19 -43 32 -82 38 -120 30 -115 180 -115 150 0 142 -5 180
-                    115 13 39 27 75 32 82 5 7 33 19 61 28 29 9 91 35 138 57 l86 40 81 -41 c45
-                    -23 92 -41 105 -41 16 0 50 27 110 89 48 49 87 95 87 103 0 8 -18 51 -40 97
-                    -22 45 -40 89 -40 97 0 9 11 34 24 57 13 23 37 78 52 122 15 44 31 85 36 92 5
-                    6 46 24 91 38 114 37 117 42 117 183 0 93 -3 119 -16 134 -9 9 -54 29 -99 43
-                    -45 14 -87 31 -92 37 -5 7 -20 45 -32 83 -13 39 -36 94 -52 124 -16 30 -29 62
-                    -29 70 0 9 19 53 41 98 38 75 41 84 30 111 -20 48 -154 172 -185 172 -15 0
-                    -63 -18 -108 -41 l-81 -41 -96 45 c-53 25 -115 50 -137 56 -52 14 -56 19 -84
-                    106 -38 120 -30 115 -180 115 -123 0 -130 -1 -144 -22z m247 -603 c274 -58
-                    452 -341 382 -610 -50 -192 -202 -332 -403 -372 -76 -15 -88 -15 -164 0 -341
-                    67 -515 418 -361 726 59 117 203 227 336 256 81 18 128 18 210 0z" />
-                        <path d="M569 3994 c-60 -18 -131 -82 -163 -146 l-26 -52 0 -1445 0 -1446 24
-                    -50 c13 -29 44 -69 70 -92 90 -79 -90 -73 2086 -73 2176 0 1996 -6 2086 73 26
-                    23 57 63 70 92 l24 50 0 1446 0 1445 -26 52 c-14 28 -46 69 -70 91 -78 69 -94
-                    71 -476 71 l-338 0 0 -70 c0 -135 -55 -205 -195 -250 -38 -12 -54 -25 -55 -42
-                    0 -5 168 -8 373 -8 277 0 376 -3 385 -12 17 -17 17 -2539 0 -2556 -17 -17
-                    -3539 -17 -3556 0 -17 17 -17 2539 0 2556 9 9 108 12 385 12 205 0 373 3 373
-                    8 -1 17 -17 30 -55 42 -140 45 -195 115 -195 250 l0 70 -337 -1 c-261 0 -348
-                    -4 -384 -15z" />
-                        <path d="M1142 2548 c-17 -17 -17 -389 0 -406 17 -17 389 -17 406 0 17 17 17
-                    389 0 406 -8 8 -68 12 -203 12 -135 0 -195 -4 -203 -12z" />
-                        <path d="M1952 2548 c-17 -17 -17 -389 0 -406 17 -17 389 -17 406 0 17 17 17
-                    389 0 406 -8 8 -68 12 -203 12 -135 0 -195 -4 -203 -12z" />
-                        <path d="M2762 2548 c-17 -17 -17 -389 0 -406 17 -17 389 -17 406 0 17 17 17
-                    389 0 406 -8 8 -68 12 -203 12 -135 0 -195 -4 -203 -12z" />
-                        <path d="M3572 2548 c-17 -17 -17 -389 0 -406 17 -17 389 -17 406 0 17 17 17
-                    389 0 406 -8 8 -68 12 -203 12 -135 0 -195 -4 -203 -12z" />
-                        <path d="M1142 1798 c-9 -9 -12 -68 -12 -205 0 -180 1 -193 19 -203 26 -13
-                    366 -13 392 0 18 10 19 23 19 203 0 137 -3 196 -12 205 -8 8 -68 12 -203 12
-                    -135 0 -195 -4 -203 -12z" />
-                        <path d="M1952 1798 c-9 -9 -12 -68 -12 -205 0 -180 1 -193 19 -203 26 -13
-                    366 -13 392 0 18 10 19 23 19 203 0 137 -3 196 -12 205 -8 8 -68 12 -203 12
-                    -135 0 -195 -4 -203 -12z" />
-                        <path d="M2762 1798 c-9 -9 -12 -68 -12 -205 0 -180 1 -193 19 -203 26 -13
-                    366 -13 392 0 18 10 19 23 19 203 0 137 -3 196 -12 205 -8 8 -68 12 -203 12
-                    -135 0 -195 -4 -203 -12z" />
-                        <path d="M3572 1798 c-9 -9 -12 -68 -12 -205 0 -180 1 -193 19 -203 26 -13
-                    366 -13 392 0 18 10 19 23 19 203 0 137 -3 196 -12 205 -8 8 -68 12 -203 12
-                    -135 0 -195 -4 -203 -12z" />
-                        <path d="M2121 518 c-4 -13 -34 -96 -66 -185 l-58 -163 -209 0 -210 0 -29 -29
-                    c-35 -35 -38 -77 -8 -115 l20 -26 999 0 999 0 20 26 c30 38 27 80 -8 115 l-29
-                    29 -210 0 -209 0 -65 183 -65 182 -432 3 -431 2 -9 -22z" />
-                      </g>
-                    </svg>
-                  </div>
-                  <span
-                    class="flip-card-front my-3 max-md:text-sm noHover text-(--text-color) dark:text-(--text-dark-color)">تهيئة
-                    النظام</span>
-                  <img class="flip-card-back hide-flip-card w-30 h-28 noHover" src="assets/img/billing-machine.png"
-                    alt="">
-                  <p
-                    class="flip-card-back p-1 hide-flip-card text-base text-center noHover text-(--text-color) dark:text-(--text-dark-color)">
-                    نهية النظام وتسجيل المعاملات
-                    المالية والمحاسبية</p>
-                  <div class="flip-card-back">
-                    <div class="w-fit h-fit"></div>
-                  </div>
-                </a>
+            </div>
+            <!--Third item-->
+            <div
+              class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+              data-twe-carousel-item style="backface-visibility: hidden">
+              <div class="bg-[url(../assets/img/extra/4.jpeg)] h-100 w-full" alt="...">
+                <div class="ads-blur"></div>
               </div>
-              <div class="bg-(--cards-background-color) dark:bg-(--cards-background-dark-color) rounded-lg shadow-md">
-                <a href="#"
-                  class="sidebar-menu-item hover:bg-(--sidebar-menu-items-hover-color) dark:hover:bg-(--sidebar-menu-items-hover-dark-color) hover:rotate-y-180 transform-3d transition-all duration-600 ease-in-out rounded-lg">
-                  <div class="circle mt-3 noHover flip-card-front">
-                    <svg class="w-10 h-10 fill-(--icons-color) dark:fill-(--icons-dark-color)" aria-hidden="true"
-                      xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 512.000000 512.000000">
-                      <g class="w-7 h-7" transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)"
-                        stroke="none">
-                        <path d="M2416 5098 c-7 -13 -24 -54 -36 -93 -13 -38 -27 -76 -33 -82 -5 -7
-                    -32 -20 -61 -28 -28 -8 -90 -34 -137 -56 l-86 -41 -81 41 c-45 23 -93 41 -108
-                    41 -31 0 -165 -124 -185 -172 -11 -27 -9 -36 29 -110 23 -44 42 -86 42 -95 0
-                    -8 -15 -47 -34 -86 -19 -40 -42 -97 -52 -127 -9 -30 -21 -61 -27 -67 -5 -7
-                    -46 -24 -91 -39 -117 -37 -116 -35 -116 -174 0 -143 3 -148 117 -185 45 -14
-                    86 -32 91 -38 5 -7 21 -48 36 -92 15 -44 39 -99 52 -122 13 -23 24 -48 24 -57
-                    0 -8 -18 -52 -40 -97 -22 -46 -40 -89 -40 -97 0 -8 39 -54 87 -103 60 -62 94
-                    -89 110 -89 13 0 60 18 105 41 l81 41 86 -40 c47 -22 109 -47 138 -56 28 -10
-                    56 -22 61 -29 5 -7 19 -43 32 -82 38 -120 30 -115 180 -115 150 0 142 -5 180
-                    115 13 39 27 75 32 82 5 7 33 19 61 28 29 9 91 35 138 57 l86 40 81 -41 c45
-                    -23 92 -41 105 -41 16 0 50 27 110 89 48 49 87 95 87 103 0 8 -18 51 -40 97
-                    -22 45 -40 89 -40 97 0 9 11 34 24 57 13 23 37 78 52 122 15 44 31 85 36 92 5
-                    6 46 24 91 38 114 37 117 42 117 183 0 93 -3 119 -16 134 -9 9 -54 29 -99 43
-                    -45 14 -87 31 -92 37 -5 7 -20 45 -32 83 -13 39 -36 94 -52 124 -16 30 -29 62
-                    -29 70 0 9 19 53 41 98 38 75 41 84 30 111 -20 48 -154 172 -185 172 -15 0
-                    -63 -18 -108 -41 l-81 -41 -96 45 c-53 25 -115 50 -137 56 -52 14 -56 19 -84
-                    106 -38 120 -30 115 -180 115 -123 0 -130 -1 -144 -22z m247 -603 c274 -58
-                    452 -341 382 -610 -50 -192 -202 -332 -403 -372 -76 -15 -88 -15 -164 0 -341
-                    67 -515 418 -361 726 59 117 203 227 336 256 81 18 128 18 210 0z" />
-                        <path d="M569 3994 c-60 -18 -131 -82 -163 -146 l-26 -52 0 -1445 0 -1446 24
-                    -50 c13 -29 44 -69 70 -92 90 -79 -90 -73 2086 -73 2176 0 1996 -6 2086 73 26
-                    23 57 63 70 92 l24 50 0 1446 0 1445 -26 52 c-14 28 -46 69 -70 91 -78 69 -94
-                    71 -476 71 l-338 0 0 -70 c0 -135 -55 -205 -195 -250 -38 -12 -54 -25 -55 -42
-                    0 -5 168 -8 373 -8 277 0 376 -3 385 -12 17 -17 17 -2539 0 -2556 -17 -17
-                    -3539 -17 -3556 0 -17 17 -17 2539 0 2556 9 9 108 12 385 12 205 0 373 3 373
-                    8 -1 17 -17 30 -55 42 -140 45 -195 115 -195 250 l0 70 -337 -1 c-261 0 -348
-                    -4 -384 -15z" />
-                        <path d="M1142 2548 c-17 -17 -17 -389 0 -406 17 -17 389 -17 406 0 17 17 17
-                    389 0 406 -8 8 -68 12 -203 12 -135 0 -195 -4 -203 -12z" />
-                        <path d="M1952 2548 c-17 -17 -17 -389 0 -406 17 -17 389 -17 406 0 17 17 17
-                    389 0 406 -8 8 -68 12 -203 12 -135 0 -195 -4 -203 -12z" />
-                        <path d="M2762 2548 c-17 -17 -17 -389 0 -406 17 -17 389 -17 406 0 17 17 17
-                    389 0 406 -8 8 -68 12 -203 12 -135 0 -195 -4 -203 -12z" />
-                        <path d="M3572 2548 c-17 -17 -17 -389 0 -406 17 -17 389 -17 406 0 17 17 17
-                    389 0 406 -8 8 -68 12 -203 12 -135 0 -195 -4 -203 -12z" />
-                        <path d="M1142 1798 c-9 -9 -12 -68 -12 -205 0 -180 1 -193 19 -203 26 -13
-                    366 -13 392 0 18 10 19 23 19 203 0 137 -3 196 -12 205 -8 8 -68 12 -203 12
-                    -135 0 -195 -4 -203 -12z" />
-                        <path d="M1952 1798 c-9 -9 -12 -68 -12 -205 0 -180 1 -193 19 -203 26 -13
-                    366 -13 392 0 18 10 19 23 19 203 0 137 -3 196 -12 205 -8 8 -68 12 -203 12
-                    -135 0 -195 -4 -203 -12z" />
-                        <path d="M2762 1798 c-9 -9 -12 -68 -12 -205 0 -180 1 -193 19 -203 26 -13
-                    366 -13 392 0 18 10 19 23 19 203 0 137 -3 196 -12 205 -8 8 -68 12 -203 12
-                    -135 0 -195 -4 -203 -12z" />
-                        <path d="M3572 1798 c-9 -9 -12 -68 -12 -205 0 -180 1 -193 19 -203 26 -13
-                    366 -13 392 0 18 10 19 23 19 203 0 137 -3 196 -12 205 -8 8 -68 12 -203 12
-                    -135 0 -195 -4 -203 -12z" />
-                        <path d="M2121 518 c-4 -13 -34 -96 -66 -185 l-58 -163 -209 0 -210 0 -29 -29
-                    c-35 -35 -38 -77 -8 -115 l20 -26 999 0 999 0 20 26 c30 38 27 80 -8 115 l-29
-                    29 -210 0 -209 0 -65 183 -65 182 -432 3 -431 2 -9 -22z" />
-                      </g>
-                    </svg>
-                  </div>
-                  <span
-                    class="flip-card-front my-3 max-md:text-sm noHover text-(--text-color) dark:text-(--text-dark-color)">تهيئة
-                    النظام</span>
-                  <img class="flip-card-back hide-flip-card w-30 h-28 noHover" src="assets/img/billing-machine.png"
-                    alt="">
-                  <p
-                    class="flip-card-back p-1 hide-flip-card text-base text-center noHover text-(--text-color) dark:text-(--text-dark-color)">
-                    نهية النظام وتسجيل المعاملات
-                    المالية والمحاسبية</p>
-                  <div class="flip-card-back">
-                    <div class="w-fit h-fit"></div>
-                  </div>
-                </a>
+              <div class="absolute inset-x-[15%] bottom-5 py-5 text-center text-white md:block">
+                <h5 class="text-xl max-md:text-sm">Third slide label</h5>
+                <p>
+                  Some representative placeholder content for the third slide.
+                </p>
               </div>
+            </div>
+          </div>
+
+          <!--Carousel controls - prev item-->
+          <button
+            class="absolute bottom-0 left-0 top-0 z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-white opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-white hover:no-underline hover:opacity-90 hover:outline-none focus:text-white focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
+            type="button" data-twe-target="#carouselExampleCaptions" data-twe-slide="prev">
+            <span class="inline-block h-8 w-8">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="h-6 w-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+              </svg>
+            </span>
+            <span
+              class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]">Previous</span>
+          </button>
+          <!--Carousel controls - next item-->
+          <button
+            class="absolute bottom-0 right-0 top-0 z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-white opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-white hover:no-underline hover:opacity-90 hover:outline-none focus:text-white focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
+            type="button" data-twe-target="#carouselExampleCaptions" data-twe-slide="next">
+            <span class="inline-block h-8 w-8">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="h-6 w-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+              </svg>
+            </span>
+            <span
+              class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]">Next</span>
+          </button>
+        </div>
+        <!-- ------------------------------------------------ -- -->
+        <div class="p-8 overflow-y-auto">
+          <div class="mt-8 grid grid-cols-1 md:grid-cols-3 gap-10">
+            <div class="bg-(--cards-background-color) dark:bg-(--cards-background-dark-color) rounded-md p-4">
+              <a href="">
+
+              </a>
+            </div>
+            <div class=" rounded-md p-4">
+              <h1 class="text-2xl text-center text-(--text-color) dark:text-(--text-dark-color) font-semibold mb-2">
+                روابط سريعة</h3>
+            </div>
+            <div class="bg-(--cards-background-color) dark:bg-(--cards-background-dark-color) rounded-md p-4">
+
+            </div>
+          </div>
+          <div class="mt-8 grid grid-cols-1 md:grid-cols-4 gap-10">
+            <div
+              class="p-4 max-sm:p-2 bg-(--cards-background-color) dark:bg-(--cards-background-dark-color) rounded-lg shadow-md">
+              <a class="items-center justify-end grid grid-cols-3 gap-2">
+                <div class="circle max-sm:p-2.5 col-span-1">
+                  <svg class="w-5 h-5 fill-(--icons-color) dark:fill-(--icons-dark-color)" aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 512.000000 512.000000">
+                    <g class="shrink-0 w-7 h-7" xmlns="http://www.w3.org/2000/svg"
+                      transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)" stroke="none">
+                      <path
+                        d="M2488 4998 c-47 -13 -113 -69 -140 -122 -31 -57 -31 -155 -1 -212 24 -44 79 -98 112 -109 20 -6 21 -13 21 -246 l0 -239 80 0 80 0 0 239 c0 233 1 240 21 246 58 19 123 106 135 183 22 138 -102 276 -243 271 -15 -1 -44 -5 -65 -11z" />
+                      <path
+                        d="M984 4596 c-182 -85 -178 -353 8 -430 51 -22 143 -20 193 3 45 21 90 62 111 103 l15 28 154 0 155 0 0 -325 c0 -179 3 -325 8 -325 4 0 42 35 85 78 l77 77 0 302 0 302 -24 28 -24 28 -221 3 c-187 3 -221 6 -221 18 0 8 -21 36 -47 62 -76 75 -173 93 -269 48z" />
+                      <path
+                        d="M3934 4596 c-48 -22 -114 -87 -114 -113 0 -8 -57 -12 -221 -15 l-221 -3 -24 -28 -24 -28 0 -302 0 -302 78 -78 c42 -42 81 -77 85 -77 4 0 7 146 7 325 l0 325 153 0 154 0 31 -48 c99 -154 336 -135 413 33 38 82 13 212 -52 272 -69 63 -178 80 -265 39z" />
+                      <path
+                        d="M546 3990 c-205 -65 -218 -363 -19 -447 42 -17 144 -17 187 1 45 19 101 70 116 106 l12 30 119 0 118 0 3 -446 3 -446 24 -19 c19 -16 40 -19 117 -19 l94 0 0 80 0 80 -35 0 -34 0 -3 445 -3 444 -23 23 c-22 22 -29 23 -200 23 l-177 0 -15 28 c-21 39 -67 85 -103 104 -37 19 -140 26 -181 13z" />
+                      <path
+                        d="M4417 3986 c-56 -20 -106 -66 -128 -118 l-11 -28 -183 0 c-172 0 -183 -1 -201 -21 -18 -20 -19 -45 -22 -465 l-3 -444 -34 0 -35 0 0 -80 0 -80 95 0 c88 0 98 2 120 25 l25 24 0 441 0 440 119 0 119 0 11 -29 c30 -71 120 -124 211 -124 138 0 234 96 234 233 0 169 -159 282 -317 226z" />
+                      <path
+                        d="M2407 3913 c-3 -5 -10 -60 -17 -124 l-13 -115 -66 -17 c-36 -10 -101 -35 -143 -57 l-78 -39 -96 76 -97 75 -109 -109 -109 -109 66 -85 c37 -46 69 -89 72 -95 2 -6 -10 -33 -26 -60 -32 -50 -91 -192 -91 -219 0 -21 -9 -23 -125 -38 l-100 -12 -3 -152 -3 -151 28 -6 c16 -3 55 -8 88 -11 89 -10 94 -12 101 -53 11 -60 51 -169 83 -229 17 -31 28 -61 24 -67 -4 -6 -31 -42 -61 -80 l-55 -68 110 -110 109 -109 75 59 c70 55 77 58 95 45 34 -27 198 -101 249 -114 28 -6 55 -16 61 -21 6 -4 15 -40 18 -79 4 -39 10 -77 13 -85 4 -11 36 -14 153 -14 170 0 155 -10 166 107 l7 73 41 10 c87 22 229 85 280 123 18 13 26 10 95 -45 l75 -59 109 109 109 109 -61 78 c-34 43 -60 80 -58 84 35 65 81 175 98 237 12 43 26 82 31 85 6 4 42 10 82 13 129 13 117 -5 114 170 l-3 151 -99 12 c-55 7 -103 14 -108 15 -5 2 -21 40 -37 86 -16 45 -45 110 -65 144 -20 33 -35 66 -33 72 3 6 35 49 71 96 l67 84 -109 109 -109 109 -97 -75 -97 -76 -67 34 c-68 34 -180 75 -205 75 -10 0 -17 28 -26 108 -7 59 -15 115 -17 125 -5 15 -21 17 -154 17 -82 0 -151 -3 -153 -7z m345 -705 c94 -47 176 -130 221 -225 41 -89 50 -223 19 -319 -67 -214 -289 -353 -502 -315 -246 44 -412 268 -379 511 18 128 108 263 218 328 86 51 137 63 247 60 93 -3 107 -6 176 -40z" />
+                      <path
+                        d="M814 3279 c-67 -25 -123 -75 -159 -140 l-30 -54 -3 -902 -2 -903 1940 0 1940 0 -2 903 -3 902 -30 54 c-16 29 -47 68 -69 87 -46 39 -131 74 -181 74 l-35 0 0 -262 c0 -245 -1 -264 -21 -305 -44 -90 -132 -133 -276 -133 -82 0 -83 0 -83 -25 0 -14 -6 -25 -12 -25 -35 -1 -220 -29 -225 -34 -4 -3 -21 -45 -39 -93 l-33 -87 57 -74 c31 -40 63 -81 69 -90 11 -16 -12 -42 -185 -215 l-197 -197 -84 66 -83 66 -67 -30 c-36 -17 -82 -37 -102 -45 -35 -14 -36 -16 -43 -83 -4 -38 -9 -86 -13 -106 l-6 -38 -277 0 -278 0 -5 33 c-3 17 -9 59 -12 92 -9 83 -13 93 -38 100 -12 4 -56 23 -98 42 l-77 35 -83 -66 -84 -66 -197 197 c-173 173 -196 199 -185 215 6 9 38 50 69 91 l58 74 -30 69 c-16 38 -30 77 -30 86 0 9 -5 20 -11 23 -9 6 -192 34 -226 35 -7 0 -13 11 -13 25 0 25 -1 25 -83 25 -144 0 -232 43 -276 133 -20 41 -21 60 -21 305 l0 262 -37 -1 c-21 0 -61 -9 -89 -20z" />
+                      <path
+                        d="M620 1017 c0 -148 15 -194 89 -268 104 -103 -80 -94 1851 -94 1931 0 1747 -9 1851 94 74 74 89 120 89 268 l0 113 -1940 0 -1940 0 0 -113z" />
+                      <path
+                        d="M1860 395 l0 -115 -160 0 c-202 0 -230 -11 -230 -90 0 -15 9 -38 19 -51 l19 -24 1052 0 1052 0 19 24 c21 26 25 78 6 102 -26 34 -55 39 -216 39 l-161 0 0 115 0 115 -700 0 -700 0 0 -115z" />
+                    </g>
+                  </svg>
+                </div>
+                <p class="text-sm col-span-2 text-(--text-color) dark:text-(--text-dark-color)">نظام 1</p>
+              </a>
+            </div>
+            <div
+              class="p-4 max-sm:p-2 bg-(--cards-background-color) dark:bg-(--cards-background-dark-color) rounded-lg shadow-md">
+              <a class="items-center justify-end grid grid-cols-3 gap-2">
+                <div class="circle max-sm:p-2.5 col-span-1">
+                  <svg class="w-5 h-5 fill-(--icons-color) dark:fill-(--icons-dark-color)" aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 512.000000 512.000000">
+                    <g class="shrink-0 w-7 h-7" xmlns="http://www.w3.org/2000/svg"
+                      transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)" stroke="none">
+                      <path
+                        d="M2488 4998 c-47 -13 -113 -69 -140 -122 -31 -57 -31 -155 -1 -212 24 -44 79 -98 112 -109 20 -6 21 -13 21 -246 l0 -239 80 0 80 0 0 239 c0 233 1 240 21 246 58 19 123 106 135 183 22 138 -102 276 -243 271 -15 -1 -44 -5 -65 -11z" />
+                      <path
+                        d="M984 4596 c-182 -85 -178 -353 8 -430 51 -22 143 -20 193 3 45 21 90 62 111 103 l15 28 154 0 155 0 0 -325 c0 -179 3 -325 8 -325 4 0 42 35 85 78 l77 77 0 302 0 302 -24 28 -24 28 -221 3 c-187 3 -221 6 -221 18 0 8 -21 36 -47 62 -76 75 -173 93 -269 48z" />
+                      <path
+                        d="M3934 4596 c-48 -22 -114 -87 -114 -113 0 -8 -57 -12 -221 -15 l-221 -3 -24 -28 -24 -28 0 -302 0 -302 78 -78 c42 -42 81 -77 85 -77 4 0 7 146 7 325 l0 325 153 0 154 0 31 -48 c99 -154 336 -135 413 33 38 82 13 212 -52 272 -69 63 -178 80 -265 39z" />
+                      <path
+                        d="M546 3990 c-205 -65 -218 -363 -19 -447 42 -17 144 -17 187 1 45 19 101 70 116 106 l12 30 119 0 118 0 3 -446 3 -446 24 -19 c19 -16 40 -19 117 -19 l94 0 0 80 0 80 -35 0 -34 0 -3 445 -3 444 -23 23 c-22 22 -29 23 -200 23 l-177 0 -15 28 c-21 39 -67 85 -103 104 -37 19 -140 26 -181 13z" />
+                      <path
+                        d="M4417 3986 c-56 -20 -106 -66 -128 -118 l-11 -28 -183 0 c-172 0 -183 -1 -201 -21 -18 -20 -19 -45 -22 -465 l-3 -444 -34 0 -35 0 0 -80 0 -80 95 0 c88 0 98 2 120 25 l25 24 0 441 0 440 119 0 119 0 11 -29 c30 -71 120 -124 211 -124 138 0 234 96 234 233 0 169 -159 282 -317 226z" />
+                      <path
+                        d="M2407 3913 c-3 -5 -10 -60 -17 -124 l-13 -115 -66 -17 c-36 -10 -101 -35 -143 -57 l-78 -39 -96 76 -97 75 -109 -109 -109 -109 66 -85 c37 -46 69 -89 72 -95 2 -6 -10 -33 -26 -60 -32 -50 -91 -192 -91 -219 0 -21 -9 -23 -125 -38 l-100 -12 -3 -152 -3 -151 28 -6 c16 -3 55 -8 88 -11 89 -10 94 -12 101 -53 11 -60 51 -169 83 -229 17 -31 28 -61 24 -67 -4 -6 -31 -42 -61 -80 l-55 -68 110 -110 109 -109 75 59 c70 55 77 58 95 45 34 -27 198 -101 249 -114 28 -6 55 -16 61 -21 6 -4 15 -40 18 -79 4 -39 10 -77 13 -85 4 -11 36 -14 153 -14 170 0 155 -10 166 107 l7 73 41 10 c87 22 229 85 280 123 18 13 26 10 95 -45 l75 -59 109 109 109 109 -61 78 c-34 43 -60 80 -58 84 35 65 81 175 98 237 12 43 26 82 31 85 6 4 42 10 82 13 129 13 117 -5 114 170 l-3 151 -99 12 c-55 7 -103 14 -108 15 -5 2 -21 40 -37 86 -16 45 -45 110 -65 144 -20 33 -35 66 -33 72 3 6 35 49 71 96 l67 84 -109 109 -109 109 -97 -75 -97 -76 -67 34 c-68 34 -180 75 -205 75 -10 0 -17 28 -26 108 -7 59 -15 115 -17 125 -5 15 -21 17 -154 17 -82 0 -151 -3 -153 -7z m345 -705 c94 -47 176 -130 221 -225 41 -89 50 -223 19 -319 -67 -214 -289 -353 -502 -315 -246 44 -412 268 -379 511 18 128 108 263 218 328 86 51 137 63 247 60 93 -3 107 -6 176 -40z" />
+                      <path
+                        d="M814 3279 c-67 -25 -123 -75 -159 -140 l-30 -54 -3 -902 -2 -903 1940 0 1940 0 -2 903 -3 902 -30 54 c-16 29 -47 68 -69 87 -46 39 -131 74 -181 74 l-35 0 0 -262 c0 -245 -1 -264 -21 -305 -44 -90 -132 -133 -276 -133 -82 0 -83 0 -83 -25 0 -14 -6 -25 -12 -25 -35 -1 -220 -29 -225 -34 -4 -3 -21 -45 -39 -93 l-33 -87 57 -74 c31 -40 63 -81 69 -90 11 -16 -12 -42 -185 -215 l-197 -197 -84 66 -83 66 -67 -30 c-36 -17 -82 -37 -102 -45 -35 -14 -36 -16 -43 -83 -4 -38 -9 -86 -13 -106 l-6 -38 -277 0 -278 0 -5 33 c-3 17 -9 59 -12 92 -9 83 -13 93 -38 100 -12 4 -56 23 -98 42 l-77 35 -83 -66 -84 -66 -197 197 c-173 173 -196 199 -185 215 6 9 38 50 69 91 l58 74 -30 69 c-16 38 -30 77 -30 86 0 9 -5 20 -11 23 -9 6 -192 34 -226 35 -7 0 -13 11 -13 25 0 25 -1 25 -83 25 -144 0 -232 43 -276 133 -20 41 -21 60 -21 305 l0 262 -37 -1 c-21 0 -61 -9 -89 -20z" />
+                      <path
+                        d="M620 1017 c0 -148 15 -194 89 -268 104 -103 -80 -94 1851 -94 1931 0 1747 -9 1851 94 74 74 89 120 89 268 l0 113 -1940 0 -1940 0 0 -113z" />
+                      <path
+                        d="M1860 395 l0 -115 -160 0 c-202 0 -230 -11 -230 -90 0 -15 9 -38 19 -51 l19 -24 1052 0 1052 0 19 24 c21 26 25 78 6 102 -26 34 -55 39 -216 39 l-161 0 0 115 0 115 -700 0 -700 0 0 -115z" />
+                    </g>
+                  </svg>
+                </div>
+                <p class="text-sm col-span-2 text-(--text-color) dark:text-(--text-dark-color)">نظام 1</p>
+              </a>
+            </div>
+            <div
+              class="p-4 max-sm:p-2 bg-(--cards-background-color) dark:bg-(--cards-background-dark-color) rounded-lg shadow-md">
+              <a class="items-center justify-end grid grid-cols-3 gap-2">
+                <div class="circle max-sm:p-2.5 col-span-1">
+                  <svg class="w-5 h-5 fill-(--icons-color) dark:fill-(--icons-dark-color)" aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 512.000000 512.000000">
+                    <g class="shrink-0 w-7 h-7" xmlns="http://www.w3.org/2000/svg"
+                      transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)" stroke="none">
+                      <path
+                        d="M2488 4998 c-47 -13 -113 -69 -140 -122 -31 -57 -31 -155 -1 -212 24 -44 79 -98 112 -109 20 -6 21 -13 21 -246 l0 -239 80 0 80 0 0 239 c0 233 1 240 21 246 58 19 123 106 135 183 22 138 -102 276 -243 271 -15 -1 -44 -5 -65 -11z" />
+                      <path
+                        d="M984 4596 c-182 -85 -178 -353 8 -430 51 -22 143 -20 193 3 45 21 90 62 111 103 l15 28 154 0 155 0 0 -325 c0 -179 3 -325 8 -325 4 0 42 35 85 78 l77 77 0 302 0 302 -24 28 -24 28 -221 3 c-187 3 -221 6 -221 18 0 8 -21 36 -47 62 -76 75 -173 93 -269 48z" />
+                      <path
+                        d="M3934 4596 c-48 -22 -114 -87 -114 -113 0 -8 -57 -12 -221 -15 l-221 -3 -24 -28 -24 -28 0 -302 0 -302 78 -78 c42 -42 81 -77 85 -77 4 0 7 146 7 325 l0 325 153 0 154 0 31 -48 c99 -154 336 -135 413 33 38 82 13 212 -52 272 -69 63 -178 80 -265 39z" />
+                      <path
+                        d="M546 3990 c-205 -65 -218 -363 -19 -447 42 -17 144 -17 187 1 45 19 101 70 116 106 l12 30 119 0 118 0 3 -446 3 -446 24 -19 c19 -16 40 -19 117 -19 l94 0 0 80 0 80 -35 0 -34 0 -3 445 -3 444 -23 23 c-22 22 -29 23 -200 23 l-177 0 -15 28 c-21 39 -67 85 -103 104 -37 19 -140 26 -181 13z" />
+                      <path
+                        d="M4417 3986 c-56 -20 -106 -66 -128 -118 l-11 -28 -183 0 c-172 0 -183 -1 -201 -21 -18 -20 -19 -45 -22 -465 l-3 -444 -34 0 -35 0 0 -80 0 -80 95 0 c88 0 98 2 120 25 l25 24 0 441 0 440 119 0 119 0 11 -29 c30 -71 120 -124 211 -124 138 0 234 96 234 233 0 169 -159 282 -317 226z" />
+                      <path
+                        d="M2407 3913 c-3 -5 -10 -60 -17 -124 l-13 -115 -66 -17 c-36 -10 -101 -35 -143 -57 l-78 -39 -96 76 -97 75 -109 -109 -109 -109 66 -85 c37 -46 69 -89 72 -95 2 -6 -10 -33 -26 -60 -32 -50 -91 -192 -91 -219 0 -21 -9 -23 -125 -38 l-100 -12 -3 -152 -3 -151 28 -6 c16 -3 55 -8 88 -11 89 -10 94 -12 101 -53 11 -60 51 -169 83 -229 17 -31 28 -61 24 -67 -4 -6 -31 -42 -61 -80 l-55 -68 110 -110 109 -109 75 59 c70 55 77 58 95 45 34 -27 198 -101 249 -114 28 -6 55 -16 61 -21 6 -4 15 -40 18 -79 4 -39 10 -77 13 -85 4 -11 36 -14 153 -14 170 0 155 -10 166 107 l7 73 41 10 c87 22 229 85 280 123 18 13 26 10 95 -45 l75 -59 109 109 109 109 -61 78 c-34 43 -60 80 -58 84 35 65 81 175 98 237 12 43 26 82 31 85 6 4 42 10 82 13 129 13 117 -5 114 170 l-3 151 -99 12 c-55 7 -103 14 -108 15 -5 2 -21 40 -37 86 -16 45 -45 110 -65 144 -20 33 -35 66 -33 72 3 6 35 49 71 96 l67 84 -109 109 -109 109 -97 -75 -97 -76 -67 34 c-68 34 -180 75 -205 75 -10 0 -17 28 -26 108 -7 59 -15 115 -17 125 -5 15 -21 17 -154 17 -82 0 -151 -3 -153 -7z m345 -705 c94 -47 176 -130 221 -225 41 -89 50 -223 19 -319 -67 -214 -289 -353 -502 -315 -246 44 -412 268 -379 511 18 128 108 263 218 328 86 51 137 63 247 60 93 -3 107 -6 176 -40z" />
+                      <path
+                        d="M814 3279 c-67 -25 -123 -75 -159 -140 l-30 -54 -3 -902 -2 -903 1940 0 1940 0 -2 903 -3 902 -30 54 c-16 29 -47 68 -69 87 -46 39 -131 74 -181 74 l-35 0 0 -262 c0 -245 -1 -264 -21 -305 -44 -90 -132 -133 -276 -133 -82 0 -83 0 -83 -25 0 -14 -6 -25 -12 -25 -35 -1 -220 -29 -225 -34 -4 -3 -21 -45 -39 -93 l-33 -87 57 -74 c31 -40 63 -81 69 -90 11 -16 -12 -42 -185 -215 l-197 -197 -84 66 -83 66 -67 -30 c-36 -17 -82 -37 -102 -45 -35 -14 -36 -16 -43 -83 -4 -38 -9 -86 -13 -106 l-6 -38 -277 0 -278 0 -5 33 c-3 17 -9 59 -12 92 -9 83 -13 93 -38 100 -12 4 -56 23 -98 42 l-77 35 -83 -66 -84 -66 -197 197 c-173 173 -196 199 -185 215 6 9 38 50 69 91 l58 74 -30 69 c-16 38 -30 77 -30 86 0 9 -5 20 -11 23 -9 6 -192 34 -226 35 -7 0 -13 11 -13 25 0 25 -1 25 -83 25 -144 0 -232 43 -276 133 -20 41 -21 60 -21 305 l0 262 -37 -1 c-21 0 -61 -9 -89 -20z" />
+                      <path
+                        d="M620 1017 c0 -148 15 -194 89 -268 104 -103 -80 -94 1851 -94 1931 0 1747 -9 1851 94 74 74 89 120 89 268 l0 113 -1940 0 -1940 0 0 -113z" />
+                      <path
+                        d="M1860 395 l0 -115 -160 0 c-202 0 -230 -11 -230 -90 0 -15 9 -38 19 -51 l19 -24 1052 0 1052 0 19 24 c21 26 25 78 6 102 -26 34 -55 39 -216 39 l-161 0 0 115 0 115 -700 0 -700 0 0 -115z" />
+                    </g>
+                  </svg>
+                </div>
+                <p class="text-sm col-span-2 text-(--text-color) dark:text-(--text-dark-color)">نظام 1</p>
+              </a>
+            </div>
+            <div
+              class="p-4 max-sm:p-2 bg-(--cards-background-color) dark:bg-(--cards-background-dark-color) rounded-lg shadow-md">
+              <a class="items-center justify-end grid grid-cols-3 gap-2">
+                <div class="circle max-sm:p-2.5 col-span-1">
+                  <svg class="w-5 h-5 fill-(--icons-color) dark:fill-(--icons-dark-color)" aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 512.000000 512.000000">
+                    <g class="shrink-0 w-7 h-7" xmlns="http://www.w3.org/2000/svg"
+                      transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)" stroke="none">
+                      <path
+                        d="M2488 4998 c-47 -13 -113 -69 -140 -122 -31 -57 -31 -155 -1 -212 24 -44 79 -98 112 -109 20 -6 21 -13 21 -246 l0 -239 80 0 80 0 0 239 c0 233 1 240 21 246 58 19 123 106 135 183 22 138 -102 276 -243 271 -15 -1 -44 -5 -65 -11z" />
+                      <path
+                        d="M984 4596 c-182 -85 -178 -353 8 -430 51 -22 143 -20 193 3 45 21 90 62 111 103 l15 28 154 0 155 0 0 -325 c0 -179 3 -325 8 -325 4 0 42 35 85 78 l77 77 0 302 0 302 -24 28 -24 28 -221 3 c-187 3 -221 6 -221 18 0 8 -21 36 -47 62 -76 75 -173 93 -269 48z" />
+                      <path
+                        d="M3934 4596 c-48 -22 -114 -87 -114 -113 0 -8 -57 -12 -221 -15 l-221 -3 -24 -28 -24 -28 0 -302 0 -302 78 -78 c42 -42 81 -77 85 -77 4 0 7 146 7 325 l0 325 153 0 154 0 31 -48 c99 -154 336 -135 413 33 38 82 13 212 -52 272 -69 63 -178 80 -265 39z" />
+                      <path
+                        d="M546 3990 c-205 -65 -218 -363 -19 -447 42 -17 144 -17 187 1 45 19 101 70 116 106 l12 30 119 0 118 0 3 -446 3 -446 24 -19 c19 -16 40 -19 117 -19 l94 0 0 80 0 80 -35 0 -34 0 -3 445 -3 444 -23 23 c-22 22 -29 23 -200 23 l-177 0 -15 28 c-21 39 -67 85 -103 104 -37 19 -140 26 -181 13z" />
+                      <path
+                        d="M4417 3986 c-56 -20 -106 -66 -128 -118 l-11 -28 -183 0 c-172 0 -183 -1 -201 -21 -18 -20 -19 -45 -22 -465 l-3 -444 -34 0 -35 0 0 -80 0 -80 95 0 c88 0 98 2 120 25 l25 24 0 441 0 440 119 0 119 0 11 -29 c30 -71 120 -124 211 -124 138 0 234 96 234 233 0 169 -159 282 -317 226z" />
+                      <path
+                        d="M2407 3913 c-3 -5 -10 -60 -17 -124 l-13 -115 -66 -17 c-36 -10 -101 -35 -143 -57 l-78 -39 -96 76 -97 75 -109 -109 -109 -109 66 -85 c37 -46 69 -89 72 -95 2 -6 -10 -33 -26 -60 -32 -50 -91 -192 -91 -219 0 -21 -9 -23 -125 -38 l-100 -12 -3 -152 -3 -151 28 -6 c16 -3 55 -8 88 -11 89 -10 94 -12 101 -53 11 -60 51 -169 83 -229 17 -31 28 -61 24 -67 -4 -6 -31 -42 -61 -80 l-55 -68 110 -110 109 -109 75 59 c70 55 77 58 95 45 34 -27 198 -101 249 -114 28 -6 55 -16 61 -21 6 -4 15 -40 18 -79 4 -39 10 -77 13 -85 4 -11 36 -14 153 -14 170 0 155 -10 166 107 l7 73 41 10 c87 22 229 85 280 123 18 13 26 10 95 -45 l75 -59 109 109 109 109 -61 78 c-34 43 -60 80 -58 84 35 65 81 175 98 237 12 43 26 82 31 85 6 4 42 10 82 13 129 13 117 -5 114 170 l-3 151 -99 12 c-55 7 -103 14 -108 15 -5 2 -21 40 -37 86 -16 45 -45 110 -65 144 -20 33 -35 66 -33 72 3 6 35 49 71 96 l67 84 -109 109 -109 109 -97 -75 -97 -76 -67 34 c-68 34 -180 75 -205 75 -10 0 -17 28 -26 108 -7 59 -15 115 -17 125 -5 15 -21 17 -154 17 -82 0 -151 -3 -153 -7z m345 -705 c94 -47 176 -130 221 -225 41 -89 50 -223 19 -319 -67 -214 -289 -353 -502 -315 -246 44 -412 268 -379 511 18 128 108 263 218 328 86 51 137 63 247 60 93 -3 107 -6 176 -40z" />
+                      <path
+                        d="M814 3279 c-67 -25 -123 -75 -159 -140 l-30 -54 -3 -902 -2 -903 1940 0 1940 0 -2 903 -3 902 -30 54 c-16 29 -47 68 -69 87 -46 39 -131 74 -181 74 l-35 0 0 -262 c0 -245 -1 -264 -21 -305 -44 -90 -132 -133 -276 -133 -82 0 -83 0 -83 -25 0 -14 -6 -25 -12 -25 -35 -1 -220 -29 -225 -34 -4 -3 -21 -45 -39 -93 l-33 -87 57 -74 c31 -40 63 -81 69 -90 11 -16 -12 -42 -185 -215 l-197 -197 -84 66 -83 66 -67 -30 c-36 -17 -82 -37 -102 -45 -35 -14 -36 -16 -43 -83 -4 -38 -9 -86 -13 -106 l-6 -38 -277 0 -278 0 -5 33 c-3 17 -9 59 -12 92 -9 83 -13 93 -38 100 -12 4 -56 23 -98 42 l-77 35 -83 -66 -84 -66 -197 197 c-173 173 -196 199 -185 215 6 9 38 50 69 91 l58 74 -30 69 c-16 38 -30 77 -30 86 0 9 -5 20 -11 23 -9 6 -192 34 -226 35 -7 0 -13 11 -13 25 0 25 -1 25 -83 25 -144 0 -232 43 -276 133 -20 41 -21 60 -21 305 l0 262 -37 -1 c-21 0 -61 -9 -89 -20z" />
+                      <path
+                        d="M620 1017 c0 -148 15 -194 89 -268 104 -103 -80 -94 1851 -94 1931 0 1747 -9 1851 94 74 74 89 120 89 268 l0 113 -1940 0 -1940 0 0 -113z" />
+                      <path
+                        d="M1860 395 l0 -115 -160 0 c-202 0 -230 -11 -230 -90 0 -15 9 -38 19 -51 l19 -24 1052 0 1052 0 19 24 c21 26 25 78 6 102 -26 34 -55 39 -216 39 l-161 0 0 115 0 115 -700 0 -700 0 0 -115z" />
+                    </g>
+                  </svg>
+                </div>
+                <p class="text-sm col-span-2 text-(--text-color) dark:text-(--text-dark-color)">نظام 1</p>
+              </a>
+            </div>
+            <div class="p-4 max-sm:p-2 bg-(--cards-background-color) dark:bg-(--cards-background-dark-color) rounded-lg shadow-md">
+              <a class="items-center justify-end grid grid-cols-3 gap-2">
+                <div class="circle max-sm:p-2.5 col-span-1">
+                  <svg class="w-5 h-5 fill-(--icons-color) dark:fill-(--icons-dark-color)" aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 512.000000 512.000000">
+                    <g class="shrink-0 w-7 h-7" xmlns="http://www.w3.org/2000/svg"
+                      transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)" stroke="none">
+                      <path
+                        d="M2488 4998 c-47 -13 -113 -69 -140 -122 -31 -57 -31 -155 -1 -212 24 -44 79 -98 112 -109 20 -6 21 -13 21 -246 l0 -239 80 0 80 0 0 239 c0 233 1 240 21 246 58 19 123 106 135 183 22 138 -102 276 -243 271 -15 -1 -44 -5 -65 -11z" />
+                      <path
+                        d="M984 4596 c-182 -85 -178 -353 8 -430 51 -22 143 -20 193 3 45 21 90 62 111 103 l15 28 154 0 155 0 0 -325 c0 -179 3 -325 8 -325 4 0 42 35 85 78 l77 77 0 302 0 302 -24 28 -24 28 -221 3 c-187 3 -221 6 -221 18 0 8 -21 36 -47 62 -76 75 -173 93 -269 48z" />
+                      <path
+                        d="M3934 4596 c-48 -22 -114 -87 -114 -113 0 -8 -57 -12 -221 -15 l-221 -3 -24 -28 -24 -28 0 -302 0 -302 78 -78 c42 -42 81 -77 85 -77 4 0 7 146 7 325 l0 325 153 0 154 0 31 -48 c99 -154 336 -135 413 33 38 82 13 212 -52 272 -69 63 -178 80 -265 39z" />
+                      <path
+                        d="M546 3990 c-205 -65 -218 -363 -19 -447 42 -17 144 -17 187 1 45 19 101 70 116 106 l12 30 119 0 118 0 3 -446 3 -446 24 -19 c19 -16 40 -19 117 -19 l94 0 0 80 0 80 -35 0 -34 0 -3 445 -3 444 -23 23 c-22 22 -29 23 -200 23 l-177 0 -15 28 c-21 39 -67 85 -103 104 -37 19 -140 26 -181 13z" />
+                      <path
+                        d="M4417 3986 c-56 -20 -106 -66 -128 -118 l-11 -28 -183 0 c-172 0 -183 -1 -201 -21 -18 -20 -19 -45 -22 -465 l-3 -444 -34 0 -35 0 0 -80 0 -80 95 0 c88 0 98 2 120 25 l25 24 0 441 0 440 119 0 119 0 11 -29 c30 -71 120 -124 211 -124 138 0 234 96 234 233 0 169 -159 282 -317 226z" />
+                      <path
+                        d="M2407 3913 c-3 -5 -10 -60 -17 -124 l-13 -115 -66 -17 c-36 -10 -101 -35 -143 -57 l-78 -39 -96 76 -97 75 -109 -109 -109 -109 66 -85 c37 -46 69 -89 72 -95 2 -6 -10 -33 -26 -60 -32 -50 -91 -192 -91 -219 0 -21 -9 -23 -125 -38 l-100 -12 -3 -152 -3 -151 28 -6 c16 -3 55 -8 88 -11 89 -10 94 -12 101 -53 11 -60 51 -169 83 -229 17 -31 28 -61 24 -67 -4 -6 -31 -42 -61 -80 l-55 -68 110 -110 109 -109 75 59 c70 55 77 58 95 45 34 -27 198 -101 249 -114 28 -6 55 -16 61 -21 6 -4 15 -40 18 -79 4 -39 10 -77 13 -85 4 -11 36 -14 153 -14 170 0 155 -10 166 107 l7 73 41 10 c87 22 229 85 280 123 18 13 26 10 95 -45 l75 -59 109 109 109 109 -61 78 c-34 43 -60 80 -58 84 35 65 81 175 98 237 12 43 26 82 31 85 6 4 42 10 82 13 129 13 117 -5 114 170 l-3 151 -99 12 c-55 7 -103 14 -108 15 -5 2 -21 40 -37 86 -16 45 -45 110 -65 144 -20 33 -35 66 -33 72 3 6 35 49 71 96 l67 84 -109 109 -109 109 -97 -75 -97 -76 -67 34 c-68 34 -180 75 -205 75 -10 0 -17 28 -26 108 -7 59 -15 115 -17 125 -5 15 -21 17 -154 17 -82 0 -151 -3 -153 -7z m345 -705 c94 -47 176 -130 221 -225 41 -89 50 -223 19 -319 -67 -214 -289 -353 -502 -315 -246 44 -412 268 -379 511 18 128 108 263 218 328 86 51 137 63 247 60 93 -3 107 -6 176 -40z" />
+                      <path
+                        d="M814 3279 c-67 -25 -123 -75 -159 -140 l-30 -54 -3 -902 -2 -903 1940 0 1940 0 -2 903 -3 902 -30 54 c-16 29 -47 68 -69 87 -46 39 -131 74 -181 74 l-35 0 0 -262 c0 -245 -1 -264 -21 -305 -44 -90 -132 -133 -276 -133 -82 0 -83 0 -83 -25 0 -14 -6 -25 -12 -25 -35 -1 -220 -29 -225 -34 -4 -3 -21 -45 -39 -93 l-33 -87 57 -74 c31 -40 63 -81 69 -90 11 -16 -12 -42 -185 -215 l-197 -197 -84 66 -83 66 -67 -30 c-36 -17 -82 -37 -102 -45 -35 -14 -36 -16 -43 -83 -4 -38 -9 -86 -13 -106 l-6 -38 -277 0 -278 0 -5 33 c-3 17 -9 59 -12 92 -9 83 -13 93 -38 100 -12 4 -56 23 -98 42 l-77 35 -83 -66 -84 -66 -197 197 c-173 173 -196 199 -185 215 6 9 38 50 69 91 l58 74 -30 69 c-16 38 -30 77 -30 86 0 9 -5 20 -11 23 -9 6 -192 34 -226 35 -7 0 -13 11 -13 25 0 25 -1 25 -83 25 -144 0 -232 43 -276 133 -20 41 -21 60 -21 305 l0 262 -37 -1 c-21 0 -61 -9 -89 -20z" />
+                      <path
+                        d="M620 1017 c0 -148 15 -194 89 -268 104 -103 -80 -94 1851 -94 1931 0 1747 -9 1851 94 74 74 89 120 89 268 l0 113 -1940 0 -1940 0 0 -113z" />
+                      <path
+                        d="M1860 395 l0 -115 -160 0 c-202 0 -230 -11 -230 -90 0 -15 9 -38 19 -51 l19 -24 1052 0 1052 0 19 24 c21 26 25 78 6 102 -26 34 -55 39 -216 39 l-161 0 0 115 0 115 -700 0 -700 0 0 -115z" />
+                    </g>
+                  </svg>
+                </div>
+                <p class="text-sm col-span-2 text-(--text-color) dark:text-(--text-dark-color)">نظام 1</p>
+              </a>
+            </div><div class="p-4 max-sm:p-2 bg-(--cards-background-color) dark:bg-(--cards-background-dark-color) rounded-lg shadow-md">
+              <a class="items-center justify-end grid grid-cols-3 gap-2">
+                <div class="circle max-sm:p-2.5 col-span-1">
+                  <svg class="w-5 h-5 fill-(--icons-color) dark:fill-(--icons-dark-color)" aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 512.000000 512.000000">
+                    <g class="shrink-0 w-7 h-7" xmlns="http://www.w3.org/2000/svg"
+                      transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)" stroke="none">
+                      <path
+                        d="M2488 4998 c-47 -13 -113 -69 -140 -122 -31 -57 -31 -155 -1 -212 24 -44 79 -98 112 -109 20 -6 21 -13 21 -246 l0 -239 80 0 80 0 0 239 c0 233 1 240 21 246 58 19 123 106 135 183 22 138 -102 276 -243 271 -15 -1 -44 -5 -65 -11z" />
+                      <path
+                        d="M984 4596 c-182 -85 -178 -353 8 -430 51 -22 143 -20 193 3 45 21 90 62 111 103 l15 28 154 0 155 0 0 -325 c0 -179 3 -325 8 -325 4 0 42 35 85 78 l77 77 0 302 0 302 -24 28 -24 28 -221 3 c-187 3 -221 6 -221 18 0 8 -21 36 -47 62 -76 75 -173 93 -269 48z" />
+                      <path
+                        d="M3934 4596 c-48 -22 -114 -87 -114 -113 0 -8 -57 -12 -221 -15 l-221 -3 -24 -28 -24 -28 0 -302 0 -302 78 -78 c42 -42 81 -77 85 -77 4 0 7 146 7 325 l0 325 153 0 154 0 31 -48 c99 -154 336 -135 413 33 38 82 13 212 -52 272 -69 63 -178 80 -265 39z" />
+                      <path
+                        d="M546 3990 c-205 -65 -218 -363 -19 -447 42 -17 144 -17 187 1 45 19 101 70 116 106 l12 30 119 0 118 0 3 -446 3 -446 24 -19 c19 -16 40 -19 117 -19 l94 0 0 80 0 80 -35 0 -34 0 -3 445 -3 444 -23 23 c-22 22 -29 23 -200 23 l-177 0 -15 28 c-21 39 -67 85 -103 104 -37 19 -140 26 -181 13z" />
+                      <path
+                        d="M4417 3986 c-56 -20 -106 -66 -128 -118 l-11 -28 -183 0 c-172 0 -183 -1 -201 -21 -18 -20 -19 -45 -22 -465 l-3 -444 -34 0 -35 0 0 -80 0 -80 95 0 c88 0 98 2 120 25 l25 24 0 441 0 440 119 0 119 0 11 -29 c30 -71 120 -124 211 -124 138 0 234 96 234 233 0 169 -159 282 -317 226z" />
+                      <path
+                        d="M2407 3913 c-3 -5 -10 -60 -17 -124 l-13 -115 -66 -17 c-36 -10 -101 -35 -143 -57 l-78 -39 -96 76 -97 75 -109 -109 -109 -109 66 -85 c37 -46 69 -89 72 -95 2 -6 -10 -33 -26 -60 -32 -50 -91 -192 -91 -219 0 -21 -9 -23 -125 -38 l-100 -12 -3 -152 -3 -151 28 -6 c16 -3 55 -8 88 -11 89 -10 94 -12 101 -53 11 -60 51 -169 83 -229 17 -31 28 -61 24 -67 -4 -6 -31 -42 -61 -80 l-55 -68 110 -110 109 -109 75 59 c70 55 77 58 95 45 34 -27 198 -101 249 -114 28 -6 55 -16 61 -21 6 -4 15 -40 18 -79 4 -39 10 -77 13 -85 4 -11 36 -14 153 -14 170 0 155 -10 166 107 l7 73 41 10 c87 22 229 85 280 123 18 13 26 10 95 -45 l75 -59 109 109 109 109 -61 78 c-34 43 -60 80 -58 84 35 65 81 175 98 237 12 43 26 82 31 85 6 4 42 10 82 13 129 13 117 -5 114 170 l-3 151 -99 12 c-55 7 -103 14 -108 15 -5 2 -21 40 -37 86 -16 45 -45 110 -65 144 -20 33 -35 66 -33 72 3 6 35 49 71 96 l67 84 -109 109 -109 109 -97 -75 -97 -76 -67 34 c-68 34 -180 75 -205 75 -10 0 -17 28 -26 108 -7 59 -15 115 -17 125 -5 15 -21 17 -154 17 -82 0 -151 -3 -153 -7z m345 -705 c94 -47 176 -130 221 -225 41 -89 50 -223 19 -319 -67 -214 -289 -353 -502 -315 -246 44 -412 268 -379 511 18 128 108 263 218 328 86 51 137 63 247 60 93 -3 107 -6 176 -40z" />
+                      <path
+                        d="M814 3279 c-67 -25 -123 -75 -159 -140 l-30 -54 -3 -902 -2 -903 1940 0 1940 0 -2 903 -3 902 -30 54 c-16 29 -47 68 -69 87 -46 39 -131 74 -181 74 l-35 0 0 -262 c0 -245 -1 -264 -21 -305 -44 -90 -132 -133 -276 -133 -82 0 -83 0 -83 -25 0 -14 -6 -25 -12 -25 -35 -1 -220 -29 -225 -34 -4 -3 -21 -45 -39 -93 l-33 -87 57 -74 c31 -40 63 -81 69 -90 11 -16 -12 -42 -185 -215 l-197 -197 -84 66 -83 66 -67 -30 c-36 -17 -82 -37 -102 -45 -35 -14 -36 -16 -43 -83 -4 -38 -9 -86 -13 -106 l-6 -38 -277 0 -278 0 -5 33 c-3 17 -9 59 -12 92 -9 83 -13 93 -38 100 -12 4 -56 23 -98 42 l-77 35 -83 -66 -84 -66 -197 197 c-173 173 -196 199 -185 215 6 9 38 50 69 91 l58 74 -30 69 c-16 38 -30 77 -30 86 0 9 -5 20 -11 23 -9 6 -192 34 -226 35 -7 0 -13 11 -13 25 0 25 -1 25 -83 25 -144 0 -232 43 -276 133 -20 41 -21 60 -21 305 l0 262 -37 -1 c-21 0 -61 -9 -89 -20z" />
+                      <path
+                        d="M620 1017 c0 -148 15 -194 89 -268 104 -103 -80 -94 1851 -94 1931 0 1747 -9 1851 94 74 74 89 120 89 268 l0 113 -1940 0 -1940 0 0 -113z" />
+                      <path
+                        d="M1860 395 l0 -115 -160 0 c-202 0 -230 -11 -230 -90 0 -15 9 -38 19 -51 l19 -24 1052 0 1052 0 19 24 c21 26 25 78 6 102 -26 34 -55 39 -216 39 l-161 0 0 115 0 115 -700 0 -700 0 0 -115z" />
+                    </g>
+                  </svg>
+                </div>
+                <p class="text-sm col-span-2 text-(--text-color) dark:text-(--text-dark-color)">نظام 1</p>
+              </a>
+            </div><div class="p-4 max-sm:p-2 bg-(--cards-background-color) dark:bg-(--cards-background-dark-color) rounded-lg shadow-md">
+              <a class="items-center justify-end grid grid-cols-3 gap-2">
+                <div class="circle max-sm:p-2.5 col-span-1">
+                  <svg class="w-5 h-5 fill-(--icons-color) dark:fill-(--icons-dark-color)" aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 512.000000 512.000000">
+                    <g class="shrink-0 w-7 h-7" xmlns="http://www.w3.org/2000/svg"
+                      transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)" stroke="none">
+                      <path
+                        d="M2488 4998 c-47 -13 -113 -69 -140 -122 -31 -57 -31 -155 -1 -212 24 -44 79 -98 112 -109 20 -6 21 -13 21 -246 l0 -239 80 0 80 0 0 239 c0 233 1 240 21 246 58 19 123 106 135 183 22 138 -102 276 -243 271 -15 -1 -44 -5 -65 -11z" />
+                      <path
+                        d="M984 4596 c-182 -85 -178 -353 8 -430 51 -22 143 -20 193 3 45 21 90 62 111 103 l15 28 154 0 155 0 0 -325 c0 -179 3 -325 8 -325 4 0 42 35 85 78 l77 77 0 302 0 302 -24 28 -24 28 -221 3 c-187 3 -221 6 -221 18 0 8 -21 36 -47 62 -76 75 -173 93 -269 48z" />
+                      <path
+                        d="M3934 4596 c-48 -22 -114 -87 -114 -113 0 -8 -57 -12 -221 -15 l-221 -3 -24 -28 -24 -28 0 -302 0 -302 78 -78 c42 -42 81 -77 85 -77 4 0 7 146 7 325 l0 325 153 0 154 0 31 -48 c99 -154 336 -135 413 33 38 82 13 212 -52 272 -69 63 -178 80 -265 39z" />
+                      <path
+                        d="M546 3990 c-205 -65 -218 -363 -19 -447 42 -17 144 -17 187 1 45 19 101 70 116 106 l12 30 119 0 118 0 3 -446 3 -446 24 -19 c19 -16 40 -19 117 -19 l94 0 0 80 0 80 -35 0 -34 0 -3 445 -3 444 -23 23 c-22 22 -29 23 -200 23 l-177 0 -15 28 c-21 39 -67 85 -103 104 -37 19 -140 26 -181 13z" />
+                      <path
+                        d="M4417 3986 c-56 -20 -106 -66 -128 -118 l-11 -28 -183 0 c-172 0 -183 -1 -201 -21 -18 -20 -19 -45 -22 -465 l-3 -444 -34 0 -35 0 0 -80 0 -80 95 0 c88 0 98 2 120 25 l25 24 0 441 0 440 119 0 119 0 11 -29 c30 -71 120 -124 211 -124 138 0 234 96 234 233 0 169 -159 282 -317 226z" />
+                      <path
+                        d="M2407 3913 c-3 -5 -10 -60 -17 -124 l-13 -115 -66 -17 c-36 -10 -101 -35 -143 -57 l-78 -39 -96 76 -97 75 -109 -109 -109 -109 66 -85 c37 -46 69 -89 72 -95 2 -6 -10 -33 -26 -60 -32 -50 -91 -192 -91 -219 0 -21 -9 -23 -125 -38 l-100 -12 -3 -152 -3 -151 28 -6 c16 -3 55 -8 88 -11 89 -10 94 -12 101 -53 11 -60 51 -169 83 -229 17 -31 28 -61 24 -67 -4 -6 -31 -42 -61 -80 l-55 -68 110 -110 109 -109 75 59 c70 55 77 58 95 45 34 -27 198 -101 249 -114 28 -6 55 -16 61 -21 6 -4 15 -40 18 -79 4 -39 10 -77 13 -85 4 -11 36 -14 153 -14 170 0 155 -10 166 107 l7 73 41 10 c87 22 229 85 280 123 18 13 26 10 95 -45 l75 -59 109 109 109 109 -61 78 c-34 43 -60 80 -58 84 35 65 81 175 98 237 12 43 26 82 31 85 6 4 42 10 82 13 129 13 117 -5 114 170 l-3 151 -99 12 c-55 7 -103 14 -108 15 -5 2 -21 40 -37 86 -16 45 -45 110 -65 144 -20 33 -35 66 -33 72 3 6 35 49 71 96 l67 84 -109 109 -109 109 -97 -75 -97 -76 -67 34 c-68 34 -180 75 -205 75 -10 0 -17 28 -26 108 -7 59 -15 115 -17 125 -5 15 -21 17 -154 17 -82 0 -151 -3 -153 -7z m345 -705 c94 -47 176 -130 221 -225 41 -89 50 -223 19 -319 -67 -214 -289 -353 -502 -315 -246 44 -412 268 -379 511 18 128 108 263 218 328 86 51 137 63 247 60 93 -3 107 -6 176 -40z" />
+                      <path
+                        d="M814 3279 c-67 -25 -123 -75 -159 -140 l-30 -54 -3 -902 -2 -903 1940 0 1940 0 -2 903 -3 902 -30 54 c-16 29 -47 68 -69 87 -46 39 -131 74 -181 74 l-35 0 0 -262 c0 -245 -1 -264 -21 -305 -44 -90 -132 -133 -276 -133 -82 0 -83 0 -83 -25 0 -14 -6 -25 -12 -25 -35 -1 -220 -29 -225 -34 -4 -3 -21 -45 -39 -93 l-33 -87 57 -74 c31 -40 63 -81 69 -90 11 -16 -12 -42 -185 -215 l-197 -197 -84 66 -83 66 -67 -30 c-36 -17 -82 -37 -102 -45 -35 -14 -36 -16 -43 -83 -4 -38 -9 -86 -13 -106 l-6 -38 -277 0 -278 0 -5 33 c-3 17 -9 59 -12 92 -9 83 -13 93 -38 100 -12 4 -56 23 -98 42 l-77 35 -83 -66 -84 -66 -197 197 c-173 173 -196 199 -185 215 6 9 38 50 69 91 l58 74 -30 69 c-16 38 -30 77 -30 86 0 9 -5 20 -11 23 -9 6 -192 34 -226 35 -7 0 -13 11 -13 25 0 25 -1 25 -83 25 -144 0 -232 43 -276 133 -20 41 -21 60 -21 305 l0 262 -37 -1 c-21 0 -61 -9 -89 -20z" />
+                      <path
+                        d="M620 1017 c0 -148 15 -194 89 -268 104 -103 -80 -94 1851 -94 1931 0 1747 -9 1851 94 74 74 89 120 89 268 l0 113 -1940 0 -1940 0 0 -113z" />
+                      <path
+                        d="M1860 395 l0 -115 -160 0 c-202 0 -230 -11 -230 -90 0 -15 9 -38 19 -51 l19 -24 1052 0 1052 0 19 24 c21 26 25 78 6 102 -26 34 -55 39 -216 39 l-161 0 0 115 0 115 -700 0 -700 0 0 -115z" />
+                    </g>
+                  </svg>
+                </div>
+                <p class="text-sm col-span-2 text-(--text-color) dark:text-(--text-dark-color)">نظام 1</p>
+              </a>
+            </div><div class="p-4 max-sm:p-2 bg-(--cards-background-color) dark:bg-(--cards-background-dark-color) rounded-lg shadow-md">
+              <a class="items-center justify-end grid grid-cols-3 gap-2">
+                <div class="circle max-sm:p-2.5 col-span-1">
+                  <svg class="w-5 h-5 fill-(--icons-color) dark:fill-(--icons-dark-color)" aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 512.000000 512.000000">
+                    <g class="shrink-0 w-7 h-7" xmlns="http://www.w3.org/2000/svg"
+                      transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)" stroke="none">
+                      <path
+                        d="M2488 4998 c-47 -13 -113 -69 -140 -122 -31 -57 -31 -155 -1 -212 24 -44 79 -98 112 -109 20 -6 21 -13 21 -246 l0 -239 80 0 80 0 0 239 c0 233 1 240 21 246 58 19 123 106 135 183 22 138 -102 276 -243 271 -15 -1 -44 -5 -65 -11z" />
+                      <path
+                        d="M984 4596 c-182 -85 -178 -353 8 -430 51 -22 143 -20 193 3 45 21 90 62 111 103 l15 28 154 0 155 0 0 -325 c0 -179 3 -325 8 -325 4 0 42 35 85 78 l77 77 0 302 0 302 -24 28 -24 28 -221 3 c-187 3 -221 6 -221 18 0 8 -21 36 -47 62 -76 75 -173 93 -269 48z" />
+                      <path
+                        d="M3934 4596 c-48 -22 -114 -87 -114 -113 0 -8 -57 -12 -221 -15 l-221 -3 -24 -28 -24 -28 0 -302 0 -302 78 -78 c42 -42 81 -77 85 -77 4 0 7 146 7 325 l0 325 153 0 154 0 31 -48 c99 -154 336 -135 413 33 38 82 13 212 -52 272 -69 63 -178 80 -265 39z" />
+                      <path
+                        d="M546 3990 c-205 -65 -218 -363 -19 -447 42 -17 144 -17 187 1 45 19 101 70 116 106 l12 30 119 0 118 0 3 -446 3 -446 24 -19 c19 -16 40 -19 117 -19 l94 0 0 80 0 80 -35 0 -34 0 -3 445 -3 444 -23 23 c-22 22 -29 23 -200 23 l-177 0 -15 28 c-21 39 -67 85 -103 104 -37 19 -140 26 -181 13z" />
+                      <path
+                        d="M4417 3986 c-56 -20 -106 -66 -128 -118 l-11 -28 -183 0 c-172 0 -183 -1 -201 -21 -18 -20 -19 -45 -22 -465 l-3 -444 -34 0 -35 0 0 -80 0 -80 95 0 c88 0 98 2 120 25 l25 24 0 441 0 440 119 0 119 0 11 -29 c30 -71 120 -124 211 -124 138 0 234 96 234 233 0 169 -159 282 -317 226z" />
+                      <path
+                        d="M2407 3913 c-3 -5 -10 -60 -17 -124 l-13 -115 -66 -17 c-36 -10 -101 -35 -143 -57 l-78 -39 -96 76 -97 75 -109 -109 -109 -109 66 -85 c37 -46 69 -89 72 -95 2 -6 -10 -33 -26 -60 -32 -50 -91 -192 -91 -219 0 -21 -9 -23 -125 -38 l-100 -12 -3 -152 -3 -151 28 -6 c16 -3 55 -8 88 -11 89 -10 94 -12 101 -53 11 -60 51 -169 83 -229 17 -31 28 -61 24 -67 -4 -6 -31 -42 -61 -80 l-55 -68 110 -110 109 -109 75 59 c70 55 77 58 95 45 34 -27 198 -101 249 -114 28 -6 55 -16 61 -21 6 -4 15 -40 18 -79 4 -39 10 -77 13 -85 4 -11 36 -14 153 -14 170 0 155 -10 166 107 l7 73 41 10 c87 22 229 85 280 123 18 13 26 10 95 -45 l75 -59 109 109 109 109 -61 78 c-34 43 -60 80 -58 84 35 65 81 175 98 237 12 43 26 82 31 85 6 4 42 10 82 13 129 13 117 -5 114 170 l-3 151 -99 12 c-55 7 -103 14 -108 15 -5 2 -21 40 -37 86 -16 45 -45 110 -65 144 -20 33 -35 66 -33 72 3 6 35 49 71 96 l67 84 -109 109 -109 109 -97 -75 -97 -76 -67 34 c-68 34 -180 75 -205 75 -10 0 -17 28 -26 108 -7 59 -15 115 -17 125 -5 15 -21 17 -154 17 -82 0 -151 -3 -153 -7z m345 -705 c94 -47 176 -130 221 -225 41 -89 50 -223 19 -319 -67 -214 -289 -353 -502 -315 -246 44 -412 268 -379 511 18 128 108 263 218 328 86 51 137 63 247 60 93 -3 107 -6 176 -40z" />
+                      <path
+                        d="M814 3279 c-67 -25 -123 -75 -159 -140 l-30 -54 -3 -902 -2 -903 1940 0 1940 0 -2 903 -3 902 -30 54 c-16 29 -47 68 -69 87 -46 39 -131 74 -181 74 l-35 0 0 -262 c0 -245 -1 -264 -21 -305 -44 -90 -132 -133 -276 -133 -82 0 -83 0 -83 -25 0 -14 -6 -25 -12 -25 -35 -1 -220 -29 -225 -34 -4 -3 -21 -45 -39 -93 l-33 -87 57 -74 c31 -40 63 -81 69 -90 11 -16 -12 -42 -185 -215 l-197 -197 -84 66 -83 66 -67 -30 c-36 -17 -82 -37 -102 -45 -35 -14 -36 -16 -43 -83 -4 -38 -9 -86 -13 -106 l-6 -38 -277 0 -278 0 -5 33 c-3 17 -9 59 -12 92 -9 83 -13 93 -38 100 -12 4 -56 23 -98 42 l-77 35 -83 -66 -84 -66 -197 197 c-173 173 -196 199 -185 215 6 9 38 50 69 91 l58 74 -30 69 c-16 38 -30 77 -30 86 0 9 -5 20 -11 23 -9 6 -192 34 -226 35 -7 0 -13 11 -13 25 0 25 -1 25 -83 25 -144 0 -232 43 -276 133 -20 41 -21 60 -21 305 l0 262 -37 -1 c-21 0 -61 -9 -89 -20z" />
+                      <path
+                        d="M620 1017 c0 -148 15 -194 89 -268 104 -103 -80 -94 1851 -94 1931 0 1747 -9 1851 94 74 74 89 120 89 268 l0 113 -1940 0 -1940 0 0 -113z" />
+                      <path
+                        d="M1860 395 l0 -115 -160 0 c-202 0 -230 -11 -230 -90 0 -15 9 -38 19 -51 l19 -24 1052 0 1052 0 19 24 c21 26 25 78 6 102 -26 34 -55 39 -216 39 l-161 0 0 115 0 115 -700 0 -700 0 0 -115z" />
+                    </g>
+                  </svg>
+                </div>
+                <p class="text-sm col-span-2 text-(--text-color) dark:text-(--text-dark-color)">نظام 1</p>
+              </a>
             </div>
           </div>
         </div>
-      </main>
+      </div>
+
 
     </main>
     <!-- Settings nav side -->

@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" dir="rtl" content="width=device-width, initial-scale=1.0">
-    <title>نظام الحسابات</title>
+    <title>تهيئة النظام</title>
     <link rel="stylesheet" href="/css/output.css">
 </head>
 
@@ -21,7 +21,7 @@
                 </a>
                 <ul class="space-y-5 px-3 font-medium">
                     <li class="sidebar-menu">
-                        <a href="/pages/sys_init.html"
+                        <a href="#"
                             class="sidebar-menu-item hover:bg-(--sidebar-menu-items-hover-color)  dark:hover:bg-(--sidebar-menu-items-hover-dark-color) rounded-lg hover:rotate-y-180 transform-3d transition-all duration-600 ease-in-out">
                             <div class="circle noHover flip-card-front">
                                 <svg class="w-7 h-7 fill-(--icons-color) dark:fill-(--icons-dark-color)"
@@ -97,7 +97,7 @@
                     </li>
 
                     <li class="sidebar-menu">
-                        <a href="#"
+                        <a href="/pages/sys_management.html"
                             class="sidebar-menu-item hover:bg-(--sidebar-menu-items-hover-color) dark:hover:bg-(--sidebar-menu-items-hover-dark-color) hover:rotate-y-180 transform-3d transition-all duration-600 ease-in-out rounded-lg">
                             <div class="circle noHover flip-card-front">
                                 <svg class="w-7 h-7 fill-(--icons-color) dark:fill-(--icons-dark-color)"
@@ -176,8 +176,7 @@
                                 </svg>
                             </div>
                             <span
-                                class="flip-card-front max-md:text-sm noHover text-(--text-color) dark:text-(--text-dark-color)">نظام
-                                الحسابات</span>
+                                class="flip-card-front max-md:text-sm noHover text-(--text-color) dark:text-(--text-dark-color)">نظام الحسابات</span>
                             <img class="flip-card-back hide-flip-card w-30 h-28 noHover"
                                 src="assets/img/billing-machine.png" alt="">
                             <span
@@ -582,8 +581,7 @@
                     <div class="mt-5 grid grid-cols-1 md:grid-cols-3 gap-8">
                         <h1
                             class="text-xl max-md:text-sm content-center mr-8 font-semibold text-gray-700 dark:text-(--text-dark-color)">
-                            نظام
-                            الحسابات</h1>
+                            تهيئة النظام</h1>
                         <div class="relative w-full max-w-md mx-auto">
                             <input type="text" placeholder="Search..."
                                 class="w-full py-2 pl-10 pr-4 border text-gray-700 dark:text-(--text-dark-color) border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" />
@@ -601,7 +599,7 @@
                             <button type="button"
                                 class="inline-flex justify-between w-full rounded-md border border-gray-300 shadow-sm px-4 py-2.5 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
                                 id="menu-button" aria-expanded="true" aria-haspopup="true">
-                                اختر النظام
+                                نوع التهيئة
                                 <svg class="-mr-1 ml-2 h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
                                     fill="currentColor" aria-hidden="true">
                                     <path fill-rule="evenodd"
@@ -616,14 +614,14 @@
                                 role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1"
                                 style="display: none;">
                                 <div class="py-1" role="none">
-                                    <a href="#" data-content-file="accounting-general-ledger.html"
-                                        data-script-file="/js/pages/accounting-general-ledger.js"
+                                    <a href="#" data-content-file="sys_init_general_init.html"
+                                        data-script-file="/js/pages/sys_init_general_init.js"
                                         class="dropdown-item text-gray-700 block px-4 py-2 text-sm hover:bg-gray-100"
-                                        role="menuitem" tabindex="-1" id="menu-item-0">نظام الاستاذ العام</a>
-                                    <a href="#" data-content-file="accounting-reviews.html"
-                                        data-script-file="js/pages/accounting-reviews.js"
+                                        role="menuitem" tabindex="-1" id="menu-item-0">تهيئة عامة</a>
+                                    <a href="#" data-content-file="sys_init_general_inputs.html"
+                                        data-script-file="js/pages/sys_init_general_inputs.js"
                                         class="dropdown-item text-gray-700 block px-4 py-2 text-sm hover:bg-gray-100"
-                                        role="menuitem" tabindex="-1" id="menu-item-1">نظام المراجعات</a>
+                                        role="menuitem" tabindex="-1" id="menu-item-1">مدخلات عامة</a>
 
                                 </div>
                             </div>
@@ -703,7 +701,7 @@
         <!--End Settings nav side -->
     </div>
     <script src="/js/main.js"></script>
-    <script src="/js/pages/accounting.js"></script>
+    <script src="/js/pages/sys_init.js"></script>
     <script src="/tw-elements/js/tw-elements.umd.min.js"></script>
 </body>
 
