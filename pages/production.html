@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" dir="rtl" content="width=device-width, initial-scale=1.0">
-    <title>نظام الحسابات</title>
+    <title>نظام الانتاج</title>
     <link rel="stylesheet" href="/css/output.css">
 </head>
 
@@ -466,8 +466,7 @@
                     <div class="mt-5 grid grid-cols-1 md:grid-cols-3 gap-8">
                         <h1
                             class="text-xl max-md:text-sm content-center mr-8 font-semibold text-gray-700 dark:text-(--text-dark-color)">
-                            نظام
-                            الحسابات</h1>
+                            نظام الانتاج</h1>
                         <div class="relative w-full max-w-md mx-auto">
                             <input type="text" placeholder="Search..."
                                 class="w-full py-2 pl-10 pr-4 border text-gray-700 dark:text-(--text-dark-color) border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" />
@@ -481,11 +480,10 @@
                         </div>
 
                         <div class="relative inline-block">
-
                             <button type="button"
                                 class="inline-flex justify-between w-full rounded-md border border-gray-300 shadow-sm px-4 py-2.5 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
                                 id="menu-button" aria-expanded="true" aria-haspopup="true">
-                                اختر النظام
+                                النوع
                                 <svg class="-mr-1 ml-2 h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
                                     fill="currentColor" aria-hidden="true">
                                     <path fill-rule="evenodd"
@@ -500,14 +498,18 @@
                                 role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1"
                                 style="display: none;">
                                 <div class="py-1" role="none">
-                                    <a href="#" data-content-file="accounting-general-ledger.html"
-                                        data-script-file="/js/pages/accounting-general-ledger.js"
+                                    <a href="#" data-content-file="production_inputs.html"
+                                        data-script-file="/js/pages/production_inputs.js"
                                         class="dropdown-item text-gray-700 block px-4 py-2 text-sm hover:bg-gray-100"
-                                        role="menuitem" tabindex="-1" id="menu-item-0">نظام الاستاذ العام</a>
-                                    <a href="#" data-content-file="accounting-reviews.html"
-                                        data-script-file="js/pages/accounting-reviews.js"
+                                        role="menuitem" tabindex="-1" id="menu-item-0">مدخلات الانتاج</a>
+                                    <a href="#" data-content-file="production_ops.html"
+                                        data-script-file="js/pages/production_ops.js"
                                         class="dropdown-item text-gray-700 block px-4 py-2 text-sm hover:bg-gray-100"
-                                        role="menuitem" tabindex="-1" id="menu-item-1">نظام المراجعات</a>
+                                        role="menuitem" tabindex="-1" id="menu-item-1">عمليات الانتاج</a>
+                                    <a href="#" data-content-file="production_reports.html"
+                                        data-script-file="js/pages/production_reports.js"
+                                        class="dropdown-item text-gray-700 block px-4 py-2 text-sm hover:bg-gray-100"
+                                        role="menuitem" tabindex="-1" id="menu-item-1">تقارير الانتاج</a>
 
                                 </div>
                             </div>
@@ -587,7 +589,7 @@
         <!--End Settings nav side -->
     </div>
     <script src="/js/main.js"></script>
-    <script src="/js/pages/accounting.js"></script>
+    <script src="/js/pages/suppliers.js"></script>
     <script src="/tw-elements/js/tw-elements.umd.min.js"></script>
 </body>
 
