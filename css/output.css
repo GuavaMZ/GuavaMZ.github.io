@@ -595,6 +595,9 @@
   .m-1040 {
     margin: calc(var(--spacing) * 1040);
   }
+  .m-1070 {
+    margin: calc(var(--spacing) * 1070);
+  }
   .m-1091 {
     margin: calc(var(--spacing) * 1091);
   }
@@ -622,8 +625,17 @@
   .m-1180 {
     margin: calc(var(--spacing) * 1180);
   }
+  .m-1190 {
+    margin: calc(var(--spacing) * 1190);
+  }
+  .m-1191 {
+    margin: calc(var(--spacing) * 1191);
+  }
   .m-1196 {
     margin: calc(var(--spacing) * 1196);
+  }
+  .m-1210 {
+    margin: calc(var(--spacing) * 1210);
   }
   .m-1220 {
     margin: calc(var(--spacing) * 1220);
@@ -840,6 +852,9 @@
   }
   .m-2976 {
     margin: calc(var(--spacing) * 2976);
+  }
+  .m-3011 {
+    margin: calc(var(--spacing) * 3011);
   }
   .m-3070 {
     margin: calc(var(--spacing) * 3070);
