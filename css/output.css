@@ -397,6 +397,9 @@
   .m-4 {
     margin: calc(var(--spacing) * 4);
   }
+  .m-16 {
+    margin: calc(var(--spacing) * 16);
+  }
   .m-22 {
     margin: calc(var(--spacing) * 22);
   }
@@ -411,6 +414,9 @@
   }
   .m-75 {
     margin: calc(var(--spacing) * 75);
+  }
+  .m-90 {
+    margin: calc(var(--spacing) * 90);
   }
   .m-161 {
     margin: calc(var(--spacing) * 161);
@@ -454,6 +460,9 @@
   .m-454 {
     margin: calc(var(--spacing) * 454);
   }
+  .m-511 {
+    margin: calc(var(--spacing) * 511);
+  }
   .m-570 {
     margin: calc(var(--spacing) * 570);
   }
@@ -466,8 +475,14 @@
   .m-787 {
     margin: calc(var(--spacing) * 787);
   }
+  .m-798 {
+    margin: calc(var(--spacing) * 798);
+  }
   .m-826 {
     margin: calc(var(--spacing) * 826);
+  }
+  .m-828 {
+    margin: calc(var(--spacing) * 828);
   }
   .m-861 {
     margin: calc(var(--spacing) * 861);
@@ -496,6 +511,9 @@
   .m-1154 {
     margin: calc(var(--spacing) * 1154);
   }
+  .m-1155 {
+    margin: calc(var(--spacing) * 1155);
+  }
   .m-1156 {
     margin: calc(var(--spacing) * 1156);
   }
@@ -517,6 +535,9 @@
   .m-1280 {
     margin: calc(var(--spacing) * 1280);
   }
+  .m-1318 {
+    margin: calc(var(--spacing) * 1318);
+  }
   .m-1356 {
     margin: calc(var(--spacing) * 1356);
   }
@@ -535,8 +556,17 @@
   .m-1441 {
     margin: calc(var(--spacing) * 1441);
   }
+  .m-1445 {
+    margin: calc(var(--spacing) * 1445);
+  }
   .m-1459 {
     margin: calc(var(--spacing) * 1459);
+  }
+  .m-1480 {
+    margin: calc(var(--spacing) * 1480);
+  }
+  .m-1634 {
+    margin: calc(var(--spacing) * 1634);
   }
   .m-1678 {
     margin: calc(var(--spacing) * 1678);
@@ -550,11 +580,20 @@
   .m-1774 {
     margin: calc(var(--spacing) * 1774);
   }
+  .m-1812 {
+    margin: calc(var(--spacing) * 1812);
+  }
   .m-1868 {
     margin: calc(var(--spacing) * 1868);
   }
   .m-1897 {
     margin: calc(var(--spacing) * 1897);
+  }
+  .m-1898 {
+    margin: calc(var(--spacing) * 1898);
+  }
+  .m-1978 {
+    margin: calc(var(--spacing) * 1978);
   }
   .m-2053 {
     margin: calc(var(--spacing) * 2053);
@@ -567,6 +606,9 @@
   }
   .m-2115 {
     margin: calc(var(--spacing) * 2115);
+  }
+  .m-2220 {
+    margin: calc(var(--spacing) * 2220);
   }
   .m-2241 {
     margin: calc(var(--spacing) * 2241);
@@ -1230,9 +1272,6 @@
   .stroke-\(--icons-color\) {
     stroke: var(--icons-color);
   }
-  .stroke-white {
-    stroke: var(--color-white);
-  }
   .\!p-0 {
     padding: calc(var(--spacing) * 0) !important;
   }
@@ -1850,13 +1889,6 @@
     &:hover {
       @media (hover: hover) {
         --tw-rotate-y: rotateY(180deg);
-        transform: var(--tw-rotate-x,) var(--tw-rotate-y,) var(--tw-rotate-z,) var(--tw-skew-x,) var(--tw-skew-y,);
-      }
-    }
-  }
-  .hover\:transform {
-    &:hover {
-      @media (hover: hover) {
         transform: var(--tw-rotate-x,) var(--tw-rotate-y,) var(--tw-rotate-z,) var(--tw-skew-x,) var(--tw-skew-y,);
       }
     }
