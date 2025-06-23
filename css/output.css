@@ -412,6 +412,9 @@
   .m-28 {
     margin: calc(var(--spacing) * 28);
   }
+  .m-39 {
+    margin: calc(var(--spacing) * 39);
+  }
   .m-47 {
     margin: calc(var(--spacing) * 47);
   }
@@ -439,6 +442,9 @@
   .m-92 {
     margin: calc(var(--spacing) * 92);
   }
+  .m-93 {
+    margin: calc(var(--spacing) * 93);
+  }
   .m-102 {
     margin: calc(var(--spacing) * 102);
   }
@@ -456,6 +462,9 @@
   }
   .m-123 {
     margin: calc(var(--spacing) * 123);
+  }
+  .m-150 {
+    margin: calc(var(--spacing) * 150);
   }
   .m-161 {
     margin: calc(var(--spacing) * 161);
@@ -529,6 +538,9 @@
   .m-372 {
     margin: calc(var(--spacing) * 372);
   }
+  .m-382 {
+    margin: calc(var(--spacing) * 382);
+  }
   .m-390 {
     margin: calc(var(--spacing) * 390);
   }
@@ -577,6 +589,9 @@
   .m-560 {
     margin: calc(var(--spacing) * 560);
   }
+  .m-568 {
+    margin: calc(var(--spacing) * 568);
+  }
   .m-569 {
     margin: calc(var(--spacing) * 569);
   }
@@ -597,6 +612,9 @@
   }
   .m-666 {
     margin: calc(var(--spacing) * 666);
+  }
+  .m-694 {
+    margin: calc(var(--spacing) * 694);
   }
   .m-699 {
     margin: calc(var(--spacing) * 699);
@@ -640,11 +658,23 @@
   .m-902 {
     margin: calc(var(--spacing) * 902);
   }
+  .m-926 {
+    margin: calc(var(--spacing) * 926);
+  }
   .m-938 {
     margin: calc(var(--spacing) * 938);
   }
+  .m-953 {
+    margin: calc(var(--spacing) * 953);
+  }
+  .m-960 {
+    margin: calc(var(--spacing) * 960);
+  }
   .m-966 {
     margin: calc(var(--spacing) * 966);
+  }
+  .m-972 {
+    margin: calc(var(--spacing) * 972);
   }
   .m-985 {
     margin: calc(var(--spacing) * 985);
@@ -724,6 +754,9 @@
   .m-1295 {
     margin: calc(var(--spacing) * 1295);
   }
+  .m-1310 {
+    margin: calc(var(--spacing) * 1310);
+  }
   .m-1317 {
     margin: calc(var(--spacing) * 1317);
   }
@@ -777,6 +810,12 @@
   }
   .m-1544 {
     margin: calc(var(--spacing) * 1544);
+  }
+  .m-1548 {
+    margin: calc(var(--spacing) * 1548);
+  }
+  .m-1579 {
+    margin: calc(var(--spacing) * 1579);
   }
   .m-1580 {
     margin: calc(var(--spacing) * 1580);
@@ -946,6 +985,9 @@
   .m-2688 {
     margin: calc(var(--spacing) * 2688);
   }
+  .m-2690 {
+    margin: calc(var(--spacing) * 2690);
+  }
   .m-2718 {
     margin: calc(var(--spacing) * 2718);
   }
@@ -972,6 +1014,9 @@
   }
   .m-3150 {
     margin: calc(var(--spacing) * 3150);
+  }
+  .m-3168 {
+    margin: calc(var(--spacing) * 3168);
   }
   .m-3174 {
     margin: calc(var(--spacing) * 3174);
@@ -1079,9 +1124,6 @@
   .-ml-2 {
     margin-left: calc(var(--spacing) * -2);
   }
-  .ml-0 {
-    margin-left: calc(var(--spacing) * 0);
-  }
   .ml-0\.5 {
     margin-left: calc(var(--spacing) * 0.5);
   }
@@ -1163,9 +1205,6 @@
   .h-0 {
     height: calc(var(--spacing) * 0);
   }
-  .h-1 {
-    height: calc(var(--spacing) * 1);
-  }
   .h-1\.5 {
     height: calc(var(--spacing) * 1.5);
   }
@@ -1232,9 +1271,6 @@
   }
   .w-0 {
     width: calc(var(--spacing) * 0);
-  }
-  .w-1 {
-    width: calc(var(--spacing) * 1);
   }
   .w-1\.5 {
     width: calc(var(--spacing) * 1.5);
@@ -1317,17 +1353,11 @@
   .flex-initial {
     flex: 0 auto;
   }
-  .flex-shrink {
-    flex-shrink: 1;
-  }
   .flex-shrink-0 {
     flex-shrink: 0;
   }
   .shrink-0 {
     flex-shrink: 0;
-  }
-  .flex-grow {
-    flex-grow: 1;
   }
   .grow {
     flex-grow: 1;
@@ -1337,9 +1367,6 @@
   }
   .basis-auto {
     flex-basis: auto;
-  }
-  .border-collapse {
-    border-collapse: collapse;
   }
   .origin-top-right {
     transform-origin: top right;
@@ -1641,9 +1668,6 @@
   .p-1 {
     padding: calc(var(--spacing) * 1);
   }
-  .p-2 {
-    padding: calc(var(--spacing) * 2);
-  }
   .p-2\.5 {
     padding: calc(var(--spacing) * 2.5);
   }
@@ -1694,9 +1718,6 @@
   }
   .pr-4 {
     padding-right: calc(var(--spacing) * 4);
-  }
-  .pb-2 {
-    padding-bottom: calc(var(--spacing) * 2);
   }
   .pb-2\.5 {
     padding-bottom: calc(var(--spacing) * 2.5);
@@ -1821,9 +1842,6 @@
   }
   .no-underline {
     text-decoration-line: none;
-  }
-  .underline {
-    text-decoration-line: underline;
   }
   .underline-offset-auto {
     text-underline-offset: auto;
