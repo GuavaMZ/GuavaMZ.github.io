@@ -760,6 +760,9 @@
   .m-953 {
     margin: calc(var(--spacing) * 953);
   }
+  .m-957 {
+    margin: calc(var(--spacing) * 957);
+  }
   .m-960 {
     margin: calc(var(--spacing) * 960);
   }
@@ -873,6 +876,9 @@
   }
   .m-1266 {
     margin: calc(var(--spacing) * 1266);
+  }
+  .m-1275 {
+    margin: calc(var(--spacing) * 1275);
   }
   .m-1280 {
     margin: calc(var(--spacing) * 1280);
@@ -1221,6 +1227,9 @@
   }
   .m-3251 {
     margin: calc(var(--spacing) * 3251);
+  }
+  .m-3308 {
+    margin: calc(var(--spacing) * 3308);
   }
   .m-3358 {
     margin: calc(var(--spacing) * 3358);
