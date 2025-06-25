@@ -45,8 +45,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
     searchInput.addEventListener('input', searchContent);
 
-
-
     const loadContent = async (contentFile, scriptFile = null) => {
         try {
             const response = await fetch(contentFile);
