@@ -48,7 +48,7 @@ document.addEventListener('DOMContentLoaded', function () {
             // You can join them or display them individually.
 
             // Option 1: Join all content into one string and set innerHTML once
-            bodyContentContainer.innerHTML = contents.includes(searchInput.value); // Joins all HTML strings together
+            bodyContentContainer.innerHTML = contents.filter(content => content.includes(searchInput.value)); // Joins all HTML strings together
 
             // Option 2: If you want to display each page's content in a distinct way
             // For example, wrap each page's content in a div
