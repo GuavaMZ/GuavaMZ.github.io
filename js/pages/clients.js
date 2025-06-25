@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     const searchContent = async() => {
         try {
-            const fetchPromises = pagesToSearchThrough.map(page => fetch(page).then(response => {
+            const content = await pagesToSearchThrough.map(page => fetch(page).then(response => {
                 if (!response.ok) {
                     throw new Error(`HTTP error! status: ${response.status}`);
                 }
