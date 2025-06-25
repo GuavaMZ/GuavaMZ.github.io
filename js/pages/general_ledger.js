@@ -30,19 +30,38 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 
-    const searchContent = async () => {
+       const searchContent = async () => {
         try {
-            const content = await pagesToSearchThrough.map(page => fetch(page).then(response => {
+            // Use Promise.all to wait for all fetch operations to complete
+            const contents = await Promise.all(pagesToSearchThrough.map(async page => {
+                const response = await fetch(page);
+
                 if (!response.ok) {
-                    throw new Error(`HTTP error! status: ${response.status}`);
+                    // Throw an error if the HTTP status is not OK, including the page URL for context
+                    throw new Error(`HTTP error! status: ${response.status} from ${page}`);
                 }
-                bodyContentContainer.innerHTML = content;
+
+                // Extract the text content from the response
+                return response.text();
             }));
+
+            // Now 'contents' is an array of strings, where each string is the HTML content of a page.
+            // You can join them or display them individually.
+
+            // Option 1: Join all content into one string and set innerHTML once
+            bodyContentContainer.innerHTML = contents.join(''); // Joins all HTML strings together
+
+            // Option 2: If you want to display each page's content in a distinct way
+            // For example, wrap each page's content in a div
+            // bodyContentContainer.innerHTML = contents.map(content => `<div>${content}</div>`).join('');
+
         } catch (error) {
             console.error("Failed to load content:", error);
-            bodyContentContainer.innerHTML = `<p style="color: red;">Error searching content. Please try again.</p>`;
+            // Display a more informative error message to the user
+            bodyContentContainer.innerHTML = `<p style="color: red;">Error searching content: ${error.message}. Please try again.</p>`;
         }
-    }
+    };
+
 
     searchInput.addEventListener('input', searchContent);
 
