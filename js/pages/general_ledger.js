@@ -4,6 +4,13 @@ document.addEventListener('DOMContentLoaded', function () {
     const dropdownItems = document.querySelectorAll('.dropdown-item');
     const bodyContentContainer = document.getElementById('systemContent'); // Container for dynamic content
 
+    const searchInput = document.getElementById('searchInput');
+    const pagesToSearchThrough = [
+        '/pages/general_ledger_init.html',
+        '/pages/general_ledger_inputs.html',
+        '/pages/general_ledger_ops.html',
+        '/pages/general_ledger_reports.html'];
+
     menuButton.addEventListener('click', () => {
         const isExpanded = menuButton.getAttribute('aria-expanded') === 'true';
         menuButton.setAttribute('aria-expanded', !isExpanded);
@@ -22,6 +29,22 @@ document.addEventListener('DOMContentLoaded', function () {
             menuButton.setAttribute('aria-expanded', 'false');
         }
     });
+
+    const searchContent = async () => {
+        try {
+            const content = await pagesToSearchThrough.map(page => fetch(page).then(response => {
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                bodyContentContainer.innerHTML = content;
+            }));
+        } catch (error) {
+            console.error("Failed to load content:", error);
+            bodyContentContainer.innerHTML = `<p style="color: red;">Error searching content. Please try again.</p>`;
+        }
+    }
+
+    searchInput.addEventListener('input', searchContent);
 
     const loadContent = async (contentFile, scriptFile = null) => {
         try {
