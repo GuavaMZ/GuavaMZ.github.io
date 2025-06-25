@@ -4,6 +4,13 @@ document.addEventListener('DOMContentLoaded', function () {
     const dropdownItems = document.querySelectorAll('.dropdown-item');
     const bodyContentContainer = document.getElementById('systemContent'); // Container for dynamic content
 
+    const searchInput = document.getElementById('searchInput');
+    const pagesToSearchThrough = [
+        '/pages/purchases_ops.html',
+        '/pages/purchases_init.html',
+        '/pages/purchases_reports.html',
+    ];
+
     menuButton.addEventListener('click', () => {
         const isExpanded = menuButton.getAttribute('aria-expanded') === 'true';
         menuButton.setAttribute('aria-expanded', !isExpanded);
@@ -14,6 +21,52 @@ document.addEventListener('DOMContentLoaded', function () {
             dropdownMenuItems.style.display = 'none'; // Hide the dropdown
         }
     });
+
+     const searchContent = async () => {
+        try {
+            const parser = new DOMParser();
+            // Use Promise.all to wait for all fetch operations to complete
+            const fetchedContents = await Promise.all(pagesToSearchThrough.map(async page => {
+                const response = await fetch(page);
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status} from ${page}`);
+                }
+                return response.text();
+            }));
+
+            const combinedPagesHTMLContent = fetchedContents.join('');
+
+            const doc = parser.parseFromString(combinedPagesHTMLContent, 'text/html');
+
+            const mnuButtonsInContent = doc.querySelectorAll('.mnu-btn');
+
+            let resultsHtml = ''; // Accumulator for HTML of matching buttons
+            let foundMatch = false; // Flag to track if any match was found
+
+            mnuButtonsInContent.forEach(button => {
+
+                const buttonTextElement = button.children[0]?.children[1]; // Using optional chaining for safety
+
+                if (buttonTextElement && buttonTextElement.textContent.includes(searchInput.value)) {
+                    foundMatch = true;
+                    // Append the outerHTML of the matching button to resultsHtml
+                    resultsHtml += `<div class="found-button-wrapper">${button.outerHTML}</div>`;
+                }
+            });
+            if (foundMatch) {
+                bodyContentContainer.innerHTML = resultsHtml;
+            } else {
+                bodyContentContainer.innerHTML = `<p>No matching menu buttons found for "${searchInput.value}".</p>`;
+            }
+        } catch (error) {
+            console.error("Failed to load content:", error);
+
+            bodyContentContainer.innerHTML = `<p style="color: red;">Error searching content: ${error.message}. Please try again.</p>`;
+        }
+    };
+
+    searchInput.addEventListener('input', searchContent);
+
 
     // Optional: Hide dropdown when clicking outside
     document.addEventListener('click', (event) => {

@@ -6,10 +6,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
     const searchInput = document.getElementById('searchInput');
     const pagesToSearchThrough = [
-        '/pages/sys_management_closing.html',
-        '/pages/sys_management_permissions.html',
-        '/pages/sys_management_users.html',
-    ];
+        '/pages/production_ops.html',
+        '/pages/production_inputs.html',
+        '/pages/production_reports.html',];
 
     menuButton.addEventListener('click', () => {
         const isExpanded = menuButton.getAttribute('aria-expanded') === 'true';
@@ -22,7 +21,15 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 
-     const searchContent = async () => {
+    // Optional: Hide dropdown when clicking outside
+    document.addEventListener('click', (event) => {
+        if (!menuButton.contains(event.target) && !dropdownMenuItems.contains(event.target)) {
+            dropdownMenuItems.style.display = 'none';
+            menuButton.setAttribute('aria-expanded', 'false');
+        }
+    });
+
+    const searchContent = async () => {
         try {
             const parser = new DOMParser();
             // Use Promise.all to wait for all fetch operations to complete
@@ -66,15 +73,6 @@ document.addEventListener('DOMContentLoaded', function () {
     };
 
     searchInput.addEventListener('input', searchContent);
-
-
-    // Optional: Hide dropdown when clicking outside
-    document.addEventListener('click', (event) => {
-        if (!menuButton.contains(event.target) && !dropdownMenuItems.contains(event.target)) {
-            dropdownMenuItems.style.display = 'none';
-            menuButton.setAttribute('aria-expanded', 'false');
-        }
-    });
 
     const loadContent = async (contentFile, scriptFile = null) => {
         try {
