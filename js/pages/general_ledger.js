@@ -64,7 +64,7 @@ document.addEventListener('DOMContentLoaded', function () {
             if (foundMatch) {
                 bodyContentContainer.innerHTML = resultsHtml;
             } else {
-                bodyContentContainer.innerHTML = `<p>No matching menu buttons found for "${searchInput.value}".</p>`;
+                bodyContentContainer.innerHTML = `<p>لا يوجد نتائج مطابقة.</p>`;
             }
         } catch (error) {
             console.error("Failed to load content:", error);
