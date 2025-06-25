@@ -29,9 +29,7 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 
-  searchInput.addEventListener('input', searchContent);
-
-    const searchContent = async() => {
+    const searchContent = async () => {
         try {
             const content = await pagesToSearchThrough.map(page => fetch(page).then(response => {
                 if (!response.ok) {
@@ -44,6 +42,10 @@ document.addEventListener('DOMContentLoaded', function () {
             bodyContentContainer.innerHTML = `<p style="color: red;">Error searching content. Please try again.</p>`;
         }
     }
+
+    searchInput.addEventListener('input', searchContent);
+
+
 
     const loadContent = async (contentFile, scriptFile = null) => {
         try {
