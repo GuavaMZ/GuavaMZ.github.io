@@ -31,32 +31,43 @@ document.addEventListener('DOMContentLoaded', function () {
 
     const searchContent = async () => {
         try {
+            const parser = new DOMParser();
             // Use Promise.all to wait for all fetch operations to complete
-            const contents = await Promise.all(pagesToSearchThrough.map(async page => {
+            const fetchedContents = await Promise.all(pagesToSearchThrough.map(async page => {
                 const response = await fetch(page);
-
                 if (!response.ok) {
-                    // Throw an error if the HTTP status is not OK, including the page URL for context
                     throw new Error(`HTTP error! status: ${response.status} from ${page}`);
                 }
-
-                // Extract the text content from the response
                 return response.text();
             }));
 
-            // Now 'contents' is an array of strings, where each string is the HTML content of a page.
-            // You can join them or display them individually.
+            const combinedPagesHTMLContent = fetchedContents.join('');
 
-            // Option 1: Join all content into one string and set innerHTML once
-            bodyContentContainer.innerHTML = contents.filter(content => content.includes(searchInput.value)); // Joins all HTML strings together
+            const doc = parser.parseFromString(combinedPagesHTMLContent, 'text/html');
 
-            // Option 2: If you want to display each page's content in a distinct way
-            // For example, wrap each page's content in a div
-            // bodyContentContainer.innerHTML = contents.map(content => `<div>${content}</div>`).join('');
+            const mnuButtonsInContent = doc.querySelectorAll('.mnu-btn');
 
+            let resultsHtml = ''; // Accumulator for HTML of matching buttons
+            let foundMatch = false; // Flag to track if any match was found
+
+            mnuButtonsInContent.forEach(button => {
+
+                const buttonTextElement = button.children[0]?.children[1]; // Using optional chaining for safety
+
+                if (buttonTextElement && buttonTextElement.textContent.includes(searchInput.value)) {
+                    foundMatch = true;
+                    // Append the outerHTML of the matching button to resultsHtml
+                    resultsHtml += `<div class="found-button-wrapper">${button.outerHTML}</div>`;
+                }
+            });
+            if (foundMatch) {
+                bodyContentContainer.innerHTML = resultsHtml;
+            } else {
+                bodyContentContainer.innerHTML = `<p>No matching menu buttons found for "${searchInput.value}".</p>`;
+            }
         } catch (error) {
             console.error("Failed to load content:", error);
-            // Display a more informative error message to the user
+
             bodyContentContainer.innerHTML = `<p style="color: red;">Error searching content: ${error.message}. Please try again.</p>`;
         }
     };
