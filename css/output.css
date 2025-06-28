@@ -2347,6 +2347,9 @@
   .text-\(--text-dark-color\) {
     color: var(--text-dark-color);
   }
+  .text-black {
+    color: var(--color-black);
+  }
   .text-gray-500 {
     color: var(--color-gray-500);
   }
