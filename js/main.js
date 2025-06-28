@@ -137,7 +137,7 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 
   function initTheme() {
-    var selectedTheme = localStorage.getItem('theme') || 'light';
+    var selectedTheme = localStorage.getItem('theme');
     // Initialize the theme based on the data attribute
     if (selectedTheme === 'dark') {
       htmlElement.dataset.theme = 'dark';
