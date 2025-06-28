@@ -30,6 +30,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
   const htmlElement = document.documentElement;
 
+  initTheme();
+
   btnBackTypeToggle.addEventListener('click', function () {
     if (flipperStatus === 0) {
       flipperStatus = 1;
@@ -123,14 +125,26 @@ document.addEventListener('DOMContentLoaded', function () {
     // Toggle the theme
     if (htmlElement.dataset.theme === 'dark') {
       htmlElement.dataset.theme = 'light';
+      localStorage.setItem('theme', 'light'); // Save the theme preference
       themeToggleDarkIcon.classList.remove('hidden');
       themeToggleLightIcon.classList.add('hidden');
     } else {
       htmlElement.dataset.theme = 'dark';
+      localStorage.setItem('theme', 'dark'); // Save the theme preference
       themeToggleDarkIcon.classList.add('hidden');
       themeToggleLightIcon.classList.remove('hidden');
     }
   });
+
+  function initTheme() {
+    var selectedTheme = localStorage.getItem('theme') || 'light';
+    // Initialize the theme based on the data attribute
+    if (selectedTheme === 'dark') {
+      htmlElement.dataset.theme = 'dark';
+    } else {
+      htmlElement.dataset.theme = 'light';
+    }
+  }
 
   // Initialize the carousel by duplicating items
 
@@ -179,8 +193,6 @@ document.addEventListener('DOMContentLoaded', function () {
       }
     });
   });
-
-
 
   // sidebarMenu.forEach(item => {
   //   item.addEventListener('click', function () {
