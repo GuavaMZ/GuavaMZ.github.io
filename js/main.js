@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   const settingsToggleBtn = document.getElementById('settings-toggle');
   const settingsNav = document.getElementById('settings-nav');
-  const settingsNavWidth = 'w-50'; // Define the open width for the sidebar
+  const settingsNavWidth = 'w-64'; // Define the open width for the sidebar
   const settingsNavWidthMobile = 'max-md:w-35';
   const settingsOverlay = document.getElementById('settingsOverlay');
 
