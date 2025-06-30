@@ -3430,20 +3430,25 @@
   }
 }
 @layer utilities {
-  .scrollbar::-webkit-scrollbar {
+  ::-webkit-scrollbar {
     width: 5px;
   }
-  .scrollbar::-webkit-scrollbar-track {
-    border-radius: 100vh;
-    background: #f7f4ed;
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
   }
-  .scrollbar::-webkit-scrollbar-thumb {
-    background: #e0cbcb;
-    border-radius: 100vh;
-    border: 3px solid #f6f7ed;
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
   }
-  .scrollbar::-webkit-scrollbar-thumb:hover {
-    background: #c0a0b9;
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+  ::-webkit-scrollbar-corner {
+    background: #ccc;
+  }
+  ::-webkit-scrollbar-resizer {
+    background: #eee;
   }
 }
 @font-face {
@@ -3513,21 +3518,6 @@
     opacity: 1;
     transform: translateY(0);
   }
-}
-.scrollbar::-webkit-scrollbar {
-  width: 5px;
-}
-.scrollbar::-webkit-scrollbar-track {
-  border-radius: 100vh;
-  background: #f7f4ed;
-}
-.scrollbar::-webkit-scrollbar-thumb {
-  background: #e0cbcb;
-  border-radius: 100vh;
-  border: 3px solid #f6f7ed;
-}
-.scrollbar::-webkit-scrollbar-thumb:hover {
-  background: #c0a0b9;
 }
 @property --tw-translate-x {
   syntax: "*";
