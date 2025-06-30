@@ -21,7 +21,7 @@
                         أوراكس سوفت
                     </h1>
                 </a>
-                <ul class="space-y-5 px-3 font-medium">
+                <ul class="space-y-5 px-3">
                     <li class="sidebar-menu">
                         <a href="/pages/sys_init.html"
                             class="sidebar-menu-item hover:bg-(--sidebar-menu-items-hover-color)  dark:hover:bg-(--sidebar-menu-items-hover-dark-color) rounded-lg hover:rotate-y-180 transform-3d transition-all duration-600 ease-in-out">
@@ -713,15 +713,15 @@ l-32 61 421 0 421 0 -32 -60z" />
             </header>
 
             <main id="mainContent" class="font-lama-medium overflow-y-auto h-screen">
-                <div id="systemContent" class="mt-8 px-3.5 grid grid-cols-1 md:grid-cols-6 gap-x-5 gap-y-5 z-10">
+                <div id="systemContent" class="mt-8 px-3.5 grid grid-cols-1 md:grid-cols-7 gap-x-4 gap-y-5 z-10">
                     <div>
                         <div class="relative">
                             <label for="branch-select"
-                                class="absolute -top-3.5 left-2 px-1 text-sm font-medium text-gray-700 dark:text-white bg-(--background-color) dark:bg-[#060d19]">
+                                class="absolute -top-2.5 left-2 px-1 text-xs text-gray-700 dark:text-white bg-(--background-color) dark:bg-[#060d19]">
                                 الفرع
                             </label>
                             <button type="button" id="branch-select-button"
-                                class="inline-flex justify-between items-center w-full rounded-md border border-gray-300 shadow-sm px-3 py-1.5  text-sm font-medium text-gray-700 dark:text-white"
+                                class="inline-flex justify-between items-center w-full rounded-md border border-gray-300 shadow-sm px-3 py-1.5  text-xs text-gray-700 dark:text-white"
                                 aria-expanded="true" aria-haspopup="true">
                                 الفرع
                                 <svg class="h-4.5 w-4.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
@@ -756,7 +756,7 @@ l-32 61 421 0 421 0 -32 -60z" />
                                     <div
                                         class="branch-selection-item flex items-center ps-2 rounded-sm hover:bg-gray-100 dark:hover:bg-gray-600">
                                         <label for="checkbox-item-11"
-                                            class="w-full py-2 ms-2 text-sm font-medium text-gray-900 rounded-sm dark:text-gray-300">فرع
+                                            class="w-full py-2 ms-2 text-sm text-gray-900 rounded-sm dark:text-gray-300">فرع
                                             1</label>
                                     </div>
                                 </li>
@@ -764,7 +764,7 @@ l-32 61 421 0 421 0 -32 -60z" />
                                     <div
                                         class="branch-selection-item flex items-center ps-2 rounded-sm hover:bg-gray-100 dark:hover:bg-gray-600">
                                         <label for="checkbox-item-12"
-                                            class="w-full py-2 ms-2 text-sm font-medium text-gray-900 rounded-sm dark:text-gray-300">فرع
+                                            class="w-full py-2 ms-2 text-sm text-gray-900 rounded-sm dark:text-gray-300">فرع
                                             2</label>
                                     </div>
                                 </li>
@@ -772,13 +772,13 @@ l-32 61 421 0 421 0 -32 -60z" />
                                     <div
                                         class="branch-selection-item flex items-center ps-2 rounded-sm hover:bg-gray-100 dark:hover:bg-gray-600">
                                         <label for="checkbox-item-13"
-                                            class="w-full py-2 ms-2 text-sm font-medium text-gray-900 rounded-sm dark:text-gray-300">فرع
+                                            class="w-full py-2 ms-2 text-sm text-gray-900 rounded-sm dark:text-gray-300">فرع
                                             3</label>
                                     </div>
                                 </li>
                             </ul>
                             <a href="#"
-                                class="flex items-center p-3 text-sm font-medium text-blue-600 border-t border-gray-200 rounded-b-lg bg-gray-50 dark:border-gray-600 hover:bg-gray-100 dark:bg-gray-700 dark:hover:bg-gray-600 dark:text-blue-500 hover:underline">
+                                class="flex items-center p-3 text-sm text-blue-600 border-t border-gray-200 rounded-b-lg bg-gray-50 dark:border-gray-600 hover:bg-gray-100 dark:bg-gray-700 dark:hover:bg-gray-600 dark:text-blue-500 hover:underline">
                                 <svg class="w-4 h-4 me-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
                                     fill="currentColor" viewBox="0 0 20 18">
                                     <path
@@ -801,12 +801,12 @@ l-32 61 421 0 421 0 -32 -60z" />
                                     </svg>
                                 </a>
                                 <input type="text" id="inv-date"
-                                    class="inv-date flatpickr flatpickr-input inline-flex justify-between items-center w-full rounded-md border border-gray-300 shadow-sm px-3 py-1.5 text-sm font-medium text-gray-700 dark:text-white">
+                                    class="inv-date flatpickr flatpickr-input inline-flex justify-between items-center w-full rounded-md border border-gray-300 shadow-sm px-3 py-1.5 text-xs text-gray-700 dark:text-white">
                             </div>
 
 
                             <label for="inv-date"
-                                class="absolute -top-3.5 left-2 px-1 text-sm font-medium text-gray-700 dark:text-white bg-(--background-color) dark:bg-[#060d19]">
+                                class="absolute -top-2.5 left-2 px-1 text-xs text-gray-700 dark:text-white bg-(--background-color) dark:bg-[#060d19]">
                                 تاريخ الفاتورة
                             </label>
                         </div>
@@ -816,10 +816,10 @@ l-32 61 421 0 421 0 -32 -60z" />
                         <div class="relative">
                             <div class="flex items-center justify-between">
                                 <input type="number" id="inv-number"
-                                    class="inline-flex justify-between items-center w-full rounded-md border border-gray-300 shadow-sm px-3 py-1.5 text-sm font-medium text-gray-700 dark:text-white">
+                                    class="inline-flex justify-between items-center w-full rounded-md border border-gray-300 shadow-sm px-3 py-1.5 text-xs text-gray-700 dark:text-white">
                             </div>
                             <label for="inv-number"
-                                class="absolute -top-3.5 left-2 px-1 text-sm font-medium text-gray-700 dark:text-white bg-(--background-color) dark:bg-[#060d19]">
+                                class="absolute -top-2.5 left-2 px-1 text-xs text-gray-700 dark:text-white bg-(--background-color) dark:bg-[#060d19]">
                                 رقم الفاتورة
                             </label>
                         </div>
@@ -828,11 +828,11 @@ l-32 61 421 0 421 0 -32 -60z" />
                     <div>
                         <div class="relative">
                             <label for="payment-method-select"
-                                class="absolute -top-3.5 left-2 px-1 text-sm font-medium text-gray-700 dark:text-white bg-(--background-color) dark:bg-[#060d19]">
+                                class="absolute -top-2.5 left-2 px-1 text-xs text-gray-700 dark:text-white bg-(--background-color) dark:bg-[#060d19]">
                                 طريقة الدفع
                             </label>
                             <button type="button" id="payment-method-select-button"
-                                class="inline-flex justify-between items-center w-full rounded-md border border-gray-300 shadow-sm px-3 py-1.5  text-sm font-medium text-gray-700 dark:text-white"
+                                class="inline-flex justify-between items-center w-full rounded-md border border-gray-300 shadow-sm px-3 py-1.5  text-xs text-gray-700 dark:text-white"
                                 aria-expanded="true" aria-haspopup="true">
                                 طريقة الدفع
                                 <svg class="h-4.5 w-4.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
@@ -867,26 +867,26 @@ l-32 61 421 0 421 0 -32 -60z" />
                                     <div
                                         class="payment-method-select-item flex items-center ps-2 rounded-sm hover:bg-gray-100 dark:hover:bg-gray-600">
                                         <label for="checkbox-item-11"
-                                            class="w-full py-2 ms-2 text-sm font-medium text-gray-900 rounded-sm dark:text-gray-300">نقدا</label>
+                                            class="w-full py-2 ms-2 text-sm text-gray-900 rounded-sm dark:text-gray-300">نقدا</label>
                                     </div>
                                 </li>
                                 <li>
                                     <div
                                         class="payment-method-select-item flex items-center ps-2 rounded-sm hover:bg-gray-100 dark:hover:bg-gray-600">
                                         <label for="checkbox-item-12"
-                                            class="w-full py-2 ms-2 text-sm font-medium text-gray-900 rounded-sm dark:text-gray-300">بنكي</label>
+                                            class="w-full py-2 ms-2 text-sm text-gray-900 rounded-sm dark:text-gray-300">بنكي</label>
                                     </div>
                                 </li>
                                 <li>
                                     <div
                                         class="payment-method-select-item flex items-center ps-2 rounded-sm hover:bg-gray-100 dark:hover:bg-gray-600">
                                         <label for="checkbox-item-13"
-                                            class="w-full py-2 ms-2 text-sm font-medium text-gray-900 rounded-sm dark:text-gray-300">تحويل</label>
+                                            class="w-full py-2 ms-2 text-sm text-gray-900 rounded-sm dark:text-gray-300">تحويل</label>
                                     </div>
                                 </li>
                             </ul>
                             <!-- <a href="#"
-                                class="flex items-center p-3 text-sm font-medium text-blue-600 border-t border-gray-200 rounded-b-lg bg-gray-50 dark:border-gray-600 hover:bg-gray-100 dark:bg-gray-700 dark:hover:bg-gray-600 dark:text-blue-500 hover:underline">
+                                class="flex items-center p-3 text-sm text-blue-600 border-t border-gray-200 rounded-b-lg bg-gray-50 dark:border-gray-600 hover:bg-gray-100 dark:bg-gray-700 dark:hover:bg-gray-600 dark:text-blue-500 hover:underline">
                                 <svg class="w-4 h-4 me-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
                                     fill="currentColor" viewBox="0 0 20 18">
                                     <path
@@ -900,11 +900,11 @@ l-32 61 421 0 421 0 -32 -60z" />
                     <div>
                         <div class="relative">
                             <label for="price-type-select"
-                                class="absolute -top-3.5 left-2 px-1 text-sm font-medium text-gray-700 dark:text-white bg-(--background-color) dark:bg-[#060d19]">
+                                class="absolute -top-2.5 left-2 px-1 text-xs text-gray-700 dark:text-white bg-(--background-color) dark:bg-[#060d19]">
                                 نوع السعر
                             </label>
                             <button type="button" id="price-type-select-button"
-                                class="inline-flex justify-between items-center w-full rounded-md border border-gray-300 shadow-sm px-3 py-1.5  text-sm font-medium text-gray-700 dark:text-white"
+                                class="inline-flex justify-between items-center w-full rounded-md border border-gray-300 shadow-sm px-3 py-1.5 text-xs text-gray-700 dark:text-white"
                                 aria-expanded="true" aria-haspopup="true">
                                 نوع السعر
                                 <svg class="h-4.5 w-4.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
@@ -934,28 +934,26 @@ l-32 61 421 0 421 0 -32 -60z" />
                                         class="block w-full p-1 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
                                 </div>
                             </div>
-                            <ul class="h-28 px-3 pb-3 overflow-y-auto text-sm text-gray-700 dark:text-gray-200" 
+                            <ul class="h-28 px-3 pb-3 overflow-y-auto text-xs text-gray-700 dark:text-gray-200"
                                 aria-labelledby="price-type-select-button">
                                 <li>
                                     <div
                                         class="price-type-select-item flex items-center ps-2 rounded-sm hover:bg-gray-100 dark:hover:bg-gray-600">
-                                        <label
-                                            class="w-full py-2 ms-2 text-sm font-medium text-gray-900 rounded-sm dark:text-gray-300">نوع
+                                        <label class="w-full py-2 ms-2  text-gray-900 rounded-sm dark:text-gray-300">نوع
                                             سعر 1</label>
                                     </div>
                                 </li>
                                 <li>
                                     <div
                                         class="price-type-select-item flex items-center ps-2 rounded-sm hover:bg-gray-100 dark:hover:bg-gray-600">
-                                        <label
-                                            class="w-full py-2 ms-2 text-sm font-medium text-gray-900 rounded-sm dark:text-gray-300">نوع
+                                        <label class="w-full py-2 ms-2  text-gray-900 rounded-sm dark:text-gray-300">نوع
                                             سعر 2</label>
                                     </div>
                                 </li>
 
                             </ul>
                             <!-- <a href="#"
-                                class="flex items-center p-3 text-sm font-medium text-blue-600 border-t border-gray-200 rounded-b-lg bg-gray-50 dark:border-gray-600 hover:bg-gray-100 dark:bg-gray-700 dark:hover:bg-gray-600 dark:text-blue-500 hover:underline">
+                                class="flex items-center p-3 text-sm text-blue-600 border-t border-gray-200 rounded-b-lg bg-gray-50 dark:border-gray-600 hover:bg-gray-100 dark:bg-gray-700 dark:hover:bg-gray-600 dark:text-blue-500 hover:underline">
                                 <svg class="w-4 h-4 me-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
                                     fill="currentColor" viewBox="0 0 20 18">
                                     <path
@@ -969,11 +967,11 @@ l-32 61 421 0 421 0 -32 -60z" />
                     <div>
                         <div class="relative">
                             <label for="warehouse-select-button"
-                                class="absolute -top-3.5 left-2 px-1 text-sm font-medium text-gray-700 dark:text-white bg-(--background-color) dark:bg-[#060d19]">
+                                class="absolute -top-2.5 left-2 px-1 text-xs text-gray-700 dark:text-white bg-(--background-color) dark:bg-[#060d19]">
                                 المخزن
                             </label>
                             <button type="button" id="warehouse-select-button"
-                                class="inline-flex justify-between items-center w-full rounded-md border border-gray-300 shadow-sm px-3 py-1.5  text-sm font-medium text-gray-700 dark:text-white"
+                                class="inline-flex justify-between items-center w-full rounded-md border border-gray-300 shadow-sm px-3 py-1.5  text-xs text-gray-700 dark:text-white"
                                 aria-expanded="true" aria-haspopup="true">
                                 المخزن
                                 <svg class="h-4.5 w-4.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
@@ -987,8 +985,8 @@ l-32 61 421 0 421 0 -32 -60z" />
 
                         <div id="warehouse-select-menu"
                             class="absolute z-30 hidden bg-white rounded-lg shadow-sm dark:bg-gray-700" role="menu"
-                            style="display: none;" aria-orientation="vertical"
-                            aria-labelledby="warehouse-select-button" tabindex="-1">
+                            style="display: none;" aria-orientation="vertical" aria-labelledby="warehouse-select-button"
+                            tabindex="-1">
                             <div class="p-3">
                                 <div class="relative">
                                     <div
@@ -1000,7 +998,7 @@ l-32 61 421 0 421 0 -32 -60z" />
                                         </svg>
                                     </div>
                                     <input type="text" id="input-group-search"
-                                        class="block w-full p-1.5 ps-5 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                                        class="block w-full p-1 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
                                 </div>
                             </div>
                             <ul class="h-28 px-3 pb-3 overflow-y-auto text-sm text-gray-700 dark:text-gray-200"
@@ -1009,7 +1007,7 @@ l-32 61 421 0 421 0 -32 -60z" />
                                     <div
                                         class="warehouse-select-item flex items-center ps-2 rounded-sm hover:bg-gray-100 dark:hover:bg-gray-600">
                                         <label
-                                            class="w-full py-2 ms-2 text-sm font-medium text-gray-900 rounded-sm dark:text-gray-300">نوع
+                                            class="w-full py-2 ms-2 text-sm text-gray-900 rounded-sm dark:text-gray-300">نوع
                                             مخزن 1</label>
                                     </div>
                                 </li>
@@ -1017,14 +1015,83 @@ l-32 61 421 0 421 0 -32 -60z" />
                                     <div
                                         class="warehouse-select-item flex items-center ps-2 rounded-sm hover:bg-gray-100 dark:hover:bg-gray-600">
                                         <label
-                                            class="w-full py-2 ms-2 text-sm font-medium text-gray-900 rounded-sm dark:text-gray-300">نوع
+                                            class="w-full py-2 ms-2 text-sm text-gray-900 rounded-sm dark:text-gray-300">نوع
                                             مخزن 2</label>
                                     </div>
                                 </li>
 
                             </ul>
                             <!-- <a href="#"
-                                class="flex items-center p-3 text-sm font-medium text-blue-600 border-t border-gray-200 rounded-b-lg bg-gray-50 dark:border-gray-600 hover:bg-gray-100 dark:bg-gray-700 dark:hover:bg-gray-600 dark:text-blue-500 hover:underline">
+                                class="flex items-center p-3 text-sm text-blue-600 border-t border-gray-200 rounded-b-lg bg-gray-50 dark:border-gray-600 hover:bg-gray-100 dark:bg-gray-700 dark:hover:bg-gray-600 dark:text-blue-500 hover:underline">
+                                <svg class="w-4 h-4 me-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                    fill="currentColor" viewBox="0 0 20 18">
+                                    <path
+                                        d="M6.5 9a4.5 4.5 0 1 0 0-9 4.5 4.5 0 0 0 0 9ZM8 10H5a5.006 5.006 0 0 0-5 5v2a1 1 0 0 0 1 1h11a1 1 0 0 0 1-1v-2a5.006 5.006 0 0 0-5-5Zm11-3h-2V5a1 1 0 0 0-2 0v2h-2a1 1 0 1 0 0 2h2v2a1 1 0 0 0 2 0V9h2a1 1 0 1 0 0-2Z" />
+                                </svg>
+                                اضافة فرع
+                            </a> -->
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="relative">
+                            <label for="bill-type-select-button"
+                                class="absolute -top-2.5 left-2 px-1 text-xs text-gray-700 dark:text-white bg-(--background-color) dark:bg-[#060d19]">
+                                نوع الفاتورة
+                            </label>
+                            <button type="button" id="bill-type-select-button"
+                                class="inline-flex justify-between items-center w-full rounded-md border border-gray-300 shadow-sm px-3 py-1.5  text-xs text-gray-700 dark:text-white"
+                                aria-expanded="true" aria-haspopup="true">
+                                نوع الفاتورة
+                                <svg class="h-4.5 w-4.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                                    fill="currentColor" aria-hidden="true">
+                                    <path fill-rule="evenodd"
+                                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </button>
+                        </div>
+
+                        <div id="bill-type-select-menu"
+                            class="absolute z-30 hidden bg-white rounded-lg shadow-sm dark:bg-gray-700" role="menu"
+                            style="display: none;" aria-orientation="vertical" aria-labelledby="bill-type-select-button"
+                            tabindex="-1">
+                            <div class="p-3">
+                                <div class="relative">
+                                    <div
+                                        class="absolute inset-y-0 rtl:inset-r-0 start-0 flex items-center ps-3 pointer-events-none">
+                                        <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true"
+                                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                                stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
+                                        </svg>
+                                    </div>
+                                    <input type="text" id="input-group-search"
+                                        class="block w-full p-1 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                                </div>
+                            </div>
+                            <ul class="h-28 px-3 pb-3 overflow-y-auto text-sm text-gray-700 dark:text-gray-200"
+                                aria-labelledby="bill-type-select-button">
+                                <li>
+                                    <div
+                                        class="bill-type-select-item flex items-center ps-2 rounded-sm hover:bg-gray-100 dark:hover:bg-gray-600">
+                                        <label
+                                            class="w-full py-2 ms-2 text-sm text-gray-900 rounded-sm dark:text-gray-300">
+                                            نوع فاتورة 1</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div
+                                        class="bill-type-select-item flex items-center ps-2 rounded-sm hover:bg-gray-100 dark:hover:bg-gray-600">
+                                        <label
+                                            class="w-full py-2 ms-2 text-sm text-gray-900 rounded-sm dark:text-gray-300">
+                                            نوع فاتورة 2</label>
+                                    </div>
+                                </li>
+
+                            </ul>
+                            <!-- <a href="#"
+                                class="flex items-center p-3 text-sm text-blue-600 border-t border-gray-200 rounded-b-lg bg-gray-50 dark:border-gray-600 hover:bg-gray-100 dark:bg-gray-700 dark:hover:bg-gray-600 dark:text-blue-500 hover:underline">
                                 <svg class="w-4 h-4 me-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
                                     fill="currentColor" viewBox="0 0 20 18">
                                     <path
@@ -1039,10 +1106,10 @@ l-32 61 421 0 421 0 -32 -60z" />
                         <div class="relative">
                             <div class="flex items-center justify-between">
                                 <input type="text" id="notes"
-                                    class="inline-flex justify-between items-center w-full rounded-md border border-gray-300 shadow-sm px-3 py-1.5 text-sm font-medium text-gray-700 dark:text-white">
+                                    class="inline-flex justify-between items-center w-full rounded-md border border-gray-300 shadow-sm px-3 py-1.5 text-xs text-gray-700 dark:text-white">
                             </div>
                             <label for="notes"
-                                class="absolute -top-3.5 left-2 px-1 text-sm font-medium text-gray-700 dark:text-white bg-(--background-color) dark:bg-[#060d19]">
+                                class="absolute -top-2.5 left-2 px-1 text-xs text-gray-700 dark:text-white bg-(--background-color) dark:bg-[#060d19]">
                                 البيان
                             </label>
                         </div>
@@ -1089,7 +1156,7 @@ l-32 61 421 0 421 0 -32 -60z" />
                         class="text-xl max-md:text-sm font-bold text-gray-800 dark:text-white flex-1 mx-1.5 row-span-1 ">
                         إعدادات</h1>
                 </div>
-                <ul class="space-y-5 px-1 font-medium">
+                <ul class="space-y-5 px-1">
                     <li class="settings-menu-item">
                         <span
                             class="max-md:text-sm noHover text-(--text-color) dark:text-(--text-dark-color)">الوضع</span>

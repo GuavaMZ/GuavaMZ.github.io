@@ -147,6 +147,43 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 
+    const billTypeSelectionButton = document.getElementById('bill-type-select-button');
+    const billTypeSelectionMenuItems = document.getElementById('bill-type-select-menu');
+    const billTypeSelectionItem = document.querySelectorAll('.bill-type-select-item');
+
+    billTypeSelectionButton.addEventListener('click', () => {
+        const isExpanded = billTypeSelectionButton.getAttribute('aria-expanded') === 'true';
+        billTypeSelectionButton.setAttribute('aria-expanded', !isExpanded);
+
+        if (billTypeSelectionMenuItems.style.display === 'none') {
+            billTypeSelectionMenuItems.style.display = 'block'; // Show the dropdown
+        } else {
+            billTypeSelectionMenuItems.style.display = 'none'; // Hide the dropdown
+        }
+    });
+
+    billTypeSelectionItem.forEach(item => {
+        item.addEventListener('click', (event) => {
+            event.preventDefault(); // Prevent default link behavior (full page reload)
+
+            // Hide the dropdown menu after an item is clicked
+            billTypeSelectionMenuItems.style.display = 'none';
+            billTypeSelectionButton.setAttribute('aria-expanded', 'false');
+
+            // Optionally, update the button text to show selected item
+            billTypeSelectionButton.childNodes[0].nodeValue = item.textContent + ' '; // Update button text
+        });
+    });
+
+    document.addEventListener('click', (event) => {
+        if ((!billTypeSelectionButton.contains(event.target) && !billTypeSelectionMenuItems.contains(event.target))) {
+            billTypeSelectionMenuItems.style.display = 'none';
+            billTypeSelectionButton.setAttribute('aria-expanded', 'false');
+        }
+    });
+
+
+
     // const salesTable = document.getElementById("sales-table");
     // const salesData = [
     //     {
