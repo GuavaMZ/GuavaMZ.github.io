@@ -184,7 +184,88 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-    // const salesTable = document.getElementById("sales-table");
+    const invTable = document.getElementById("inv-table");
+    const invTableBody = document.getElementById("inv-tbody");
+
+    // Example data for the invoice table
+    const invoiceData = [
+        {
+            "item_number": "001",
+            "item_name": "لابتوب ديل XPS 15",
+            "unit": "قطعة",
+            "quantity": 2,
+            "free": false,
+            "price": 25000.00,
+            "discount_percentage": 5,
+            "discount_amount": 2500.00,
+            "total_after_discount": 47500.00,
+            "tax_rate": 14,
+            "tax_amount": 6650.00,
+            "net_total": 54150.00,
+            "description": "جهاز لابتوب متطور للأداء العالي."
+        },
+        {
+            "item_number": "002",
+            "item_name": "هارد ديسك خارجي 1TB",
+            "unit": "قطعة",
+            "quantity": 5,
+            "free": true,
+            "price": 1200.00,
+            "discount_percentage": 0,
+            "discount_amount": 0.00,
+            "total_after_discount": 0.00,
+            "tax_rate": 14,
+            "tax_amount": 0.00,
+            "net_total": 0.00,
+            "description": "هدية مع كل 5 أجهزة لابتوب."
+        },
+        {
+            "item_number": "003",
+            "item_name": "شاشة سامسونج 27 بوصة",
+            "unit": "قطعة",
+            "quantity": 1,
+            "free": false,
+            "price": 6000.00,
+            "discount_percentage": 10,
+            "discount_amount": 600.00,
+            "total_after_discount": 5400.00,
+            "tax_rate": 14,
+            "tax_amount": 756.00,
+            "net_total": 6156.00,
+            "description": "شاشة عالية الدقة للألعاب والعمل."
+        },
+        {
+            "item_number": "004",
+            "item_name": "ماوس لاسلكي لوجيتك",
+            "unit": "قطعة",
+            "quantity": 3,
+            "free": false,
+            "price": 350.00,
+            "discount_percentage": 0,
+            "discount_amount": 0.00,
+            "total_after_discount": 1050.00,
+            "tax_rate": 14,
+            "tax_amount": 147.00,
+            "net_total": 1197.00,
+            "description": "ماوس مريح للاستخدام اليومي."
+        },
+        {
+            "item_number": "005",
+            "item_name": "لوحة مفاتيح ميكانيكية",
+            "unit": "قطعة",
+            "quantity": 1,
+            "free": false,
+            "price": 800.00,
+            "discount_percentage": 0,
+            "discount_amount": 0.00,
+            "total_after_discount": 800.00,
+            "tax_rate": 14,
+            "tax_amount": 112.00,
+            "net_total": 912.00,
+            "description": "لوحة مفاتيح احترافية للكتابة والألعاب."
+        }
+    ];
+
     // const salesData = [
     //     {
     //         id: 1,
@@ -206,14 +287,23 @@ document.addEventListener("DOMContentLoaded", function () {
     //     },
     // ];
 
-    // salesData.forEach((sale) => {
-    //     const row = document.createElement("tr");
-    //     row.innerHTML = `
-    //         <td>${sale.id}</td>
-    //         <td>${sale.customer}</td>
-    //         <td>${sale.date}</td>
-    //         <td>${sale.total}</td>
-    //     `;
-    //     salesTable.appendChild(row);
-    // });
+    invoiceData.forEach((sale) => {
+        const row = document.createElement("tr");
+        row.innerHTML = `
+            <td class="py-3 border px-1.5">${sale.item_number}</td>
+            <td class="py-3 border px-1.5">${sale.item_name}</td>
+            <td class="py-3 border px-1.5">${sale.unit}</td>
+            <td class="py-3 border px-1.5">${sale.quantity}</td>
+            <td class="py-3 border px-1.5">${sale.free ? "نعم" : "لا"}</td>
+            <td class="py-3 border px-1.5">${sale.price.toFixed(2)}</td>
+            <td class="py-3 border px-1.5">${sale.discount_percentage.toFixed(2)}</td>
+            <td class="py-3 border px-1.5">${sale.discount_amount.toFixed(2)}</td>
+            <td class="py-3 border px-1.5">${sale.total_after_discount.toFixed(2)}</td>
+            <td class="py-3 border px-1.5">${sale.tax_rate.toFixed(2)}</td>
+            <td class="py-3 border px-1.5">${sale.tax_amount.toFixed(2)}</td>
+            <td class="py-3 border px-1.5">${sale.net_total.toFixed(2)}</td>
+            <td class="py-3 border px-1.5">${sale.description}</td>
+        `;
+        invTableBody.appendChild(row);
+    });
 });
