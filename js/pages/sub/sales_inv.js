@@ -112,6 +112,41 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 
+    const warehouseSelectionButton = document.getElementById('warehouse-select-button');
+    const warehouseSelectionMenuItems = document.getElementById('warehouse-select-menu');
+    const warehouseSelectionItem = document.querySelectorAll('.warehouse-select-item');
+
+    warehouseSelectionButton.addEventListener('click', () => {
+        const isExpanded = warehouseSelectionButton.getAttribute('aria-expanded') === 'true';
+        warehouseSelectionButton.setAttribute('aria-expanded', !isExpanded);
+
+        if (warehouseSelectionMenuItems.style.display === 'none') {
+            warehouseSelectionMenuItems.style.display = 'block'; // Show the dropdown
+        } else {
+            warehouseSelectionMenuItems.style.display = 'none'; // Hide the dropdown
+        }
+    });
+
+    warehouseSelectionItem.forEach(item => {
+        item.addEventListener('click', (event) => {
+            event.preventDefault(); // Prevent default link behavior (full page reload)
+
+            // Hide the dropdown menu after an item is clicked
+            warehouseSelectionMenuItems.style.display = 'none';
+            warehouseSelectionButton.setAttribute('aria-expanded', 'false');
+
+            // Optionally, update the button text to show selected item
+            warehouseSelectionButton.childNodes[0].nodeValue = item.textContent + ' '; // Update button text
+        });
+    });
+
+    document.addEventListener('click', (event) => {
+        if ((!warehouseSelectionButton.contains(event.target) && !warehouseSelectionMenuItems.contains(event.target))) {
+            warehouseSelectionMenuItems.style.display = 'none';
+            warehouseSelectionButton.setAttribute('aria-expanded', 'false');
+        }
+    });
+
     // const salesTable = document.getElementById("sales-table");
     // const salesData = [
     //     {
