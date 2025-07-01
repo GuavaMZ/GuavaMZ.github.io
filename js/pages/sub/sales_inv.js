@@ -195,7 +195,7 @@ document.addEventListener("DOMContentLoaded", function () {
             "unit": "قطعة",
             "quantity": 2,
             "free": false,
-            "price": 25000.00,
+            "price": 2500000.00,
             "discount_percentage": 5,
             "discount_amount": 2500.00,
             "total_after_discount": 47500.00,
@@ -292,18 +292,45 @@ document.addEventListener("DOMContentLoaded", function () {
         row.innerHTML = `
             <td class="py-3 border px-1.5">${sale.item_number}</td>
             <td class="py-3 border px-1.5">${sale.item_name}</td>
-            <td class="py-3 border px-1.5">${sale.unit}</td>
-            <td class="py-3 border px-1.5">${sale.quantity}</td>
-            <td class="py-3 border px-1.5">${sale.free ? "نعم" : "لا"}</td>
+            <td class="py-3 border px-1.5"> <button type="button" id="unit-select-button"
+                                class="inline-flex justify-between items-center w-full rounded-md border border-gray-300 shadow-sm px-1 py-1.5 text-xs "
+                                aria-expanded="true" aria-haspopup="true">
+                                <span class="block truncate"> ${sale.unit} </span>
+                                <svg class="h-3 w-3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                                    fill="currentColor" aria-hidden="true">
+                                    <path fill-rule="evenodd"
+                                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </button></td>
+            <td class="py-3 border px-1.5"><input class="w-20 rounded-md border border-gray-300 shadow-sm px-1 py-1.5 text-xs" type="number" value="${sale.quantity}"></td>
+            <td class="py-3 border px-1.5"><input class="w-20 rounded-md border border-gray-300 shadow-sm px-1 py-1.5 text-xs" type="number" value="${sale.free}"></td>
             <td class="py-3 border px-1.5">${sale.price.toFixed(2)}</td>
-            <td class="py-3 border px-1.5">${sale.discount_percentage.toFixed(2)}</td>
+            <td class="py-3 border px-1.5"><input class="w-18 rounded-md border border-gray-300 shadow-sm px-1 py-1.5 text-xs" type="number" value="${sale.discount_percentage.toFixed(2)}"></td>
             <td class="py-3 border px-1.5">${sale.discount_amount.toFixed(2)}</td>
             <td class="py-3 border px-1.5">${sale.total_after_discount.toFixed(2)}</td>
             <td class="py-3 border px-1.5">${sale.tax_rate.toFixed(2)}</td>
             <td class="py-3 border px-1.5">${sale.tax_amount.toFixed(2)}</td>
             <td class="py-3 border px-1.5">${sale.net_total.toFixed(2)}</td>
-            <td class="py-3 border px-1.5">${sale.description}</td>
+            <td class="py-3 border px-1"><input class="overflow-ellipsis focus:outline-none text-xs" type="text" value="${sale.description}"></td>
         `;
         invTableBody.appendChild(row);
+    });
+
+    
+    const categoriesToggle = document.getElementById('categories-toggle');
+    const categoriesContainer = document.getElementById('categories');
+
+    categoriesToggle.addEventListener('click', () => {
+        if (categoriesContainer.classList.contains('w-0')) {
+            categoriesContainer.classList.remove('w-0');
+            categoriesContainer.classList.add('w-1/2');
+            invTable.classList.add('w-[150%]');
+        } else {
+            categoriesContainer.classList.add('w-0');
+            categoriesContainer.classList.remove('w-1/2');
+            invTable.classList.remove('w-[150%]');
+        }
+
     });
 });
