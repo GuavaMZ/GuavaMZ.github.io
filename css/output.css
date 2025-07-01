@@ -319,6 +319,12 @@
   .\!top-auto {
     top: auto !important;
   }
+  .-top-1 {
+    top: calc(var(--spacing) * -1);
+  }
+  .-top-1\.5 {
+    top: calc(var(--spacing) * -1.5);
+  }
   .-top-2 {
     top: calc(var(--spacing) * -2);
   }
@@ -1893,6 +1899,9 @@
   .flex-1 {
     flex: 1;
   }
+  .flex-2 {
+    flex: 2;
+  }
   .flex-initial {
     flex: 0 auto;
   }
@@ -2068,6 +2077,9 @@
   }
   .\!overflow-hidden {
     overflow: hidden !important;
+  }
+  .overflow-auto {
+    overflow: auto;
   }
   .overflow-hidden {
     overflow: hidden;
