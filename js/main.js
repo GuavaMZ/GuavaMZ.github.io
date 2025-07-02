@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   const toggleNavButton = document.getElementById('nav-toggle');
   const sideNav = document.getElementById('default-sidebar');
-  const navWidth = 'w-60'; // Define the open width for the sidebar
+  const navWidth = 'w-55'; // Define the open width for the sidebar
   const navWidthMobile = 'max-md:w-40'
 
   const settingsToggleBtn = document.getElementById('settings-toggle');
@@ -193,13 +193,7 @@ document.addEventListener('DOMContentLoaded', function () {
       }
     });
   });
-
-  // document.addEventListener('click', function (event) {
-  //   // Check if the clicked element is not a sidebar menu item
-  //   sideNav.classList.remove(navWidth);
-  //   sideNav.classList.remove(navWidthMobile);
-  //   sideNav.classList.add('w-0');
-  // });
+  
 
   // sidebarMenu.forEach(item => {
   //   item.addEventListener('click', function () {
