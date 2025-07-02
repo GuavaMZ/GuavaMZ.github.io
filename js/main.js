@@ -194,6 +194,13 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 
+  // document.addEventListener('click', function (event) {
+  //   // Check if the clicked element is not a sidebar menu item
+  //   sideNav.classList.remove(navWidth);
+  //   sideNav.classList.remove(navWidthMobile);
+  //   sideNav.classList.add('w-0');
+  // });
+
   // sidebarMenu.forEach(item => {
   //   item.addEventListener('click', function () {
   //     sidebarMenu.forEach(item => item.classList.remove('active'));

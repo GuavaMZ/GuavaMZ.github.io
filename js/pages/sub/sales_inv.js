@@ -550,10 +550,12 @@ document.addEventListener("DOMContentLoaded", function () {
         if (categoriesContainer.classList.contains('w-0')) {
             categoriesContainer.classList.remove('w-0');
             categoriesContainer.classList.add('w-1/2');
+            // categoriesContainer.classList.add('max-md:w-50');
             invTable.classList.add('w-[150%]');
         } else {
             categoriesContainer.classList.add('w-0');
             categoriesContainer.classList.remove('w-1/2');
+            // categoriesContainer.classList.remove('max-md:w-50');
             invTable.classList.remove('w-[150%]');
         }
 
