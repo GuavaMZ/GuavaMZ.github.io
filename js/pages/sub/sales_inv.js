@@ -263,6 +263,231 @@ document.addEventListener("DOMContentLoaded", function () {
             "tax_amount": 112.00,
             "net_total": 912.00,
             "description": "لوحة مفاتيح احترافية للكتابة والألعاب."
+        },
+        {
+            "item_number": "001",
+            "item_name": "لابتوب ديل XPS 15",
+            "unit": "قطعة",
+            "quantity": 2,
+            "free": false,
+            "price": 2500000.00,
+            "discount_percentage": 5,
+            "discount_amount": 2500.00,
+            "total_after_discount": 47500.00,
+            "tax_rate": 14,
+            "tax_amount": 6650.00,
+            "net_total": 54150.00,
+            "description": "جهاز لابتوب متطور للأداء العالي."
+        },
+        {
+            "item_number": "002",
+            "item_name": "هارد ديسك خارجي 1TB",
+            "unit": "قطعة",
+            "quantity": 5,
+            "free": true,
+            "price": 1200.00,
+            "discount_percentage": 0,
+            "discount_amount": 0.00,
+            "total_after_discount": 0.00,
+            "tax_rate": 14,
+            "tax_amount": 0.00,
+            "net_total": 0.00,
+            "description": "هدية مع كل 5 أجهزة لابتوب."
+        },
+        {
+            "item_number": "003",
+            "item_name": "شاشة سامسونج 27 بوصة",
+            "unit": "قطعة",
+            "quantity": 1,
+            "free": false,
+            "price": 6000.00,
+            "discount_percentage": 10,
+            "discount_amount": 600.00,
+            "total_after_discount": 5400.00,
+            "tax_rate": 14,
+            "tax_amount": 756.00,
+            "net_total": 6156.00,
+            "description": "شاشة عالية الدقة للألعاب والعمل."
+        },
+        {
+            "item_number": "004",
+            "item_name": "ماوس لاسلكي لوجيتك",
+            "unit": "قطعة",
+            "quantity": 3,
+            "free": false,
+            "price": 350.00,
+            "discount_percentage": 0,
+            "discount_amount": 0.00,
+            "total_after_discount": 1050.00,
+            "tax_rate": 14,
+            "tax_amount": 147.00,
+            "net_total": 1197.00,
+            "description": "ماوس مريح للاستخدام اليومي."
+        },
+        {
+            "item_number": "005",
+            "item_name": "لوحة مفاتيح ميكانيكية",
+            "unit": "قطعة",
+            "quantity": 1,
+            "free": false,
+            "price": 800.00,
+            "discount_percentage": 0,
+            "discount_amount": 0.00,
+            "total_after_discount": 800.00,
+            "tax_rate": 14,
+            "tax_amount": 112.00,
+            "net_total": 912.00,
+            "description": "لوحة مفاتيح احترافية للكتابة والألعاب."
+        },
+        {
+            "item_number": "001",
+            "item_name": "لابتوب ديل XPS 15",
+            "unit": "قطعة",
+            "quantity": 2,
+            "free": false,
+            "price": 2500000.00,
+            "discount_percentage": 5,
+            "discount_amount": 2500.00,
+            "total_after_discount": 47500.00,
+            "tax_rate": 14,
+            "tax_amount": 6650.00,
+            "net_total": 54150.00,
+            "description": "جهاز لابتوب متطور للأداء العالي."
+        },
+        {
+            "item_number": "002",
+            "item_name": "هارد ديسك خارجي 1TB",
+            "unit": "قطعة",
+            "quantity": 5,
+            "free": true,
+            "price": 1200.00,
+            "discount_percentage": 0,
+            "discount_amount": 0.00,
+            "total_after_discount": 0.00,
+            "tax_rate": 14,
+            "tax_amount": 0.00,
+            "net_total": 0.00,
+            "description": "هدية مع كل 5 أجهزة لابتوب."
+        },
+        {
+            "item_number": "003",
+            "item_name": "شاشة سامسونج 27 بوصة",
+            "unit": "قطعة",
+            "quantity": 1,
+            "free": false,
+            "price": 6000.00,
+            "discount_percentage": 10,
+            "discount_amount": 600.00,
+            "total_after_discount": 5400.00,
+            "tax_rate": 14,
+            "tax_amount": 756.00,
+            "net_total": 6156.00,
+            "description": "شاشة عالية الدقة للألعاب والعمل."
+        },
+        {
+            "item_number": "004",
+            "item_name": "ماوس لاسلكي لوجيتك",
+            "unit": "قطعة",
+            "quantity": 3,
+            "free": false,
+            "price": 350.00,
+            "discount_percentage": 0,
+            "discount_amount": 0.00,
+            "total_after_discount": 1050.00,
+            "tax_rate": 14,
+            "tax_amount": 147.00,
+            "net_total": 1197.00,
+            "description": "ماوس مريح للاستخدام اليومي."
+        },
+        {
+            "item_number": "005",
+            "item_name": "لوحة مفاتيح ميكانيكية",
+            "unit": "قطعة",
+            "quantity": 1,
+            "free": false,
+            "price": 800.00,
+            "discount_percentage": 0,
+            "discount_amount": 0.00,
+            "total_after_discount": 800.00,
+            "tax_rate": 14,
+            "tax_amount": 112.00,
+            "net_total": 912.00,
+            "description": "لوحة مفاتيح احترافية للكتابة والألعاب."
+        },
+        {
+            "item_number": "001",
+            "item_name": "لابتوب ديل XPS 15",
+            "unit": "قطعة",
+            "quantity": 2,
+            "free": false,
+            "price": 2500000.00,
+            "discount_percentage": 5,
+            "discount_amount": 2500.00,
+            "total_after_discount": 47500.00,
+            "tax_rate": 14,
+            "tax_amount": 6650.00,
+            "net_total": 54150.00,
+            "description": "جهاز لابتوب متطور للأداء العالي."
+        },
+        {
+            "item_number": "002",
+            "item_name": "هارد ديسك خارجي 1TB",
+            "unit": "قطعة",
+            "quantity": 5,
+            "free": true,
+            "price": 1200.00,
+            "discount_percentage": 0,
+            "discount_amount": 0.00,
+            "total_after_discount": 0.00,
+            "tax_rate": 14,
+            "tax_amount": 0.00,
+            "net_total": 0.00,
+            "description": "هدية مع كل 5 أجهزة لابتوب."
+        },
+        {
+            "item_number": "003",
+            "item_name": "شاشة سامسونج 27 بوصة",
+            "unit": "قطعة",
+            "quantity": 1,
+            "free": false,
+            "price": 6000.00,
+            "discount_percentage": 10,
+            "discount_amount": 600.00,
+            "total_after_discount": 5400.00,
+            "tax_rate": 14,
+            "tax_amount": 756.00,
+            "net_total": 6156.00,
+            "description": "شاشة عالية الدقة للألعاب والعمل."
+        },
+        {
+            "item_number": "004",
+            "item_name": "ماوس لاسلكي لوجيتك",
+            "unit": "قطعة",
+            "quantity": 3,
+            "free": false,
+            "price": 350.00,
+            "discount_percentage": 0,
+            "discount_amount": 0.00,
+            "total_after_discount": 1050.00,
+            "tax_rate": 14,
+            "tax_amount": 147.00,
+            "net_total": 1197.00,
+            "description": "ماوس مريح للاستخدام اليومي."
+        },
+        {
+            "item_number": "005",
+            "item_name": "لوحة مفاتيح ميكانيكية",
+            "unit": "قطعة",
+            "quantity": 1,
+            "free": false,
+            "price": 800.00,
+            "discount_percentage": 0,
+            "discount_amount": 0.00,
+            "total_after_discount": 800.00,
+            "tax_rate": 14,
+            "tax_amount": 112.00,
+            "net_total": 912.00,
+            "description": "لوحة مفاتيح احترافية للكتابة والألعاب."
         }
     ];
 
@@ -303,21 +528,21 @@ document.addEventListener("DOMContentLoaded", function () {
                                         clip-rule="evenodd" />
                                 </svg>
                             </button></td>
-            <td class="py-3 border px-1.5"><input class="w-20 rounded-md border border-gray-300 shadow-sm px-1 py-1.5 text-xs" type="number" value="${sale.quantity}"></td>
-            <td class="py-3 border px-1.5"><input class="w-20 rounded-md border border-gray-300 shadow-sm px-1 py-1.5 text-xs" type="number" value="${sale.free}"></td>
-            <td class="py-3 border px-1.5">${sale.price.toFixed(2)}</td>
+            <td class="py-3 border px-1.5"><input class="w-18 rounded-md border border-gray-300 shadow-sm px-1 py-1.5 text-xs" type="number" value="${sale.quantity}"></td>
+            <td class="py-3 border px-1.5"><input class="w-18 rounded-md border border-gray-300 shadow-sm px-1 py-1.5 text-xs" type="number" value="${sale.free}"></td>
+            <td class="py-3 border px-1.5"><input class="w-25 rounded-md border border-gray-300 shadow-sm px-1 py-1.5 text-xs" type="number" value="${sale.price.toFixed(2)}"></td>
             <td class="py-3 border px-1.5"><input class="w-18 rounded-md border border-gray-300 shadow-sm px-1 py-1.5 text-xs" type="number" value="${sale.discount_percentage.toFixed(2)}"></td>
-            <td class="py-3 border px-1.5">${sale.discount_amount.toFixed(2)}</td>
+            <td class="py-3 border px-1.5"><input class="w-22 rounded-md border border-gray-300 shadow-sm px-1 py-1.5 text-xs" type="number" value="${sale.discount_amount.toFixed(2)}"></td>
             <td class="py-3 border px-1.5">${sale.total_after_discount.toFixed(2)}</td>
-            <td class="py-3 border px-1.5">${sale.tax_rate.toFixed(2)}</td>
-            <td class="py-3 border px-1.5">${sale.tax_amount.toFixed(2)}</td>
+            <td class="py-3 border px-1.5"><input class="w-15 rounded-md border border-gray-300 shadow-sm px-1 py-1.5 text-xs" type="number" value="${sale.tax_rate.toFixed(2)}"></td>
+            <td class="py-3 border px-1.5"><input class="w-20 rounded-md border border-gray-300 shadow-sm px-1 py-1.5 text-xs" type="number" value="${sale.tax_amount.toFixed(2)}"></td>
             <td class="py-3 border px-1.5">${sale.net_total.toFixed(2)}</td>
             <td class="py-3 border px-1"><input class="overflow-ellipsis focus:outline-none text-xs" type="text" value="${sale.description}"></td>
         `;
         invTableBody.appendChild(row);
     });
 
-    
+
     const categoriesToggle = document.getElementById('categories-toggle');
     const categoriesContainer = document.getElementById('categories');
 
