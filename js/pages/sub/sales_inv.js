@@ -560,4 +560,101 @@ document.addEventListener("DOMContentLoaded", function () {
         }
 
     });
+
+
+    const addToInvButton = document.getElementById('add-to-inv-button');
+    addToInvButton.addEventListener('click', () => {
+
+        // هنا يمكنك إضافة الكود لإضافة الصنف إلى الفاتورة
+        const newRow = document.createElement("tr");
+        newRow.innerHTML = `
+            <td class="py-3 border px-1.5"></td>
+            <td class="py-3 border px-1.5"></td>
+            <td class="py-3 border px-1.5"> <button type="button" id="unit-select-button"
+                                class="w-full inline-flex justify-between items-center rounded-md border border-gray-300 shadow-sm px-1 py-1.5 text-xs "
+                                aria-expanded="true" aria-haspopup="true">
+                                <span class="block truncate"></span>
+                                <svg class="h-3 w-3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                                    fill="currentColor" aria-hidden="true">
+                                    <path fill-rule="evenodd"
+                                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </button></td>
+            <td class="py-3 border px-1.5"><input class="w-full rounded-md border border-gray-300 shadow-sm px-1 py-1.5 text-xs" type="number" value=""></td>
+            <td class="py-3 border px-1.5"><input class="w-full rounded-md border border-gray-300 shadow-sm px-1 py-1.5 text-xs" type="number" value=""></td>
+            <td class="py-3 border px-1.5"><input class="w-full rounded-md border border-gray-300 shadow-sm px-1 py-1.5 text-xs" type="number" value=""></td>
+            <td class="py-3 border px-1.5"><input class="w-full rounded-md border border-gray-300 shadow-sm px-1 py-1.5 text-xs" type="number" value=""></td>
+            <td class="py-3 border px-1.5"><input class="w-full rounded-md border border-gray-300 shadow-sm px-1 py-1.5 text-xs" type="number" value=""></td>
+            <td class="py-3 border px-1.5"></td>
+            <td class="py-3 border px-1.5"><input class="w-20 rounded-md border border-gray-300 shadow-sm px-1 py-1.5 text-xs" type="number" value=""></td>
+            <td class="py-3 border px-1.5"><input class="w-full rounded-md border border-gray-300 shadow-sm px-1 py-1.5 text-xs" type="number" value=""></td>
+            <td class="py-3 border px-1.5"></td>
+            <td class="py-3 border px-1"><input class="overflow-ellipsis focus:outline-none text-xs" type="text" value=""></td>
+        `;
+        const deleteButton = document.createElement('button');
+        if (document.querySelector('#inv-table th.delete-column-header')) {
+
+            deleteButton.textContent = 'حذف';
+            deleteButton.className = 'bg-red-500 hover:bg-red-600 text-white font-bold py-1 px-3 rounded text-xs';
+
+            // Optional: Add functionality to the delete button (e.g., remove the row)
+            deleteButton.addEventListener('click', () => {
+                // row.remove(); // Removes the entire row
+                // Or if you want to confirm:
+                if (confirm('Are you sure you want to delete this row?')) {
+                    newRow.remove();
+                }
+            });
+            if (deleteButton) {
+                const deleteCell = document.createElement('td');
+                deleteCell.className = 'px-6 py-4 whitespace-nowrap text-sm';
+                deleteCell.appendChild(deleteButton);
+                newRow.appendChild(deleteCell);
+            }
+        }
+        invTableBody.appendChild(newRow);
+
+        // Scroll to the bottom of the table
+        invTable.scrollTop = invTable.scrollHeight;
+    });
+
+    const removeFromInvButton = document.getElementById('remove-from-inv-button');
+    removeFromInvButton.addEventListener('click', () => {
+
+        if (document.querySelector('#inv-table th.delete-column-header')) {
+            alert('Delete column already exists!');
+            return;
+        }
+
+        const tableHeaderRow = invTable.querySelector('thead tr');
+        const newTh = document.createElement('th');
+        newTh.scope = 'col';
+        newTh.className = 'px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider delete-column-header';
+        newTh.textContent = '';
+        tableHeaderRow.appendChild(newTh);
+
+
+        const tableRows = invTable.querySelectorAll('tbody tr');
+        tableRows.forEach(row => {
+            const newTd = document.createElement('td');
+            newTd.className = 'px-6 py-4 whitespace-nowrap text-sm';
+
+            const deleteButton = document.createElement('button');
+            deleteButton.textContent = 'حذف';
+            deleteButton.className = 'bg-red-500 hover:bg-red-600 text-white font-bold py-1 px-3 rounded text-xs';
+
+            // Optional: Add functionality to the delete button (e.g., remove the row)
+            deleteButton.addEventListener('click', () => {
+                // row.remove(); // Removes the entire row
+                // Or if you want to confirm:
+                if (confirm('Are you sure you want to delete this row?')) {
+                    row.remove();
+                }
+            });
+
+            newTd.appendChild(deleteButton);
+            row.appendChild(newTd);
+        });
+    });
 });
