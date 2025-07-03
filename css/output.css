@@ -1567,9 +1567,6 @@
   .mr-8 {
     margin-right: calc(var(--spacing) * 8);
   }
-  .mr-auto {
-    margin-right: auto;
-  }
   .mb-0 {
     margin-bottom: calc(var(--spacing) * 0);
   }
@@ -1608,9 +1605,6 @@
   }
   .ml-55 {
     margin-left: calc(var(--spacing) * 55);
-  }
-  .ml-auto {
-    margin-left: auto;
   }
   .box-border {
     box-sizing: border-box;
@@ -1835,14 +1829,29 @@
   .w-30 {
     width: calc(var(--spacing) * 30);
   }
+  .w-35 {
+    width: calc(var(--spacing) * 35);
+  }
+  .w-40 {
+    width: calc(var(--spacing) * 40);
+  }
+  .w-45 {
+    width: calc(var(--spacing) * 45);
+  }
+  .w-50 {
+    width: calc(var(--spacing) * 50);
+  }
+  .w-53 {
+    width: calc(var(--spacing) * 53);
+  }
+  .w-54 {
+    width: calc(var(--spacing) * 54);
+  }
   .w-55 {
     width: calc(var(--spacing) * 55);
   }
   .w-56 {
     width: calc(var(--spacing) * 56);
-  }
-  .w-60 {
-    width: calc(var(--spacing) * 60);
   }
   .w-64 {
     width: calc(var(--spacing) * 64);
@@ -2007,9 +2016,6 @@
   .flex-col {
     flex-direction: column;
   }
-  .flex-row {
-    flex-direction: row;
-  }
   .flex-nowrap {
     flex-wrap: nowrap;
   }
@@ -2021,9 +2027,6 @@
   }
   .items-center {
     align-items: center;
-  }
-  .items-start {
-    align-items: flex-start;
   }
   .justify-between {
     justify-content: space-between;
@@ -2100,6 +2103,9 @@
   }
   .overflow-x-hidden {
     overflow-x: hidden;
+  }
+  .overflow-x-scroll {
+    overflow-x: scroll;
   }
   .overflow-y-auto {
     overflow-y: auto;
@@ -2351,6 +2357,9 @@
   }
   .px-4 {
     padding-inline: calc(var(--spacing) * 4);
+  }
+  .px-5 {
+    padding-inline: calc(var(--spacing) * 5);
   }
   .px-6 {
     padding-inline: calc(var(--spacing) * 6);
@@ -3273,11 +3282,6 @@
       width: calc(var(--spacing) * 0);
     }
   }
-  .max-md\:w-3\/4 {
-    @media (width < 48rem) {
-      width: calc(3/4 * 100%);
-    }
-  }
   .max-md\:w-35 {
     @media (width < 48rem) {
       width: calc(var(--spacing) * 35);
@@ -3302,16 +3306,6 @@
     @media (width < 48rem) {
       font-size: var(--text-sm);
       line-height: var(--tw-leading, var(--text-sm--line-height));
-    }
-  }
-  .max-sm\:w-3\/4 {
-    @media (width < 40rem) {
-      width: calc(3/4 * 100%);
-    }
-  }
-  .max-sm\:overflow-x-auto {
-    @media (width < 40rem) {
-      overflow-x: auto;
     }
   }
   .max-sm\:overflow-x-visible {

@@ -518,7 +518,7 @@ document.addEventListener("DOMContentLoaded", function () {
             <td class="py-3 border px-1.5">${sale.item_number}</td>
             <td class="py-3 border px-1.5">${sale.item_name}</td>
             <td class="py-3 border px-1.5"> <button type="button" id="unit-select-button"
-                                class="inline-flex justify-between items-center w-full rounded-md border border-gray-300 shadow-sm px-1 py-1.5 text-xs "
+                                class="w-full inline-flex justify-between items-center rounded-md border border-gray-300 shadow-sm px-1 py-1.5 text-xs "
                                 aria-expanded="true" aria-haspopup="true">
                                 <span class="block truncate"> ${sale.unit} </span>
                                 <svg class="h-3 w-3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
@@ -528,14 +528,14 @@ document.addEventListener("DOMContentLoaded", function () {
                                         clip-rule="evenodd" />
                                 </svg>
                             </button></td>
-            <td class="py-3 border px-1.5"><input class="w-18 rounded-md border border-gray-300 shadow-sm px-1 py-1.5 text-xs" type="number" value="${sale.quantity}"></td>
-            <td class="py-3 border px-1.5"><input class="w-18 rounded-md border border-gray-300 shadow-sm px-1 py-1.5 text-xs" type="number" value="${sale.free}"></td>
-            <td class="py-3 border px-1.5"><input class="w-25 rounded-md border border-gray-300 shadow-sm px-1 py-1.5 text-xs" type="number" value="${sale.price.toFixed(2)}"></td>
-            <td class="py-3 border px-1.5"><input class="w-18 rounded-md border border-gray-300 shadow-sm px-1 py-1.5 text-xs" type="number" value="${sale.discount_percentage.toFixed(2)}"></td>
-            <td class="py-3 border px-1.5"><input class="w-22 rounded-md border border-gray-300 shadow-sm px-1 py-1.5 text-xs" type="number" value="${sale.discount_amount.toFixed(2)}"></td>
+            <td class="py-3 border px-1.5"><input class="w-full rounded-md border border-gray-300 shadow-sm px-1 py-1.5 text-xs" type="number" value="${sale.quantity}"></td>
+            <td class="py-3 border px-1.5"><input class="w-full rounded-md border border-gray-300 shadow-sm px-1 py-1.5 text-xs" type="number" value="${sale.free}"></td>
+            <td class="py-3 border px-1.5"><input class="w-full rounded-md border border-gray-300 shadow-sm px-1 py-1.5 text-xs" type="number" value="${sale.price.toFixed(2)}"></td>
+            <td class="py-3 border px-1.5"><input class="w-full rounded-md border border-gray-300 shadow-sm px-1 py-1.5 text-xs" type="number" value="${sale.discount_percentage.toFixed(2)}"></td>
+            <td class="py-3 border px-1.5"><input class="w-full rounded-md border border-gray-300 shadow-sm px-1 py-1.5 text-xs" type="number" value="${sale.discount_amount.toFixed(2)}"></td>
             <td class="py-3 border px-1.5">${sale.total_after_discount.toFixed(2)}</td>
-            <td class="py-3 border px-1.5"><input class="w-15 rounded-md border border-gray-300 shadow-sm px-1 py-1.5 text-xs" type="number" value="${sale.tax_rate.toFixed(2)}"></td>
-            <td class="py-3 border px-1.5"><input class="w-20 rounded-md border border-gray-300 shadow-sm px-1 py-1.5 text-xs" type="number" value="${sale.tax_amount.toFixed(2)}"></td>
+            <td class="py-3 border px-1.5"><input class="w-full rounded-md border border-gray-300 shadow-sm px-1 py-1.5 text-xs" type="number" value="${sale.tax_rate.toFixed(2)}"></td>
+            <td class="py-3 border px-1.5"><input class="w-full rounded-md border border-gray-300 shadow-sm px-1 py-1.5 text-xs" type="number" value="${sale.tax_amount.toFixed(2)}"></td>
             <td class="py-3 border px-1.5">${sale.net_total.toFixed(2)}</td>
             <td class="py-3 border px-1"><input class="overflow-ellipsis focus:outline-none text-xs" type="text" value="${sale.description}"></td>
         `;
