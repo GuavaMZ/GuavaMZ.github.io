@@ -534,7 +534,7 @@ document.addEventListener("DOMContentLoaded", function () {
             <td class="py-3 border px-1.5"><input class="w-full rounded-md border border-gray-300 shadow-sm px-1 py-1.5 text-xs" type="number" value="${sale.discount_percentage.toFixed(2)}"></td>
             <td class="py-3 border px-1.5"><input class="w-full rounded-md border border-gray-300 shadow-sm px-1 py-1.5 text-xs" type="number" value="${sale.discount_amount.toFixed(2)}"></td>
             <td class="py-3 border px-1.5">${sale.total_after_discount.toFixed(2)}</td>
-            <td class="py-3 border px-1.5"><input class="w-full rounded-md border border-gray-300 shadow-sm px-1 py-1.5 text-xs" type="number" value="${sale.tax_rate.toFixed(2)}"></td>
+            <td class="py-3 border px-1.5"><input class="w-20 rounded-md border border-gray-300 shadow-sm px-1 py-1.5 text-xs" type="number" value="${sale.tax_rate.toFixed(2)}"></td>
             <td class="py-3 border px-1.5"><input class="w-full rounded-md border border-gray-300 shadow-sm px-1 py-1.5 text-xs" type="number" value="${sale.tax_amount.toFixed(2)}"></td>
             <td class="py-3 border px-1.5">${sale.net_total.toFixed(2)}</td>
             <td class="py-3 border px-1"><input class="overflow-ellipsis focus:outline-none text-xs" type="text" value="${sale.description}"></td>
