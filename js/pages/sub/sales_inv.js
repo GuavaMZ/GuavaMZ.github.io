@@ -1,4 +1,8 @@
 document.addEventListener("DOMContentLoaded", function () {
+    var currentInvState = 0; // 0 for no invoice // 1 for new invoice, 2 for edit invoice, 3 for view invoice
+
+
+
     const branchSelectionButton = document.getElementById('branch-select-button');
     const branchSelectionMenuItems = document.getElementById('branch-select-menu');
     const branchSelectionItem = document.querySelectorAll('.branch-selection-item');
@@ -655,6 +659,59 @@ document.addEventListener("DOMContentLoaded", function () {
 
             newTd.appendChild(deleteButton);
             row.appendChild(newTd);
+        });
+    });
+
+    if (currentInvState === 0) {
+        document.getElementById('add-inv').style.display = 'block';
+        document.getElementById('edit-inv').style.display = 'none';
+        document.getElementById('save-inv').style.display = 'none';
+        document.getElementById('delete-inv').style.display = 'none';
+        document.getElementById('cancel-inv').style.display = 'none';
+        const invTableInputs = document.querySelectorAll('#inv-table tbody tr td input');
+        invTableInputs.forEach(input => {
+            input.disabled = true;
+        });
+    }
+
+    document.getElementById('add-inv').addEventListener('click', () => {
+        currentInvState = 1;
+        document.getElementById('add-inv').style.display = 'none';
+        document.getElementById('edit-inv').style.display = 'block';
+        document.getElementById('save-inv').style.display = 'block';
+        document.getElementById('delete-inv').style.display = 'block';
+        document.getElementById('cancel-inv').style.display = 'block';
+    })
+
+    document.getElementById('edit-inv').addEventListener('click', () => {
+        currentInvState = 2;
+        // Make every input field in inv-table editable
+        const invTableInputs = document.querySelectorAll('#inv-table input');
+        invTableInputs.forEach(input => {
+            input.disabled = false;
+        });
+    });
+
+    document.getElementById('cancel-inv').addEventListener('click', () => {
+        currentInvState = 0;
+        document.getElementById('add-inv').style.display = 'block';
+        document.getElementById('edit-inv').style.display = 'none';
+        document.getElementById('save-inv').style.display = 'none';
+        document.getElementById('delete-inv').style.display = 'none';
+        document.getElementById('cancel-inv').style.display = 'none';
+    });
+
+    document.getElementById('save-inv').addEventListener('click', () => {
+        currentInvState = 0;
+        document.getElementById('add-inv').style.display = 'block';
+        document.getElementById('edit-inv').style.display = 'none';
+        document.getElementById('save-inv').style.display = 'none';
+        document.getElementById('delete-inv').style.display = 'none';
+        document.getElementById('cancel-inv').style.display = 'none';
+
+        const invTableInputs = document.querySelectorAll('#inv-table tbody tr td input');
+        invTableInputs.forEach(input => {
+            input.disabled = true;
         });
     });
 });
