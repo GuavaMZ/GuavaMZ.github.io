@@ -1,7 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-    var currentInvState = 0; // 0 for no invoice // 1 for new invoice, 2 for edit invoice, 3 for view invoice
-
-
+    var currentInvState = 1; // 0 for no invoice // 1 for new invoice, 2 for edit invoice, 3 for view invoice
 
     const branchSelectionButton = document.getElementById('branch-select-button');
     const branchSelectionMenuItems = document.getElementById('branch-select-menu');
@@ -672,6 +670,12 @@ document.addEventListener("DOMContentLoaded", function () {
         invTableInputs.forEach(input => {
             input.disabled = true;
         });
+    } else if (currentInvState === 1) {
+        document.getElementById('add-inv').style.display = 'none';
+        document.getElementById('edit-inv').style.display = 'block';
+        document.getElementById('save-inv').style.display = 'block';
+        document.getElementById('delete-inv').style.display = 'block';
+        document.getElementById('cancel-inv').style.display = 'block';
     }
 
     document.getElementById('add-inv').addEventListener('click', () => {
@@ -706,7 +710,6 @@ document.addEventListener("DOMContentLoaded", function () {
                 row.remove();
             });
         }
-
     });
 
     document.getElementById('save-inv').addEventListener('click', () => {
