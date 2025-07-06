@@ -699,6 +699,14 @@ document.addEventListener("DOMContentLoaded", function () {
         document.getElementById('save-inv').style.display = 'none';
         document.getElementById('delete-inv').style.display = 'none';
         document.getElementById('cancel-inv').style.display = 'none';
+
+        const tableRows = invTable.querySelectorAll('tbody tr');
+        if (confirm('Are you sure you want to cancel this invoice?')) {
+            tableRows.forEach(row => {
+                row.remove();
+            });
+        }
+
     });
 
     document.getElementById('save-inv').addEventListener('click', () => {
