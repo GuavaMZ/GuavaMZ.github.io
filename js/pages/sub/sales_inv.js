@@ -676,6 +676,10 @@ document.addEventListener("DOMContentLoaded", function () {
         document.getElementById('save-inv').style.display = 'block';
         document.getElementById('delete-inv').style.display = 'block';
         document.getElementById('cancel-inv').style.display = 'block';
+        const invTableInputs = document.querySelectorAll('#inv-table tbody tr td input');
+        invTableInputs.forEach(input => {
+            input.disabled = true;
+        });
     }
 
     document.getElementById('add-inv').addEventListener('click', () => {
